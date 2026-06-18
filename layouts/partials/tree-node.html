@@ -1,0 +1,32 @@
+{{ $node := .node }}
+{{ $current := .current }}
+
+<ul class="tree-list">
+  <!-- Subfolders (Sections) -->
+  {{ range $node.Sections.ByTitle }}
+    {{ $isOpen := false }}
+    {{ if or ($current.IsDescendant .) (eq $current .) }}
+      {{ $isOpen = true }}
+    {{ end }}
+    <li class="tree-item folder {{ if $isOpen }}open{{ end }}">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">{{ if $isOpen }}▼{{ else }}▶{{ end }}</span>
+        <span class="folder-icon">📁</span>
+        <a href="{{ .RelPermalink }}" class="folder-title {{ if eq $current . }}active{{ end }}">{{ .Title }}</a>
+      </div>
+      <div class="folder-content" style="{{ if $isOpen }}display: block;{{ else }}display: none;{{ end }}">
+        {{ partial "tree-node.html" (dict "node" . "current" $current) }}
+      </div>
+    </li>
+  {{ end }}
+
+  <!-- Files (Regular Pages) -->
+  {{ range $node.RegularPages.ByTitle }}
+    <li class="tree-item file">
+      <a href="{{ .RelPermalink }}" class="file-title-link {{ if eq $current . }}active{{ end }}">
+        <span class="file-icon">📄</span>
+        <span class="file-name">{{ .Title }}</span>
+      </a>
+    </li>
+  {{ end }}
+</ul>

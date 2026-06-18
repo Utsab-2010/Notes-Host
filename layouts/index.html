@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="contents-page">
+    <header style="margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(90deg, var(--accent-color), #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Garden Index</h1>
+        <p style="color: #8b949e; font-size: 1.1rem;">Explore the notes, categories, and technical logs from my Obsidian vault.</p>
+    </header>
+
+    {{ $vault := .Site.GetPage "section" "vault" }}
+    {{ if $vault }}
+        <div class="folder-grid-container">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                📂 Top-Level Folders
+            </h2>
+            <div class="grid">
+                {{ range $vault.Sections.ByTitle }}
+                <a href="{{ .RelPermalink }}" class="card folder-card">
+                    <div class="card-icon">📁</div>
+                    <div class="card-info">
+                        <h3>{{ .Title }}</h3>
+                        <span class="card-meta">{{ len .RegularPagesRecursive }} notes</span>
+                    </div>
+                </a>
+                {{ end }}
+            </div>
+
+            {{ if $vault.RegularPages }}
+            <h2 style="font-size: 1.5rem; margin-top: 3rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+                📄 Root Notes
+            </h2>
+            <div class="grid">
+                {{ range $vault.RegularPages.ByTitle }}
+                <a href="{{ .RelPermalink }}" class="card file-card">
+                    <div class="card-icon">📄</div>
+                    <div class="card-info">
+                        <h3>{{ .Title }}</h3>
+                        <span class="card-meta">Note</span>
+                    </div>
+                </a>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    {{ else }}
+        <div class="empty-state">
+            <p>No content found in the vault.</p>
+            <p>Ensure that your Obsidian vault folder is correctly configured and accessible.</p>
+        </div>
+    {{ end }}
+</div>
+{{ end }}

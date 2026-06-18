@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Misc on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/vault/misc/</link>
+    <description>Recent content in Misc on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/vault/misc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AJB BTP Summary</title>
+      <link>http://localhost:1313/vault/misc/ajb-btp-summary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/ajb-btp-summary/</guid>
+      <description>Topics Game Theory: Pursuation Robust PCA(signal processing) - Compressed Sensing Topological Signals - Consensus Problem - Non central decision maker Networks - TCP IP - Send packets and receive - ensure not much retransmission Financial Markets </description>
+    </item>
+    <item>
+      <title>How to Read Papers</title>
+      <link>http://localhost:1313/vault/misc/how-to-read-papers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/how-to-read-papers/</guid>
+      <description>Order to Read Title Abstract Summary/Conclusions Now at this point if they don&amp;rsquo;t feel relevant to you then don&amp;rsquo;t read that paper. Tables and Figures They can be very info dense but they deliver a clear sense of what the authors wanted to do. If its all good till now then Read the intro/theory Read Results Read Methods to understand their experiments, assumptions , etc How to Note </description>
+    </item>
+    <item>
+      <title>Krutarth meet - 20th March</title>
+      <link>http://localhost:1313/vault/misc/krutarth-meet---20th-march/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/krutarth-meet---20th-march/</guid>
+      <description>Subgoal Recommendation policy Trying to solve freezing robot problem static obstacles new idea now: - MLP is all you need for spatio temporal prediction.(paper) - An all MLP TSMixer for timeseries forecasting - &amp;ldquo;same shit&amp;rdquo; for Vision - Mixers - what can the constant velocity model teach us about pedestrian motion prediction&#xA;strategy space problems&#xA;task space problems&#xA;negotiation - explicit &amp;amp; implicit&#xA;cognitive architectures CADRL&#xA;SCOPUS for lit review</description>
+    </item>
+    <item>
+      <title>Loss Funk Application</title>
+      <link>http://localhost:1313/vault/misc/loss-funk-application/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/loss-funk-application/</guid>
+      <description>Create learning algorithms that are as sample efficient as humans What can we study from the nature of data to drive sample efficiency? How can we use data to create new data (are world models involved?) ? What kinds of abstractions lead to sample efficient learning? Explore tradeoff between compute, parameters and data samples. Research Internship&#xA;Diffusion Language Model(ongoing) - Trying to implement a diffusion based small language model inspired by the seminal paper &amp;ldquo;Diffusion LM&amp;rdquo;.</description>
+    </item>
+    <item>
+      <title>Meet Summary</title>
+      <link>http://localhost:1313/vault/misc/meet-summary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/meet-summary/</guid>
+      <description>Objective: Work on a framework for robot learning which has interpretable results or explainable guarantees.&#xA;Currently looking at works involving Normalising Flows, it is recently popular ML framework which essentially tries to models the transformation function which converts(transforms) a known prior distribution into the required optimal expert distribution.&#xA;Some papers for inspiration:&#xA;RESPO(NeurIPS 23) - Used a reachability indicator in their RL Value(objective) function to ensure safety focus and induce recovering maneuvars back to safe zones from unsafe regions.</description>
+    </item>
+    <item>
+      <title>Reading List</title>
+      <link>http://localhost:1313/vault/misc/reading-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/reading-list/</guid>
+      <description>Research Evolution Strategies at the Hyperscale ViTs Need Registers Bangla Literature Ghurghutiyar Ghotona - Satyajit Ray Specials Borrasca </description>
+    </item>
+    <item>
+      <title>Reddit - ML Papers to Read</title>
+      <link>http://localhost:1313/vault/misc/reddit---ml-papers-to-read/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/reddit---ml-papers-to-read/</guid>
+      <description>Theoretical: Neural Networks are Decision Trees Cross-Validation Bias due to Unsupervised Preprocessing The Forward-Forward Algorithm: Some Preliminary Investigations LoRA: Low-Rank Adaptation of Large Language Models (included here as it has applications beyond LLMs) Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets Image: ViT related:&#xA;An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)&#xA;Emerging Properties in Self-Supervised Vision Transformers&#xA;Training data-efficient image transformers &amp;amp; distillation through attention</description>
+    </item>
+    <item>
+      <title>Summer Plan 2026</title>
+      <link>http://localhost:1313/vault/misc/summer-plan-2026/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/summer-plan-2026/</guid>
+      <description>Major Targets Write 4 great technical Blogs Implementing AlphaZero Implementing Simple Diffusion and Understanding the math Implementing a simple Flow Model and Math behind Implementing simple CLIP Do great work with VAL, IISc Finalize a BTP direction and work towards it (6 hrs a week) CDC data prep Gather what you need to be doing before going to IISc Breakdown stuff into a broader category Practice Self-Control over full Summer Proper Skincare Side Quests Finalize a PS for IITB thing, do small scale experiments Post regularly on Twitter regarding work Improve and Lock the AlphaZero Project Maybe make one infographic video that you were planning Organize Obsidian better, improve workflow Read 2 books Read Bangla, Know your history Figure out Zotero </description>
+    </item>
+    <item>
+      <title>VAL Notebook</title>
+      <link>http://localhost:1313/vault/misc/val-notebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/val-notebook/</guid>
+      <description>Author: Utsab Karan Vision and AI Lab, IISc Bangalore Summer Internship 2026 Current Work Order-DP keep the same compute 20,50,100 epochs 2. Prune ratio = 0.3,0.5 3. imgnet When can pruning lead to gains? Can there be a theory behind it? Imgnet not much. At CLIP level some gains. Questions Possible Directions for Lit Review Possible set of experiments. To-Dos To Ponder What exactly are we looking for? Are we thinking about only the pre-training phase of image models?</description>
+    </item>
+    <item>
+      <title>Workout Log</title>
+      <link>http://localhost:1313/vault/misc/workout-log/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/workout-log/</guid>
+      <description> 28th March,2026 - 2km jog , total 11 min 30th March, 2026 - 30 min Gym, Upper body, Arms and core </description>
+    </item>
+    <item>
+      <title>Workout Routine</title>
+      <link>http://localhost:1313/vault/misc/workout-routine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/misc/workout-routine/</guid>
+      <description>Core/Abs Instagram Lie and leg raise walk - 4 sets of 20 Bring leg close and hug leg - 4 sets of 15 Russian Twists - 4 set Shredded Home Workout Instagram Chest - Incline Pushup Shoulders - Hindu Pushups Back - Seal ups Quads - Sissy Swats Hammies - RDL Extensions Biceps - doorway curls - 3x15 Triceps - skull crushers - 3 sets of 10 Forearms - Floor pulses - 3x12 Upper Abs - V-UPs - 2x10 Lower Abs - Reverse Crunch - 3x15 </description>
+    </item>
+  </channel>
+</rss>

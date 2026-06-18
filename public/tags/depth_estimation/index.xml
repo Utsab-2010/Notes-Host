@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Depth_Estimation on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/tags/depth_estimation/</link>
+    <description>Recent content in Depth_Estimation on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/tags/depth_estimation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/vault/papers/infidepth---arbitrary-high-res-estimation-using-neural-implicit-fields/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/infidepth---arbitrary-high-res-estimation-using-neural-implicit-fields/</guid>
+      <description>Link: https://zju3dv.github.io/InfiniDepth/#pointcloud Paper: https://arxiv.org/pdf/2601.03252&#xA;Depth as Neural Implicit Fields They have extended the concept of Neural Implicit Fields which maps any 2d coordinate to a depth value conditioned on the input RGB image of a fixed resolution.$$d_{I}(x,y) = N_{\mathbb{\theta}}(I,(x,y))$$ They implemented this NIF model using a Local Implicit Decoder. It has two modules:&#xA;Feature Query: They use a VIT encoder to capture Global information.&#xA;This is followed by a Reassemble Block .</description>
+    </item>
+  </channel>
+</rss>

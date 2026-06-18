@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="contents-page">
+    <header style="margin-bottom: 2.5rem;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(90deg, var(--accent-color), #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            📁 {{ .Title }}
+        </h1>
+        <p style="color: #8b949e; font-size: 1.1rem;">Section folder view.</p>
+    </header>
+
+    <div class="folder-grid-container">
+        {{ if .Sections }}
+        <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; color: #8b949e;">
+            Subfolders
+        </h2>
+        <div class="grid" style="margin-bottom: 3rem;">
+            {{ range .Sections.ByTitle }}
+            <a href="{{ .RelPermalink }}" class="card folder-card">
+                <div class="card-icon">📁</div>
+                <div class="card-info">
+                    <h3>{{ .Title }}</h3>
+                    <span class="card-meta">{{ len .RegularPagesRecursive }} notes</span>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        {{ if .RegularPages }}
+        <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; color: #8b949e;">
+            Notes
+        </h2>
+        <div class="grid">
+            {{ range .RegularPages.ByTitle }}
+            <a href="{{ .RelPermalink }}" class="card file-card">
+                <div class="card-icon">📄</div>
+                <div class="card-info">
+                    <h3>{{ .Title }}</h3>
+                    <span class="card-meta">Note</span>
+                </div>
+            </a>
+            {{ end }}
+        </div>
+        {{ else if not .Sections }}
+        <div class="empty-state">
+            <p>This folder is empty.</p>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}

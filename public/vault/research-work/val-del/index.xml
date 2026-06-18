@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VAL-DEL on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/vault/research-work/val-del/</link>
+    <description>Recent content in VAL-DEL on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/vault/research-work/val-del/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avg El2n score difference between two toy datasets</title>
+      <link>http://localhost:1313/vault/research-work/val-del/avg-el2n-score-difference-between-two-toy-datasets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/val-del/avg-el2n-score-difference-between-two-toy-datasets/</guid>
+      <description>Case 1: Fixed Vector Summed + Noise as Input Case 2: Multi-Hot Vector as Input As can be seen the 2nd toy el2n scores(above) are much higher than the one below(multi-hot vector toy dataset)&#xA;Case II: Multi-Hot Vector Input If the input is easy to untangle, then the model directly tries to get biased towards the more frequent quanta, but due to the polygenic nature, the $Y$ label varies quite a bit and hence more frequent quanta lead to more errors (High EL2N).</description>
+    </item>
+    <item>
+      <title>Deriving Neural Scaling Laws from Lang Stat</title>
+      <link>http://localhost:1313/vault/research-work/val-del/deriving-neural-scaling-laws-from-lang-stat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/val-del/deriving-neural-scaling-laws-from-lang-stat/</guid>
+      <description>1. Foundational Setup and Definitions A. Autoregressive Test Loss ($\mathcal{L}_{AR}$) In autoregressive language modeling, the network predicts the probability of the next token $X_{n+1}$ given a sequence of past conditioning tokens $X_{1:n}$. For a maximum context window length $T$, the global autoregressive loss is defined as the arithmetic mean of individual $n$-gram cross-entropy losses over all available horizons $n \in [1, T]$: $$\mathcal{L}{AR}(P) = \frac{1}{T} \sum{n=1}^{T} \mathcal{L}n(P)$$ where the $n$-gram loss at a specific context length is given by: $$\mathcal{L}n(P) = -\mathbb{E}\left[\log \hat{p}(X{n+1}|X{1:n})\right]$$</description>
+    </item>
+    <item>
+      <title>Detect the change of implicit curricula</title>
+      <link>http://localhost:1313/vault/research-work/val-del/detect-the-change-of-implicit-curricula/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/val-del/detect-the-change-of-implicit-curricula/</guid>
+      <description>Hypothesis: Based on the quantisation paper, to learn a particular quanta it has to be seen $\tau$ no. of times(in unique samples). But that paper kinda considered the quantas to be independent of each other, that is learning one quanta does not affect the learning of another quanta.&#xA;For a particular dataset having a range of quantas, the model will follow its own implicit curricula for the dataset based on which samples it can learn earlier.</description>
+    </item>
+    <item>
+      <title>Initial Tests for the Scaling Law</title>
+      <link>http://localhost:1313/vault/research-work/val-del/initial-tests-for-the-scaling-law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/val-del/initial-tests-for-the-scaling-law/</guid>
+      <description>To validate this acyclic framework, you need to verify two things: first, that your static corpus metric ($H_{\text{spec}}$ at $n^_0$) matches the empirical rate of multi-epoch decay ($\delta$) across different text distributions, and second, that the active learning horizon ($n^_k$) actually expands along the predicted path.&#xA;Here is a lean experimental protocol you can run on a single GPU using small-scale subsets.&#xA;Phase 1: Establish the Dataset Profiles (Static Step) Select three small text corpora ($P_0 \approx 10\text{M}$ to $50\text{M}$ tokens) with explicitly contrasting structural profiles:</description>
+    </item>
+    <item>
+      <title>Open Questions</title>
+      <link>http://localhost:1313/vault/research-work/val-del/open-questions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/val-del/open-questions/</guid>
+      <description>How much can a model actually learn? Do we address this? Capacity of a model? Parameter-space alloted for different tasks? related works - Look into Data Attribution? Which data is important for which predictions. Use cases of good DA methods?? Does the assumption of neural networks being over-parameterised hold well in the context of CL? Which area to target CIL, TIL, DIL, etc? how to extract juice from all the samples as quickly as possible w/o leading to overfitting / forgetting.</description>
+    </item>
+    <item>
+      <title>Polygenic Voting Toy Test</title>
+      <link>http://localhost:1313/vault/research-work/val-del/polygenic-voting-toy-test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/val-del/polygenic-voting-toy-test/</guid>
+      <description>Read , lines 91 to 175&#xA;Here&amp;rsquo;s a complete breakdown of the data generation process with your current config (n_tasks=500, num_classes=100, max_poly=1, max_quanta_classes=5, alpha=1.44, weighted_votes=False):&#xA;Phase 1: Setup (once at dataset creation) Step 1 — Zipf probabilities&#xA;probs[q] = q^(-alpha) / sum(i^(-alpha)) This gives a descending probability distribution: quantum 0 is ~140× more likely to be sampled than quantum 499.&#xA;Step 2 — Class votes per quantum For each quantum q (0 to 499):</description>
+    </item>
+    <item>
+      <title>Quantization Based Hypothesis</title>
+      <link>http://localhost:1313/vault/research-work/val-del/quantization-based-hypothesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/val-del/quantization-based-hypothesis/</guid>
+      <description>Quantisation Modelling paper states that the datasets comprise of different quantas of information corresponding to different characteristic features. And that the distribution of said quanta is spread according to the Zipf distribution throughout the dataset. Now based on the frequency of occurrence of a quanta we can create a descending sequence called the Q-sequence. Some points:&#xA;Each quanta needs to be seen for a threshold $\tau$ number of times to get learnt.</description>
+    </item>
+    <item>
+      <title>Scaling laws with rep</title>
+      <link>http://localhost:1313/vault/research-work/val-del/scaling-laws-with-rep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/val-del/scaling-laws-with-rep/</guid>
+      <description>1. The Core Premise: What Must $\delta$ Measure? When a model processes a dataset of size $P_0$ tokens for the first time, it uses those samples to resolve the true underlying distribution rules of the language. When it reads the exact same sequence a second time, no new tokens are added. The only reason the second pass contains non-zero utility is if the model failed to fully extract the statistical relationships during the first pass.</description>
+    </item>
+  </channel>
+</rss>

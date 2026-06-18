@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Papers on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/vault/papers/</link>
+    <description>Recent content in Papers on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/vault/papers/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/vault/papers/infidepth---arbitrary-high-res-estimation-using-neural-implicit-fields/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/infidepth---arbitrary-high-res-estimation-using-neural-implicit-fields/</guid>
+      <description>Link: https://zju3dv.github.io/InfiniDepth/#pointcloud Paper: https://arxiv.org/pdf/2601.03252&#xA;Depth as Neural Implicit Fields They have extended the concept of Neural Implicit Fields which maps any 2d coordinate to a depth value conditioned on the input RGB image of a fixed resolution.$$d_{I}(x,y) = N_{\mathbb{\theta}}(I,(x,y))$$ They implemented this NIF model using a Local Implicit Decoder. It has two modules:&#xA;Feature Query: They use a VIT encoder to capture Global information.&#xA;This is followed by a Reassemble Block .</description>
+    </item>
+    <item>
+      <title>Beyond Neural Scaling Law - Data Pruning improve power law</title>
+      <link>http://localhost:1313/vault/papers/beyond-neural-scaling-law---data-pruning-improve-power-law/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/beyond-neural-scaling-law---data-pruning-improve-power-law/</guid>
+      <description>#scaling_laws paper: [2206.14486] Beyond neural scaling laws: beating power law scaling via data pruning&#xA;Main Points They are NOT focusing on trainining/compute efficiency in this work even though they are working with data pruning methods They try to show that use of data pruning can lead to the creation of better datasets which can help scale up performance beyond the traditional power law trend. They tested with a toy model and designed a scoring metric to score samples based on their quality.</description>
+    </item>
+    <item>
+      <title>Boosting Data-Driven Mirror Descent with Randomization,Equivariance, and Acceleration</title>
+      <link>http://localhost:1313/vault/papers/boosting-data-driven-mirror-descent-with-randomizationequivariance-and-acceleration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/boosting-data-driven-mirror-descent-with-randomizationequivariance-and-acceleration/</guid>
+      <description>Boosting Data-Driven Mirror Descent with Randomization, Equivariance, and Acceleration | OpenReview</description>
+    </item>
+    <item>
+      <title>Crowd-Aware Robot Navigation with Switching BetweenLearning-Based and Rule-Based Methods Using Normalizing Flows</title>
+      <link>http://localhost:1313/vault/papers/crowd-aware-robot-navigation-with-switching-betweenlearning-based-and-rule-based-methods-using-normalizing-flows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/crowd-aware-robot-navigation-with-switching-betweenlearning-based-and-rule-based-methods-using-normalizing-flows/</guid>
+      <description>#robotics</description>
+    </item>
+    <item>
+      <title>Deep Learning on a Data Diet</title>
+      <link>http://localhost:1313/vault/papers/deep-learning-on-a-data-diet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/deep-learning-on-a-data-diet/</guid>
+      <description>#data_efficient_ml&#xA;Proposed Ideas Compared to recent work that prunes data by discarding examples that are rarely forgotten over the course of training, our scores use only local information early in training a scoring method to identify diff and important samples early on in training identify how this score pruned sub-population affect loss surface and the training dynamics Imp Results we can prune 25% of CIFAR-100 (verified by IISc task results) compared to 50% of CIFAR-10 due to difficulty in learning more variety.</description>
+    </item>
+    <item>
+      <title>Diffusion-LM</title>
+      <link>http://localhost:1313/vault/papers/diffusion-lm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/diffusion-lm/</guid>
+      <description>#diffusion #nlp Link: Diffusion-LM Improves Controllable Text Generation | alphaXiv&#xA;The training workflow of Diffusion-LM adapts continuous diffusion models to discrete text by modifying the standard diffusion process to include an embedding step mapping discrete words to a continuous space, and a rounding step mapping continuous vectors back to words. The model is trained end-to-end, jointly learning the diffusion model&amp;rsquo;s parameters and the word embeddings.&#xA;Here is the detailed workflow and the underlying mathematics:</description>
+    </item>
+    <item>
+      <title>I-JEPA</title>
+      <link>http://localhost:1313/vault/papers/i-jepa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/i-jepa/</guid>
+      <description>Image Joint Embedding Predictive Architecture: Paper: [2301.08243] Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture&#xA;#deep_learning #representations #compvis&#xA;Flaws in the older stuff Masked pretraining tasks require less prior knowledge than view-invariance approaches and easily generalize beyond the image modality [8]. However, the esulting representations are typically of a lower semantic level and underperform invariance-based pretraining in offthe-shelf evaluations (e.g., linear-probing) and in transfer settings with limited supervision for semantic classification tasks [4].</description>
+    </item>
+    <item>
+      <title>Information Theory for Repr Learning</title>
+      <link>http://localhost:1313/vault/papers/information-theory-for-repr-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/information-theory-for-repr-learning/</guid>
+      <description>The weight of evidence regarding a particular hypothesis over the other(defined hre as prob distributiosns) is just log p/q. that is log of the ratios of the posteriors.&#xA;KL Divergence can be thought of as the expected weight of evidence&#xA;VAEs . world P is what we build, world Q is desirable. Taking kl divergence gives us just the VAE architecture Variational Information Bottleneck repr without augmentated variations of inputs if you express each input as a new random variatble you can encode a much richer set of relationships like heirarchies,etc.</description>
+    </item>
+    <item>
+      <title>Large-Scale Pruning using Dyna Uncertainty</title>
+      <link>http://localhost:1313/vault/papers/large-scale-pruning-using-dyna-uncertainty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/large-scale-pruning-using-dyna-uncertainty/</guid>
+      <description>#data_efficient_ml paper: openaccess.thecvf.com/content/CVPR2024W/DDCV/papers/He_Large-scale_Dataset_Pruning_with_Dynamic_Uncertainty_CVPRW_2024_paper.pdf&#xA;Proposed Ideas Generality Easy to learn samples are pruned out and focus is shifted to the hard(high train loss) samples. They argue that focus be shifted to uncertain samples rather than hard ones. Because hard ones are often mis-labled or noise data. Most of the information regarding the decision boundary is learned from the uncertain samples. They want to prune out a coreset which is subset of the dataset.</description>
+    </item>
+    <item>
+      <title>Learning Stable Normalizing-Flow Control for Robotic Manipulation</title>
+      <link>http://localhost:1313/vault/papers/learning-stable-normalizing-flow-control-for-robotic-manipulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/learning-stable-normalizing-flow-control-for-robotic-manipulation/</guid>
+      <description>This paper maps the real system X of the manipulator(end-effector) to a simpler spring mass types control system Y.&#xA;This transformation is given by a learnable invertible flow network. The optimal control $u_y$ is found from the equation an we can get the optimal control for the manipulator state $u_x$ using the inverse jacobian matrix (using the concept of virtual work) They also show safety guarantees in their framework In Normalizing Flows, complex probability distributions are models are constructed by learning a sequence of convertible and differential neural network transformations that map the simple prior distribution to the required complex ones.</description>
+    </item>
+    <item>
+      <title>Learning2Optimize</title>
+      <link>http://localhost:1313/vault/papers/learning2optimize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/learning2optimize/</guid>
+      <description>jmlr.org/papers/volume23/21-0308/21-0308.pdf&#xA;Learning optimisers for different problems. trying to improve over the hard engineered optimisation algos like sgd , adam,etc. model based methods </description>
+    </item>
+    <item>
+      <title>MaxEnRL via Energy-based Normalising Flows 1</title>
+      <link>http://localhost:1313/vault/papers/maxenrl-via-energy-based-normalising-flows-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/maxenrl-via-energy-based-normalising-flows-1/</guid>
+      <description>Abstract In traditional Max Entropy RL methods for continuous action spaces , typically actor-critic is used. There are usually two parts of the training which happen at each iteration:&#xA;policy eval: update the Q-fuction(Critic) policy improvement: updating the Actor Proposed method is a single objective training process.&#xA;supports multi-modal action distributions with efficient action sampling does policy evaluation without monte carlo approximation 1. Soft Actor-Critic (SAC) Approximation This is the most common method, used in algorithms like SAC.</description>
+    </item>
+    <item>
+      <title>Neural Ordinary Differential Equations</title>
+      <link>http://localhost:1313/vault/papers/neural-ordinary-differential-equations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/neural-ordinary-differential-equations/</guid>
+      <description>#flows continuous normalizing flows&#xA;Continuous-Depth Residual Models In traditional Residual Networks (ResNets), the model is built from a sequence of layers that make discrete jumps. Each layer transforms the data by adding a small change to it: $h_{t+1} = h_t + f(h_t, \theta_t)$.&#xA;From Jumps to Flow: As you add more layers and make the steps smaller, this process starts to look like a continuous flow. Neural ODEs: Instead of specifying a fixed number of layers, a Neural Ordinary Differential Equation (ODE) defines the rate of change of the hidden state using a neural network:$$\large \frac{dh(t)}{dt} = f(h(t), t, \theta)$$ Depth as Time: In this view, the &amp;ldquo;depth&amp;rdquo; of the model is like &amp;ldquo;time.</description>
+    </item>
+    <item>
+      <title>RecoveryChaining-Learning Local Recovery Policies for Robust Manipulation</title>
+      <link>http://localhost:1313/vault/papers/recoverychaining-learning-local-recovery-policies-for-robust-manipulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/recoverychaining-learning-local-recovery-policies-for-robust-manipulation/</guid>
+      <description>#robotics&#xA;TLDR:&#xA;nominal controllers - where do you get those? skill-chaining Failure Discovery -hand designed here but there are works which show that they can be learnt. They simulate the nominal policies from various initial positions to discover and record the failures. impedance based controllers Traditional recovery learning methods are highly dataset dependent - hence they propose an online RL approach that does not rely on known preconditions. </description>
+    </item>
+    <item>
+      <title>RESPO (Reachability Estimation for Safe Policy Optimization)</title>
+      <link>http://localhost:1313/vault/papers/respo-reachability-estimation-for-safe-policy-optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/respo-reachability-estimation-for-safe-policy-optimization/</guid>
+      <description>#robotics #controls The framework is inspired by Hamilton-Jacobi (HJ) reachability analysis, a control-theoretic approach that rigorously verifies safety by finding the set of states from which an agent can avoid obstacles. RESPO was specifically developed to address the limitations of prior reachability-based methods, like RCRL, which struggled with stochasticity and lacked guarantees for recovery (re-entering safe zones) once a violation occurred.&#xA;Contributions Addresses the stochasticity of real world Address the weak safety guarantees of other methods Makes it such that an agent can go back to the safe region from a danger zone.</description>
+    </item>
+    <item>
+      <title>Scaling for Data Filtering</title>
+      <link>http://localhost:1313/vault/papers/scaling-for-data-filtering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/scaling-for-data-filtering/</guid>
+      <description>#data_efficient_ml Data curation cannot be compute-agnostic!&#xA;Paper: IEEE Xplore - Unable to Load Page&#xA;Brief presents a methodical study on how &amp;ldquo;quality&amp;rdquo; of data is not fixed and is actually compute dependent(how long you train the model). Past research considered web-data to be homogeneous(belonging to the same distribution) which they haven&amp;rsquo;t assumed in their work. filtering metrics must be designed by assessing the trade-off between the diminishing utility of a small pool of ‘high-quality’ data, and the initially lower but slowly diminishing utility of a larger pool that includes ‘lower-quality’ data.</description>
+    </item>
+    <item>
+      <title>TIC-CLIP - continual training of clip models</title>
+      <link>http://localhost:1313/vault/papers/tic-clip---continual-training-of-clip-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/tic-clip---continual-training-of-clip-models/</guid>
+      <description>#continual_learning</description>
+    </item>
+    <item>
+      <title>Understanding BlackBox Predictions - Using Influence Functions</title>
+      <link>http://localhost:1313/vault/papers/understanding-blackbox-predictions---using-influence-functions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/understanding-blackbox-predictions---using-influence-functions/</guid>
+      <description>#continual_learning&#xA;paper: [1703.04730] Understanding Black-box Predictions via Influence Functions&#xA;Setup You have training points $z_1, \dots, z_n$ where each $z_i = (x_i, y_i)$. You train a model by minimising the empirical risk:&#xA;$$\hat{\theta} = \arg\min_\theta \frac{1}{n} \sum_{i=1}^n L(z_i, \theta)$$&#xA;The fundamental question is: how does removing a single training point $z$ change $\hat{\theta}$, and consequently change predictions on a test point $z_{test}$?&#xA;Retraining from scratch for every candidate point is prohibitively expensive, so the paper approximates this.</description>
+    </item>
+    <item>
+      <title>When Do Curricula Work?</title>
+      <link>http://localhost:1313/vault/papers/when-do-curricula-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/papers/when-do-curricula-work/</guid>
+      <description>#curriculum_learning&#xA;Paper: [2012.03107] When Do Curricula Work?&#xA;Contributions investigate the implicit curricula resulting from achitectural and optimisation bias quantify the benefit of explicit curricula, we conduct extensive experiments over thousands of orderings spanning three kinds of learning: curriculum, anti-curriculum, and random-curriculum train over 25,000 models over four datasets, CIFAR10/100, FOOD101, and FOOD101N covering a wide range of choices in designing curricula curriculum learning, random, and anti-curriculum learning perform almost equally well in the standard setting Curriculum learning improves over standard training when training time is limited Curricula improves over standard training in noisy regime Each row is an CIFAR image, X axis is the list of different configurations(142 in total) on which the image was trained.</description>
+    </item>
+  </channel>
+</rss>

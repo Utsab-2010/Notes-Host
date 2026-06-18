@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DSA and CP on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/vault/dsa-and-cp/</link>
+    <description>Recent content in DSA and CP on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/vault/dsa-and-cp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linked List</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/linked-list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/dsa-and-cp/linked-list/</guid>
+      <description>1. What is a Linked List? A linked list is a data structure made up of a chain of nodes, where each node holds:&#xA;Some data A pointer to the next node Unlike arrays, linked list elements are not stored in contiguous memory. Each node can be anywhere in memory — they&amp;rsquo;re connected only through pointers.&#xA;[data | next] --&amp;gt; [data | next] --&amp;gt; [data | next] --&amp;gt; NULL Node 1 Node 2 Node 3 2.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,2613 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Notes Database Expansion | Utsab&#39;s Digital Garden</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="/css/main.css">
+
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false}
+                ]
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="sidebar">
+  <div class="sidebar-header">
+    <a href="/" class="sidebar-brand">
+      <span class="brand-icon">🌱</span>
+      <span class="brand-text">My Garden</span>
+    </a>
+  </div>
+  
+  <div class="sidebar-search">
+    <input type="text" id="search-input" placeholder="Search notes..." onkeyup="filterTree()">
+  </div>
+
+  <nav class="file-tree">
+    
+    
+      
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/blogs/" class="folder-title ">Blogs</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/blogs/why-is-diffusion-an-iterative-process/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name"></span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/blogs/diffusion/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/blogs/implementing-clip/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Implementing CLIP</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/blogs/list-of-topics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">List of Topics</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/competitions/" class="folder-title ">Competitions</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/competitions/lpcv-track-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">LPCV-Track-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/competitions/orbit-wars/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Orbit Wars</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/courses/" class="folder-title ">Courses</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/courses/fm-and-diff---mit-csail/" class="folder-title ">FM and Diff - MIT CSAIL</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/courses/fm-and-diff---mit-csail/lecture-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Lecture-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/courses/fm-and-diff---mit-csail/lecture-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Lecture-2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/courses/fm-and-diff---mit-csail/overview/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Overview</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/courses/signal-processing/" class="folder-title ">Signal Processing</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/courses/signal-processing/digital-communication/" class="folder-title ">Digital Communication</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/courses/signal-processing/digital-communication/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/courses/signal-processing/fundamentals/" class="folder-title ">Fundamentals</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/courses/signal-processing/fundamentals/fourier-transform/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fourier Transform</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+      
+    
+    <li class="tree-item folder open">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▼</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/deep-learning/" class="folder-title ">Deep Learning</a>
+      </div>
+      <div class="folder-content" style="display: block;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/attention-mechanism/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Attention Mechanism</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/continual-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/continual-learning---eval-metrics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning - Eval Metrics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/continual-learning-formulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning Formulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/curriculum-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Curriculum Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/data-attribution/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data Attribution</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/data-driven-inductive-bias/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data-Driven Inductive Bias</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/depth-estimation-metrics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Depth Estimation Metrics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/deterministic-vs-probabilistic-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deterministic vs Probabilistic Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/different-ml-optimizers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Different ML Optimizers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/diffusion-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/diffusion-reverse-process/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Reverse Process</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/diffusion-lm-denoising/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion-LM Denoising</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/energy-based-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Energy based Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/fr%C3%A9chet-inception-distance-fid/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fréchet Inception Distance (FID)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/low-rank-adaptationlora/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Low Rank Adaptation(LoRA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/matryoshka-representation-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Matryoshka Representation Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/mixture-of-experts/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mixture of Experts</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/ml-notes-database-expansion/" class="file-title-link active">
+        <span class="file-icon">📄</span>
+        <span class="file-name">ML Notes Database Expansion</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/moravecs-paradox/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Moravec&#39;s Paradox</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/n-gram-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">N-gram Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/neural-implicit-fields/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Neural Implicit Fields</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/optimal-transport/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Optimal Transport</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/predicting-next-word-with-gpt-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Predicting Next Word with GPT-2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/reimannian-manifolds/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reimannian Manifolds</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/solvable-models-in-machine-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Solvable Models in Machine Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/stability-vs-plasticity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Stability vs Plasticity</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/the-manifold-hypothesis/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">The Manifold Hypothesis</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/what-is-moco/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is MoCo?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/what-is-perplexity-in-ml/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is Perplexity in ML?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/deep-learning/x_0-parameterization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">x_0-parameterization</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/" class="folder-title ">DSA and CP</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/binary-search/" class="folder-title ">Binary Search</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/binary-search/find-1st-and-last-pos-of-element-in-sorted-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Find 1st and last pos of element in sorted array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/binary-search/search-in-rotated-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in Rotated Array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/binary-search/single-element-in-a-sorted-array-of-pairs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Single Element in a Sorted array of pairs</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/binary-trees/" class="folder-title ">Binary Trees</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/binary-trees/binary-search-trees/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Search Trees</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/binary-trees/binary-trees/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Trees</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/binary-trees/check-for-a-balanced-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Check for a Balanced BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/binary-trees/inorder-traversal-of-a-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Inorder Traversal of a BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/binary-trees/postorder-traversal-of-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Postorder Traversal of BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/binary-trees/preorder-inorder-postorder-traversals-in-one-traversal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Preorder Inorder Postorder Traversals in One Traversal</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/doubts/" class="folder-title ">Doubts</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/doubts/binary-search---vs--boundary-conditions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Search — `&lt;=` vs `&lt;` Boundary Conditions</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/greedy/" class="folder-title ">Greedy</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/greedy/insert-interval/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Insert Interval</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/greedy/jump-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Jump-II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/greedy/task-scheduler/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Task Scheduler</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/heaps/" class="folder-title ">Heaps</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/heaps/heaps-priority-queues--detailed-notes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Heaps (Priority Queues) — Detailed Notes</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/maths/" class="folder-title ">Maths</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/maths/sieve-of-eratosthenes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Sieve of Eratosthenes</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/maths/single-number-others-twice/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Single Number Others Twice</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/sliding-window-and-two-pointers/" class="folder-title ">Sliding WIndow and Two Pointers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/sliding-window-and-two-pointers/defuse-the-bomb/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Defuse the Bomb</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/sliding-window-and-two-pointers/fruits-into-basket/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fruits Into Basket</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/sliding-window-and-two-pointers/max-consecutive-one-iii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Max Consecutive One III</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/sliding-window-and-two-pointers/maximum-erasure-value/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Maximum Erasure Value</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/sorting/" class="folder-title ">Sorting</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/sorting/merge-sorted-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Merge Sorted Array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/sorting/quick-sort/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quick Sort</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/sorting/quick-sort-partition/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quick Sort Partition</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/dsa-and-cp/strings/" class="folder-title ">Strings</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/strings/cpp-strings-cheatsheet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">CPP Strings CheatSheet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/strings/largest-odd-number-in-string/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Largest Odd Number in String</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/dsa-and-cp/linked-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Linked List</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/history/" class="folder-title ">History</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/history/battle-of-polashiplassey/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Battle of Polashi(Plassey)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/history/history-of-bengal-politics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">History of Bengal Politics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/history/is-bengal-against-communism/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Is Bengal against Communism?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/machine-learning/" class="folder-title ">Machine Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/machine-learning/decision-trees-a-comprehensive-note/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Decision Trees (A comprehensive Note)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/math/" class="folder-title ">Math</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/math/probability-theory/" class="folder-title ">Probability Theory</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/math/probability-theory/convergences-in-probability-vs-almost-sure/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Convergences in Probability vs Almost Sure</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/math/probability-theory/deterministic-random-variable/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deterministic Random Variable</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/math/probability-theory/independent-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Independent Random Variables</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/math/probability-theory/law-of-iterated-expectations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Law of Iterated Expectations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/math/probability-theory/probability-and-statistics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Probability and Statistics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/math/probability-theory/total-expectation-theorem/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Total Expectation Theorem</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/math/probability-theory/unique-properties-of-gaussian-rvs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Unique Properties of Gaussian RVs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/math/probability-theory/well-known-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Well Known Distributions</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/misc/" class="folder-title ">Misc</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/ajb-btp-summary/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AJB BTP Summary</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/how-to-read-papers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">How to Read Papers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/krutarth-meet---20th-march/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Krutarth meet - 20th March</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/loss-funk-application/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Loss Funk Application</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/meet-summary/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Meet Summary</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/reading-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reading List</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/reddit---ml-papers-to-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reddit - ML Papers to Read</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/summer-plan-2026/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Summer Plan 2026</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/val-notebook/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">VAL Notebook</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/workout-log/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workout Log</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/misc/workout-routine/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workout Routine</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/papers/" class="folder-title ">Papers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/papers/good-reads/" class="folder-title ">Good Reads</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/papers/world-models-reading-list/" class="folder-title ">World Models Reading List</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/world-models-reading-list/what-to-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What to Read</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/infidepth---arbitrary-high-res-estimation-using-neural-implicit-fields/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name"></span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/beyond-neural-scaling-law---data-pruning-improve-power-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Beyond Neural Scaling Law - Data Pruning improve power law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/boosting-data-driven-mirror-descent-with-randomizationequivariance-and-acceleration/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Boosting Data-Driven Mirror Descent with Randomization,Equivariance, and Acceleration</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/crowd-aware-robot-navigation-with-switching-betweenlearning-based-and-rule-based-methods-using-normalizing-flows/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Crowd-Aware Robot Navigation with Switching BetweenLearning-Based and Rule-Based Methods Using Normalizing Flows</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/deep-learning-on-a-data-diet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Learning on a Data Diet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/diffusion-lm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion-LM</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/i-jepa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">I-JEPA</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/information-theory-for-repr-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Information Theory for Repr Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/large-scale-pruning-using-dyna-uncertainty/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Large-Scale Pruning using Dyna Uncertainty</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/learning-stable-normalizing-flow-control-for-robotic-manipulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning Stable Normalizing-Flow Control for Robotic Manipulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/learning2optimize/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning2Optimize</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/maxenrl-via-energy-based-normalising-flows-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MaxEnRL via Energy-based Normalising Flows 1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/neural-ordinary-differential-equations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Neural Ordinary Differential Equations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/recoverychaining-learning-local-recovery-policies-for-robust-manipulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RecoveryChaining-Learning Local Recovery Policies for Robust Manipulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/respo-reachability-estimation-for-safe-policy-optimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RESPO (Reachability Estimation for Safe Policy Optimization)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/scaling-for-data-filtering/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling for Data Filtering</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/tic-clip---continual-training-of-clip-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">TIC-CLIP - continual training of clip models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/understanding-blackbox-predictions---using-influence-functions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Understanding BlackBox Predictions - Using Influence Functions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/papers/when-do-curricula-work/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">When Do Curricula Work?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/projects/" class="folder-title ">Projects</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/projects/alphago-black-hole/" class="folder-title ">AlphaGo-Black-Hole</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/projects/alphago-black-hole/alpha-beta-algorithm-chess-engines/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alpha-Beta Algorithm (Chess Engines)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/projects/alphago-black-hole/alphazero-and-chess/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero and Chess</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/projects/alphago-black-hole/alphazero-training/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero Training</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/projects/alphago-black-hole/improved-representations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Improved Representations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/projects/alphago-black-hole/mixture-of-experts-approach-to-games/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mixture of Experts Approach to Games</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/research-work/" class="folder-title ">Research Work</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/research-work/btp/" class="folder-title ">BTP</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/btp/ksd-for-goodness-of-fit-tests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">KSD for Goodness-of-fit Tests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reproducing Kernel Hilbert Space (RKHS)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/research-work/lossfunk-proposal/" class="folder-title ">LossFunk Proposal</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/lossfunk-proposal/2nd-stage/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2nd stage</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/lossfunk-proposal/idea-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Idea-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/lossfunk-proposal/research-writeup/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Research Writeup</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/lossfunk-proposal/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/lossfunk-proposal/variations-of-proposal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Variations of Proposal</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/lossfunk-proposal/write-up/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Write-up</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/research-work/random-ideas/" class="folder-title ">Random Ideas</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/any-other-ways-than-deterministic-and-probabilistic-modelling/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Any other ways than deterministic and Probabilistic Modelling</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/can-we-use-jepa-for-games/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Can we use JEPA for Games??</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/can-you-project-tasks-to-similar-task-spaces/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Can you project tasks to similar Task-spaces?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/capacity-of-a-model/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Capacity of a Model</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/encoding-future-related-hope-as-a-learning-signal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Encoding Future Related Hope as a Learning Signal?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/manifolds-of-data-vs-implicit-curricula/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Manifolds of Data vs Implicit Curricula</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/marigold-&#43;-jepa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Marigold &#43; Jepa?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/new-way-of-training-small-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">New way of training small models?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/teach-a-model-to-solve-a-patch-jigsaw/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Teach a model to solve a patch jigsaw?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/why-do-diffusion-models-generalise-so-well/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why do Diffusion Models Generalise So Well?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/random-ideas/why-do-we-need-large-embedding-sizes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why do we need large embedding sizes?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/research-work/val-del/" class="folder-title ">VAL-DEL</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/val-del/avg-el2n-score-difference-between-two-toy-datasets/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Avg El2n score difference between two toy datasets</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/val-del/deriving-neural-scaling-laws-from-lang-stat/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deriving Neural Scaling Laws from Lang Stat</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/val-del/detect-the-change-of-implicit-curricula/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detect the change of implicit curricula</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/val-del/initial-tests-for-the-scaling-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Initial Tests for the Scaling Law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/val-del/open-questions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Open Questions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/val-del/polygenic-voting-toy-test/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Polygenic Voting Toy Test</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/val-del/quantization-based-hypothesis/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quantization Based Hypothesis</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/val-del/scaling-laws-with-rep/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling laws with rep</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/iitb-work/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IITB Work</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/information-theory-on-repr-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Information Theory on Repr Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/novel-depth-esitmationedge-focussed/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Novel Depth Esitmation(Edge focussed)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/research-work/works-on-source-coding/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Works on source coding</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="/vault/video-ideas/" class="folder-title ">Video Ideas</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/video-ideas/aep-and-typical-sequences/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AEP and Typical Sequences</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/video-ideas/alphazero/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/video-ideas/large-sparse-matrix-solvers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Large Sparse Matrix Solvers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/video-ideas/law-of-total-expectations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Law of Total Expectations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/video-ideas/map-vs-mle/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MAP vs MLE</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/video-ideas/monte-carlo-tree-search/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Monte Carlo Tree Search</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/video-ideas/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="/vault/command-center/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Command Center</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/cram-less-to-fit-more/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Cram Less to Fit More</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/fun-resources/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fun Resources</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/hand-of-straights/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Hand of Straights</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/house-robber-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">House Robber II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/invariant-risk-minimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Invariant Risk Minimization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/learned-representation-are-path-dependent/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learned Representation are path dependent</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/longest-common-prefix-and-sorting-a-string/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Longest common Prefix and Sorting a String</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/ml-reading-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">ML Reading List</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/professors-and-labs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Professors and Labs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/singular-value-decompositionsvd/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Singular Value Decomposition(SVD)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/untitled-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled 1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/untitled-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled 2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/untitled-3/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled 3</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="/vault/what-is-kernelfunction/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is Kernel(function)?</span>
+      </a>
+    </li>
+  
+</ul>
+
+    
+  </nav>
+</aside>
+
+
+        
+        <div class="main-area">
+            <header class="site-header">
+                <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle Sidebar">☰</button>
+                <a href="/" class="site-title-link"><h1>Utsab&#39;s Digital Garden</h1></a>
+            </header>
+
+            <main class="content-wrapper">
+<article class="post-content">
+    <header style="margin-bottom: 3rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">ML Notes Database Expansion</h1>
+        <div style="color: #8b949e; font-size: 0.9rem;">
+            January 1, 0001
+        </div>
+    </header>
+
+    <div class="markdown-body">
+        <h1 id="machine-learning-notes-database-expansion--tagging-roadmap">Machine Learning Notes Database: Expansion &amp; Tagging Roadmap</h1>
+<p>This document provides a comprehensive plan to organize, tag, and expand your existing Machine Learning and Deep Learning notes vault. The goal is to transform your current collection of 28 notes into a fully connected, highly structured reference database.</p>
+<hr>
+<h2 id="1-tag-taxonomy-definition">1. Tag Taxonomy Definition</h2>
+<p>To keep your vault structured, searchable, and clean, we propose a standardized set of tags. Tags should be added on <strong>Line 1</strong> of each file in the format <code>#tag1 #tag2 ...</code>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Tag</th>
+<th style="text-align:left">Domain / Focus</th>
+<th style="text-align:left">Example Connected Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>#deep_learning</code></td>
+<td style="text-align:left">Core neural network architectures, layers, and paradigms</td>
+<td style="text-align:left"><code>Attention Mechanism</code>, <code>What is MoCo?</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#nlp</code></td>
+<td style="text-align:left">Natural Language Processing, text models, and tokenization</td>
+<td style="text-align:left"><code>N-gram Models</code>, <code>Predicting Next Word with GPT-2</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#compvis</code></td>
+<td style="text-align:left">Computer Vision, image processing, and spatial models</td>
+<td style="text-align:left"><code>Depth Estimation Metrics</code>, <code>Fréchet Inception Distance</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#generative</code></td>
+<td style="text-align:left">Generative modeling paradigms (diffusion, energy-based, flow matching)</td>
+<td style="text-align:left"><code>Diffusion Models</code>, <code>Energy based Models</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#optimization</code></td>
+<td style="text-align:left">Model training, fine-tuning, objective functions, and scaling</td>
+<td style="text-align:left"><code>Low Rank Adaptation(LoRA)</code>, <code>Mixture of Experts</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#continual_learning</code></td>
+<td style="text-align:left">Lifelong learning, catastrophic forgetting, and plasticity</td>
+<td style="text-align:left"><code>Continual Learning Formulation</code>, <code>Stability vs Plasticity</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#theory</code></td>
+<td style="text-align:left">Mathematical foundations, geometry, manifolds, and proofs</td>
+<td style="text-align:left"><code>The Manifold Hypothesis</code>, <code>Optimal Transport</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#evaluation</code></td>
+<td style="text-align:left">Metrics, evaluation protocols, and validation techniques</td>
+<td style="text-align:left"><code>Continual Learning - Eval Metrics</code>, <code>What is Perplexity in ML?</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#efficiency</code></td>
+<td style="text-align:left">Compression, resource optimization, and architecture scaling</td>
+<td style="text-align:left"><code>Matryoshka Representation Learning</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#representation</code></td>
+<td style="text-align:left">How data is projected, implicit fields, and embeddings</td>
+<td style="text-align:left"><code>Neural Implicit Fields</code>, <code>Matryoshka Representation Learning</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>#paradigm</code></td>
+<td style="text-align:left">High-level philosophical concepts, historical paradoxes, and design styles</td>
+<td style="text-align:left"><code>Moravec's Paradox</code>, <code>Deterministic vs Probabilistic Models</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="2-existing-notes-audit--tag-recommendations">2. Existing Notes Audit &amp; Tag Recommendations</h2>
+<p>Here is the complete list of your 28 existing notes, their current tag status, and the <strong>exact tag header</strong> you should prepended to them to achieve a consistent tagging scheme.</p>
+<blockquote>
+<p>[!NOTE]
+For notes that contain YouTube links or stub content (e.g., <code>Energy based Models.md</code>, <code>Reimannian Manifolds.md</code>), completing their content is listed in the expansion section below.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Note Filename</th>
+<th style="text-align:left">Current Tags</th>
+<th style="text-align:left">Recommended Tag Header to Prepend</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>Attention Mechanism.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#deep_learning #nlp</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Continual Learning - Eval Metrics.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#continual_learning #evaluation</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Continual Learning Formulation.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#continual_learning #theory</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Continual Learning.md</code></td>
+<td style="text-align:left"><code>#continual_learning</code></td>
+<td style="text-align:left"><code>#continual_learning</code> (Keep as is)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Curriculum Learning.md</code></td>
+<td style="text-align:left"><code>#curriculum_learning</code></td>
+<td style="text-align:left"><code>#continual_learning #optimization</code> (Standardize)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Data Attribution.md</code></td>
+<td style="text-align:left"><code>#deep_learning #data_attribution</code></td>
+<td style="text-align:left"><code>#deep_learning #optimization</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Data-Driven Inductive Bias.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#deep_learning #theory</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Depth Estimation Metrics.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#compvis #evaluation</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Deterministic vs Probabilistic Models.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#theory #paradigm</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Diffusion Models.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#generative #theory</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Diffusion Reverse Process.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#generative #optimization</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Diffusion-LM Denoising.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#generative #nlp</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Energy based Models.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#generative #theory</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Fréchet Inception Distance (FID).md</code></td>
+<td style="text-align:left"><code>#compvis #diffusion</code></td>
+<td style="text-align:left"><code>#compvis #generative #evaluation</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Low Rank Adaptation(LoRA).md</code></td>
+<td style="text-align:left"><code>#deep_learning #fine-tuning</code></td>
+<td style="text-align:left"><code>#deep_learning #fine-tuning #efficiency</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Matryoshka Representation Learning.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#representation #efficiency</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Mixture of Experts.md</code> <em>(Empty)</em></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#deep_learning #efficiency</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Moravec's Paradox.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#paradigm</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>N-gram Models.md</code></td>
+<td style="text-align:left"><code>#deep_learning #nlp</code></td>
+<td style="text-align:left"><code>#nlp #theory</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Neural Implicit Fields.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#compvis #representation</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Optimal Transport.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#theory</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Predicting Next Word with GPT-2.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#nlp #deep_learning</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Reimannian Manifolds.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#theory</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Stability vs Plasticity.md</code></td>
+<td style="text-align:left"><code>#continual_learning</code></td>
+<td style="text-align:left"><code>#continual_learning #theory</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>The Manifold Hypothesis.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#theory</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>What is MoCo?.md</code></td>
+<td style="text-align:left"><code>#deep_learning</code></td>
+<td style="text-align:left"><code>#deep_learning #compvis #representation</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>What is Perplexity in ML?.md</code></td>
+<td style="text-align:left"><code>#deep_learning #theory</code></td>
+<td style="text-align:left"><code>#nlp #evaluation</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>x_0-parameterization.md</code></td>
+<td style="text-align:left"><em>None</em></td>
+<td style="text-align:left"><code>#generative #nlp</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-gap-analysis-connecting-your-knowledge-clusters">3. Gap Analysis: Connecting Your Knowledge Clusters</h2>
+<p>Your current notes group naturally into <strong>five core clusters</strong>. Below we highlight the gaps within each cluster and propose new notes to fill them:</p>
+<pre tabindex="0"><code class="language-mermaid" data-lang="mermaid">graph TD
+    classDef existing fill:#2c3e50,stroke:#34495e,stroke-width:2px,color:#fff;
+    classDef missing fill:#d35400,stroke:#e67e22,stroke-width:2px,color:#fff;
+
+    %% Cluster 1: NLP &amp; LLM Architecture
+    subgraph NLP_LLM [&#34;NLP &amp; Transformer Efficiency&#34;]
+        A[&#34;Attention Mechanism&#34;]:::existing
+        B[&#34;Predicting Next Word (GPT-2)&#34;]:::existing
+        C[&#34;Low Rank Adaptation(LoRA)&#34;]:::existing
+        D[&#34;Mixture of Experts&#34;]:::existing
+        M1[&#34;FlashAttention &amp; GPU Kernels&#34;]:::missing
+        M2[&#34;Rotary Positional Embeddings (RoPE)&#34;]:::missing
+        M3[&#34;KV Cache &amp; LLM Decoding&#34;]:::missing
+        M4[&#34;Quantization (AWQ, GPTQ, GGUF)&#34;]:::missing
+    end
+
+    %% Cluster 2: Generative Modeling
+    subgraph Generative [&#34;Generative &amp; Diffusion Models&#34;]
+        E[&#34;Diffusion Models&#34;]:::existing
+        F[&#34;Diffusion-LM / x0&#34;]:::existing
+        G[&#34;Energy based Models&#34;]:::existing
+        H[&#34;Optimal Transport&#34;]:::existing
+        M5[&#34;Score Matching &amp; SDEs&#34;]:::missing
+        M6[&#34;Classifier-Free Guidance (CFG)&#34;]:::missing
+        M7[&#34;Flow Matching / Rectified Flows&#34;]:::missing
+        M8[&#34;Langevin Dynamics &amp; MCMC&#34;]:::missing
+    end
+
+    %% Cluster 3: Lifelong Learning
+    subgraph Continual [&#34;Continual &amp; Curriculum Learning&#34;]
+        I[&#34;Continual Learning&#34;]:::existing
+        J[&#34;Stability vs Plasticity&#34;]:::existing
+        K[&#34;Curriculum Learning&#34;]:::existing
+        M9[&#34;Elastic Weight Consolidation (EWC)&#34;]:::missing
+        M10[&#34;Replay &amp; Generative Co-Tuning&#34;]:::missing
+    end
+
+    %% Cluster 4: Geometric &amp; Representation Learning
+    subgraph Geometry [&#34;Geometry &amp; Representation Learning&#34;]
+        L[&#34;Manifold Hypothesis&#34;]:::existing
+        N[&#34;Riemannian Manifolds&#34;]:::existing
+        O[&#34;Neural Implicit Fields&#34;]:::existing
+        M11[&#34;Contrastive Learning &amp; InfoNCE&#34;]:::missing
+        M12[&#34;NeRFs &amp; 3D Gaussian Splatting&#34;]:::missing
+        M13[&#34;Wasserstein Distance / EMD&#34;]:::missing
+    end
+
+    A --&gt; M1
+    B --&gt; M2
+    B --&gt; M3
+    C --&gt; M4
+    D --&gt; M4
+    E --&gt; M5
+    E --&gt; M6
+    E --&gt; M7
+    G --&gt; M8
+    H --&gt; M13
+    I --&gt; M9
+    I --&gt; M10
+    L --&gt; N
+    O --&gt; M12
+    L --&gt; M11
+</code></pre><hr>
+<h2 id="4-comprehensive-expansion-list-new-note-recommendations">4. Comprehensive Expansion List (New Note Recommendations)</h2>
+<p>Below is a detailed specification of 26 recommended new note topics to complete your ML database.</p>
+<h3 id="theme-a-transformer-architecture-llms--systems-efficiency">Theme A: Transformer Architecture, LLMs &amp; Systems Efficiency</h3>
+<h4 id="1-flashattention--gpu-kernel-fusion">1. <code>FlashAttention &amp; GPU Kernel Fusion</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Fast/exact attention, GPU memory hierarchy (SRAM vs. HBM), tiling/partitioning, avoiding materialization of the $N \times N$ attention matrix on HBM.</li>
+<li><strong>Backlinks:</strong> <code>Attention Mechanism</code> (explains why $O(N^2)$ memory is a bottleneck).</li>
+<li><strong>Suggested Tags:</strong> <code>#deep_learning #efficiency</code></li>
+</ul>
+<h4 id="2-rotary-position-embeddings-rope">2. <code>Rotary Position Embeddings (RoPE)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Absolute vs. relative position embeddings, complex number rotations, 2D vector rotation matrices, why RoPE extrapolates better than sinusoidal/learned encodings.</li>
+<li><strong>Backlinks:</strong> <code>Predicting Next Word with GPT-2</code> (which uses absolute sinusoidal/learned encodings).</li>
+<li><strong>Suggested Tags:</strong> <code>#deep_learning #nlp #theory</code></li>
+</ul>
+<h4 id="3-key-value-kv-cache--autoregressive-decoding">3. <code>Key-Value (KV) Cache &amp; Autoregressive Decoding</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Decoding bottleneck (memory bandwidth bound vs. compute bound), prefill phase vs. generation phase, KV cache sizing formulas, Multi-Query Attention (MQA) and Grouped-Query Attention (GQA) as remedies.</li>
+<li><strong>Backlinks:</strong> <code>Predicting Next Word with GPT-2</code>, <code>Attention Mechanism</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#nlp #efficiency</code></li>
+</ul>
+<h4 id="4-llm-quantization-gptq-awq-gguf">4. <code>LLM Quantization (GPTQ, AWQ, GGUF)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Weight-only vs. Weight-activation quantization, post-training quantization (PTQ) vs. Quantization-aware training (QAT), outlier activation channels, GGUF vs. GPTQ/AWQ.</li>
+<li><strong>Backlinks:</strong> <code>Low Rank Adaptation(LoRA)</code> (leads directly to QLoRA).</li>
+<li><strong>Suggested Tags:</strong> <code>#efficiency #optimization</code></li>
+</ul>
+<h4 id="5-qlora-quantized-low-rank-adaptation">5. <code>QLoRA: Quantized Low-Rank Adaptation</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> NormalFloat4 (NF4) data type, Double Quantization, Paged Optimizers, how QLoRA allows fine-tuning 70B models on consumer hardware.</li>
+<li><strong>Backlinks:</strong> <code>Low Rank Adaptation(LoRA)</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#deep_learning #fine-tuning #efficiency</code></li>
+</ul>
+<h4 id="6-mixture-of-experts-moe-architecture">6. <code>Mixture of Experts (MoE) Architecture</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Sparse vs. dense architectures, Router/Gating network (Top-1/Top-2 routing), Load Balancing Loss (preventing routing collapse), Token Capacity and capacity factors.</li>
+<li><strong>Backlinks:</strong> <code>Attention Mechanism</code> (MoE layers replace Feed-Forward Networks).</li>
+<li><strong>Suggested Tags:</strong> <code>#deep_learning #efficiency</code></li>
+</ul>
+<h4 id="7-direct-preference-optimization-dpo-vs-rlhf">7. <code>Direct Preference Optimization (DPO) vs RLHF</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Bradley-Terry model of preferences, why DPO bypasses training a reward model and running PPO, mathematical derivation showing policy loss directly optimized from preference data.</li>
+<li><strong>Backlinks:</strong> <code>Predicting Next Word with GPT-2</code> (how standard base models are aligned).</li>
+<li><strong>Suggested Tags:</strong> <code>#nlp #optimization #theory</code></li>
+</ul>
+<hr>
+<h3 id="theme-b-advanced-generative--diffusion-models">Theme B: Advanced Generative &amp; Diffusion Models</h3>
+<h4 id="8-score-based-generative-models--sdes">8. <code>Score-Based Generative Models &amp; SDEs</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Score Matching, Score Function ($\nabla_x \log p(x)$), Stochastic Differential Equations (SDEs), Variance Preserving (VP) vs. Variance Exploding (VE) SDEs, unifying DDPM and Score SDEs.</li>
+<li><strong>Backlinks:</strong> <code>Diffusion Models</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#generative #theory</code></li>
+</ul>
+<h4 id="9-classifier-free-guidance-cfg">9. <code>Classifier-Free Guidance (CFG)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Conditional vs. unconditional generative distributions, the guidance scale ($w$), mathematical derivation showing how CFG implicit-characterizes classifier gradients, trade-off between sample quality (precision) and diversity (recall).</li>
+<li><strong>Backlinks:</strong> <code>Diffusion Models</code>, <code>Diffusion Reverse Process</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#generative #optimization</code></li>
+</ul>
+<h4 id="10-denoising-diffusion-implicit-models-ddim">10. <code>Denoising Diffusion Implicit Models (DDIM)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Non-Markovian forward processes, deterministic sampling, how DDIM accelerates generation (down from 1000 to 20 steps), inversion of diffusion trajectories for image editing.</li>
+<li><strong>Backlinks:</strong> <code>Diffusion Reverse Process</code> (standard stochastic sampling).</li>
+<li><strong>Suggested Tags:</strong> <code>#generative #optimization</code></li>
+</ul>
+<h4 id="11-latent-diffusion-models-ldm">11. <code>Latent Diffusion Models (LDM)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Pixel-space vs. Latent-space diffusion, training a vector-quantized autoencoder (VQ-GAN / AutoencoderKL), cross-attention conditioning, why LDMs are computationally superior.</li>
+<li><strong>Backlinks:</strong> <code>Diffusion Models</code>, <code>Attention Mechanism</code> (used for conditioning).</li>
+<li><strong>Suggested Tags:</strong> <code>#generative #compvis</code></li>
+</ul>
+<h4 id="12-flow-matching--rectified-flows">12. <code>Flow Matching &amp; Rectified Flows</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Continuous Normalizing Flows (CNFs), vector fields, straight-line trajectories between data and noise, probability flow ODEs, why Flow Matching is faster and more stable than traditional diffusion.</li>
+<li><strong>Backlinks:</strong> <code>Diffusion Models</code>, <code>Optimal Transport</code> (straight paths connect to optimal transport displacement interpolations).</li>
+<li><strong>Suggested Tags:</strong> <code>#generative #theory</code></li>
+</ul>
+<h4 id="13-energy-based-models-ebm-content">13. <code>Energy-Based Models (EBM) Content</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Mathematical definition ($p(x) \propto e^{-E(x)}$), partition function partition bottleneck ($Z(\theta)$), Contrastive Divergence, MCMC/Langevin sampling, score matching connection.</li>
+<li><strong>Backlinks:</strong> <code>Deterministic vs Probabilistic Models</code>, <code>Optimal Transport</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#generative #theory</code></li>
+</ul>
+<h4 id="14-langevin-dynamics--mcmc-in-deep-learning">14. <code>Langevin Dynamics &amp; MCMC in Deep Learning</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Markov Chain Monte Carlo (MCMC), Stochastic Gradient Langevin Dynamics (SGLD), step size, adding noise to gradients to prevent collapse, sampling from complex unnormalized probability densities.</li>
+<li><strong>Backlinks:</strong> <code>Energy based Models</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#generative #theory</code></li>
+</ul>
+<hr>
+<h3 id="theme-c-geometry-representation-learning--math-foundations">Theme C: Geometry, Representation Learning &amp; Math Foundations</h3>
+<h4 id="15-contrastive-representation-learning-infonce--simclr">15. <code>Contrastive Representation Learning (InfoNCE &amp; SimCLR)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Self-supervised learning, positive/negative pairs, InfoNCE loss derivation, temperature scaling, batch size scaling in SimCLR, collapse prevention.</li>
+<li><strong>Backlinks:</strong> <code>What is MoCo?</code> (which is a memory-efficient version of SimCLR).</li>
+<li><strong>Suggested Tags:</strong> <code>#representation #deep_learning</code></li>
+</ul>
+<h4 id="16-wasserstein-distance--earth-movers-distance">16. <code>Wasserstein Distance &amp; Earth Mover's Distance</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Monge and Kantorovich formulations of Optimal Transport, dual formulation, Wasserstein-1 distance (EMD), why Wasserstein is superior to KL/JS divergence for disjoint distributions.</li>
+<li><strong>Backlinks:</strong> <code>Optimal Transport</code>, <code>Deterministic vs Probabilistic Models</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#theory</code></li>
+</ul>
+<h4 id="17-neural-radiance-fields-nerf">17. <code>Neural Radiance Fields (NeRF)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Volumetric rendering, 5D coordinates $(x,y,z,\theta,\phi)$, density and color output, positional encoding (frequency mapping) to capture high-frequency details, volume rendering integral.</li>
+<li><strong>Backlinks:</strong> <code>Neural Implicit Fields</code> (NeRF is a specific INR application).</li>
+<li><strong>Suggested Tags:</strong> <code>#compvis #representation</code></li>
+</ul>
+<h4 id="18-3d-gaussian-splatting">18. <code>3D Gaussian Splatting</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Explicit scene representation, 3D Gaussians (position, covariance, opacity, spherical harmonics), rasterization pipeline, comparison with implicit representations (NeRF) regarding training and rendering speed.</li>
+<li><strong>Backlinks:</strong> <code>Neural Implicit Fields</code>, <code>Depth Estimation Metrics</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#compvis #representation</code></li>
+</ul>
+<h4 id="19-riemannian-manifolds-content">19. <code>Riemannian Manifolds Content</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Metric tensor ($g_{ij}$), tangent space ($T_p M$), geodesics, exponential maps, why standard Euclidean operations fail on manifolds (e.g., spherical/hyperbolic spaces).</li>
+<li><strong>Backlinks:</strong> <code>The Manifold Hypothesis</code>, <code>Optimal Transport</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#theory</code></li>
+</ul>
+<hr>
+<h3 id="theme-d-continual-learning--training-dynamics">Theme D: Continual Learning &amp; Training Dynamics</h3>
+<h4 id="20-elastic-weight-consolidation-ewc">20. <code>Elastic Weight Consolidation (EWC)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Regularization-based continual learning, Fisher Information Matrix (FIM) as a proxy for parameter importance, Taylor expansion of loss, how EWC prevents catastrophic forgetting.</li>
+<li><strong>Backlinks:</strong> <code>Continual Learning</code>, <code>Data-Driven Inductive Bias</code> (EWC is manually engineered bias).</li>
+<li><strong>Suggested Tags:</strong> <code>#continual_learning #optimization</code></li>
+</ul>
+<h4 id="21-gradient-episodic-memory-gem">21. <code>Gradient Episodic Memory (GEM)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Optimization-based/replay-based continual learning, storing a memory buffer, formulating weight updates as quadratic programs (QP) to ensure gradient updates don&rsquo;t increase loss on old tasks (dot product of gradients $\ge 0$).</li>
+<li><strong>Backlinks:</strong> <code>Continual Learning Formulation</code>, <code>Stability vs Plasticity</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#continual_learning #optimization</code></li>
+</ul>
+<h4 id="22-prompt-based-continual-learning-l2p--dualprompt">22. <code>Prompt-Based Continual Learning (L2P &amp; DualPrompt)</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Continual learning in the foundation model era, freezing the backbone, learning a &ldquo;prompt pool&rdquo;, key-query matching to select task-specific prompts at inference time, avoiding parameter updates altogether.</li>
+<li><strong>Backlinks:</strong> <code>Continual Learning</code>, <code>Attention Mechanism</code> (how prompts guide attention).</li>
+<li><strong>Suggested Tags:</strong> <code>#continual_learning #nlp</code></li>
+</ul>
+<h4 id="23-influence-functions-for-data-attribution">23. <code>Influence Functions for Data Attribution</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Taylor approximation of leave-one-out training, Hessian-vector products (HVP), calculating how a single training point changes a model&rsquo;s test loss, debugging dataset errors.</li>
+<li><strong>Backlinks:</strong> <code>Data Attribution</code> (conceptually expands influence functions).</li>
+<li><strong>Suggested Tags:</strong> <code>#deep_learning #optimization #theory</code></li>
+</ul>
+<hr>
+<h3 id="theme-e-advanced-computer-vision--metrics">Theme E: Advanced Computer Vision &amp; Metrics</h3>
+<h4 id="24-structure-from-motion-sfm-foundations">24. <code>Structure from Motion (SfM) Foundations</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Epipolar geometry, essential/fundamental matrix, scale ambiguity, triangulation, bundle adjustment, how SfM differs from monocular depth estimation.</li>
+<li><strong>Backlinks:</strong> <code>Depth Estimation Metrics</code> (mentions how depth metrics impact SfM reconstructions).</li>
+<li><strong>Suggested Tags:</strong> <code>#compvis #theory</code></li>
+</ul>
+<h4 id="25-scale-invariant-depth-metrics">25. <code>Scale-Invariant Depth Metrics</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Relative depth estimation, scale-invariant RMSE (SI-RMSE), scale-shift invariant loss, why standard L1/L2 losses are poor for monocular depth models training on mixed datasets.</li>
+<li><strong>Backlinks:</strong> <code>Depth Estimation Metrics</code>.</li>
+<li><strong>Suggested Tags:</strong> <code>#compvis #evaluation</code></li>
+</ul>
+<h4 id="26-contrastive-sparse-representation-csr--temporal-rag">26. <code>Contrastive Sparse Representation (CSR) &amp; Temporal RAG</code></h4>
+<ul>
+<li><strong>Concepts to Cover:</strong> Combination of Matryoshka Representation Learning (MRL) with sparse activations, temporal-aware subspaces, indexing dynamic database entries where timestamp matters.</li>
+<li><strong>Backlinks:</strong> <code>Matryoshka Representation Learning</code> (modern 2025/2026 expansions).</li>
+<li><strong>Suggested Tags:</strong> <code>#representation #efficiency</code></li>
+</ul>
+
+    </div>
+</article>
+
+            </main>
+
+            <footer style="margin-top: 5rem; padding-bottom: 2rem; border-top: 1px solid var(--border-color); color: #8b949e; font-size: 0.9rem;">
+                <p>&copy; 2026 Utsab&#39;s Digital Garden. Built with Hugo.</p>
+            </footer>
+        </div>
+    </div>
+
+    
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+
+        function toggleFolder(headerElement, event) {
+            
+            if (event.target.tagName.toLowerCase() === 'a') {
+                return;
+            }
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const folderItem = headerElement.closest('.tree-item.folder');
+            const content = folderItem.querySelector('.folder-content');
+            const arrow = headerElement.querySelector('.toggle-arrow');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▼';
+                folderItem.classList.add('open');
+            } else {
+                content.style.display = 'none';
+                arrow.textContent = '▶';
+                folderItem.classList.remove('open');
+            }
+        }
+
+        function filterTree() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const items = document.querySelectorAll('.file-title-link, .folder-title');
+            
+            if (!query) {
+                
+                document.querySelectorAll('.tree-item').forEach(item => {
+                    item.style.display = '';
+                });
+                document.querySelectorAll('.folder-content').forEach(content => {
+                    const folderItem = content.closest('.tree-item.folder');
+                    if (folderItem.classList.contains('open')) {
+                        content.style.display = 'block';
+                        folderItem.querySelector('.toggle-arrow').textContent = '▼';
+                    } else {
+                        content.style.display = 'none';
+                        folderItem.querySelector('.toggle-arrow').textContent = '▶';
+                    }
+                });
+                return;
+            }
+
+            
+            document.querySelectorAll('.tree-item').forEach(item => {
+                item.style.display = 'none';
+            });
+
+            
+            items.forEach(el => {
+                const text = el.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    const item = el.closest('.tree-item');
+                    if (item) {
+                        item.style.display = '';
+                        
+                        
+                        let parent = item.parentElement.closest('.tree-item.folder');
+                        while (parent) {
+                            parent.style.display = '';
+                            parent.classList.add('open');
+                            const content = parent.querySelector('.folder-content');
+                            if (content) content.style.display = 'block';
+                            const arrow = parent.querySelector('.toggle-arrow');
+                            if (arrow) arrow.textContent = '▼';
+                            parent = parent.parentElement.closest('.tree-item.folder');
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

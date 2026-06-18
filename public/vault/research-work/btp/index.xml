@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BTP on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/vault/research-work/btp/</link>
+    <description>Recent content in BTP on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/vault/research-work/btp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>KSD for Goodness-of-fit Tests</title>
+      <link>http://localhost:1313/vault/research-work/btp/ksd-for-goodness-of-fit-tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/btp/ksd-for-goodness-of-fit-tests/</guid>
+      <description>Reproducing Kernel Hilbert Space (RKHS)&#xA;What is a Goodness of Fit Test? The goodness of fit of a statistical model describes how well it fits a set of observations. Measures of goodness of fit typically summarize the discrepancy between observed values and the values expected under the model in question.&#xA;Contributions New discrepancy statistic for measuring differences between two distribution. derive a new class of powerful goodness-of-fit tests that are widely applicable for complex and high dimensional distributions, even for those with computationally intractable normalization constants.</description>
+    </item>
+    <item>
+      <title>Reproducing Kernel Hilbert Space (RKHS)</title>
+      <link>http://localhost:1313/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/</guid>
+      <description>To understand a Reproducing Kernel Hilbert Space (RKHS), it helps to break the name down into its two core mathematical pillars: the Hilbert Space (the setting) and the Reproducing Kernel (the engine).&#xA;1. The Foundation: What is a Hilbert Space? A Hilbert space (denoted as $\mathcal{H}$) is a specific type of vector space where the elements aren&amp;rsquo;t just simple numbers or coordinates—they are entire functions.&#xA;Inner Product ($\langle f, g \rangle_{\mathcal{H}}$): Just like you can take the dot product of two geometric vectors to see how well they align, a Hilbert space has an inner product that lets you measure the &amp;ldquo;angle,&amp;rdquo; &amp;ldquo;distance,&amp;rdquo; and &amp;ldquo;length&amp;rdquo; (norm) between two different functions.</description>
+    </item>
+  </channel>
+</rss>

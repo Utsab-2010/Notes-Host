@@ -1,0 +1,21 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <a href="/" class="sidebar-brand">
+      <span class="brand-icon">🌱</span>
+      <span class="brand-text">My Garden</span>
+    </a>
+  </div>
+  
+  <div class="sidebar-search">
+    <input type="text" id="search-input" placeholder="Search notes..." onkeyup="filterTree()">
+  </div>
+
+  <nav class="file-tree">
+    {{ $vault := .Site.GetPage "section" "vault" }}
+    {{ if $vault }}
+      {{ partial "tree-node.html" (dict "node" $vault "current" .) }}
+    {{ else }}
+      <p class="empty-message">No notes found.</p>
+    {{ end }}
+  </nav>
+</aside>
