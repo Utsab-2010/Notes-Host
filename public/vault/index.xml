@@ -1,123 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Vault on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/vault/</link>
-    <description>Recent content in Vault on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/vault/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Command Center</title>
-      <link>http://localhost:1313/vault/command-center/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/command-center/</guid>
-      <description>Advice for the day&#xA;STOP LARPING! You wanna get shit done? Scared of failure? DO IT SCARED ANYWAY!&#xA;Daily Tasks DSA Greedy 2 Medium Insert Interval - LeetCode Merge Intervals - LeetCode BST Theory Revise Problems Room Arrange Wardrobe Wash Clothes Finish all of Machine Learning Theory + Make Notes Decision Trees Boosting Random Forests RNN LSTM Methods of Stability Dropout Regularisation AlphaZero Blog and Project Revision - Finish this Increase Linux partition space Weekly Goals Detailed Note on PCA and t-SNE</description>
-    </item>
-    <item>
-      <title>Cram Less to Fit More</title>
-      <link>http://localhost:1313/vault/cram-less-to-fit-more/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/cram-less-to-fit-more/</guid>
-      <description>#nlp #model_capacity #scaling_laws source: [2604.08519] Cram Less to Fit More: Training Data Pruning Improves Memorization of Facts</description>
-    </item>
-    <item>
-      <title>Fun Resources</title>
-      <link>http://localhost:1313/vault/fun-resources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/fun-resources/</guid>
-      <description>Blogs Matthew Landers Gregory Gundersen co/scope - Build a Strong Foundation for Your Research Project - Blog Series by Cohere Labs The Illustrated Transformer – Jay Alammar – Visualizing machine learning one concept at a time. FeynmanWiki - Technical Blogs, Explained Lil&amp;rsquo;Log Courses DEEP LEARNING · Deep Learning - NYU DL course by LeCun Stanford CS336 | Language Modeling from Scratch Carnegie Mellon University: Computer Vision Courses | Basic to Advanced EECS 4422 Computer Vision Deep Learning in Computer Vision Competitive Programming Good Blog Post Resources about Algorithm and Data Structures - Codeforces String Hashing - Algorithms for Competitive Programming Research Assists arXiv Xplorer - Does fast semantic search on arxiv Explore | alphaXiv - does AI based semantic search and provides AI help like summaries, discussions,etc NotebookLM for Literature Review: A Detailed Step-by-Step Guide for Students and Researchers | by Dhiraj Amin | Medium </description>
-    </item>
-    <item>
-      <title>Hand of Straights</title>
-      <link>http://localhost:1313/vault/hand-of-straights/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/hand-of-straights/</guid>
-      <description>#cp_medium&#xA;Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.&#xA;Given an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.&#xA;Example 1:&#xA;Input: hand = [1,2,3,6,2,3,4,7,8], groupSize = 3 Output: true Explanation: Alice&amp;rsquo;s hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]</description>
-    </item>
-    <item>
-      <title>House Robber II</title>
-      <link>http://localhost:1313/vault/house-robber-ii/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/house-robber-ii/</guid>
-      <description>#cp_medium You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.</description>
-    </item>
-    <item>
-      <title>Invariant Risk Minimization</title>
-      <link>http://localhost:1313/vault/invariant-risk-minimization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/invariant-risk-minimization/</guid>
-      <description>Main Issue ML models learn complex prediction rules by minimizing the training error. But while doing so they often overloop the proper features and get marred by selection biases. They essentially cheat by absorbing irrelevant correlations that are found in the training data and lead to a lower loss but not the intended correlation we would want.&#xA;A very simple example would be the following. Imagine the problem of classifying images of cows and camels.</description>
-    </item>
-    <item>
-      <title>Learned Representation are path dependent</title>
-      <link>http://localhost:1313/vault/learned-representation-are-path-dependent/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/learned-representation-are-path-dependent/</guid>
-      <description>#to_ponder&#xA;Ekdeep Singh Lubana, Eric J Bigelow, Robert P Dick, David Krueger, and Hidenori Tanaka. Mechanistic mode connectivity. In International Conference on Machine Learning, pp. 22965–23004. PMLR, 2023. Learned representations are substantially path-dependent (cf. Lubana et al., 2023)—if a model is pretrained to compute feature A, then trained to additionally compute feature B, it will have different representations than if it was trained on feature B before feature A, or if it was trained on both A and B simultaneously—even with similar behavior on train and test sets.</description>
-    </item>
-    <item>
-      <title>Longest common Prefix and Sorting a String</title>
-      <link>http://localhost:1313/vault/longest-common-prefix-and-sorting-a-string/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/longest-common-prefix-and-sorting-a-string/</guid>
-      <description>#include &amp;lt;bits/stdc++.h&amp;gt; using namespace std; class Solution { public: // Returns the longest common prefix in a list of strings string longestCommonPrefix(vector&amp;lt;string&amp;gt;&amp;amp; str) { // Handle the case where input is empty if (str.empty()) return &amp;#34;&amp;#34;; // Sort the strings lexicographically sort(str.begin(), str.end()); // First string in sorted order string first = str[0]; // Last string in sorted order string last = str[str.size() - 1]; // To store the common prefix string ans = &amp;#34;&amp;#34;; // Compare up to the length of the shorter string int minLength = min(first.</description>
-    </item>
-    <item>
-      <title>ML Reading List</title>
-      <link>http://localhost:1313/vault/ml-reading-list/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/ml-reading-list/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Professors and Labs</title>
-      <link>http://localhost:1313/vault/professors-and-labs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/professors-and-labs/</guid>
-      <description> MIT CSAIL – Scene Representation Group </description>
-    </item>
-    <item>
-      <title>Singular Value Decomposition(SVD)</title>
-      <link>http://localhost:1313/vault/singular-value-decompositionsvd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/singular-value-decompositionsvd/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Untitled</title>
-      <link>http://localhost:1313/vault/untitled/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/untitled/</guid>
-      <description>No Prior Knowledge. No Luck. Only Trial.&#xA;Learn a task with a limited number of trajectories, Just like humans.&#xA;Few shot learning&#xA;Time in ML Having a sense of time lets you know that you have failed this task. </description>
-    </item>
-    <item>
-      <title>Untitled 1</title>
-      <link>http://localhost:1313/vault/untitled-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/untitled-1/</guid>
-      <description>Hi Dibyadip,&#xA;My name is Utsab, an upcoming 4th year at IIT Kharagpur majoring in Electronics and Electrical Communication. I came across the CVML Lab at NUS and wanted to reach out regarding possible collaboration or internship opportunities under Prof. Angelo Yao. I&amp;rsquo;m looking to pursue a research career in computer vision and robotics, and have prior experience from my internships at ARMS Lab,IITB and VAL, IISc.&#xA;Would you also be open to a quick chat this weekend?</description>
-    </item>
-    <item>
-      <title>Untitled 2</title>
-      <link>http://localhost:1313/vault/untitled-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/untitled-2/</guid>
-      <description> Some prior Minimize the structure of this prior Not give complete trajectory A general prior completely from scratch on unrrelated mistakes. VIP: Foundational model - Value implicit pre-training Observe the embedding space. See the change in the embedding space ,see what happens when uncorrelated mistakes maybe a text embedding in the same space like clip which can help us label the failure zones, semanticaly and help us avoid them like &amp;ldquo;dropping the chopstick&amp;rdquo; R3m set this up franka kitchen or metaworld roboreward robometer topreward </description>
-    </item>
-    <item>
-      <title>Untitled 3</title>
-      <link>http://localhost:1313/vault/untitled-3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/untitled-3/</guid>
-      <description>Bespoke solver - iclr 24&#xA;class based bias during generation. some classes have more curvy/comflicated odes compared to others. can we reason this? ReFlow </description>
-    </item>
-    <item>
-      <title>What is Kernel(function)?</title>
-      <link>http://localhost:1313/vault/what-is-kernelfunction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/what-is-kernelfunction/</guid>
-      <description>In machine learning and statistics, you’ll see the word kernel thrown around constantly—whether it’s the transition kernel $p_{0t}(\mathbf{x}(t) \mid \mathbf{x}(0))$ in diffusion models, a smoothing kernel in computer vision, or the kernel trick in Support Vector Machines (SVMs).&#xA;While a kernel is mathematically a function, the word &amp;ldquo;function&amp;rdquo; is too generic. Calling something a &amp;ldquo;kernel&amp;rdquo; signals that it possesses a specific structural role and a unique set of geometric properties.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vault on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/</link><description>Recent content in Vault on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/index.xml" rel="self" type="application/rss+xml"/><item><title>Command Center</title><link>https://Utsab-2010.github.io/Notes-Host/vault/command-center/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/command-center/</guid><description>Advice for the day
+STOP LARPING! You wanna get shit done? Scared of failure? DO IT SCARED ANYWAY!
+Daily Tasks DSA Greedy 2 Medium Insert Interval - LeetCode Merge Intervals - LeetCode BST Theory Revise Problems Room Arrange Wardrobe Wash Clothes Finish all of Machine Learning Theory + Make Notes Decision Trees Boosting Random Forests RNN LSTM Methods of Stability Dropout Regularisation AlphaZero Blog and Project Revision - Finish this Increase Linux partition space Weekly Goals Detailed Note on PCA and t-SNE</description></item><item><title>Cram Less to Fit More</title><link>https://Utsab-2010.github.io/Notes-Host/vault/cram-less-to-fit-more/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/cram-less-to-fit-more/</guid><description>#nlp #model_capacity #scaling_laws source: [2604.08519] Cram Less to Fit More: Training Data Pruning Improves Memorization of Facts</description></item><item><title>Fun Resources</title><link>https://Utsab-2010.github.io/Notes-Host/vault/fun-resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/fun-resources/</guid><description>Blogs Matthew Landers Gregory Gundersen co/scope - Build a Strong Foundation for Your Research Project - Blog Series by Cohere Labs The Illustrated Transformer – Jay Alammar – Visualizing machine learning one concept at a time. FeynmanWiki - Technical Blogs, Explained Lil&amp;rsquo;Log Courses DEEP LEARNING · Deep Learning - NYU DL course by LeCun Stanford CS336 | Language Modeling from Scratch Carnegie Mellon University: Computer Vision Courses | Basic to Advanced EECS 4422 Computer Vision Deep Learning in Computer Vision Competitive Programming Good Blog Post Resources about Algorithm and Data Structures - Codeforces String Hashing - Algorithms for Competitive Programming Research Assists arXiv Xplorer - Does fast semantic search on arxiv Explore | alphaXiv - does AI based semantic search and provides AI help like summaries, discussions,etc NotebookLM for Literature Review: A Detailed Step-by-Step Guide for Students and Researchers | by Dhiraj Amin | Medium</description></item><item><title>Hand of Straights</title><link>https://Utsab-2010.github.io/Notes-Host/vault/hand-of-straights/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/hand-of-straights/</guid><description>#cp_medium
+Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.
+Given an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.
+Example 1:
+Input: hand = [1,2,3,6,2,3,4,7,8], groupSize = 3 Output: true Explanation: Alice&amp;rsquo;s hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]</description></item><item><title>House Robber II</title><link>https://Utsab-2010.github.io/Notes-Host/vault/house-robber-ii/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/house-robber-ii/</guid><description>#cp_medium You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.</description></item><item><title>Invariant Risk Minimization</title><link>https://Utsab-2010.github.io/Notes-Host/vault/invariant-risk-minimization/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/invariant-risk-minimization/</guid><description>Main Issue ML models learn complex prediction rules by minimizing the training error. But while doing so they often overloop the proper features and get marred by selection biases. They essentially cheat by absorbing irrelevant correlations that are found in the training data and lead to a lower loss but not the intended correlation we would want.
+A very simple example would be the following. Imagine the problem of classifying images of cows and camels.</description></item><item><title>Learned Representation are path dependent</title><link>https://Utsab-2010.github.io/Notes-Host/vault/learned-representation-are-path-dependent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/learned-representation-are-path-dependent/</guid><description>#to_ponder
+Ekdeep Singh Lubana, Eric J Bigelow, Robert P Dick, David Krueger, and Hidenori Tanaka. Mechanistic mode connectivity. In International Conference on Machine Learning, pp. 22965–23004. PMLR, 2023. Learned representations are substantially path-dependent (cf. Lubana et al., 2023)—if a model is pretrained to compute feature A, then trained to additionally compute feature B, it will have different representations than if it was trained on feature B before feature A, or if it was trained on both A and B simultaneously—even with similar behavior on train and test sets.</description></item><item><title>Longest common Prefix and Sorting a String</title><link>https://Utsab-2010.github.io/Notes-Host/vault/longest-common-prefix-and-sorting-a-string/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/longest-common-prefix-and-sorting-a-string/</guid><description>#include &amp;lt;bits/stdc++.h&amp;gt; using namespace std; class Solution { public: // Returns the longest common prefix in a list of strings string longestCommonPrefix(vector&amp;lt;string&amp;gt;&amp;amp; str) { // Handle the case where input is empty if (str.empty()) return &amp;#34;&amp;#34;; // Sort the strings lexicographically sort(str.begin(), str.end()); // First string in sorted order string first = str[0]; // Last string in sorted order string last = str[str.size() - 1]; // To store the common prefix string ans = &amp;#34;&amp;#34;; // Compare up to the length of the shorter string int minLength = min(first.</description></item><item><title>ML Reading List</title><link>https://Utsab-2010.github.io/Notes-Host/vault/ml-reading-list/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/ml-reading-list/</guid><description/></item><item><title>Professors and Labs</title><link>https://Utsab-2010.github.io/Notes-Host/vault/professors-and-labs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/professors-and-labs/</guid><description> MIT CSAIL – Scene Representation Group</description></item><item><title>Singular Value Decomposition(SVD)</title><link>https://Utsab-2010.github.io/Notes-Host/vault/singular-value-decompositionsvd/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/singular-value-decompositionsvd/</guid><description/></item><item><title>Untitled</title><link>https://Utsab-2010.github.io/Notes-Host/vault/untitled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/untitled/</guid><description>No Prior Knowledge. No Luck. Only Trial.
+Learn a task with a limited number of trajectories, Just like humans.
+Few shot learning
+Time in ML Having a sense of time lets you know that you have failed this task.</description></item><item><title>Untitled 1</title><link>https://Utsab-2010.github.io/Notes-Host/vault/untitled-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/untitled-1/</guid><description>Hi Dibyadip,
+My name is Utsab, an upcoming 4th year at IIT Kharagpur majoring in Electronics and Electrical Communication. I came across the CVML Lab at NUS and wanted to reach out regarding possible collaboration or internship opportunities under Prof. Angelo Yao. I&amp;rsquo;m looking to pursue a research career in computer vision and robotics, and have prior experience from my internships at ARMS Lab,IITB and VAL, IISc.
+Would you also be open to a quick chat this weekend?</description></item><item><title>Untitled 2</title><link>https://Utsab-2010.github.io/Notes-Host/vault/untitled-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/untitled-2/</guid><description> Some prior Minimize the structure of this prior Not give complete trajectory A general prior completely from scratch on unrrelated mistakes. VIP: Foundational model - Value implicit pre-training Observe the embedding space. See the change in the embedding space ,see what happens when uncorrelated mistakes maybe a text embedding in the same space like clip which can help us label the failure zones, semanticaly and help us avoid them like &amp;ldquo;dropping the chopstick&amp;rdquo; R3m set this up franka kitchen or metaworld roboreward robometer topreward</description></item><item><title>Untitled 3</title><link>https://Utsab-2010.github.io/Notes-Host/vault/untitled-3/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/untitled-3/</guid><description>Bespoke solver - iclr 24
+class based bias during generation. some classes have more curvy/comflicated odes compared to others. can we reason this? ReFlow</description></item><item><title>What is Kernel(function)?</title><link>https://Utsab-2010.github.io/Notes-Host/vault/what-is-kernelfunction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/what-is-kernelfunction/</guid><description>In machine learning and statistics, you’ll see the word kernel thrown around constantly—whether it’s the transition kernel $p_{0t}(\mathbf{x}(t) \mid \mathbf{x}(0))$ in diffusion models, a smoothing kernel in computer vision, or the kernel trick in Support Vector Machines (SVMs).
+While a kernel is mathematically a function, the word &amp;ldquo;function&amp;rdquo; is too generic. Calling something a &amp;ldquo;kernel&amp;rdquo; signals that it possesses a specific structural role and a unique set of geometric properties.</description></item></channel></rss>

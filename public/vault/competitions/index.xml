@@ -1,25 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Competitions on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/vault/competitions/</link>
-    <description>Recent content in Competitions on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/vault/competitions/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>LPCV-Track-1</title>
-      <link>http://localhost:1313/vault/competitions/lpcv-track-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/competitions/lpcv-track-1/</guid>
-      <description>LPCV - Low Power Computer Vision&#xA;To-Dos: Implement the sample solution Find relevant papers Create Repo Run the sample solution Collect relevant datasets prepare baseline create pipeline to train easily on vast.ai Ideas The current State-of-the-Art (SOTA) involves moving beyond simple contrastive learning toward methods that handle hard negatives, compositional logic, and parameter efficiency.&#xA;1. High-Level Fine-Tuning Approach The standard objective is the InfoNCE (Contrastive) Loss. You feed the model batches of $(Image, Text)$ pairs and train it to maximize the cosine similarity of matching pairs while minimizing it for all others in the batch.</description>
-    </item>
-    <item>
-      <title>Orbit Wars</title>
-      <link>http://localhost:1313/vault/competitions/orbit-wars/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/competitions/orbit-wars/</guid>
-      <description>Page - Getting Started</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Competitions on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/competitions/</link><description>Recent content in Competitions on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/competitions/index.xml" rel="self" type="application/rss+xml"/><item><title>LPCV-Track-1</title><link>https://Utsab-2010.github.io/Notes-Host/vault/competitions/lpcv-track-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/competitions/lpcv-track-1/</guid><description>LPCV - Low Power Computer Vision
+To-Dos: Implement the sample solution Find relevant papers Create Repo Run the sample solution Collect relevant datasets prepare baseline create pipeline to train easily on vast.ai Ideas The current State-of-the-Art (SOTA) involves moving beyond simple contrastive learning toward methods that handle hard negatives, compositional logic, and parameter efficiency.
+1. High-Level Fine-Tuning Approach The standard objective is the InfoNCE (Contrastive) Loss. You feed the model batches of $(Image, Text)$ pairs and train it to maximize the cosine similarity of matching pairs while minimizing it for all others in the batch.</description></item><item><title>Orbit Wars</title><link>https://Utsab-2010.github.io/Notes-Host/vault/competitions/orbit-wars/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/competitions/orbit-wars/</guid><description>Page - Getting Started</description></item></channel></rss>

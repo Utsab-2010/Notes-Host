@@ -1,32 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>History on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/vault/history/</link>
-    <description>Recent content in History on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/vault/history/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Battle of Polashi(Plassey)</title>
-      <link>http://localhost:1313/vault/history/battle-of-polashiplassey/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/history/battle-of-polashiplassey/</guid>
-      <description>Polashi (or Palashi) is a historically significant town in West Bengal&amp;rsquo;s Nadia district, famous as the site of the 1757 Battle of Plassey, which established British rule in India. Today, it is a town near the Bhagirathi River with landmarks like the Palashi Monument. It is also the name of a Bangladeshi social deduction board game.&#xA;Key Aspects of Polashi/Palashi:&#xA;Historical Significance: The Battle of Plassey was fought on June 23, 1757, between Nawab Siraj-ud-Daulah and the British East India Company led by Robert Clive.</description>
-    </item>
-    <item>
-      <title>History of Bengal Politics</title>
-      <link>http://localhost:1313/vault/history/history-of-bengal-politics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/history/history-of-bengal-politics/</guid>
-      <description>#bangla #history</description>
-    </item>
-    <item>
-      <title>Is Bengal against Communism?</title>
-      <link>http://localhost:1313/vault/history/is-bengal-against-communism/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/history/is-bengal-against-communism/</guid>
-      <description>#history #bangla</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>History on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/history/</link><description>Recent content in History on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/history/index.xml" rel="self" type="application/rss+xml"/><item><title>Battle of Polashi(Plassey)</title><link>https://Utsab-2010.github.io/Notes-Host/vault/history/battle-of-polashiplassey/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/history/battle-of-polashiplassey/</guid><description>Polashi (or Palashi) is a historically significant town in West Bengal&amp;rsquo;s Nadia district, famous as the site of the 1757 Battle of Plassey, which established British rule in India. Today, it is a town near the Bhagirathi River with landmarks like the Palashi Monument. It is also the name of a Bangladeshi social deduction board game.
+Key Aspects of Polashi/Palashi:
+Historical Significance: The Battle of Plassey was fought on June 23, 1757, between Nawab Siraj-ud-Daulah and the British East India Company led by Robert Clive.</description></item><item><title>History of Bengal Politics</title><link>https://Utsab-2010.github.io/Notes-Host/vault/history/history-of-bengal-politics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/history/history-of-bengal-politics/</guid><description>#bangla #history</description></item><item><title>Is Bengal against Communism?</title><link>https://Utsab-2010.github.io/Notes-Host/vault/history/is-bengal-against-communism/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/history/is-bengal-against-communism/</guid><description>#history #bangla</description></item></channel></rss>

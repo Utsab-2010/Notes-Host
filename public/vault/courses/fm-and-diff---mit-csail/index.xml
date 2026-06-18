@@ -1,32 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>FM and Diff - MIT CSAIL on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/vault/courses/fm-and-diff---mit-csail/</link>
-    <description>Recent content in FM and Diff - MIT CSAIL on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/vault/courses/fm-and-diff---mit-csail/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Lecture-1</title>
-      <link>http://localhost:1313/vault/courses/fm-and-diff---mit-csail/lecture-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/courses/fm-and-diff---mit-csail/lecture-1/</guid>
-      <description>Flow and Diffusion Models We start by defining a trajectory.&#xA;Ordinary Differential Equations (ODEs): The mathematical foundation for flow models.&#xA;Trajectory: The solution to an ODE. It is a function that maps time $t$ to a specific location in a $d$-dimensional space. - Function: $X : [0, 1] \to \mathbb{R}^d, \quad t \mapsto X_t$&#xA;Vector Field ($u$): The rule that defines an ODE. It assigns a specific velocity vector to every point in space at any given time - Function: $u : \mathbb{R}^d \times [0, 1] \to \mathbb{R}^d, \quad (x, t) \mapsto u_t(x)$</description>
-    </item>
-    <item>
-      <title>Lecture-2</title>
-      <link>http://localhost:1313/vault/courses/fm-and-diff---mit-csail/lecture-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/courses/fm-and-diff---mit-csail/lecture-2/</guid>
-      <description>How do they guarantee that the learnt marginal vector field will transform the distribution such that when sampled later it creates sensible data samples?</description>
-    </item>
-    <item>
-      <title>Overview</title>
-      <link>http://localhost:1313/vault/courses/fm-and-diff---mit-csail/overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/courses/fm-and-diff---mit-csail/overview/</guid>
-      <description>Lecture Notes: diffusion.csail.mit.edu/2026/docs/lecture_notes.pdf</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FM and Diff - MIT CSAIL on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/courses/fm-and-diff---mit-csail/</link><description>Recent content in FM and Diff - MIT CSAIL on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/courses/fm-and-diff---mit-csail/index.xml" rel="self" type="application/rss+xml"/><item><title>Lecture-1</title><link>https://Utsab-2010.github.io/Notes-Host/vault/courses/fm-and-diff---mit-csail/lecture-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/courses/fm-and-diff---mit-csail/lecture-1/</guid><description>Flow and Diffusion Models We start by defining a trajectory.
+Ordinary Differential Equations (ODEs): The mathematical foundation for flow models.
+Trajectory: The solution to an ODE. It is a function that maps time $t$ to a specific location in a $d$-dimensional space. - Function: $X : [0, 1] \to \mathbb{R}^d, \quad t \mapsto X_t$
+Vector Field ($u$): The rule that defines an ODE. It assigns a specific velocity vector to every point in space at any given time - Function: $u : \mathbb{R}^d \times [0, 1] \to \mathbb{R}^d, \quad (x, t) \mapsto u_t(x)$</description></item><item><title>Lecture-2</title><link>https://Utsab-2010.github.io/Notes-Host/vault/courses/fm-and-diff---mit-csail/lecture-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/courses/fm-and-diff---mit-csail/lecture-2/</guid><description>How do they guarantee that the learnt marginal vector field will transform the distribution such that when sampled later it creates sensible data samples?</description></item><item><title>Overview</title><link>https://Utsab-2010.github.io/Notes-Host/vault/courses/fm-and-diff---mit-csail/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/courses/fm-and-diff---mit-csail/overview/</guid><description>Lecture Notes: diffusion.csail.mit.edu/2026/docs/lecture_notes.pdf</description></item></channel></rss>

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 
     <!-- KaTeX for LaTeX -->
     {{ if .Params.math | default true }}
@@ -40,7 +40,7 @@
         <div class="main-area">
             <header class="site-header">
                 <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle Sidebar">☰</button>
-                <a href="/" class="site-title-link"><h1>{{ .Site.Title }}</h1></a>
+                <a href="{{ "" | relURL }}" class="site-title-link"><h1>{{ .Site.Title }}</h1></a>
             </header>
 
             <main class="content-wrapper">

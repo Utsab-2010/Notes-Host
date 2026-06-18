@@ -1,6 +1,7 @@
-baseURL = "https://Utsab-2010.github.io/"
+baseURL = "https://Utsab-2010.github.io/Notes-Host/"
 languageCode = "en-us"
 title = "Utsab's Digital Garden"
+canonifyURLs = true
 
 ignoreFiles = [
   "\\.obsidian",

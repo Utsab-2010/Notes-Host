@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Strings on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/vault/dsa-and-cp/strings/</link>
-    <description>Recent content in Strings on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/vault/dsa-and-cp/strings/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>CPP Strings CheatSheet</title>
-      <link>http://localhost:1313/vault/dsa-and-cp/strings/cpp-strings-cheatsheet/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/dsa-and-cp/strings/cpp-strings-cheatsheet/</guid>
-      <description>Basics // Declare string s = &amp;#34;hello&amp;#34;; string s(5, &amp;#39;a&amp;#39;); // &amp;#34;aaaaa&amp;#34; string s(arr); // from char array // Length s.size() // returns size_t (unsigned — cast to int for subtraction) s.length() // same as size() // Access s[i] // no bounds check s.at(i) // throws if out of range s.front() // s[0] s.back() // s[s.size()-1] // Append s += &amp;#34;world&amp;#34;; s.push_back(&amp;#39;!&amp;#39;); s.append(&amp;#34;xyz&amp;#34;); // Substring s.substr(pos, len) // from index pos, length len s.</description>
-    </item>
-    <item>
-      <title>Largest Odd Number in String</title>
-      <link>http://localhost:1313/vault/dsa-and-cp/strings/largest-odd-number-in-string/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/dsa-and-cp/strings/largest-odd-number-in-string/</guid>
-      <description>problem: Find the largest odd number inside of a string #cp_easy&#xA;#include &amp;lt;bits/stdc++.h&amp;gt; using namespace std; class Solution { public: // Returns the largest odd number substring from the given string string largeOddNum(string&amp;amp; s) { int ind = -1; // Find the last odd digit in the string int i; for (i = s.length() - 1; i &amp;gt;= 0; i--) { if ((s[i] - &amp;#39;0&amp;#39;) % 2 == 1) { ind = i; break; } } // Skip leading zeroes up to the odd digit i = 0; while (i &amp;lt;= ind &amp;amp;&amp;amp; s[i] == &amp;#39;0&amp;#39;) i++; // Return substring from first non-zero to odd digit return s.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Strings on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/strings/</link><description>Recent content in Strings on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/strings/index.xml" rel="self" type="application/rss+xml"/><item><title>CPP Strings CheatSheet</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/strings/cpp-strings-cheatsheet/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/strings/cpp-strings-cheatsheet/</guid><description>Basics // Declare string s = &amp;#34;hello&amp;#34;; string s(5, &amp;#39;a&amp;#39;); // &amp;#34;aaaaa&amp;#34; string s(arr); // from char array // Length s.size() // returns size_t (unsigned — cast to int for subtraction) s.length() // same as size() // Access s[i] // no bounds check s.at(i) // throws if out of range s.front() // s[0] s.back() // s[s.size()-1] // Append s += &amp;#34;world&amp;#34;; s.push_back(&amp;#39;!&amp;#39;); s.append(&amp;#34;xyz&amp;#34;); // Substring s.substr(pos, len) // from index pos, length len s.</description></item><item><title>Largest Odd Number in String</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/strings/largest-odd-number-in-string/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/strings/largest-odd-number-in-string/</guid><description>problem: Find the largest odd number inside of a string #cp_easy
+#include &amp;lt;bits/stdc++.h&amp;gt; using namespace std; class Solution { public: // Returns the largest odd number substring from the given string string largeOddNum(string&amp;amp; s) { int ind = -1; // Find the last odd digit in the string int i; for (i = s.length() - 1; i &amp;gt;= 0; i--) { if ((s[i] - &amp;#39;0&amp;#39;) % 2 == 1) { ind = i; break; } } // Skip leading zeroes up to the odd digit i = 0; while (i &amp;lt;= ind &amp;amp;&amp;amp; s[i] == &amp;#39;0&amp;#39;) i++; // Return substring from first non-zero to odd digit return s.</description></item></channel></rss>

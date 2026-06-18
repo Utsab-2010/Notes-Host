@@ -1,18 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Heaps on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/vault/dsa-and-cp/heaps/</link>
-    <description>Recent content in Heaps on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/vault/dsa-and-cp/heaps/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Heaps (Priority Queues) — Detailed Notes</title>
-      <link>http://localhost:1313/vault/dsa-and-cp/heaps/heaps-priority-queues--detailed-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/vault/dsa-and-cp/heaps/heaps-priority-queues--detailed-notes/</guid>
-      <description>Based on: Heaps Visually Explained (Priority Queues) Topic: Max Heap — structure, insertion, deletion, and building from an array&#xA;1. What is a Heap? A heap is a special complete binary tree that satisfies the heap property:&#xA;Max Heap: Every parent node is greater than or equal to its children. The maximum element is always at the root. Min Heap: Every parent node is less than or equal to its children.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Heaps on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/heaps/</link><description>Recent content in Heaps on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/heaps/index.xml" rel="self" type="application/rss+xml"/><item><title>Heaps (Priority Queues) — Detailed Notes</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/heaps/heaps-priority-queues--detailed-notes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/heaps/heaps-priority-queues--detailed-notes/</guid><description>Based on: Heaps Visually Explained (Priority Queues) Topic: Max Heap — structure, insertion, deletion, and building from an array
+1. What is a Heap? A heap is a special complete binary tree that satisfies the heap property:
+Max Heap: Every parent node is greater than or equal to its children. The maximum element is always at the root. Min Heap: Every parent node is less than or equal to its children.</description></item></channel></rss>
