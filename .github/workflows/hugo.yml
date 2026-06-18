@@ -42,8 +42,7 @@ jobs:
         with:
           repository: Utsab-2010/Utsab-Notes
           path: Utsab-Notes
-          # If your vault repo is private, uncomment the line below and add your token to GitHub Secrets
-          # token: ${{ secrets.VAULT_TOKEN }}
+          token: ${{ secrets.VAULT_TOKEN }}
 
       - name: Setup Pages
         id: pages
