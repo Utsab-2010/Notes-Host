@@ -11,8 +11,8 @@ CONTENT_DIR = os.environ.get("CONTENT_DIR", "/home/utsab/notes-hosted/hugo-site/
 CONFIG_FILE = "/home/utsab/notes-hosted/hugo-site/config.toml"
 
 # Exclude lists
-EXCLUDE_DIRS = {'.git', '.obsidian', 'Journal'}
-EXCLUDE_FILES = {'Internship Applications.md', 'Project Ideas.md', 'Vault Content.base'}
+EXCLUDE_DIRS = {'.git', '.github', '.obsidian', 'Journal'}
+EXCLUDE_FILES = {'Internship Applications.md', 'Project Ideas.md', 'Vault Content.base', '.gitignore', '.DS_Store'}
 
 def slugify(text):
     text = text.lower()
