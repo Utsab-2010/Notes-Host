@@ -1,10 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LossFunk Proposal on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/</link><description>Recent content in LossFunk Proposal on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/index.xml" rel="self" type="application/rss+xml"/><item><title>2nd stage</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/2nd-stage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/2nd-stage/</guid><description>**
-As part of the next round, please go through the document below and submit your research proposal (as outlined at the end of the form):
-Build research plan for Lossfunk
-You can choose any research idea and develop a plan for it that aligns with the lab’s focus but the interviewer suggested you can submit a research proposal related to his identified gaps in AI:
-Representation learning, using classical information theory to guide how we can achieve “compression” in representation learning</description></item><item><title>Idea-1</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/idea-1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/idea-1/</guid><description>This is an exceptionally sharp research direction for 2026. The field is currently moving away from &amp;ldquo;black-box distillation&amp;rdquo; (just matching logits) toward Geometric Knowledge Distillation (GKD).
-Studying how the manifold transforms during distillation is the &amp;ldquo;missing link&amp;rdquo; that explains why a 10M-parameter student can sometimes outperform a 100M-parameter teacher on specific downstream tasks.
-1. Why this is a &amp;ldquo;Solid&amp;rdquo; Research Area The &amp;ldquo;Effectiveness&amp;rdquo; you mentioned isn&amp;rsquo;t just about accuracy; it’s about representational efficiency.</description></item><item><title>Research Writeup</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/research-writeup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/research-writeup/</guid><description>Target Problem: How do we learn representations that help with out of distribution generalization? Do they need to be disentangled? How do we learn that?
-Create learning algorithms that are as sample efficient as humans- What can we study from the nature of data to drive sample efficiency? How can we use data to create new data (are world models involved?) ? What kinds of abstractions lead to sample efficient learning?</description></item><item><title>Untitled</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/untitled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/untitled/</guid><description/></item><item><title>Variations of Proposal</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/variations-of-proposal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/variations-of-proposal/</guid><description>Student Representation and Manifold Refinement Known: The student network, being smaller, must compress and interpolate the teacher’s manifold. In many KD methods, the student mimics the teacher’s output or feature activations
-. Aligning feature manifolds (e.g. via regression or geometric matching) can preserve both numerical and relational information. Empirically, distilled students often generalize surprisingly well. For example, in one study a distilled variational autoencoder (VAE) student — despite having far fewer parameters — generalized to higher image resolutions better than its teacher, effectively filling “gaps” in the latent manifold.</description></item><item><title>Write-up</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/write-up/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/lossfunk-proposal/write-up/</guid><description>Main Topic: KD is the way towards more effective representations and thus OOD generalisations? Recent works in KD. what exactly is KD Talk about the information bottleneck concept Efficient Universal Perception Encoder | alphaXiv Theoretical Analysis of Weak-to-Strong Generalization | alphaXiv On student-teacher deviations in distillation: does it pay to disobey? | alphaXiv
-Hypothesis The student network learns a better, more precise manifold from the teacher&amp;rsquo;s manifold . Due to the reduction in dimensionality and complexity, the student fills in a lot of the gaps in the original manifold which led to noisy or erroneous predictions for OOD data generalisation.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LossFunk Proposal on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/</link>
+    <description>Recent content in LossFunk Proposal on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2nd stage</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/2nd-stage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/2nd-stage/</guid>
+      <description>**&#xA;As part of the next round, please go through the document below and submit your research proposal (as outlined at the end of the form):&#xA;Build research plan for Lossfunk&#xA;You can choose any research idea and develop a plan for it that aligns with the lab’s focus but the interviewer suggested you can submit a research proposal related to his identified gaps in AI:&#xA;Representation learning, using classical information theory to guide how we can achieve “compression” in representation learning</description>
+    </item>
+    <item>
+      <title>Idea-1</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/idea-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/idea-1/</guid>
+      <description>This is an exceptionally sharp research direction for 2026. The field is currently moving away from &amp;ldquo;black-box distillation&amp;rdquo; (just matching logits) toward Geometric Knowledge Distillation (GKD).&#xA;Studying how the manifold transforms during distillation is the &amp;ldquo;missing link&amp;rdquo; that explains why a 10M-parameter student can sometimes outperform a 100M-parameter teacher on specific downstream tasks.&#xA;1. Why this is a &amp;ldquo;Solid&amp;rdquo; Research Area The &amp;ldquo;Effectiveness&amp;rdquo; you mentioned isn&amp;rsquo;t just about accuracy; it’s about representational efficiency.</description>
+    </item>
+    <item>
+      <title>Research Writeup</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/research-writeup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/research-writeup/</guid>
+      <description>Target Problem: How do we learn representations that help with out of distribution generalization? Do they need to be disentangled? How do we learn that?&#xA;Create learning algorithms that are as sample efficient as humans- What can we study from the nature of data to drive sample efficiency? How can we use data to create new data (are world models involved?) ? What kinds of abstractions lead to sample efficient learning?</description>
+    </item>
+    <item>
+      <title>Untitled</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/untitled/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Variations of Proposal</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/variations-of-proposal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/variations-of-proposal/</guid>
+      <description>Student Representation and Manifold Refinement Known: The student network, being smaller, must compress and interpolate the teacher’s manifold. In many KD methods, the student mimics the teacher’s output or feature activations&#xA;. Aligning feature manifolds (e.g. via regression or geometric matching) can preserve both numerical and relational information. Empirically, distilled students often generalize surprisingly well. For example, in one study a distilled variational autoencoder (VAE) student — despite having far fewer parameters — generalized to higher image resolutions better than its teacher, effectively filling “gaps” in the latent manifold.</description>
+    </item>
+    <item>
+      <title>Write-up</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/write-up/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/lossfunk-proposal/write-up/</guid>
+      <description>Main Topic: KD is the way towards more effective representations and thus OOD generalisations? Recent works in KD. what exactly is KD Talk about the information bottleneck concept Efficient Universal Perception Encoder | alphaXiv Theoretical Analysis of Weak-to-Strong Generalization | alphaXiv On student-teacher deviations in distillation: does it pay to disobey? | alphaXiv&#xA;Hypothesis The student network learns a better, more precise manifold from the teacher&amp;rsquo;s manifold . Due to the reduction in dimensionality and complexity, the student fills in a lot of the gaps in the original manifold which led to noisy or erroneous predictions for OOD data generalisation.</description>
+    </item>
+  </channel>
+</rss>

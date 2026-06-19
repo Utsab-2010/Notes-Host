@@ -1,1 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Digital Communication on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/courses/signal-processing/digital-communication/</link><description>Recent content in Digital Communication on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/courses/signal-processing/digital-communication/index.xml" rel="self" type="application/rss+xml"/><item><title>Untitled</title><link>https://Utsab-2010.github.io/Notes-Host/vault/courses/signal-processing/digital-communication/untitled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/courses/signal-processing/digital-communication/untitled/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Communication on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/courses/signal-processing/digital-communication/</link>
+    <description>Recent content in Digital Communication on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/courses/signal-processing/digital-communication/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Untitled</title>
+      <link>http://localhost:1313/Notes-Host/vault/courses/signal-processing/digital-communication/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/courses/signal-processing/digital-communication/untitled/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

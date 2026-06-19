@@ -1,45 +1,228 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Deep Learning on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/</link><description>Recent content in Deep Learning on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/index.xml" rel="self" type="application/rss+xml"/><item><title>Attention Mechanism</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/attention-mechanism/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/attention-mechanism/</guid><description>Why Attention Exists Before attention, sequence models (RNNs, LSTMs) processed tokens one by one and tried to compress the entire context into a single hidden state vector before producing an output. This bottleneck was brutal — by the time you&amp;rsquo;re generating the 50th word, the information from the 1st word has been squeezed through 49 intermediate states and is largely gone.
-Attention throws out the bottleneck. Instead of a single compressed state, every output position gets to directly look at every input position and decide what&amp;rsquo;s relevant.</description></item><item><title>Continual Learning</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/continual-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/continual-learning/</guid><description>#continual_learning
-It is an AI learning approach which seeks to sequentially train a model for new tasks while retaining concepts and knowledge regarding previous tasks. That is , we need it to learn new things while retaining already learned info and the number of tasks is not fixed. ^e662de
-Keywords Catastrophic Forgetting Stability-Plasticity Trade-off Inter/intra task generalizability Papers Survey on Continual Learning These five categories represent different strategies for solving catastrophic forgetting</description></item><item><title>Continual Learning - Eval Metrics</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/continual-learning---eval-metrics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/continual-learning---eval-metrics/</guid><description>Overall Performance Evaluated by average accuracy (AA) and average incremental accuracy(AIA). Let $a_{k,j}$ be the classification accuracy evaluated on the j-th task&amp;rsquo;s test data after the incremental learning of the k-th task ($j\leq k$) Memory Stability Evaluated by Forgetting Measure(FM) and Backward Transfer(BWT)</description></item><item><title>Continual Learning Formulation</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/continual-learning-formulation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/continual-learning-formulation/</guid><description>Continual learning is defined as learning from dynamic data distributions. Unlike standard machine learning, where data is often static, here training samples from different distributions arrive in a sequence.
-A model (parameterized by $\theta$) must learn new tasks ($t$) under two main constraints:
-Limited Memory: No or very limited access to previous training data. Performance: The model must still perform well on the test sets of those old tasks. Formal Notation Task $t$: Defined by its data distribution $\mathbb{D}_t := p(\mathcal{X}_t, \mathcal{Y}_t)$.</description></item><item><title>Curriculum Learning</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/curriculum-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/curriculum-learning/</guid><description>#curriculum_learning
-The original definition of Curriculum Learning (CL) was formally proposed by Bengio et al. in 2009. They defined a curriculum as a sequence of training criteria over $T$ training steps, denoted as: $$\mathcal{C} = \langle Q_1, \dots, Q_t, \dots, Q_T \rangle$$ Each criterion $Q_t$ represents a reweighting of the target training distribution $P(z)$ at a specific step $t$. $Q_{t}(z) ∝ W_t(z)P (z) \quad ∀ example z ∈ training, set, D$</description></item><item><title>Data Attribution</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/data-attribution/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/data-attribution/</guid><description>#deep_learning #data_attribution
-What is Data Attribution? In machine learning, data attribution (often referred to as data valuation or influence calculation) is the process of tracing a model&amp;rsquo;s behavior, predictions, or performance back to its underlying training data.
-If a standard interpretability technique answers the question, &amp;ldquo;Which features of this image caused the model to classify it as a dog?&amp;rdquo;, data attribution answers the question, &amp;ldquo;Which specific images in the training dataset taught the model to classify this as a dog?</description></item><item><title>Data-Driven Inductive Bias</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/data-driven-inductive-bias/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/data-driven-inductive-bias/</guid><description>The word Inductive refers to a reasoning process that uses specific observations, evidence, or patterns to form broad, general conclusions or theories.
-An inductive bias is the set of assumptions a model uses to predict outputs for inputs it hasn&amp;rsquo;t seen yet.
-Manual Bias: A researcher decides, &amp;ldquo;I assume the important weights are the ones with low gradients,&amp;rdquo; and writes an algorithm like EWC to enforce that. Data-Driven Bias: The model is &amp;ldquo;meta-trained&amp;rdquo; on various sequences of tasks.</description></item><item><title>Depth Estimation Metrics</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/depth-estimation-metrics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/depth-estimation-metrics/</guid><description>To evaluate the accuracy of the predicted depth maps against the &amp;ldquo;ground truth&amp;rdquo; (the actual measured distance), the InfiniDepth paper utilizes a standard set of error and accuracy metrics common in monocular depth estimation research.
-These metrics compare the predicted depth $d$ with the ground-truth depth $d^*$ for $N$ total pixels.
-1. Error Metrics (Lower is Better) These metrics quantify the average distance or deviation between the prediction and the truth.</description></item><item><title>Deterministic vs Probabilistic Models</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/deterministic-vs-probabilistic-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/deterministic-vs-probabilistic-models/</guid><description>The difference between these two boils down to how they handle uncertainty and predictability.
-1. The Deterministic Model: &amp;ldquo;Same In, Same Out&amp;rdquo; A deterministic model is like a rigid mathematical formula. If you provide the same input, you are guaranteed to get the exact same output every single time. There is no room for randomness or &amp;ldquo;maybe.&amp;rdquo;
-Logic: $y = f(x)$ Perspective: It assumes that the system is fully known and that there is only one correct answer for any given state.</description></item><item><title>Different ML Optimizers</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/different-ml-optimizers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/different-ml-optimizers/</guid><description>A detailed reference on gradient-based optimization — the math, the intuition, and why it matters.
-0. The Setup We&amp;rsquo;re minimizing a loss function $\mathcal{L}(\theta)$ over parameters $\theta \in \mathbb{R}^d$. At each step $t$ we compute the gradient $g_t = \nabla_\theta \mathcal{L}(\theta_t)$ (or a stochastic approximation over a minibatch) and update $\theta$.
-The central tension in optimizer design:
-Gradient noise — stochastic gradients are unbiased but high-variance. Curvature — the loss landscape curves differently in every direction; a single global learning rate is a crude approximation.</description></item><item><title>Diffusion Models</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/diffusion-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/diffusion-models/</guid><description>Diffusion models might look like a mess of Gaussian noise at first glance, but the math is actually a very elegant &amp;ldquo;tug-of-war&amp;rdquo; between destroying information and reconstructing it.
-Think of it like this: If you dip a drop of ink into water, it’s easy to predict how it spreads out (Forward), but incredibly hard to figure out exactly where the drop started once it&amp;rsquo;s fully mixed (Reverse). Diffusion models learn to do exactly that.</description></item><item><title>Diffusion Reverse Process</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/diffusion-reverse-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/diffusion-reverse-process/</guid><description>To implement the reverse process (sampling), we essentially perform a &amp;ldquo;denoising&amp;rdquo; loop. We start with a tensor of pure Gaussian noise and gradually subtract the noise predicted by our trained model until we reach a clean image.
-Here is the step-by-step algorithmic breakdown for the Reverse Diffusion (Sampling). Before starting the loop, you need:
-A Trained Model ($\epsilon_\theta$): Usually a U-Net that takes $(x_t, t)$ as input and outputs the predicted noise.</description></item><item><title>Diffusion-LM Denoising</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/diffusion-lm-denoising/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/diffusion-lm-denoising/</guid><description>The denoising inference step in Diffusion-LM is the reverse process of the diffusion model, where the system starts with a sequence of pure Gaussian noise vectors ($x_T$) and iteratively removes the noise step-by-step to recover the continuous word vectors ($x_0$), which are finally converted back into discrete text.
-Here is the detailed workflow and mathematics behind this process:
-1. The Denoising Transition At each step $t$ during inference, the model aims to transition from the current noisy state $x_t$ to a slightly less noisy state $x_{t-1}$.</description></item><item><title>Energy based Models</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/energy-based-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/energy-based-models/</guid><description> Energy-Based Models · Deep Learning</description></item><item><title>Fréchet Inception Distance (FID)</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/fr%C3%A9chet-inception-distance-fid/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/fr%C3%A9chet-inception-distance-fid/</guid><description>#compvis #diffusion
-The Problem It Solves You&amp;rsquo;ve trained a generative model — a GAN, a diffusion model, whatever — and it&amp;rsquo;s producing images. How do you know if they&amp;rsquo;re good? You can look at them, sure, but that doesn&amp;rsquo;t scale. You need a number.
-Early metrics like Inception Score (IS) tried to answer this, but they had a blind spot: they only looked at the generated images. They had no idea what real images looked like.</description></item><item><title>Low Rank Adaptation(LoRA)</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/low-rank-adaptationlora/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/low-rank-adaptationlora/</guid><description>#deep_learning #fine-tuning
-This is built upon the hypothesis that the weight update during fine-tuning often exists an low intrinsic rank, thus a low-rank decomposition matrices could potentially mimic the weight changes with a few trainable parameters.
-More background regarding the hypothesis:
-Measuring the Intrinsic Dimension of Objective Landscapes Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning 1. Introduction Scaling up pre-trained language models has yielded unprecedented performance on a wide range of downstream tasks.</description></item><item><title>Matryoshka Representation Learning</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/matryoshka-representation-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/matryoshka-representation-learning/</guid><description>Paper: [2205.13147] Matryoshka Representation Learning Blog: What Is Matryoshka Representation Learning in Gemini Embedding 2? | MindStudio
-Matryoshka Representation Learning (MRL) is a high-efficiency embedding technique designed to address the &amp;ldquo;one-size-fits-all&amp;rdquo; rigidity of standard neural representations. Named after the Russian nesting dolls, MRL allows a single high-dimensional embedding to be truncated to smaller sizes without a significant loss in accuracy, effectively packing coarse-to-fine information into a single vector.
-Introduced by researchers at the University of Washington and Google Research (Kusupati et al.</description></item><item><title>Mixture of Experts</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/mixture-of-experts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/mixture-of-experts/</guid><description/></item><item><title>ML Notes Database Expansion</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/ml-notes-database-expansion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/ml-notes-database-expansion/</guid><description>Machine Learning Notes Database: Expansion &amp;amp; Tagging Roadmap This document provides a comprehensive plan to organize, tag, and expand your existing Machine Learning and Deep Learning notes vault. The goal is to transform your current collection of 28 notes into a fully connected, highly structured reference database.
-1. Tag Taxonomy Definition To keep your vault structured, searchable, and clean, we propose a standardized set of tags. Tags should be added on Line 1 of each file in the format #tag1 #tag2 .</description></item><item><title>Moravec's Paradox</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/moravecs-paradox/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/moravecs-paradox/</guid><description>Moravec&amp;rsquo;s paradox - Wikipedia
-Moravec&amp;rsquo;s paradox is the observation that, as Hans Moravec wrote in 1988, &amp;ldquo;it is comparatively easy to make computers exhibit adult level performance on intelligence tests or playing checkers, and difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility&amp;rdquo;. This counter-intuitive pattern may happen because skills that appear effortless to humans, such as recognising faces or walking, required millions of years of evolution to develop, while abstract reasoning abilities like mathematics are evolutionarily recent.</description></item><item><title>N-gram Models</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/n-gram-models/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/n-gram-models/</guid><description>#deep_learning #nlp An n-gram model is a classical, statistically driven approach used in Natural Language Processing (NLP) to predict the next item in a sequence (typically words or characters) based on the history of the preceding items.
-Unlike modern Large Language Models that process long paragraphs of text simultaneously using self-attention mechanisms, an n-gram model operates on a strict, local window of text.
-1. Breaking Down the Term &amp;ldquo;n-gram&amp;rdquo; In this context, the &amp;ldquo;n&amp;rdquo; represents a fixed number, and a &amp;ldquo;gram&amp;rdquo; represents a unit of text (usually a word).</description></item><item><title>Neural Implicit Fields</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/neural-implicit-fields/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/neural-implicit-fields/</guid><description>Neural implicit fields (or Implicit Neural Representations - INRs) are a machine learning paradigm that represents data—such as 3D shapes, images, or scenes—as a continuous function parameterized by a neural network rather than discrete grids or pixels. They map coordinates (e.g. (𝑥,𝑦,𝑧) ) to signal values (e.g., color, density, or distance), enabling high-fidelity, compact storage, and resolution-independent rendering of complex data.</description></item><item><title>Optimal Transport</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/optimal-transport/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/optimal-transport/</guid><description>Optimal Transport (OT) is a mathematical field used in many interesting and popular tasks, such as image segmentation, image restoration, computer vision, data analysis, etc., and in general, OT can be useful for those tasks involving a density distribution.
-It provides you with the least effort requiring way to transform one distribution(shape) to another by essentially rearranging the mass(here probability).
-The most classical example is given by the task of rearranging a sand pile to desired shape.</description></item><item><title>Predicting Next Word with GPT-2</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/predicting-next-word-with-gpt-2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/predicting-next-word-with-gpt-2/</guid><description>GPT-2 Inference Pipeline and Tensor Transformations The following report outlines the sequential transformation of data through the GPT-2 architecture, tracking the tensor shapes from input tokens to the final vocabulary distribution.
-1. Input Processing The process begins with a sequence of $T$ tokens for a batch of $B$ sequences.
-Input Sequence: $(B, T,1)$ The input consists of integer indices representing words/sub-words from the vocabulary. Token &amp;amp; Positional Encoding: $(B, T, C)$ The model performs a lookup in the Word Token Embedding (WTE) matrix.</description></item><item><title>Reimannian Manifolds</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/reimannian-manifolds/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/reimannian-manifolds/</guid><description>Riemannian Manifolds in 12 Minutes - YouTube</description></item><item><title>Solvable Models in Machine Learning</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/solvable-models-in-machine-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/solvable-models-in-machine-learning/</guid><description>#deep_learning
-In physics and mathematics, a solvable model (or exactly integrable system) is a theoretical system that can be solved analytically from first principles without relying on approximations, trial-and-error simulations, or heuristic guesswork.
-In Machine Learning, we rarely have solvable models. Most modern neural networks are &amp;ldquo;black boxes&amp;rdquo;—we optimize them using gradients, but we cannot write down a clean, exact mathematical formula for the final weights or the exact shape of the loss landscape.</description></item><item><title>Stability vs Plasticity</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/stability-vs-plasticity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/stability-vs-plasticity/</guid><description>#continual_learning
-This section describes the Bayesian approach to Continual Learning, which is a more mathematically rigorous alternative to just storing old images in a buffer (replay-based methods).
-Think of it as trying to turn the model&amp;rsquo;s &amp;ldquo;memory&amp;rdquo; into a probability distribution rather than a hard drive of raw data.
-1. How is the Posterior being defined? In this context, the posterior $p(\theta | \mathcal{D}{1:k})$ represents the probability of the model parameters $\theta$ being correct, given that you have observed all the datasets from Task 1 up to Task $k$ ($\mathcal{D}{1:k}$).</description></item><item><title>The Manifold Hypothesis</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/the-manifold-hypothesis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/the-manifold-hypothesis/</guid><description>The hypothesis suggests that the actual feature space of parameters which accurate encode the information of a dataset lie in smaller subspace compared to the actual parameters of the dataset.
-The manifold hypothesis posits that many high-dimensional data sets that occur in the real world actually lie along low-dimensional latent manifolds inside that high-dimensional space.</description></item><item><title>What is MoCo?</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/what-is-moco/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/what-is-moco/</guid><description>#deep_learning</description></item><item><title>What is Perplexity in ML?</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/what-is-perplexity-in-ml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/what-is-perplexity-in-ml/</guid><description>#deep_learning #theory</description></item><item><title>x_0-parameterization</title><link>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/x_0-parameterization/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/deep-learning/x_0-parameterization/</guid><description>The $x_0$-parameterization is a specific design choice in the Diffusion-LM training objective designed to bridge the gap between continuous diffusion processes and discrete text, primarily by reducing rounding errors.
-The Problem: Rounding Errors in Standard Parameterization In standard continuous Diffusion Models, the simplified training objective ($L_{simple}$) trains a neural network to predict the mean ($\mu_\theta$) of the previous denoising step. Under this standard parameterization, the constraint that the final continuous vector ($x_0$) must perfectly commit to a single discrete word embedding is only heavily emphasized during the very last denoising steps (when $t$ is near 0).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/deep-learning/</link>
+    <description>Recent content in Deep Learning on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Attention Mechanism</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/attention-mechanism/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/attention-mechanism/</guid>
+      <description>Why Attention Exists Before attention, sequence models (RNNs, LSTMs) processed tokens one by one and tried to compress the entire context into a single hidden state vector before producing an output. This bottleneck was brutal — by the time you&amp;rsquo;re generating the 50th word, the information from the 1st word has been squeezed through 49 intermediate states and is largely gone.&#xA;Attention throws out the bottleneck. Instead of a single compressed state, every output position gets to directly look at every input position and decide what&amp;rsquo;s relevant.</description>
+    </item>
+    <item>
+      <title>Continual Learning</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/continual-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/continual-learning/</guid>
+      <description>#continual_learning&#xA;It is an AI learning approach which seeks to sequentially train a model for new tasks while retaining concepts and knowledge regarding previous tasks. That is , we need it to learn new things while retaining already learned info and the number of tasks is not fixed. ^e662de&#xA;Keywords Catastrophic Forgetting Stability-Plasticity Trade-off Inter/intra task generalizability Papers Survey on Continual Learning These five categories represent different strategies for solving catastrophic forgetting</description>
+    </item>
+    <item>
+      <title>Continual Learning - Eval Metrics</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/continual-learning---eval-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/continual-learning---eval-metrics/</guid>
+      <description>Overall Performance Evaluated by average accuracy (AA) and average incremental accuracy(AIA). Let $a_{k,j}$ be the classification accuracy evaluated on the j-th task&amp;rsquo;s test data after the incremental learning of the k-th task ($j\leq k$) Memory Stability Evaluated by Forgetting Measure(FM) and Backward Transfer(BWT) </description>
+    </item>
+    <item>
+      <title>Continual Learning Formulation</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/continual-learning-formulation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/continual-learning-formulation/</guid>
+      <description>Continual learning is defined as learning from dynamic data distributions. Unlike standard machine learning, where data is often static, here training samples from different distributions arrive in a sequence.&#xA;A model (parameterized by $\theta$) must learn new tasks ($t$) under two main constraints:&#xA;Limited Memory: No or very limited access to previous training data. Performance: The model must still perform well on the test sets of those old tasks. Formal Notation Task $t$: Defined by its data distribution $\mathbb{D}_t := p(\mathcal{X}_t, \mathcal{Y}_t)$.</description>
+    </item>
+    <item>
+      <title>Curriculum Learning</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/curriculum-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/curriculum-learning/</guid>
+      <description>#curriculum_learning&#xA;The original definition of Curriculum Learning (CL) was formally proposed by Bengio et al. in 2009. They defined a curriculum as a sequence of training criteria over $T$ training steps, denoted as: $$\mathcal{C} = \langle Q_1, \dots, Q_t, \dots, Q_T \rangle$$ Each criterion $Q_t$ represents a reweighting of the target training distribution $P(z)$ at a specific step $t$. $Q_{t}(z) ∝ W_t(z)P (z) \quad ∀ example z ∈ training, set, D$</description>
+    </item>
+    <item>
+      <title>Data Attribution</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/data-attribution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/data-attribution/</guid>
+      <description>#deep_learning #data_attribution&#xA;What is Data Attribution? In machine learning, data attribution (often referred to as data valuation or influence calculation) is the process of tracing a model&amp;rsquo;s behavior, predictions, or performance back to its underlying training data.&#xA;If a standard interpretability technique answers the question, &amp;ldquo;Which features of this image caused the model to classify it as a dog?&amp;rdquo;, data attribution answers the question, &amp;ldquo;Which specific images in the training dataset taught the model to classify this as a dog?</description>
+    </item>
+    <item>
+      <title>Data-Driven Inductive Bias</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/data-driven-inductive-bias/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/data-driven-inductive-bias/</guid>
+      <description>The word Inductive refers to a reasoning process that uses specific observations, evidence, or patterns to form broad, general conclusions or theories.&#xA;An inductive bias is the set of assumptions a model uses to predict outputs for inputs it hasn&amp;rsquo;t seen yet.&#xA;Manual Bias: A researcher decides, &amp;ldquo;I assume the important weights are the ones with low gradients,&amp;rdquo; and writes an algorithm like EWC to enforce that. Data-Driven Bias: The model is &amp;ldquo;meta-trained&amp;rdquo; on various sequences of tasks.</description>
+    </item>
+    <item>
+      <title>Depth Estimation Metrics</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/depth-estimation-metrics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/depth-estimation-metrics/</guid>
+      <description>To evaluate the accuracy of the predicted depth maps against the &amp;ldquo;ground truth&amp;rdquo; (the actual measured distance), the InfiniDepth paper utilizes a standard set of error and accuracy metrics common in monocular depth estimation research.&#xA;These metrics compare the predicted depth $d$ with the ground-truth depth $d^*$ for $N$ total pixels.&#xA;1. Error Metrics (Lower is Better) These metrics quantify the average distance or deviation between the prediction and the truth.</description>
+    </item>
+    <item>
+      <title>Deterministic vs Probabilistic Models</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/deterministic-vs-probabilistic-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/deterministic-vs-probabilistic-models/</guid>
+      <description>The difference between these two boils down to how they handle uncertainty and predictability.&#xA;1. The Deterministic Model: &amp;ldquo;Same In, Same Out&amp;rdquo; A deterministic model is like a rigid mathematical formula. If you provide the same input, you are guaranteed to get the exact same output every single time. There is no room for randomness or &amp;ldquo;maybe.&amp;rdquo;&#xA;Logic: $y = f(x)$ Perspective: It assumes that the system is fully known and that there is only one correct answer for any given state.</description>
+    </item>
+    <item>
+      <title>Different ML Optimizers</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/different-ml-optimizers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/different-ml-optimizers/</guid>
+      <description>A detailed reference on gradient-based optimization — the math, the intuition, and why it matters.&#xA;0. The Setup We&amp;rsquo;re minimizing a loss function $\mathcal{L}(\theta)$ over parameters $\theta \in \mathbb{R}^d$. At each step $t$ we compute the gradient $g_t = \nabla_\theta \mathcal{L}(\theta_t)$ (or a stochastic approximation over a minibatch) and update $\theta$.&#xA;The central tension in optimizer design:&#xA;Gradient noise — stochastic gradients are unbiased but high-variance. Curvature — the loss landscape curves differently in every direction; a single global learning rate is a crude approximation.</description>
+    </item>
+    <item>
+      <title>Diffusion Models</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/diffusion-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/diffusion-models/</guid>
+      <description>Diffusion models might look like a mess of Gaussian noise at first glance, but the math is actually a very elegant &amp;ldquo;tug-of-war&amp;rdquo; between destroying information and reconstructing it.&#xA;Think of it like this: If you dip a drop of ink into water, it’s easy to predict how it spreads out (Forward), but incredibly hard to figure out exactly where the drop started once it&amp;rsquo;s fully mixed (Reverse). Diffusion models learn to do exactly that.</description>
+    </item>
+    <item>
+      <title>Diffusion Reverse Process</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/diffusion-reverse-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/diffusion-reverse-process/</guid>
+      <description>To implement the reverse process (sampling), we essentially perform a &amp;ldquo;denoising&amp;rdquo; loop. We start with a tensor of pure Gaussian noise and gradually subtract the noise predicted by our trained model until we reach a clean image.&#xA;Here is the step-by-step algorithmic breakdown for the Reverse Diffusion (Sampling). Before starting the loop, you need:&#xA;A Trained Model ($\epsilon_\theta$): Usually a U-Net that takes $(x_t, t)$ as input and outputs the predicted noise.</description>
+    </item>
+    <item>
+      <title>Diffusion-LM Denoising</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/diffusion-lm-denoising/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/diffusion-lm-denoising/</guid>
+      <description>The denoising inference step in Diffusion-LM is the reverse process of the diffusion model, where the system starts with a sequence of pure Gaussian noise vectors ($x_T$) and iteratively removes the noise step-by-step to recover the continuous word vectors ($x_0$), which are finally converted back into discrete text.&#xA;Here is the detailed workflow and mathematics behind this process:&#xA;1. The Denoising Transition At each step $t$ during inference, the model aims to transition from the current noisy state $x_t$ to a slightly less noisy state $x_{t-1}$.</description>
+    </item>
+    <item>
+      <title>Energy based Models</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/energy-based-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/energy-based-models/</guid>
+      <description> Energy-Based Models · Deep Learning </description>
+    </item>
+    <item>
+      <title>Fréchet Inception Distance (FID)</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/fr%C3%A9chet-inception-distance-fid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/fr%C3%A9chet-inception-distance-fid/</guid>
+      <description>#compvis #diffusion&#xA;The Problem It Solves You&amp;rsquo;ve trained a generative model — a GAN, a diffusion model, whatever — and it&amp;rsquo;s producing images. How do you know if they&amp;rsquo;re good? You can look at them, sure, but that doesn&amp;rsquo;t scale. You need a number.&#xA;Early metrics like Inception Score (IS) tried to answer this, but they had a blind spot: they only looked at the generated images. They had no idea what real images looked like.</description>
+    </item>
+    <item>
+      <title>Low Rank Adaptation(LoRA)</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/low-rank-adaptationlora/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/low-rank-adaptationlora/</guid>
+      <description>#deep_learning #fine-tuning&#xA;This is built upon the hypothesis that the weight update during fine-tuning often exists an low intrinsic rank, thus a low-rank decomposition matrices could potentially mimic the weight changes with a few trainable parameters.&#xA;More background regarding the hypothesis:&#xA;Measuring the Intrinsic Dimension of Objective Landscapes Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning 1. Introduction Scaling up pre-trained language models has yielded unprecedented performance on a wide range of downstream tasks.</description>
+    </item>
+    <item>
+      <title>Matryoshka Representation Learning</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/matryoshka-representation-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/matryoshka-representation-learning/</guid>
+      <description>Paper: [2205.13147] Matryoshka Representation Learning Blog: What Is Matryoshka Representation Learning in Gemini Embedding 2? | MindStudio&#xA;Matryoshka Representation Learning (MRL) is a high-efficiency embedding technique designed to address the &amp;ldquo;one-size-fits-all&amp;rdquo; rigidity of standard neural representations. Named after the Russian nesting dolls, MRL allows a single high-dimensional embedding to be truncated to smaller sizes without a significant loss in accuracy, effectively packing coarse-to-fine information into a single vector.&#xA;Introduced by researchers at the University of Washington and Google Research (Kusupati et al.</description>
+    </item>
+    <item>
+      <title>Mixture of Experts</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/mixture-of-experts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/mixture-of-experts/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ML Notes Database Expansion</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/ml-notes-database-expansion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/ml-notes-database-expansion/</guid>
+      <description>Machine Learning Notes Database: Expansion &amp;amp; Tagging Roadmap This document provides a comprehensive plan to organize, tag, and expand your existing Machine Learning and Deep Learning notes vault. The goal is to transform your current collection of 28 notes into a fully connected, highly structured reference database.&#xA;1. Tag Taxonomy Definition To keep your vault structured, searchable, and clean, we propose a standardized set of tags. Tags should be added on Line 1 of each file in the format #tag1 #tag2 .</description>
+    </item>
+    <item>
+      <title>Moravec&#39;s Paradox</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/moravecs-paradox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/moravecs-paradox/</guid>
+      <description>Moravec&amp;rsquo;s paradox - Wikipedia&#xA;Moravec&amp;rsquo;s paradox is the observation that, as Hans Moravec wrote in 1988, &amp;ldquo;it is comparatively easy to make computers exhibit adult level performance on intelligence tests or playing checkers, and difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility&amp;rdquo;. This counter-intuitive pattern may happen because skills that appear effortless to humans, such as recognising faces or walking, required millions of years of evolution to develop, while abstract reasoning abilities like mathematics are evolutionarily recent.</description>
+    </item>
+    <item>
+      <title>N-gram Models</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/n-gram-models/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/n-gram-models/</guid>
+      <description>#deep_learning #nlp An n-gram model is a classical, statistically driven approach used in Natural Language Processing (NLP) to predict the next item in a sequence (typically words or characters) based on the history of the preceding items.&#xA;Unlike modern Large Language Models that process long paragraphs of text simultaneously using self-attention mechanisms, an n-gram model operates on a strict, local window of text.&#xA;1. Breaking Down the Term &amp;ldquo;n-gram&amp;rdquo; In this context, the &amp;ldquo;n&amp;rdquo; represents a fixed number, and a &amp;ldquo;gram&amp;rdquo; represents a unit of text (usually a word).</description>
+    </item>
+    <item>
+      <title>Neural Implicit Fields</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/neural-implicit-fields/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/neural-implicit-fields/</guid>
+      <description>Neural implicit fields (or Implicit Neural Representations - INRs) are a machine learning paradigm that represents data—such as 3D shapes, images, or scenes—as a continuous function parameterized by a neural network rather than discrete grids or pixels. They map coordinates (e.g. (𝑥,𝑦,𝑧) ) to signal values (e.g., color, density, or distance), enabling high-fidelity, compact storage, and resolution-independent rendering of complex data.</description>
+    </item>
+    <item>
+      <title>Optimal Transport</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/optimal-transport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/optimal-transport/</guid>
+      <description>Optimal Transport (OT) is a mathematical field used in many interesting and popular tasks, such as image segmentation, image restoration, computer vision, data analysis, etc., and in general, OT can be useful for those tasks involving a density distribution.&#xA;It provides you with the least effort requiring way to transform one distribution(shape) to another by essentially rearranging the mass(here probability).&#xA;The most classical example is given by the task of rearranging a sand pile to desired shape.</description>
+    </item>
+    <item>
+      <title>Predicting Next Word with GPT-2</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/predicting-next-word-with-gpt-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/predicting-next-word-with-gpt-2/</guid>
+      <description>GPT-2 Inference Pipeline and Tensor Transformations The following report outlines the sequential transformation of data through the GPT-2 architecture, tracking the tensor shapes from input tokens to the final vocabulary distribution.&#xA;1. Input Processing The process begins with a sequence of $T$ tokens for a batch of $B$ sequences.&#xA;Input Sequence: $(B, T,1)$ The input consists of integer indices representing words/sub-words from the vocabulary. Token &amp;amp; Positional Encoding: $(B, T, C)$ The model performs a lookup in the Word Token Embedding (WTE) matrix.</description>
+    </item>
+    <item>
+      <title>Reimannian Manifolds</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/reimannian-manifolds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/reimannian-manifolds/</guid>
+      <description>Riemannian Manifolds in 12 Minutes - YouTube</description>
+    </item>
+    <item>
+      <title>Solvable Models in Machine Learning</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/solvable-models-in-machine-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/solvable-models-in-machine-learning/</guid>
+      <description>#deep_learning&#xA;In physics and mathematics, a solvable model (or exactly integrable system) is a theoretical system that can be solved analytically from first principles without relying on approximations, trial-and-error simulations, or heuristic guesswork.&#xA;In Machine Learning, we rarely have solvable models. Most modern neural networks are &amp;ldquo;black boxes&amp;rdquo;—we optimize them using gradients, but we cannot write down a clean, exact mathematical formula for the final weights or the exact shape of the loss landscape.</description>
+    </item>
+    <item>
+      <title>Stability vs Plasticity</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/stability-vs-plasticity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/stability-vs-plasticity/</guid>
+      <description>#continual_learning&#xA;This section describes the Bayesian approach to Continual Learning, which is a more mathematically rigorous alternative to just storing old images in a buffer (replay-based methods).&#xA;Think of it as trying to turn the model&amp;rsquo;s &amp;ldquo;memory&amp;rdquo; into a probability distribution rather than a hard drive of raw data.&#xA;1. How is the Posterior being defined? In this context, the posterior $p(\theta | \mathcal{D}{1:k})$ represents the probability of the model parameters $\theta$ being correct, given that you have observed all the datasets from Task 1 up to Task $k$ ($\mathcal{D}{1:k}$).</description>
+    </item>
+    <item>
+      <title>The Manifold Hypothesis</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/the-manifold-hypothesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/the-manifold-hypothesis/</guid>
+      <description>The hypothesis suggests that the actual feature space of parameters which accurate encode the information of a dataset lie in smaller subspace compared to the actual parameters of the dataset.&#xA;The manifold hypothesis posits that many high-dimensional data sets that occur in the real world actually lie along low-dimensional latent manifolds inside that high-dimensional space.</description>
+    </item>
+    <item>
+      <title>What is MoCo?</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/what-is-moco/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/what-is-moco/</guid>
+      <description>#deep_learning</description>
+    </item>
+    <item>
+      <title>What is Perplexity in ML?</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/what-is-perplexity-in-ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/what-is-perplexity-in-ml/</guid>
+      <description>#deep_learning #theory</description>
+    </item>
+    <item>
+      <title>x_0-parameterization</title>
+      <link>http://localhost:1313/Notes-Host/vault/deep-learning/x_0-parameterization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/deep-learning/x_0-parameterization/</guid>
+      <description>The $x_0$-parameterization is a specific design choice in the Diffusion-LM training objective designed to bridge the gap between continuous diffusion processes and discrete text, primarily by reducing rounding errors.&#xA;The Problem: Rounding Errors in Standard Parameterization In standard continuous Diffusion Models, the simplified training objective ($L_{simple}$) trains a neural network to predict the mean ($\mu_\theta$) of the previous denoising step. Under this standard parameterization, the constraint that the final continuous vector ($x_0$) must perfectly commit to a single discrete word embedding is only heavily emphasized during the very last denoising steps (when $t$ is near 0).</description>
+    </item>
+  </channel>
+</rss>

@@ -1,3 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Doubts on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/doubts/</link><description>Recent content in Doubts on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/doubts/index.xml" rel="self" type="application/rss+xml"/><item><title>Binary Search — `&lt;=` vs `&lt;` Boundary Conditions</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/doubts/binary-search---vs--boundary-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/doubts/binary-search---vs--boundary-conditions/</guid><description>Binary Search — &amp;lt;= vs &amp;lt; Boundary Conditions
-The golden rule: Ask — &amp;ldquo;Has this index been fully eliminated as a candidate?&amp;rdquo;
-Yes → skip it: use mid + 1 / mid - 1 No → keep it: use mid 1. The Two Styles of Binary Search Every binary search loop falls into one of two mental models. The choice of &amp;lt;= vs &amp;lt; follows directly from which model you pick.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Doubts on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/doubts/</link>
+    <description>Recent content in Doubts on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/dsa-and-cp/doubts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binary Search — `&lt;=` vs `&lt;` Boundary Conditions</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/doubts/binary-search---vs--boundary-conditions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/doubts/binary-search---vs--boundary-conditions/</guid>
+      <description>Binary Search — &amp;lt;= vs &amp;lt; Boundary Conditions&#xA;The golden rule: Ask — &amp;ldquo;Has this index been fully eliminated as a candidate?&amp;rdquo;&#xA;Yes → skip it: use mid + 1 / mid - 1 No → keep it: use mid 1. The Two Styles of Binary Search Every binary search loop falls into one of two mental models. The choice of &amp;lt;= vs &amp;lt; follows directly from which model you pick.</description>
+    </item>
+  </channel>
+</rss>

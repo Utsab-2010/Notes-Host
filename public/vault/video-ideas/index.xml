@@ -1,6 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Video Ideas on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/</link><description>Recent content in Video Ideas on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/index.xml" rel="self" type="application/rss+xml"/><item><title>AEP and Typical Sequences</title><link>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/aep-and-typical-sequences/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/aep-and-typical-sequences/</guid><description/></item><item><title>AlphaZero</title><link>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/alphazero/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/alphazero/</guid><description>This is a 3 min recap of my implementation of Google&amp;rsquo;s Alpha Zero framework on the game of black hole.
-Black Hole Rules This is a recap of how I implemented Google&amp;rsquo;s AlphaZero framework for the game of Black-Hole. But first let us understand the rules of the game. You have a 9 layer triangle of hexagonal cells. Both players are supposed to play by alternating filling up the cells with values from 1 to 22 in ascending order.</description></item><item><title>Large Sparse Matrix Solvers</title><link>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/large-sparse-matrix-solvers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/large-sparse-matrix-solvers/</guid><description/></item><item><title>Law of Total Expectations</title><link>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/law-of-total-expectations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/law-of-total-expectations/</guid><description>Script Intro While going through the course material for a class at my university I stumbled upon this problem. I tried long and hard to solve this but it seemed like I always overcomplicated the train of thought. A thing about solving such problems is to build a proper intuition through practice. This problem introduced me to the beautiful concept of Total expectation theorem.
-Since you are watching this video, I expect that you have a basic idea of what probability theory is.</description></item><item><title>MAP vs MLE</title><link>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/map-vs-mle/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/map-vs-mle/</guid><description>&amp;quot;The logic that f* cks your mind&amp;quot; To make the distinction crystal clear, let’s use the medical test example with concrete numbers. This will show you exactly why the ML and MAP detectors can sometimes pick different &amp;ldquo;winners&amp;rdquo; based on the same data.
-The Scenario Imagine a rare disease that only 1% of the population has.
-Prior ($P(M)$): $P(\text{Sick}) = 0.01$ and $P(\text{Healthy}) = 0.99$.
-The Channel (The Test): The test is very good but not perfect.</description></item><item><title>Monte Carlo Tree Search</title><link>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/monte-carlo-tree-search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/monte-carlo-tree-search/</guid><description/></item><item><title>Untitled</title><link>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/untitled/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/video-ideas/untitled/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Video Ideas on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/video-ideas/</link>
+    <description>Recent content in Video Ideas on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/video-ideas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AEP and Typical Sequences</title>
+      <link>http://localhost:1313/Notes-Host/vault/video-ideas/aep-and-typical-sequences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/video-ideas/aep-and-typical-sequences/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AlphaZero</title>
+      <link>http://localhost:1313/Notes-Host/vault/video-ideas/alphazero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/video-ideas/alphazero/</guid>
+      <description>This is a 3 min recap of my implementation of Google&amp;rsquo;s Alpha Zero framework on the game of black hole.&#xA;Black Hole Rules This is a recap of how I implemented Google&amp;rsquo;s AlphaZero framework for the game of Black-Hole. But first let us understand the rules of the game. You have a 9 layer triangle of hexagonal cells. Both players are supposed to play by alternating filling up the cells with values from 1 to 22 in ascending order.</description>
+    </item>
+    <item>
+      <title>Large Sparse Matrix Solvers</title>
+      <link>http://localhost:1313/Notes-Host/vault/video-ideas/large-sparse-matrix-solvers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/video-ideas/large-sparse-matrix-solvers/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Law of Total Expectations</title>
+      <link>http://localhost:1313/Notes-Host/vault/video-ideas/law-of-total-expectations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/video-ideas/law-of-total-expectations/</guid>
+      <description>Script Intro While going through the course material for a class at my university I stumbled upon this problem. I tried long and hard to solve this but it seemed like I always overcomplicated the train of thought. A thing about solving such problems is to build a proper intuition through practice. This problem introduced me to the beautiful concept of Total expectation theorem.&#xA;Since you are watching this video, I expect that you have a basic idea of what probability theory is.</description>
+    </item>
+    <item>
+      <title>MAP vs MLE</title>
+      <link>http://localhost:1313/Notes-Host/vault/video-ideas/map-vs-mle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/video-ideas/map-vs-mle/</guid>
+      <description>&amp;quot;The logic that f* cks your mind&amp;quot; To make the distinction crystal clear, let’s use the medical test example with concrete numbers. This will show you exactly why the ML and MAP detectors can sometimes pick different &amp;ldquo;winners&amp;rdquo; based on the same data.&#xA;The Scenario Imagine a rare disease that only 1% of the population has.&#xA;Prior ($P(M)$): $P(\text{Sick}) = 0.01$ and $P(\text{Healthy}) = 0.99$.&#xA;The Channel (The Test): The test is very good but not perfect.</description>
+    </item>
+    <item>
+      <title>Monte Carlo Tree Search</title>
+      <link>http://localhost:1313/Notes-Host/vault/video-ideas/monte-carlo-tree-search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/video-ideas/monte-carlo-tree-search/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Untitled</title>
+      <link>http://localhost:1313/Notes-Host/vault/video-ideas/untitled/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/video-ideas/untitled/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,3 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Research Work on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/</link><description>Recent content in Research Work on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/research-work/index.xml" rel="self" type="application/rss+xml"/><item><title>IITB Work</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/iitb-work/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/iitb-work/</guid><description/></item><item><title>Information Theory on Repr Learning</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/information-theory-on-repr-learning/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/information-theory-on-repr-learning/</guid><description>NeurIPS Information Theory for Representation Learning
-To Compress or Not to Compress- Self-Supervised Learning and Information Theory: A Review
-builds upon the info bottleneck principle They use a two-channel setup with the inputs to study a multiviewed system. They are essentially trying to understand what makes models learn implicitely through self-supervision without supervised labels. So they have two different channels for the input X to flow through and get encoded to Z.</description></item><item><title>Novel Depth Esitmation(Edge focussed)</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/novel-depth-esitmationedge-focussed/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/novel-depth-esitmationedge-focussed/</guid><description>Tiny Marigold - Depth - Paper Take inspiration from the marigold paper use a Vae - stable diffusion or some other(compare different if possible) lightweight Denoising End result light weight diffusion based depth estimation. Resources https://arxiv.org/pdf/2305.15798 https://github.com/Nota-NetsPresso/BK-SDM https://github.com/toshas/mdec_benchmark https://github.com/prs-eth/Marigold https://arxiv.org/pdf/2505.09358 https://link.springer.com/article/10.1007/s10462-024-10800-8 [Marigold: Repurposing Diffusion-Based Image Generators for Monocular Depth Estimation](https://marigoldmonodepth.github.io/ AnyDepth: Depth Estimation Made Easy https://zju3dv.github.io/InfiniDepth/ [2510.07316] Pixel-Perfect Depth with Semantics-Prompted Diffusion Transformers Possible Directions zero-shot nature prior influence stable-diffusion pre-image light-weight for sure super-resolution use inns in the upsampling part?</description></item><item><title>Works on source coding</title><link>https://Utsab-2010.github.io/Notes-Host/vault/research-work/works-on-source-coding/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/research-work/works-on-source-coding/</guid><description>AEP enhanced ML or smth</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research Work on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/research-work/</link>
+    <description>Recent content in Research Work on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/research-work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IITB Work</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/iitb-work/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/iitb-work/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Information Theory on Repr Learning</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/information-theory-on-repr-learning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/information-theory-on-repr-learning/</guid>
+      <description>NeurIPS Information Theory for Representation Learning&#xA;To Compress or Not to Compress- Self-Supervised Learning and Information Theory: A Review&#xA;builds upon the info bottleneck principle They use a two-channel setup with the inputs to study a multiviewed system. They are essentially trying to understand what makes models learn implicitely through self-supervision without supervised labels. So they have two different channels for the input X to flow through and get encoded to Z.</description>
+    </item>
+    <item>
+      <title>Novel Depth Esitmation(Edge focussed)</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/novel-depth-esitmationedge-focussed/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/novel-depth-esitmationedge-focussed/</guid>
+      <description>Tiny Marigold - Depth - Paper Take inspiration from the marigold paper use a Vae - stable diffusion or some other(compare different if possible) lightweight Denoising End result light weight diffusion based depth estimation. Resources https://arxiv.org/pdf/2305.15798 https://github.com/Nota-NetsPresso/BK-SDM https://github.com/toshas/mdec_benchmark https://github.com/prs-eth/Marigold https://arxiv.org/pdf/2505.09358 https://link.springer.com/article/10.1007/s10462-024-10800-8 [Marigold: Repurposing Diffusion-Based Image Generators for Monocular Depth Estimation](https://marigoldmonodepth.github.io/ AnyDepth: Depth Estimation Made Easy https://zju3dv.github.io/InfiniDepth/ [2510.07316] Pixel-Perfect Depth with Semantics-Prompted Diffusion Transformers Possible Directions zero-shot nature prior influence stable-diffusion pre-image light-weight for sure super-resolution use inns in the upsampling part?</description>
+    </item>
+    <item>
+      <title>Works on source coding</title>
+      <link>http://localhost:1313/Notes-Host/vault/research-work/works-on-source-coding/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/research-work/works-on-source-coding/</guid>
+      <description>AEP enhanced ML or smth</description>
+    </item>
+  </channel>
+</rss>

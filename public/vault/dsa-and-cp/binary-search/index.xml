@@ -1,16 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Binary Search on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-search/</link><description>Recent content in Binary Search on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-search/index.xml" rel="self" type="application/rss+xml"/><item><title>Find 1st and last pos of element in sorted array</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-search/find-1st-and-last-pos-of-element-in-sorted-array/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-search/find-1st-and-last-pos-of-element-in-sorted-array/</guid><description>Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
-If target is not found in the array, return [-1, -1].
-You must write an algorithm with O(log n) runtime complexity.
-Example 1:
-Input: nums = [5,7,7,8,8,10], target = 8 Output: [3,4]
-Example 2:
-Input: nums = [5,7,7,8,8,10], target = 6 Output: [-1,-1]
-Example 3:
-Input: nums = [], target = 0 Output: [-1,-1]</description></item><item><title>Search in Rotated Array</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-search/search-in-rotated-array/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-search/search-in-rotated-array/</guid><description>There is an integer array nums sorted in ascending order (with distinct values).
-Prior to being passed to your function, nums is possibly left rotated at an unknown index k (1 &amp;lt;= k &amp;lt; nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be left rotated by 3 indices and become [4,5,6,7,0,1,2].
-Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.</description></item><item><title>Single Element in a Sorted array of pairs</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-search/single-element-in-a-sorted-array-of-pairs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-search/single-element-in-a-sorted-array-of-pairs/</guid><description>You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.
-Return the single element that appears only once.
-Your solution must run in O(log n) time and O(1) space.
-Example 1:
-Input: nums = [1,1,2,3,3,4,4,8,8] Output: 2
-Approach The array is sorted, and all elements except one appear exactly twice. If we observe carefully, every pair starts at even index and ends at odd index when the array is still balanced (i.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Binary Search on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-search/</link>
+    <description>Recent content in Binary Search on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-search/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Find 1st and last pos of element in sorted array</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-search/find-1st-and-last-pos-of-element-in-sorted-array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-search/find-1st-and-last-pos-of-element-in-sorted-array/</guid>
+      <description>Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.&#xA;If target is not found in the array, return [-1, -1].&#xA;You must write an algorithm with O(log n) runtime complexity.&#xA;Example 1:&#xA;Input: nums = [5,7,7,8,8,10], target = 8 Output: [3,4]&#xA;Example 2:&#xA;Input: nums = [5,7,7,8,8,10], target = 6 Output: [-1,-1]&#xA;Example 3:&#xA;Input: nums = [], target = 0 Output: [-1,-1]</description>
+    </item>
+    <item>
+      <title>Search in Rotated Array</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-search/search-in-rotated-array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-search/search-in-rotated-array/</guid>
+      <description>There is an integer array nums sorted in ascending order (with distinct values).&#xA;Prior to being passed to your function, nums is possibly left rotated at an unknown index k (1 &amp;lt;= k &amp;lt; nums.length) such that the resulting array is [nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]] (0-indexed). For example, [0,1,2,4,5,6,7] might be left rotated by 3 indices and become [4,5,6,7,0,1,2].&#xA;Given the array nums after the possible rotation and an integer target, return the index of target if it is in nums, or -1 if it is not in nums.</description>
+    </item>
+    <item>
+      <title>Single Element in a Sorted array of pairs</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-search/single-element-in-a-sorted-array-of-pairs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-search/single-element-in-a-sorted-array-of-pairs/</guid>
+      <description>You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.&#xA;Return the single element that appears only once.&#xA;Your solution must run in O(log n) time and O(1) space.&#xA;Example 1:&#xA;Input: nums = [1,1,2,3,3,4,4,8,8] Output: 2&#xA;Approach The array is sorted, and all elements except one appear exactly twice. If we observe carefully, every pair starts at even index and ends at odd index when the array is still balanced (i.</description>
+    </item>
+  </channel>
+</rss>

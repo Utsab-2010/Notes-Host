@@ -1,7 +1,53 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Binary Trees on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/</link><description>Recent content in Binary Trees on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/index.xml" rel="self" type="application/rss+xml"/><item><title>Binary Search Trees</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/binary-search-trees/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/binary-search-trees/</guid><description>#dsa
-Core invariant Every node satisfies: left subtree values &amp;lt; node &amp;lt; right subtree values, recursively at every level. This single rule makes search, insert, and delete all reduce to a root-to-leaf path — no backtracking, no scanning.
-Structure 40 / \ 20 60 / \ / \ 10 30 50 70 Left child is always strictly less than the parent Right child is always strictly greater Inorder traversal always yields a sorted sequence (a direct consequence of the invariant, not a coincidence) Duplicates are usually disallowed Traversals All traversals apply the same rule recursively at every node.</description></item><item><title>Binary Trees</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/binary-trees/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/binary-trees/</guid><description>1. What is a Binary Tree? A binary tree is a hierarchical data structure where each node has at most two children, referred to as the left child and the right child.
-1 ← Root / \ 2 3 ← Internal nodes / \ \ 4 5 6 ← Leaf nodes (no children) Every node contains:
-A value/data A pointer/reference to the left child (or None) A pointer/reference to the right child (or None) class Node: def __init__(self, val): self.</description></item><item><title>Check for a Balanced BT</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/check-for-a-balanced-bt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/check-for-a-balanced-bt/</guid><description/></item><item><title>Inorder Traversal of a BT</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/inorder-traversal-of-a-bt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/inorder-traversal-of-a-bt/</guid><description>Left - &amp;gt; Parent -&amp;gt; RIght
-Recursive Approach # Definition for a binary tree node. # class TreeNode: # def __init__(self, val=0, left=None, right=None): # self.val = val # self.left = left # self.right = right class Solution: def inorderTraversal(self, root: Optional[TreeNode]) -&amp;gt; List[int]: stack = [] if root: stack.extend(self.inorderTraversal(root.left)) stack.append(root.val) stack.extend(self.inorderTraversal(root.right)) return stack Iterative Approach # Definition for a binary tree node. # class TreeNode: # def __init__(self, val=0, left=None, right=None): # self.</description></item><item><title>Postorder Traversal of BT</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/postorder-traversal-of-bt/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/postorder-traversal-of-bt/</guid><description>Left -&amp;gt; RIGght -&amp;gt; Root traversal
-Iterative Approach Create two stacks: one for holding nodes and another for storing the final postorder traversal sequence. Initialize an array postorder to store the traversal sequence. Push the root node to the first stack. Process the nodes until the first stack is empty: Pop a node from the top of the first stack. Push this node onto the second stack. Push its left child (if it exists) onto the first stack.</description></item><item><title>Preorder Inorder Postorder Traversals in One Traversal</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/preorder-inorder-postorder-traversals-in-one-traversal/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/binary-trees/preorder-inorder-postorder-traversals-in-one-traversal/</guid><description>This approach traverses the binary tree in a single pass while computing the preorder, inorder and postorder traversals at the same time. A stack is used for state management. The stack keeps track of the traversal state for each node. It stores nodes and their state information allowing the algorithm to resume traversal from intermediate points. For each node, it identifies its state i.e. if it&amp;rsquo;s in the preorder state, it records the node&amp;rsquo;s value and pushes the left child onto the stack.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Binary Trees on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/</link>
+    <description>Recent content in Binary Trees on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Binary Search Trees</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/binary-search-trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/binary-search-trees/</guid>
+      <description>#dsa&#xA;Core invariant Every node satisfies: left subtree values &amp;lt; node &amp;lt; right subtree values, recursively at every level. This single rule makes search, insert, and delete all reduce to a root-to-leaf path — no backtracking, no scanning.&#xA;Structure 40 / \ 20 60 / \ / \ 10 30 50 70 Left child is always strictly less than the parent Right child is always strictly greater Inorder traversal always yields a sorted sequence (a direct consequence of the invariant, not a coincidence) Duplicates are usually disallowed Traversals All traversals apply the same rule recursively at every node.</description>
+    </item>
+    <item>
+      <title>Binary Trees</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/binary-trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/binary-trees/</guid>
+      <description>1. What is a Binary Tree? A binary tree is a hierarchical data structure where each node has at most two children, referred to as the left child and the right child.&#xA;1 ← Root / \ 2 3 ← Internal nodes / \ \ 4 5 6 ← Leaf nodes (no children) Every node contains:&#xA;A value/data A pointer/reference to the left child (or None) A pointer/reference to the right child (or None) class Node: def __init__(self, val): self.</description>
+    </item>
+    <item>
+      <title>Check for a Balanced BT</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/check-for-a-balanced-bt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/check-for-a-balanced-bt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inorder Traversal of a BT</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/inorder-traversal-of-a-bt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/inorder-traversal-of-a-bt/</guid>
+      <description>Left - &amp;gt; Parent -&amp;gt; RIght&#xA;Recursive Approach # Definition for a binary tree node. # class TreeNode: # def __init__(self, val=0, left=None, right=None): # self.val = val # self.left = left # self.right = right class Solution: def inorderTraversal(self, root: Optional[TreeNode]) -&amp;gt; List[int]: stack = [] if root: stack.extend(self.inorderTraversal(root.left)) stack.append(root.val) stack.extend(self.inorderTraversal(root.right)) return stack Iterative Approach # Definition for a binary tree node. # class TreeNode: # def __init__(self, val=0, left=None, right=None): # self.</description>
+    </item>
+    <item>
+      <title>Postorder Traversal of BT</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/postorder-traversal-of-bt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/postorder-traversal-of-bt/</guid>
+      <description>Left -&amp;gt; RIGght -&amp;gt; Root traversal&#xA;Iterative Approach Create two stacks: one for holding nodes and another for storing the final postorder traversal sequence. Initialize an array postorder to store the traversal sequence. Push the root node to the first stack. Process the nodes until the first stack is empty: Pop a node from the top of the first stack. Push this node onto the second stack. Push its left child (if it exists) onto the first stack.</description>
+    </item>
+    <item>
+      <title>Preorder Inorder Postorder Traversals in One Traversal</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/preorder-inorder-postorder-traversals-in-one-traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/binary-trees/preorder-inorder-postorder-traversals-in-one-traversal/</guid>
+      <description>This approach traverses the binary tree in a single pass while computing the preorder, inorder and postorder traversals at the same time. A stack is used for state management. The stack keeps track of the traversal state for each node. It stores nodes and their state information allowing the algorithm to resume traversal from intermediate points. For each node, it identifies its state i.e. if it&amp;rsquo;s in the preorder state, it records the node&amp;rsquo;s value and pushes the left child onto the stack.</description>
+    </item>
+  </channel>
+</rss>

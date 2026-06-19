@@ -1,5 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>World Models Reading List on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/papers/world-models-reading-list/</link><description>Recent content in World Models Reading List on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/papers/world-models-reading-list/index.xml" rel="self" type="application/rss+xml"/><item><title>What to Read</title><link>https://Utsab-2010.github.io/Notes-Host/vault/papers/world-models-reading-list/what-to-read/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/papers/world-models-reading-list/what-to-read/</guid><description>Foundational World Models — Ha &amp;amp; Schmidhuber, NeurIPS 2018 https://arxiv.org/abs/1803.10122
-Learning Latent Dynamics for Planning from Pixels (PlaNet) — Hafner et al., ICML 2019 https://arxiv.org/abs/1811.04551
-Dream to Control: Learning Behaviors by Latent Imagination (DreamerV1) — Hafner et al., ICLR 2020 https://arxiv.org/abs/1912.01603
-Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm (AlphaZero) — Silver et al., Science 2018 https://arxiv.org/abs/1712.01815
-Core MBRL Mastering Atari with Discrete World Models (DreamerV2) — Hafner et al.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>World Models Reading List on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/papers/world-models-reading-list/</link>
+    <description>Recent content in World Models Reading List on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/papers/world-models-reading-list/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What to Read</title>
+      <link>http://localhost:1313/Notes-Host/vault/papers/world-models-reading-list/what-to-read/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/papers/world-models-reading-list/what-to-read/</guid>
+      <description>Foundational World Models — Ha &amp;amp; Schmidhuber, NeurIPS 2018 https://arxiv.org/abs/1803.10122&#xA;Learning Latent Dynamics for Planning from Pixels (PlaNet) — Hafner et al., ICML 2019 https://arxiv.org/abs/1811.04551&#xA;Dream to Control: Learning Behaviors by Latent Imagination (DreamerV1) — Hafner et al., ICLR 2020 https://arxiv.org/abs/1912.01603&#xA;Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm (AlphaZero) — Silver et al., Science 2018 https://arxiv.org/abs/1712.01815&#xA;Core MBRL Mastering Atari with Discrete World Models (DreamerV2) — Hafner et al.</description>
+    </item>
+  </channel>
+</rss>

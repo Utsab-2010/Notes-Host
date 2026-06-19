@@ -1,5 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Greedy on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/greedy/</link><description>Recent content in Greedy on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/greedy/index.xml" rel="self" type="application/rss+xml"/><item><title>Insert Interval</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/greedy/insert-interval/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/greedy/insert-interval/</guid><description>#cp_medium
-My Code (badly written) class Solution: def insert(self, intervals: List[List[int]], newInterval: List[int]) -&amp;gt; List[List[int]]: N = len(intervals) pre_i,pos_i = 0,N-1 j = pos_i newIntervals= [] if not (N): return [newInterval] elif N==1: else: for i in range(len(intervals)-1): if intervals[i][0] &amp;lt;= newInterval[0]: pre_i = i if intervals[j][1] &amp;gt;= newInterval[1]: pos_i = j j-=1 merged_pre = [] merged_pos = [] merged = [] if newInterval[0]-intervals[pre_i][1] &amp;lt;= 0 : merged_pre= [intervals[pre_i][0],newInterval[1]] pre_i-=1 if newInterval[1] - intervals[pos_i][0] &amp;gt;= 0: merged_pos = [newInterval[0],intervals[pos_i][1]] pos_i+=1 if merged_pre and merged_pos: merged = [merged_pre[0],merged_pos[1]] elif merged_pre: merged = merged_pre elif merged_pos: merged = merged_pos else: merged = newInterval print(merged) print(pre_i,pos_i) if pre_i &amp;gt;=0: for i in range(pre_i+1): newIntervals.</description></item><item><title>Jump-II</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/greedy/jump-ii/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/greedy/jump-ii/</guid><description>#cp_medium You are given a 0-indexed array of integers nums of length n. You are initially positioned at index 0.
-Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at index i, you can jump to any index (i + j) where:
-0 &amp;lt;= j &amp;lt;= nums[i] and i + j &amp;lt; n Return the minimum number of jumps to reach index n - 1.</description></item><item><title>Task Scheduler</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/greedy/task-scheduler/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/greedy/task-scheduler/</guid><description>#cp_medium You are given an array of CPU tasks, each labeled with a letter from A to Z, and a number n. Each CPU interval can be idle or allow the completion of one task. Tasks can be completed in any order, but there&amp;rsquo;s a constraint: there has to be a gap of at least n intervals between two tasks with the same label.
-Return the minimum number of CPU intervals required to complete all tasks.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Greedy on Utsab&#39;s Digital Garden</title>
+    <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/greedy/</link>
+    <description>Recent content in Greedy on Utsab&#39;s Digital Garden</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/Notes-Host/vault/dsa-and-cp/greedy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Insert Interval</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/greedy/insert-interval/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/greedy/insert-interval/</guid>
+      <description>#cp_medium&#xA;My Code (badly written) class Solution: def insert(self, intervals: List[List[int]], newInterval: List[int]) -&amp;gt; List[List[int]]: N = len(intervals) pre_i,pos_i = 0,N-1 j = pos_i newIntervals= [] if not (N): return [newInterval] elif N==1: else: for i in range(len(intervals)-1): if intervals[i][0] &amp;lt;= newInterval[0]: pre_i = i if intervals[j][1] &amp;gt;= newInterval[1]: pos_i = j j-=1 merged_pre = [] merged_pos = [] merged = [] if newInterval[0]-intervals[pre_i][1] &amp;lt;= 0 : merged_pre= [intervals[pre_i][0],newInterval[1]] pre_i-=1 if newInterval[1] - intervals[pos_i][0] &amp;gt;= 0: merged_pos = [newInterval[0],intervals[pos_i][1]] pos_i+=1 if merged_pre and merged_pos: merged = [merged_pre[0],merged_pos[1]] elif merged_pre: merged = merged_pre elif merged_pos: merged = merged_pos else: merged = newInterval print(merged) print(pre_i,pos_i) if pre_i &amp;gt;=0: for i in range(pre_i+1): newIntervals.</description>
+    </item>
+    <item>
+      <title>Jump-II</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/greedy/jump-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/greedy/jump-ii/</guid>
+      <description>#cp_medium You are given a 0-indexed array of integers nums of length n. You are initially positioned at index 0.&#xA;Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at index i, you can jump to any index (i + j) where:&#xA;0 &amp;lt;= j &amp;lt;= nums[i] and i + j &amp;lt; n Return the minimum number of jumps to reach index n - 1.</description>
+    </item>
+    <item>
+      <title>Task Scheduler</title>
+      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/greedy/task-scheduler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/greedy/task-scheduler/</guid>
+      <description>#cp_medium You are given an array of CPU tasks, each labeled with a letter from A to Z, and a number n. Each CPU interval can be idle or allow the completion of one task. Tasks can be completed in any order, but there&amp;rsquo;s a constraint: there has to be a gap of at least n intervals between two tasks with the same label.&#xA;Return the minimum number of CPU intervals required to complete all tasks.</description>
+    </item>
+  </channel>
+</rss>

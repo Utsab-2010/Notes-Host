@@ -11,8 +11,8 @@ title: "Command Center"
 		- [ ] 2 Medium
 			- [ ] [Insert Interval - LeetCode](https://leetcode.com/problems/insert-interval/description/)
 			- [ ] [Merge Intervals - LeetCode](https://leetcode.com/problems/merge-intervals/description/)
-	- [ ] BST 
-		- [ ] Theory
+	- [x] BST 
+		- [x] Theory
 	- [ ] Revise Problems
  - [ ] Room
 	- [ ] Arrange Wardrobe
@@ -29,7 +29,7 @@ title: "Command Center"
 		- [ ] 
 - [ ] AlphaZero Blog and Project Revision - Finish this
 - [ ] Increase Linux partition space
- 
+- [x] Hosted my Obsidian Notes
 
 # Weekly Goals
 - [ ] Detailed Note on PCA and t-SNE
