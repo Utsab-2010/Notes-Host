@@ -31,7 +31,8 @@ lastmod: 2026-06-19
 - [ ] AlphaZero Blog and Project Revision - Finish this
 - [ ] Increase Linux partition space
 - [x] Hosted my Obsidian Notes
-
+- This is a test just to see if anything appears
+- Another
 # Weekly Goals
 - [ ] Detailed Note on PCA and t-SNE
 - [ ] BT Medium Problems
@@ -51,6 +52,6 @@ lastmod: 2026-06-19
 - [ ] Start reformulating Lossfunk PS
 	- [ ] Read the old writeups and stuff
 ## Important Notes
-- [Workout Log](/vault/misc/workout-log/)
+- [[Workout Log]]
 - [[Project Ideas]]
-- [Summer Plan 2026](/vault/misc/summer-plan-2026/)
+- [[Summer Plan 2026]]
