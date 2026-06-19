@@ -453,9 +453,65 @@ p > code {
         display: inline-block;
     }
     header.site-header {
-        padding: 1rem 1.5rem;
+        padding: 0.5rem 0.75rem;
+    }
+    .site-title-link h1 {
+        font-size: 1.1rem !important;
     }
     .content-wrapper {
-        padding: 1.5rem;
+        padding: 0.75rem;
+    }
+    
+    /* Ultra-compact typography & code size for mobile view */
+    .markdown-body {
+        font-size: 0.88rem;   /* scaled down for high information density */
+        line-height: 1.55;    /* tighter line height */
+    }
+    .markdown-body h1 {
+        font-size: 1.35rem;   /* smaller mobile headings */
+        margin-top: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+    .markdown-body h2 {
+        font-size: 1.18rem;
+        margin-top: 1.1rem;
+        margin-bottom: 0.4rem;
+    }
+    .markdown-body h3 {
+        font-size: 1.05rem;
+        margin-top: 0.95rem;
+    }
+    .markdown-body p, .markdown-body ul, .markdown-body ol {
+        margin-bottom: 0.75rem;
+    }
+    blockquote {
+        margin: 1rem 0;
+        padding: 0.4rem 0.75rem;
+    }
+    pre {
+        padding: 0.65rem 0.85rem;
+        margin: 1rem 0;
+    }
+    pre code, p > code {
+        font-size: 0.78rem !important; /* significantly smaller code font */
+    }
+    
+    /* Smaller folder/note cards on mobile */
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 0.75rem;
+    }
+    .card {
+        padding: 0.75rem 1rem;
+        gap: 0.5rem;
+    }
+    .card-icon {
+        font-size: 1.2rem;
+    }
+    .card-info h3 {
+        font-size: 0.92rem;
+    }
+    .card-meta {
+        font-size: 0.72rem;
     }
 }
