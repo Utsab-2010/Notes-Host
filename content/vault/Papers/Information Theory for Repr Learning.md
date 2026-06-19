@@ -1,5 +1,6 @@
 ---
 title: "Information Theory for Repr Learning"
+lastmod: 2026-04-05
 ---
 
 The weight of evidence regarding a particular hypothesis over the other(defined hre as prob distributiosns) is just log p/q. that is log of the ratios of the posteriors.

@@ -1,5 +1,6 @@
 ---
 title: "CPP Strings CheatSheet"
+lastmod: 2026-06-07
 ---
 
 ## Basics

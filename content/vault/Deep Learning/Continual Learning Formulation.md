@@ -1,5 +1,6 @@
 ---
 title: "Continual Learning Formulation"
+lastmod: 2026-05-04
 ---
 
 Continual learning is defined as learning from dynamic data distributions. Unlike standard machine learning, where data is often static, here training samples from different distributions arrive in a sequence.

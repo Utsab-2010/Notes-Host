@@ -45,6 +45,7 @@ jobs:
           repository: Utsab-2010/Utsab-Notes
           path: Utsab-Notes
           token: ${{ secrets.VAULT_TOKEN }}
+          fetch-depth: 0
 
       - name: Setup Pages
         id: pages

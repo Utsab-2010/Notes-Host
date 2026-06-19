@@ -1,5 +1,6 @@
 ---
 title: "Can you project tasks to similar Task-spaces?"
+lastmod: 2026-05-21
 ---
 
 #to_ponder #continual_learning 

@@ -1,5 +1,6 @@
 ---
 title: "LPCV-Track-1"
+lastmod: 2026-03-05
 ---
 
 [LPCV - Low Power Computer Vision](https://lpcv.ai/2026LPCVC/tracks/track1/)

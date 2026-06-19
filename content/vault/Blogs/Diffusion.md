@@ -1,5 +1,6 @@
 ---
 title: "Diffusion"
+lastmod: 2026-05-09
 ---
 
 #diffusion #blog 

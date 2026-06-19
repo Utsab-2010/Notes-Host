@@ -1,5 +1,6 @@
 ---
 title: "Command Center"
+lastmod: 2026-06-19
 ---
 
 
@@ -36,8 +37,6 @@ title: "Command Center"
 - [ ] BT Medium Problems
 - [ ] DP - first 3 modules
 - [ ] Revision of All modules
-- [ ] 
-
 
 - [ ] Retrain/modify and test AlphaZero
 - [ ] Figure out vast.ai remote access stuff. check if antigravity compatible

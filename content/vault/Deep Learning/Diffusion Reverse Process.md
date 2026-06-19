@@ -1,5 +1,6 @@
 ---
 title: "Diffusion Reverse Process"
+lastmod: 2026-03-27
 ---
 
 To implement the reverse process (sampling), we essentially perform a "denoising" loop. We start with a tensor of pure Gaussian noise and gradually subtract the noise predicted by our trained model until we reach a clean image.

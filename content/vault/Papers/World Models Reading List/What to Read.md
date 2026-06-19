@@ -1,5 +1,6 @@
 ---
 title: "What to Read"
+lastmod: 2026-06-11
 ---
 
 ## Foundational

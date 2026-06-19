@@ -1,5 +1,6 @@
 ---
 title: "Sieve of Eratosthenes"
+lastmod: 2026-06-16
 ---
 
 A classic algorithm to find **all prime numbers up to a limit N** efficiently.

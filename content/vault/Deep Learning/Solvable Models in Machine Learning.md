@@ -1,5 +1,6 @@
 ---
 title: "Solvable Models in Machine Learning"
+lastmod: 2026-06-04
 ---
 
 #deep_learning 

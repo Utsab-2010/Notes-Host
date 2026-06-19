@@ -1,5 +1,6 @@
 ---
 title: "Inorder Traversal of a BT"
+lastmod: 2026-06-16
 ---
 
 Left - > Parent -> RIght

@@ -1,5 +1,6 @@
 ---
 title: "x_0-parameterization"
+lastmod: 2026-05-05
 ---
 
 The **$x_0$-parameterization** is a specific design choice in the Diffusion-LM training objective designed to bridge the gap between continuous diffusion processes and discrete text, primarily by reducing rounding errors.

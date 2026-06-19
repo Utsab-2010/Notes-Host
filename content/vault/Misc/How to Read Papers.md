@@ -1,5 +1,6 @@
 ---
 title: "How to Read Papers"
+lastmod: 2026-05-30
 ---
 
 ### Order to Read

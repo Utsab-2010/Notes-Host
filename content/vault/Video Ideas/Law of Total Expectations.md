@@ -1,5 +1,6 @@
 ---
 title: "Law of Total Expectations"
+lastmod: 2026-02-11
 ---
 
 ![](/vault/video-ideas/spider-fly-problem.png)

@@ -1,5 +1,6 @@
 ---
 title: "Different ML Optimizers"
+lastmod: 2026-06-08
 ---
 
 > A detailed reference on gradient-based optimization — the math, the intuition, and why it matters.

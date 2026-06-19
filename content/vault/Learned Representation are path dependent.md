@@ -1,5 +1,6 @@
 ---
 title: "Learned Representation are path dependent"
+lastmod: 2026-06-17
 ---
 
 #to_ponder 

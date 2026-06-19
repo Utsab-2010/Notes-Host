@@ -1,5 +1,6 @@
 ---
 title: "Fourier Transform"
+lastmod: 2026-06-02
 ---
 
 # Fourier Transform — simple explanation **with equations** 🎧📐

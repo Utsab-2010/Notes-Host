@@ -1,5 +1,6 @@
 ---
 title: "Deriving Neural Scaling Laws from Lang Stat"
+lastmod: 2026-06-12
 ---
 
 ## 1. Foundational Setup and Definitions

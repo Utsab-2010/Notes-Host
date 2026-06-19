@@ -1,5 +1,6 @@
 ---
 title: "List of Topics"
+lastmod: 2026-06-03
 ---
 
 - [x] Intro to Diffusion

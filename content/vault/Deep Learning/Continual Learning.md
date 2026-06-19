@@ -1,5 +1,6 @@
 ---
 title: "Continual Learning"
+lastmod: 2026-05-06
 ---
 
 #continual_learning

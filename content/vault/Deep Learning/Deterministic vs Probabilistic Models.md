@@ -1,5 +1,6 @@
 ---
 title: "Deterministic vs Probabilistic Models"
+lastmod: 2026-05-05
 ---
 
 The difference between these two boils down to how they handle **uncertainty** and **predictability**.

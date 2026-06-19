@@ -1,5 +1,6 @@
 ---
 title: "Avg El2n score difference between two toy datasets"
+lastmod: 2026-06-16
 ---
 
 #### Case 1: Fixed Vector Summed + Noise  as Input

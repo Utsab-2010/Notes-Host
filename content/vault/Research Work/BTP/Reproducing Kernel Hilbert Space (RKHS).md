@@ -1,5 +1,6 @@
 ---
 title: "Reproducing Kernel Hilbert Space (RKHS)"
+lastmod: 2026-06-11
 ---
 
 To understand a **Reproducing Kernel Hilbert Space (RKHS)**, it helps to break the name down into its two core mathematical pillars: the **Hilbert Space** (the setting) and the **Reproducing Kernel** (the engine).

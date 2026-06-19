@@ -1,5 +1,6 @@
 ---
 title: "Attention Mechanism"
+lastmod: 2026-06-03
 ---
 
 ## Why Attention Exists

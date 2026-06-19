@@ -1,5 +1,6 @@
 ---
 title: "Quick Sort Partition"
+lastmod: 2026-06-16
 ---
 
 

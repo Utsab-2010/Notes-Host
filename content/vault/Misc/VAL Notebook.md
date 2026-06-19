@@ -1,5 +1,6 @@
 ---
 title: "VAL Notebook"
+lastmod: 2026-06-01
 ---
 
 ```

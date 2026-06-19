@@ -1,5 +1,6 @@
 ---
 title: "Optimal Transport"
+lastmod: 2026-03-10
 ---
 
 Optimal Transport (OT) is a mathematical field used in many interesting and popular tasks, such as image segmentation, image restoration, computer vision, data analysis, etc., and in general, OT can be useful for those tasks involving a density distribution.

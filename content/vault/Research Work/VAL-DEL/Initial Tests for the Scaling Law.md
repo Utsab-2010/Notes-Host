@@ -1,5 +1,6 @@
 ---
 title: "Initial Tests for the Scaling Law"
+lastmod: 2026-06-12
 ---
 
 To validate this acyclic framework, you need to verify two things: first, that your static corpus metric ($H_{\text{spec}}$ at $n^*_0$) matches the empirical rate of multi-epoch decay ($\delta$) across different text distributions, and second, that the active learning horizon ($n^*_k$) actually expands along the predicted path.

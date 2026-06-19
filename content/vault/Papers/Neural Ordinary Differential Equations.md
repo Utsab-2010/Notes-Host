@@ -1,5 +1,6 @@
 ---
 title: "Neural Ordinary Differential Equations"
+lastmod: 2026-05-03
 ---
 
 #flows

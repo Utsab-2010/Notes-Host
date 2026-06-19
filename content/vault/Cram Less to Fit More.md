@@ -1,5 +1,6 @@
 ---
 title: "Cram Less to Fit More"
+lastmod: 2026-06-08
 ---
 
 #nlp #model_capacity #scaling_laws

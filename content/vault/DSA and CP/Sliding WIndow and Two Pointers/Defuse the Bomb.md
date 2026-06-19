@@ -1,5 +1,6 @@
 ---
 title: "Defuse the Bomb"
+lastmod: 2026-06-07
 ---
 
 #cp_easy 

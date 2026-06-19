@@ -1,5 +1,6 @@
 ---
 title: "Can we use JEPA for Games??"
+lastmod: 2026-06-05
 ---
 
 #to_ponder 

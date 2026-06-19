@@ -1,5 +1,6 @@
 ---
 title: "Alpha-Beta Algorithm (Chess Engines)"
+lastmod: 2026-06-02
 ---
 
 Traditional chess engines, such as Stockfish and Deep Blue, utilize a highly optimized **alpha-beta search** algorithm to navigate the game's vast complexity. This method is a variation of the minimax algorithm that improves efficiency by "pruning" or cutting off branches of the search tree that are provably inferior to others, meaning they need not be evaluated to find the optimal move.

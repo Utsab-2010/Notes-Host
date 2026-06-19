@@ -1,5 +1,6 @@
 ---
 title: "Probability and Statistics"
+lastmod: 2026-05-30
 ---
 
 1. [Total Expectation Theorem](/vault/math/probability-theory/total-expectation-theorem/)

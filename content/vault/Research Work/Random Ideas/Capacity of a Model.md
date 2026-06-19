@@ -1,5 +1,6 @@
 ---
 title: "Capacity of a Model"
+lastmod: 2026-05-22
 ---
 
 #to_ponder 

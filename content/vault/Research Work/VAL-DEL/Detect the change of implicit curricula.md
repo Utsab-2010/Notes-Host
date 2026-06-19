@@ -1,5 +1,6 @@
 ---
 title: "Detect the change of implicit curricula"
+lastmod: 2026-06-16
 ---
 
 ### Hypothesis:

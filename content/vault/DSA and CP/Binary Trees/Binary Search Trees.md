@@ -1,5 +1,6 @@
 ---
 title: "Binary Search Trees"
+lastmod: 2026-06-18
 ---
 
 #dsa 

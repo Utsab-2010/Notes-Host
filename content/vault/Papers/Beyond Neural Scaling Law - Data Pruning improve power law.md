@@ -1,5 +1,6 @@
 ---
 title: "Beyond Neural Scaling Law - Data Pruning improve power law"
+lastmod: 2026-06-09
 ---
 
 #scaling_laws 

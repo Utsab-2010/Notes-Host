@@ -1,5 +1,6 @@
 ---
 title: "Untitled 3"
+lastmod: 2026-06-18
 ---
 
 Bespoke solver - iclr 24

@@ -1,5 +1,6 @@
 ---
 title: "Fun Resources"
+lastmod: 2026-06-11
 ---
 
 #### Blogs

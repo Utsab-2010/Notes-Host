@@ -1,5 +1,6 @@
 ---
 title: "Open Questions"
+lastmod: 2026-06-12
 ---
 
 - How much can a model actually learn? 

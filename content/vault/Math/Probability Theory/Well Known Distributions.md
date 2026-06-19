@@ -1,5 +1,6 @@
 ---
 title: "Well Known Distributions"
+lastmod: 2026-05-30
 ---
 
 

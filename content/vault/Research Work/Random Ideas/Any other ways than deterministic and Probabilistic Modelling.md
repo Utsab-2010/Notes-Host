@@ -1,5 +1,6 @@
 ---
 title: "Any other ways than deterministic and Probabilistic Modelling"
+lastmod: 2026-05-21
 ---
 
 #to_ponder #ideas

@@ -1,5 +1,6 @@
 ---
 title: "Depth Estimation Metrics"
+lastmod: 2026-02-18
 ---
 
 To evaluate the accuracy of the predicted depth maps against the "ground truth" (the actual measured distance), the **InfiniDepth** paper utilizes a standard set of error and accuracy metrics common in monocular depth estimation research.

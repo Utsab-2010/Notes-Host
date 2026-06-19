@@ -3,6 +3,8 @@ import sys
 import re
 import shutil
 import time
+import subprocess
+import datetime
 
 VAULT_DIR = os.environ.get("VAULT_DIR", "/home/utsab/Utsab-Notes")
 CONTENT_DIR = os.environ.get("CONTENT_DIR", "/home/utsab/notes-hosted/hugo-site/content/vault")
@@ -59,15 +61,50 @@ def build_indices():
                 
     return note_map, resource_map
 
+def get_git_mtime(repo_dir, file_path):
+    try:
+        # Get unix timestamp of last commit for this file in the vault repo
+        result = subprocess.run(
+            ['git', 'log', '-1', '--format=%ct', file_path],
+            cwd=repo_dir,
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        timestamp = result.stdout.strip()
+        if timestamp:
+            return int(timestamp)
+    except Exception:
+        pass
+    return None
+
 def process_markdown(src_path, dest_path, note_map, resource_map):
     with open(src_path, 'r', encoding='utf-8', errors='ignore') as f:
         content = f.read()
 
-    # 1. Prepend frontmatter if missing
-    if not content.strip().startswith('---'):
+    # Get last modified time
+    mtime = get_git_mtime(VAULT_DIR, os.path.relpath(src_path, VAULT_DIR))
+    if mtime is None:
+        mtime = os.path.getmtime(src_path)
+    
+    # Format as ISO date: YYYY-MM-DD
+    date_str = datetime.datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
+
+    # 1. Prepend frontmatter or inject lastmod
+    if content.strip().startswith('---'):
+        parts = content.split('---', 2)
+        if len(parts) >= 3:
+            frontmatter = parts[1]
+            if 'lastmod:' not in frontmatter:
+                if not frontmatter.endswith('\n'):
+                    frontmatter += '\n'
+                frontmatter = f"lastmod: {date_str}\n" + frontmatter
+            parts[1] = frontmatter
+            content = '---'.join(parts)
+    else:
         title = os.path.splitext(os.path.basename(src_path))[0]
         clean_title = title.replace('"', '\\"')
-        content = f"---\ntitle: \"{clean_title}\"\n---\n\n" + content
+        content = f"---\ntitle: \"{clean_title}\"\nlastmod: {date_str}\n---\n\n" + content
 
     # 2. Convert Obsidian Wikilink Images: ![[image.png]] or ![[image.png|width]]
     image_re = re.compile(r'!\[\[([^\]|]+)(?:\|([^\]]+))?\]\]')

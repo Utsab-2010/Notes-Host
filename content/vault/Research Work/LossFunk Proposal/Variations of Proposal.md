@@ -1,5 +1,6 @@
 ---
 title: "Variations of Proposal"
+lastmod: 2026-04-05
 ---
 
 ## Student Representation and Manifold Refinement

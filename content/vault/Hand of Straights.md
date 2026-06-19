@@ -1,5 +1,6 @@
 ---
 title: "Hand of Straights"
+lastmod: 2026-06-10
 ---
 
 #cp_medium 

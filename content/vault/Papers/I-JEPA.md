@@ -1,5 +1,6 @@
 ---
 title: "I-JEPA"
+lastmod: 2026-05-21
 ---
 
 Image Joint Embedding Predictive Architecture:

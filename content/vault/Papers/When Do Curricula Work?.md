@@ -1,5 +1,6 @@
 ---
 title: "When Do Curricula Work?"
+lastmod: 2026-05-11
 ---
 
 #curriculum_learning

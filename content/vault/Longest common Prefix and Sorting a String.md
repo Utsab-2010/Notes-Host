@@ -1,5 +1,6 @@
 ---
 title: "Longest common Prefix and Sorting a String"
+lastmod: 2026-06-07
 ---
 
 ```cpp

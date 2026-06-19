@@ -1,5 +1,6 @@
 ---
 title: "Matryoshka Representation Learning"
+lastmod: 2026-05-21
 ---
 
 Paper: [\[2205.13147\] Matryoshka Representation Learning](https://arxiv.org/abs/2205.13147)

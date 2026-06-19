@@ -1,5 +1,6 @@
 ---
 title: "Search in Rotated Array"
+lastmod: 2026-05-30
 ---
 
 There is an integer array `nums` sorted in ascending order (with **distinct** values).

@@ -1,5 +1,6 @@
 ---
 title: "Idea-1"
+lastmod: 2026-04-05
 ---
 
 This is an exceptionally sharp research direction for 2026. The field is currently moving away from "black-box distillation" (just matching logits) toward **Geometric Knowledge Distillation (GKD)**.

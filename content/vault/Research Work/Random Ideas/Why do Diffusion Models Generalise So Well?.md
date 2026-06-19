@@ -1,5 +1,6 @@
 ---
 title: "Why do Diffusion Models Generalise So Well?"
+lastmod: 2026-06-04
 ---
 
 #to_ponder #diffusion #compvis 

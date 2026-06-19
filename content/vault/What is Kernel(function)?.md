@@ -1,5 +1,6 @@
 ---
 title: "What is Kernel(function)?"
+lastmod: 2026-06-07
 ---
 
 In machine learning and statistics, you’ll see the word **kernel** thrown around constantly—whether it’s the _transition kernel_ $p_{0t}(\mathbf{x}(t) \mid \mathbf{x}(0))$ in diffusion models, a _smoothing kernel_ in computer vision, or the _kernel trick_ in Support Vector Machines (SVMs).

@@ -1,5 +1,6 @@
 ---
 title: "KSD for Goodness-of-fit Tests"
+lastmod: 2026-06-11
 ---
 
 [Reproducing Kernel Hilbert Space (RKHS)](/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/)

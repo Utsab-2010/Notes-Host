@@ -1,5 +1,6 @@
 ---
 title: "Moravec's Paradox"
+lastmod: 2026-03-20
 ---
 
 [Moravec's paradox - Wikipedia](https://en.wikipedia.org/wiki/Moravec%27s_paradox)

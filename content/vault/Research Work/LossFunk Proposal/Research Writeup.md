@@ -1,5 +1,6 @@
 ---
 title: "Research Writeup"
+lastmod: 2026-04-05
 ---
 
 

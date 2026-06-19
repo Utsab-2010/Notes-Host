@@ -1,5 +1,6 @@
 ---
 title: "The Manifold Hypothesis"
+lastmod: 2026-03-09
 ---
 
 The hypothesis suggests that the actual feature space of parameters which accurate encode the information of a dataset lie in smaller subspace compared to the actual parameters of the dataset.

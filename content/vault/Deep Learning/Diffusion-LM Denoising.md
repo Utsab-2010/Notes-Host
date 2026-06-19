@@ -1,5 +1,6 @@
 ---
 title: "Diffusion-LM Denoising"
+lastmod: 2026-03-17
 ---
 
 The denoising inference step in Diffusion-LM is the reverse process of the diffusion model, where the system starts with a sequence of pure Gaussian noise vectors ($x_T$) and iteratively removes the noise step-by-step to recover the continuous word vectors ($x_0$), which are finally converted back into discrete text.

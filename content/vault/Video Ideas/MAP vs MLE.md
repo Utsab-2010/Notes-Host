@@ -1,5 +1,6 @@
 ---
 title: "MAP vs MLE"
+lastmod: 2026-02-20
 ---
 
 	"The logic that f* cks your mind"

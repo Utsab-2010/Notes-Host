@@ -1,5 +1,6 @@
 ---
 title: "Krutarth meet - 20th March"
+lastmod: 2026-03-20
 ---
 
 - Subgoal Recommendation policy

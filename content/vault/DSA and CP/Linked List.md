@@ -1,5 +1,6 @@
 ---
 title: "Linked List"
+lastmod: 2026-06-03
 ---
 
 ## 1. What is a Linked List?

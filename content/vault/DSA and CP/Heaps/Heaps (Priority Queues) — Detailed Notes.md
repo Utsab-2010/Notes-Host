@@ -1,5 +1,6 @@
 ---
 title: "Heaps (Priority Queues) — Detailed Notes"
+lastmod: 2026-06-16
 ---
 
 

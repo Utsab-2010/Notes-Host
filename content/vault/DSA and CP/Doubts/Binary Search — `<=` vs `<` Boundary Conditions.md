@@ -1,5 +1,6 @@
 ---
 title: "Binary Search — `<=` vs `<` Boundary Conditions"
+lastmod: 2026-05-30
 ---
 
 Binary Search — `<=` vs `<` Boundary Conditions

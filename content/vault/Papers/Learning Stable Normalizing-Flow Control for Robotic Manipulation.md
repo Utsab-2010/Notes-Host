@@ -1,5 +1,6 @@
 ---
 title: "Learning Stable Normalizing-Flow Control for Robotic Manipulation"
+lastmod: 2026-02-04
 ---
 
 This paper maps the real system X of the manipulator(end-effector) to a simpler spring mass types control system Y.

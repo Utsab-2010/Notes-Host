@@ -1,5 +1,6 @@
 ---
 title: "Deterministic Random Variable"
+lastmod: 2026-05-30
 ---
 
 A random variable $X$ is said to be deterministic (or **degenerate**) if there exists some constant $c$ such that the probability of $X$ being equal to $c$ is exactly $1$.

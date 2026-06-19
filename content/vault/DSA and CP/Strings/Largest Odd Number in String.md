@@ -1,5 +1,6 @@
 ---
 title: "Largest Odd Number in String"
+lastmod: 2026-06-07
 ---
 
 problem: Find the largest odd number inside of a string

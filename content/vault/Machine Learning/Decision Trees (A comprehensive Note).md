@@ -1,5 +1,6 @@
 ---
 title: "Decision Trees (A comprehensive Note)"
+lastmod: 2026-06-07
 ---
 
 > _Based on StatQuest with Josh Starmer: "Decision and Classification Trees, Clearly Explained!!!" and "Decision Trees, Part 2 — Feature Selection and Missing Data", supplemented with additional theory and pointers._

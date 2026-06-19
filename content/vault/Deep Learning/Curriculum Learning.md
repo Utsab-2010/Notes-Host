@@ -1,5 +1,6 @@
 ---
 title: "Curriculum Learning"
+lastmod: 2026-05-21
 ---
 
 #curriculum_learning 

@@ -1,5 +1,6 @@
 ---
 title: "Fréchet Inception Distance (FID)"
+lastmod: 2026-06-03
 ---
 
 #compvis #diffusion 

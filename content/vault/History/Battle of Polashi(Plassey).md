@@ -1,5 +1,6 @@
 ---
 title: "Battle of Polashi(Plassey)"
+lastmod: 2026-05-01
 ---
 
 Polashi (or Palashi) is a historically significant town in West Bengal's Nadia district, famous as the site of the 1757 Battle of Plassey, which established British rule in India. Today, it is a town near the Bhagirathi River with landmarks like the Palashi Monument. It is also the name of a Bangladeshi social deduction board game. 

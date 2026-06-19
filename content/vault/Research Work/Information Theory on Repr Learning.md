@@ -1,5 +1,6 @@
 ---
 title: "Information Theory on Repr Learning"
+lastmod: 2026-03-27
 ---
 
 [NeurIPS Information Theory for Representation Learning](https://neurips.cc/virtual/2023/73986)

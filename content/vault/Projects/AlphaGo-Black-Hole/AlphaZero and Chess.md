@@ -1,5 +1,6 @@
 ---
 title: "AlphaZero and Chess"
+lastmod: 2026-06-02
 ---
 
 ### Contributions

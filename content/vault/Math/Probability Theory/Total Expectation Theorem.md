@@ -1,5 +1,6 @@
 ---
 title: "Total Expectation Theorem"
+lastmod: 2026-05-30
 ---
 
 ## Law of Total Expectation (Partition of Events)

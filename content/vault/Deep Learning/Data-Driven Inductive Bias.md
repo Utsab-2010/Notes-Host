@@ -1,5 +1,6 @@
 ---
 title: "Data-Driven Inductive Bias"
+lastmod: 2026-06-17
 ---
 
 The word **Inductive** refers to a reasoning process that uses specific observations, evidence, or patterns to form broad, general conclusions or theories.

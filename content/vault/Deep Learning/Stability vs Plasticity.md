@@ -1,5 +1,6 @@
 ---
 title: "Stability vs Plasticity"
+lastmod: 2026-05-05
 ---
 
 #continual_learning 

@@ -1,5 +1,6 @@
 ---
 title: "Unique Properties of Gaussian RVs"
+lastmod: 2026-05-30
 ---
 
 1. All linear combinations of independent Gaussian RVs are Gaussian

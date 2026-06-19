@@ -1,5 +1,6 @@
 ---
 title: "Low Rank Adaptation(LoRA)"
+lastmod: 2026-05-16
 ---
 
 #deep_learning #fine-tuning 

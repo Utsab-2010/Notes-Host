@@ -1,5 +1,6 @@
 ---
 title: "Diffusion Models"
+lastmod: 2026-03-17
 ---
 
 Diffusion models might look like a mess of Gaussian noise at first glance, but the math is actually a very elegant "tug-of-war" between destroying information and reconstructing it.

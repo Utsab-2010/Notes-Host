@@ -1,5 +1,6 @@
 ---
 title: "Law of Iterated Expectations"
+lastmod: 2026-05-30
 ---
 
 ## Mathematical Definition

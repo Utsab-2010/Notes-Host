@@ -1,5 +1,6 @@
 ---
 title: "Polygenic Voting Toy Test"
+lastmod: 2026-06-15
 ---
 
 Read [](file:///raid2/priyam/utsab/new-quantisation-tests/polygenic_voting.ipynb#91-91), lines 91 to 175

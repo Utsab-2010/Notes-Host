@@ -1,5 +1,6 @@
 ---
 title: "Summer Plan 2026"
+lastmod: 2026-05-29
 ---
 
 ## Major Targets 

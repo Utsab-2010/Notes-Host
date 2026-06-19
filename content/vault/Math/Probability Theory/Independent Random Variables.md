@@ -1,5 +1,6 @@
 ---
 title: "Independent Random Variables"
+lastmod: 2026-05-30
 ---
 
 Two RVs `X` and `Y` are **independent** if knowing one tells you **nothing** about the other.

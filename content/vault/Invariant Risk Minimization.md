@@ -1,5 +1,6 @@
 ---
 title: "Invariant Risk Minimization"
+lastmod: 2026-05-23
 ---
 
 > *Main Issue*

@@ -1,5 +1,6 @@
 ---
 title: "Untitled 2"
+lastmod: 2026-06-17
 ---
 
 - Some prior

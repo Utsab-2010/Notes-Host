@@ -1,5 +1,6 @@
 ---
 title: "Write-up"
+lastmod: 2026-04-05
 ---
 
 ### Main Topic: KD is the way towards more effective representations and thus OOD generalisations?

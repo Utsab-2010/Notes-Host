@@ -1,5 +1,6 @@
 ---
 title: "Loss Funk Application"
+lastmod: 2026-05-05
 ---
 
 |                                                                   |                                                                                                                                                                                                                                                                                     |

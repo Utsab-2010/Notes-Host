@@ -1,5 +1,6 @@
 ---
 title: "Quantization Based Hypothesis"
+lastmod: 2026-06-12
 ---
 
 Quantisation Modelling paper states that the datasets comprise of different quantas of information corresponding to different characteristic features.

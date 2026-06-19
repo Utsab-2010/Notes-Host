@@ -1,5 +1,6 @@
 ---
 title: "Deep Learning on a Data Diet"
+lastmod: 2026-04-03
 ---
 
 #data_efficient_ml 

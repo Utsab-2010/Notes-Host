@@ -1,5 +1,6 @@
 ---
 title: "Data Attribution"
+lastmod: 2026-05-19
 ---
 
 #deep_learning #data_attribution

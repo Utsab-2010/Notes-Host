@@ -1,5 +1,6 @@
 ---
 title: "Lecture-1"
+lastmod: 2026-03-21
 ---
 
 ## Flow and Diffusion Models

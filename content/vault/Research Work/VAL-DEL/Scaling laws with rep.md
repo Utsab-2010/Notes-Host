@@ -1,5 +1,6 @@
 ---
 title: "Scaling laws with rep"
+lastmod: 2026-06-12
 ---
 
 ### 1. The Core Premise: What Must $\delta$ Measure?

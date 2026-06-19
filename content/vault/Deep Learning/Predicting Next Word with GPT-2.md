@@ -1,5 +1,6 @@
 ---
 title: "Predicting Next Word with GPT-2"
+lastmod: 2026-03-20
 ---
 
 ### GPT-2 Inference Pipeline and Tensor Transformations

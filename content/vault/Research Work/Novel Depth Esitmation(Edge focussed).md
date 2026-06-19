@@ -1,5 +1,6 @@
 ---
 title: "Novel Depth Esitmation(Edge focussed)"
+lastmod: 2026-02-14
 ---
 
 # Tiny Marigold - Depth - Paper

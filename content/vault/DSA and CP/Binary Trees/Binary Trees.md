@@ -1,5 +1,6 @@
 ---
 title: "Binary Trees"
+lastmod: 2026-06-16
 ---
 
 ## 1. What is a Binary Tree?

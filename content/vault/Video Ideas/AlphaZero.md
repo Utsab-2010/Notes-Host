@@ -1,5 +1,6 @@
 ---
 title: "AlphaZero"
+lastmod: 2026-04-05
 ---
 
 This is a 3 min recap of my implementation of Google's Alpha Zero framework on the game of black hole.
