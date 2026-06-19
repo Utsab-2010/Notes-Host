@@ -99,6 +99,11 @@ def process_markdown(src_path, dest_path, note_map, resource_map):
     os.makedirs(os.path.dirname(dest_path), exist_ok=True)
     with open(dest_path, 'w', encoding='utf-8') as f:
         f.write(content)
+    try:
+        mtime = os.path.getmtime(src_path)
+        os.utime(dest_path, (mtime, mtime))
+    except Exception:
+        pass
 
 def sync_all():
     print("Indexing vault...")

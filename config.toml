@@ -14,3 +14,6 @@ ignoreFiles = [
 [params]
   description = "A collection of technical notes, research logs, and digital garden entries."
   math = true
+
+[frontmatter]
+  lastmod = [":git", ":fileModTime", "lastmod", "date"]

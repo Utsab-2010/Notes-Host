@@ -1,9 +1,9 @@
 {{ define "main" }}
 <article class="post-content">
-    <header style="margin-bottom: 3rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
-        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">{{ .Title }}</h1>
-        <div style="color: #8b949e; font-size: 0.9rem;">
-            {{ .Date.Format "January 2, 2006" }}
+    <header style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+        <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--text-color); font-family: var(--font-main);">{{ .Title }}</h1>
+        <div style="color: #8b949e; font-size: 0.85rem; font-family: var(--font-main);">
+            Last modified: {{ .Lastmod.Format "January 2, 2006" }}
         </div>
     </header>
 
