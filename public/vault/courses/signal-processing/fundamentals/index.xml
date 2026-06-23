@@ -1,18 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Fundamentals on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/Notes-Host/vault/courses/signal-processing/fundamentals/</link>
-    <description>Recent content in Fundamentals on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/Notes-Host/vault/courses/signal-processing/fundamentals/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fourier Transform</title>
-      <link>http://localhost:1313/Notes-Host/vault/courses/signal-processing/fundamentals/fourier-transform/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/courses/signal-processing/fundamentals/fourier-transform/</guid>
-      <description>Fourier Transform — simple explanation with equations 🎧📐 This note keeps the math clean and minimal, and every equation is paired with intuition.&#xA;1. Big picture (again, but mathematically) The Fourier Transform (FT) converts a signal from:&#xA;Time domain → x(t) Frequency domain → X(f) or X(ω) It answers:&#xA;“How much of each frequency is present in the signal?”&#xA;2. Fourier Series (where everything starts) For a periodic signal with period T, we write it as a sum of sinusoids:</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fundamentals on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/courses/signal-processing/fundamentals/</link><description>Recent content in Fundamentals on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/courses/signal-processing/fundamentals/index.xml" rel="self" type="application/rss+xml"/><item><title>Fourier Transform</title><link>https://Utsab-2010.github.io/Notes-Host/vault/courses/signal-processing/fundamentals/fourier-transform/</link><pubDate>Tue, 02 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/courses/signal-processing/fundamentals/fourier-transform/</guid><description>Fourier Transform — simple explanation with equations 🎧📐 This note keeps the math clean and minimal, and every equation is paired with intuition.
+1. Big picture (again, but mathematically) The Fourier Transform (FT) converts a signal from:
+Time domain → x(t) Frequency domain → X(f) or X(ω) It answers:
+“How much of each frequency is present in the signal?”
+2. Fourier Series (where everything starts) For a periodic signal with period T, we write it as a sum of sinusoids:</description></item></channel></rss>

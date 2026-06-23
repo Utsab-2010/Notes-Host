@@ -1,39 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sliding WIndow and Two Pointers on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/</link>
-    <description>Recent content in Sliding WIndow and Two Pointers on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Defuse the Bomb</title>
-      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/defuse-the-bomb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/defuse-the-bomb/</guid>
-      <description>#cp_easy&#xA;You have a bomb to defuse, and your time is running out! Your informer will provide you with a circular array code of length of n and a key k.&#xA;To decrypt the code, you must replace every number. All the numbers are replaced simultaneously.&#xA;If k &amp;gt; 0, replace the ith number with the sum of the next k numbers. If k &amp;lt; 0, replace the ith number with the sum of the previous -k numbers.</description>
-    </item>
-    <item>
-      <title>Fruits Into Basket</title>
-      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/fruits-into-basket/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/fruits-into-basket/</guid>
-      <description>#cp_medium&#xA;You are visiting a farm that has a single row of fruit trees arranged from left to right. The trees are represented by an integer array fruits where fruits[i] is the type of fruit the ith tree produces.&#xA;You want to collect as much fruit as possible. However, the owner has some strict rules that you must follow:&#xA;You only have two baskets, and each basket can only hold a single type of fruit.</description>
-    </item>
-    <item>
-      <title>Max Consecutive One III</title>
-      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/max-consecutive-one-iii/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/max-consecutive-one-iii/</guid>
-      <description>#cp_medium&#xA;Given a binary array nums and an integer k, return the maximum number of consecutive 1&amp;rsquo;s in the array if you can flip at most k 0&amp;rsquo;s.&#xA;Example 1:&#xA;Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2 Output: 6 Explanation: [1,1,1,0,0,1,1,1,1,1,1] Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.&#xA;Example 2:&#xA;Input: nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3 Output: 10 Explanation: [0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1] Bolded numbers were flipped from 0 to 1.</description>
-    </item>
-    <item>
-      <title>Maximum Erasure Value</title>
-      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/maximum-erasure-value/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/maximum-erasure-value/</guid>
-      <description>#cp_medium&#xA;You are given an array of positive integers nums and want to erase a subarray containing unique elements. The score you get by erasing the subarray is equal to the sum of its elements.&#xA;Return the maximum score you can get by erasing exactly one subarray.&#xA;An array b is called to be a subarray of a if it forms a contiguous subsequence of a, that is, if it is equal to a[l],a[l+1],.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sliding WIndow and Two Pointers on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/</link><description>Recent content in Sliding WIndow and Two Pointers on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/index.xml" rel="self" type="application/rss+xml"/><item><title>Fruits Into Basket</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/fruits-into-basket/</link><pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/fruits-into-basket/</guid><description>#cp_medium
+You are visiting a farm that has a single row of fruit trees arranged from left to right. The trees are represented by an integer array fruits where fruits[i] is the type of fruit the ith tree produces.
+You want to collect as much fruit as possible. However, the owner has some strict rules that you must follow:
+You only have two baskets, and each basket can only hold a single type of fruit.</description></item><item><title>Maximum Erasure Value</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/maximum-erasure-value/</link><pubDate>Mon, 08 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/maximum-erasure-value/</guid><description>#cp_medium
+You are given an array of positive integers nums and want to erase a subarray containing unique elements. The score you get by erasing the subarray is equal to the sum of its elements.
+Return the maximum score you can get by erasing exactly one subarray.
+An array b is called to be a subarray of a if it forms a contiguous subsequence of a, that is, if it is equal to a[l],a[l+1],.</description></item><item><title>Defuse the Bomb</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/defuse-the-bomb/</link><pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/defuse-the-bomb/</guid><description>#cp_easy
+You have a bomb to defuse, and your time is running out! Your informer will provide you with a circular array code of length of n and a key k.
+To decrypt the code, you must replace every number. All the numbers are replaced simultaneously.
+If k &amp;gt; 0, replace the ith number with the sum of the next k numbers. If k &amp;lt; 0, replace the ith number with the sum of the previous -k numbers.</description></item><item><title>Max Consecutive One III</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/max-consecutive-one-iii/</link><pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sliding-window-and-two-pointers/max-consecutive-one-iii/</guid><description>#cp_medium
+Given a binary array nums and an integer k, return the maximum number of consecutive 1&amp;rsquo;s in the array if you can flip at most k 0&amp;rsquo;s.
+Example 1:
+Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2 Output: 6 Explanation: [1,1,1,0,0,1,1,1,1,1,1] Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
+Example 2:
+Input: nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3 Output: 10 Explanation: [0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1] Bolded numbers were flipped from 0 to 1.</description></item></channel></rss>

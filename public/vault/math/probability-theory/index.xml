@@ -1,67 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Probability Theory on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/Notes-Host/vault/math/probability-theory/</link>
-    <description>Recent content in Probability Theory on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/Notes-Host/vault/math/probability-theory/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Convergences in Probability vs Almost Sure</title>
-      <link>http://localhost:1313/Notes-Host/vault/math/probability-theory/convergences-in-probability-vs-almost-sure/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/math/probability-theory/convergences-in-probability-vs-almost-sure/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Deterministic Random Variable</title>
-      <link>http://localhost:1313/Notes-Host/vault/math/probability-theory/deterministic-random-variable/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/math/probability-theory/deterministic-random-variable/</guid>
-      <description>A random variable $X$ is said to be deterministic (or degenerate) if there exists some constant $c$ such that the probability of $X$ being equal to $c$ is exactly $1$.&#xA;Mathematically:&#xA;$$P(X = c) = 1$$&#xA;In this case, the probability of any other value occurring is zero.&#xA;Essentially, it is not &amp;ldquo;random&amp;rdquo; but to be inclusive in the definition we have this case where it&amp;rsquo;s deterministic.</description>
-    </item>
-    <item>
-      <title>Independent Random Variables</title>
-      <link>http://localhost:1313/Notes-Host/vault/math/probability-theory/independent-random-variables/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/math/probability-theory/independent-random-variables/</guid>
-      <description>Two RVs X and Y are independent if knowing one tells you nothing about the other.&#xA;Mathematically:&#xA;$$P(X=x,Y=y) = P(X=x) P(Y=y)$$&#xA;Equivalent condition: $$ E[XY]=E[X]E[Y] $$</description>
-    </item>
-    <item>
-      <title>Law of Iterated Expectations</title>
-      <link>http://localhost:1313/Notes-Host/vault/math/probability-theory/law-of-iterated-expectations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/math/probability-theory/law-of-iterated-expectations/</guid>
-      <description>Mathematical Definition For any two random variables $X$ and $Y$, the law states:&#xA;$$E[X] = E[E[X|Y]]$$&#xA;Breaking down the notation: $E[X|Y]$ (The &amp;ldquo;Inner&amp;rdquo; Expectation): This is the average of $X$ given that you already know the value of $Y$. It is a function of $Y$, meaning it varies depending on what $Y$ is. $E[\dots]$ (The &amp;ldquo;Outer&amp;rdquo; Expectation): This takes the average of all those conditional results, weighted by the probability of each $Y$ occurring.</description>
-    </item>
-    <item>
-      <title>Probability and Statistics</title>
-      <link>http://localhost:1313/Notes-Host/vault/math/probability-theory/probability-and-statistics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/math/probability-theory/probability-and-statistics/</guid>
-      <description> Total Expectation Theorem Well Known Distributions Law of Iterated Expectations Independent Random Variables Doubts Deterministic Random Variable </description>
-    </item>
-    <item>
-      <title>Total Expectation Theorem</title>
-      <link>http://localhost:1313/Notes-Host/vault/math/probability-theory/total-expectation-theorem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/math/probability-theory/total-expectation-theorem/</guid>
-      <description>Law of Total Expectation (Partition of Events) $$&#xA;\text{Let } {A_1, A_2, \dots, A_n} \text{ be a partition of } \Omega&#xA;\text{ with } P(A_i) &amp;gt; 0.&#xA;$$&#xA;$$\large&#xA;\mathbb{E}[X]&#xA;= \sum_{i=1}^{n} \mathbb{E}[X \mid A_i] . P(A_i)&#xA;$$&#xA;Law of Total Expectation (Conditioning on a Discrete Random Variable) $$\large \mathbb{E}[X]&#xA;= \sum_{y} \mathbb{E}[X \mid Y = y]. P(Y = y)&#xA;$$&#xA;Law of Iterated Expectation (General / Tower Property) $$ \large \mathbb{E}[X]</description>
-    </item>
-    <item>
-      <title>Unique Properties of Gaussian RVs</title>
-      <link>http://localhost:1313/Notes-Host/vault/math/probability-theory/unique-properties-of-gaussian-rvs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/math/probability-theory/unique-properties-of-gaussian-rvs/</guid>
-      <description>All linear combinations of independent Gaussian RVs are Gaussian&#xA;A Gaussian random vector is a random vector all of whose linear projections are Gaussian.&#xA;If $\underline{X}$ is Gaussian , then&#xA;$X_{i}$ and $X_{j}$ are independent $equivalent$ Cov(Xi,Xj)=0 (uncorrelated) RVs are jointly Gaussian if they constitute a Gaussian random vector.&#xA;It is possible for random variables to be individually Gaussian but not jointly Gaussian. Jointly Gaussian is a stronger property.</description>
-    </item>
-    <item>
-      <title>Well Known Distributions</title>
-      <link>http://localhost:1313/Notes-Host/vault/math/probability-theory/well-known-distributions/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/math/probability-theory/well-known-distributions/</guid>
-      <description>1. Bernoulli Distribution Use case: Single experiment with success/failure&#xA;PMF&#xA;$$ P(X = 1) = p, \quad P(X = 0) = 1 - p&#xA;$$&#xA;Mean $\mathbb{E}[X] = p$ Variance $\mathrm{Var}(X) = p(1 - p)$ Special Properties&#xA;Indicator random variable Building block of Binomial distribution 2. Binomial Distribution Use case: Number of successes in (n) independent Bernoulli trials&#xA;PMF&#xA;$$ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}&#xA;$$ Mean $np$ Variance $np(1-p)$</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Probability Theory on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/</link><description>Recent content in Probability Theory on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>Convergences in Probability vs Almost Sure</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/convergences-in-probability-vs-almost-sure/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/convergences-in-probability-vs-almost-sure/</guid><description/></item><item><title>Deterministic Random Variable</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/deterministic-random-variable/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/deterministic-random-variable/</guid><description>A random variable $X$ is said to be deterministic (or degenerate) if there exists some constant $c$ such that the probability of $X$ being equal to $c$ is exactly $1$.
+Mathematically:
+$$P(X = c) = 1$$ In this case, the probability of any other value occurring is zero.
+Essentially, it is not &amp;ldquo;random&amp;rdquo; but to be inclusive in the definition we have this case where it&amp;rsquo;s deterministic.</description></item><item><title>Independent Random Variables</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/independent-random-variables/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/independent-random-variables/</guid><description>Two RVs X and Y are independent if knowing one tells you nothing about the other.
+Mathematically:
+$$P(X=x,Y=y) = P(X=x) P(Y=y)$$ Equivalent condition: $$ E[XY]=E[X]E[Y] $$</description></item><item><title>Law of Iterated Expectations</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/law-of-iterated-expectations/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/law-of-iterated-expectations/</guid><description>Mathematical Definition For any two random variables $X$ and $Y$, the law states:
+$$E[X] = E[E[X|Y]]$$ Breaking down the notation: $E[X|Y]$ (The &amp;ldquo;Inner&amp;rdquo; Expectation): This is the average of $X$ given that you already know the value of $Y$. It is a function of $Y$, meaning it varies depending on what $Y$ is. $E[\dots]$ (The &amp;ldquo;Outer&amp;rdquo; Expectation): This takes the average of all those conditional results, weighted by the probability of each $Y$ occurring.</description></item><item><title>Probability and Statistics</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/probability-and-statistics/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/probability-and-statistics/</guid><description> Total Expectation Theorem Well Known Distributions Law of Iterated Expectations Independent Random Variables Doubts Deterministic Random Variable</description></item><item><title>Total Expectation Theorem</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/total-expectation-theorem/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/total-expectation-theorem/</guid><description>Law of Total Expectation (Partition of Events) $$ \text{Let } {A_1, A_2, \dots, A_n} \text{ be a partition of } \Omega \text{ with } P(A_i) > 0. $$ $$\large \mathbb{E}[X] = \sum_{i=1}^{n} \mathbb{E}[X \mid A_i] . P(A_i) $$ Law of Total Expectation (Conditioning on a Discrete Random Variable) $$\large \mathbb{E}[X] = \sum_{y} \mathbb{E}[X \mid Y = y]. P(Y = y) $$ Law of Iterated Expectation (General / Tower Property) $$ \large \mathbb{E}[X] = \mathbb{E}\left[\mathbb{E}[X \mid Y] \right] $$ Law of Total Expectation (Continuous Case) $$ \large \mathbb{E}[X] = \int_{-\infty}^{\infty} \mathbb{E}[X \mid Y = y] , f_Y(y), dy $$ Conditional Law of Total Expectation $$ \large \mathbb{E}[X \mid Z] = \mathbb{E}\left[ \mathbb{E}[X \mid Y, Z] \mid Z \right] $$ Conditional Event-Based Version Let (A) be an event with $\mathbb{P}(A) > 0$ and let ${E_1, E_2, \dots, E_n}$ be a partition of (A).</description></item><item><title>Unique Properties of Gaussian RVs</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/unique-properties-of-gaussian-rvs/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/unique-properties-of-gaussian-rvs/</guid><description>All linear combinations of independent Gaussian RVs are Gaussian
+A Gaussian random vector is a random vector all of whose linear projections are Gaussian.
+If $\underline{X}$ is Gaussian , then
+$X_{i}$ and $X_{j}$ are independent $equivalent$ Cov(Xi,Xj)=0 (uncorrelated) RVs are jointly Gaussian if they constitute a Gaussian random vector.
+It is possible for random variables to be individually Gaussian but not jointly Gaussian. Jointly Gaussian is a stronger property.</description></item><item><title>Well Known Distributions</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/well-known-distributions/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/well-known-distributions/</guid><description>1. Bernoulli Distribution Use case: Single experiment with success/failure
+PMF
+$$ P(X = 1) = p, \quad P(X = 0) = 1 - p $$ Mean $\mathbb{E}[X] = p$ Variance $\mathrm{Var}(X) = p(1 - p)$ Special Properties
+Indicator random variable Building block of Binomial distribution 2. Binomial Distribution Use case: Number of successes in (n) independent Bernoulli trials
+PMF
+$$ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k} $$ Mean $np$ Variance $np(1-p)$</description></item></channel></rss>

@@ -1,32 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Sorting on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sorting/</link>
-    <description>Recent content in Sorting on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/Notes-Host/vault/dsa-and-cp/sorting/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Merge Sorted Array</title>
-      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sorting/merge-sorted-array/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sorting/merge-sorted-array/</guid>
-      <description>You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.&#xA;Merge nums1 and nums2 into a single array sorted in non-decreasing order.&#xA;The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored.</description>
-    </item>
-    <item>
-      <title>Quick Sort</title>
-      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sorting/quick-sort/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sorting/quick-sort/</guid>
-      <description>Quick Sort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot.&#xA;Step-by-Step Breakdown Let&amp;rsquo;s trace the algorithm using an example array: [10, 80, 30, 90, 40, 50, 70]&#xA;1. Choose a Pivot There are many different versions of quickSort that pick pivot in different ways:&#xA;Always pick the first element as a pivot. Always pick the last element as a pivot (we will use this common approach below).</description>
-    </item>
-    <item>
-      <title>Quick Sort Partition</title>
-      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sorting/quick-sort-partition/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/sorting/quick-sort-partition/</guid>
-      <description>The Partition Algorithm is the operational core of Quick Sort. Its entire job is to take an array (or a subsection of one), select one element to be the pivot, and rearrange the surrounding elements so that everything smaller than the pivot moves to its left, and everything larger moves to its right.&#xA;By the end of a single partition step, the pivot element lands in its exact, final sorted position.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sorting on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/</link><description>Recent content in Sorting on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Sort</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/quick-sort/</link><pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/quick-sort/</guid><description>Quick Sort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot.
+Step-by-Step Breakdown Let&amp;rsquo;s trace the algorithm using an example array: [10, 80, 30, 90, 40, 50, 70]
+1. Choose a Pivot There are many different versions of quickSort that pick pivot in different ways:
+Always pick the first element as a pivot. Always pick the last element as a pivot (we will use this common approach below).</description></item><item><title>Quick Sort Partition</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/quick-sort-partition/</link><pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/quick-sort-partition/</guid><description>The Partition Algorithm is the operational core of Quick Sort. Its entire job is to take an array (or a subsection of one), select one element to be the pivot, and rearrange the surrounding elements so that everything smaller than the pivot moves to its left, and everything larger moves to its right.
+By the end of a single partition step, the pivot element lands in its exact, final sorted position.</description></item><item><title>Merge Sorted Array</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/merge-sorted-array/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/merge-sorted-array/</guid><description>You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+Merge nums1 and nums2 into a single array sorted in non-decreasing order.
+The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored.</description></item></channel></rss>

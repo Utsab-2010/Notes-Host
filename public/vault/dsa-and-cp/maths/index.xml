@@ -1,25 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Maths on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/maths/</link>
-    <description>Recent content in Maths on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/Notes-Host/vault/dsa-and-cp/maths/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Sieve of Eratosthenes</title>
-      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/maths/sieve-of-eratosthenes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/maths/sieve-of-eratosthenes/</guid>
-      <description>A classic algorithm to find all prime numbers up to a limit N efficiently.&#xA;Core Idea Start by assuming every number ≥ 2 is prime. Then, for each prime you find, mark all its multiples as not prime. What&amp;rsquo;s left unmarked at the end is your list of primes.&#xA;Algorithm Create a boolean array is_prime[0..N], initialized to True. Set is_prime[0] = is_prime[1] = False. For each i from 2 to √N: If is_prime[i] is still True, mark all multiples of i starting from i*i as False.</description>
-    </item>
-    <item>
-      <title>Single Number Others Twice</title>
-      <link>http://localhost:1313/Notes-Host/vault/dsa-and-cp/maths/single-number-others-twice/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/dsa-and-cp/maths/single-number-others-twice/</guid>
-      <description>Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.&#xA;You must implement a solution with a linear runtime complexity and use only constant extra space.&#xA;Example 1:&#xA;Input: nums = [2,2,1]&#xA;Output: 1&#xA;Example 2:&#xA;Input: nums = [4,1,2,1,2]&#xA;Output: 4&#xA;Example 3:&#xA;Input: nums = [1]&#xA;Output: 1&#xA;Constraints:&#xA;1 &amp;lt;= nums.length &amp;lt;= 3 * 104 -3 * 104 &amp;lt;= nums[i] &amp;lt;= 3 * 104 Each element in the array appears twice except for one element which appears only once.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Maths on Utsab's Digital Garden</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/maths/</link><description>Recent content in Maths on Utsab's Digital Garden</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/maths/index.xml" rel="self" type="application/rss+xml"/><item><title>Sieve of Eratosthenes</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/maths/sieve-of-eratosthenes/</link><pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/maths/sieve-of-eratosthenes/</guid><description>A classic algorithm to find all prime numbers up to a limit N efficiently.
+Core Idea Start by assuming every number ≥ 2 is prime. Then, for each prime you find, mark all its multiples as not prime. What&amp;rsquo;s left unmarked at the end is your list of primes.
+Algorithm Create a boolean array is_prime[0..N], initialized to True. Set is_prime[0] = is_prime[1] = False. For each i from 2 to √N: If is_prime[i] is still True, mark all multiples of i starting from i*i as False.</description></item><item><title>Single Number Others Twice</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/maths/single-number-others-twice/</link><pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/maths/single-number-others-twice/</guid><description>Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+You must implement a solution with a linear runtime complexity and use only constant extra space.
+Example 1:
+Input: nums = [2,2,1]
+Output: 1
+Example 2:
+Input: nums = [4,1,2,1,2]
+Output: 4
+Example 3:
+Input: nums = [1]
+Output: 1
+Constraints:
+1 &amp;lt;= nums.length &amp;lt;= 3 * 104 -3 * 104 &amp;lt;= nums[i] &amp;lt;= 3 * 104 Each element in the array appears twice except for one element which appears only once.</description></item></channel></rss>
