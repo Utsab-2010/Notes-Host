@@ -1,30 +1,45 @@
 ---
 title: "Fun Resources"
-lastmod: 2026-06-11
+lastmod: 2026-07-06
 ---
 
-#### Blogs
+# Blogs
 - [Matthew Landers](https://mattlanders.net/index.html)
 - [Gregory Gundersen](https://gregorygundersen.com/blog/)
 - [co/scope - Build a Strong Foundation for Your Research Project](https://co-scope-labs.vercel.app/)  - Blog Series by Cohere Labs 
 - [The Illustrated Transformer – Jay Alammar – Visualizing machine learning one concept at a time.](https://jalammar.github.io/illustrated-transformer/)
 - [FeynmanWiki - Technical Blogs, Explained](https://www.feynmanwiki.com/)
 - [Lil'Log](https://lilianweng.github.io/)
-  
-### Courses
+- - [Work at a Frontier Lab — Learn ML Systems & Research](https://www.workatafrontierlab.com/)
+- [https://silviasapora.github.io/blog/ml-interviews.html](https://t.co/eLh20ggMHW)
+- [https://nishanthjkumar.com/blog/2026/Navigating-the-Industry-Job-Search-as-a-Robotics-PhD-in-2026/](https://t.co/VRFsZx7Kxa)
+
+---
+# Courses & Learning Guides
 - [DEEP LEARNING · Deep Learning](https://atcold.github.io/NYU-DLSP20/) - NYU DL course by LeCun
 - [Stanford CS336 \| Language Modeling from Scratch](https://cs336.stanford.edu/)
 - [Carnegie Mellon University: Computer Vision Courses \| Basic to Advanced](https://azminewasi.substack.com/p/carnegie-mellon-university-computer)
 - [EECS 4422 Computer Vision](https://www.eecs.yorku.ca/~kosta/Courses/EECS4422/)
 - [Deep Learning in Computer Vision](https://www.eecs.yorku.ca/~kosta/Courses/EECS6322/)
+- [Foundations of Computer Vision](https://visionbook.mit.edu/) - MIT's book on Computer Vision
+- [Welcome to Spinning Up in Deep RL! — Spinning Up documentation](https://spinningup.openai.com/en/latest/)
 
-### Competitive Programming
+---
+# Competitive Programming
 - [Good Blog Post Resources about Algorithm and Data Structures - Codeforces](https://codeforces.com/blog/entry/13529)
 - [String Hashing - Algorithms for Competitive Programming](https://cp-algorithms.com/string/string-hashing.html)
-- 
 
-### Research Assists
+---
+# ML-Sys
+- [Modern GPU Programming For MLSys — Modern GPU Programming For MLSys](https://mlc.ai/modern-gpu-programming-for-mlsys/)
+- [https://jax-ml.github.io/scaling-book/](https://t.co/7OotFSTHXn)
+
+---
+# Research 
 - [arXiv Xplorer](https://arxivxplorer.com/) - Does fast semantic search on arxiv
 - [Explore \| alphaXiv](https://www.alphaxiv.org) - does AI based semantic search and provides AI help like summaries, discussions,etc
 - [NotebookLM for Literature Review: A Detailed Step-by-Step Guide for Students and Researchers \| by Dhiraj Amin \| Medium](https://medium.com/@dhirajamint/notebooklm-for-literature-review-a-detailed-step-by-step-guide-for-students-and-researchers-47006e4c6409)
-
+- [Papers with Code](https://paperswithcode.co/)
+- [co/scope - Build a Strong Foundation for Your Research Project](https://co-scope-labs.vercel.app/)
+# Misc
+- [Programmable Search Engine](https://cse.google.com/cse?cx=31c7d838ae0254c4c)

@@ -1,9 +1,9 @@
 ---
 title: "Defuse the Bomb"
-lastmod: 2026-06-07
+lastmod: 2026-07-05
 ---
 
-#cp_easy 
+#cp-easy 
 
 You have a bomb to defuse, and your time is running out! Your informer will provide you with a **circular** array `code` of length of `n` and a key `k`.
 

@@ -1,11 +1,11 @@
 <aside class="sidebar">
   <div class="sidebar-header">
     <a href="{{ "" | relURL }}" class="sidebar-brand">
-      <span class="brand-icon">🌱</span>
-      <span class="brand-text">My Garden</span>
+      <span class="brand-icon">📓</span>
+      <span class="brand-text">Note Repository</span>
     </a>
   </div>
-  
+
   <div class="sidebar-search">
     <input type="text" id="search-input" placeholder="Search notes..." onkeyup="filterTree()">
   </div>
@@ -13,9 +13,9 @@
   <nav class="file-tree">
     {{ $vault := .Site.GetPage "section" "vault" }}
     {{ if $vault }}
-      {{ partial "tree-node.html" (dict "node" $vault "current" .) }}
+    {{ partial "tree-node.html" (dict "node" $vault "current" .) }}
     {{ else }}
-      <p class="empty-message">No notes found.</p>
+    <p class="empty-message">No notes found.</p>
     {{ end }}
   </nav>
 </aside>

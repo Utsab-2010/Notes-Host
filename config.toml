@@ -1,6 +1,6 @@
 baseURL = "https://Utsab-2010.github.io/Notes-Host/"
 languageCode = "en-us"
-title = "Utsab's Digital Garden"
+title = "Utsab's Note Repository"
 canonifyURLs = true
 
 ignoreFiles = [
@@ -8,7 +8,11 @@ ignoreFiles = [
   "\\.git",
   "^Journal",
   "Internship Applications\\.md",
-  "Project Ideas\\.md"
+  "Project Ideas\\.md",
+  "Command Center\\.md",
+  "History",
+  "Blogs",
+  "Video Ideas"
 ]
 
 [params]

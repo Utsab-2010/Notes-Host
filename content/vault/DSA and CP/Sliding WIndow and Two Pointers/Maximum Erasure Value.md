@@ -1,9 +1,9 @@
 ---
 title: "Maximum Erasure Value"
-lastmod: 2026-06-08
+lastmod: 2026-07-03
 ---
 
-#cp_medium 
+#cp-medium 
 
 You are given an array of positive integers `nums` and want to erase a subarray containing **unique elements**. The **score** you get by erasing the subarray is equal to the **sum** of its elements.
 

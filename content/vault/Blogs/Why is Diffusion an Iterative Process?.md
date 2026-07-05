@@ -1,7 +1,7 @@
----lastmod: 2026-05-30
+---lastmod: 2026-07-02
 
 tags:
-  - to_ponder
+  - to-ponder
   - blog
   - diffusion
 aliases:

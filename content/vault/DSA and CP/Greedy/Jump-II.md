@@ -1,9 +1,9 @@
 ---
 title: "Jump-II"
-lastmod: 2026-06-14
+lastmod: 2026-07-03
 ---
 
-#cp_medium 
+#cp-medium 
 You are given a 0-indexed array of integers nums of length n. You are initially positioned at index 0.
 
 Each element nums[i] represents the maximum length of a forward jump from index i. In other words, if you are at index i, you can jump to any index (i + j) where:

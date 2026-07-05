@@ -1,9 +1,9 @@
 ---
 title: "Max Consecutive One III"
-lastmod: 2026-06-07
+lastmod: 2026-07-03
 ---
 
-#cp_medium
+#cp-medium
 
 Given a binary array `nums` and an integer `k`, return _the maximum number of consecutive_ `1`_'s in the array if you can flip at most_ `k` `0`'s.
 

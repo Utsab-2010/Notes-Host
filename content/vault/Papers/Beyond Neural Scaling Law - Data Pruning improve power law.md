@@ -1,6 +1,6 @@
 ---
 title: "Beyond Neural Scaling Law - Data Pruning improve power law"
-lastmod: 2026-06-09
+lastmod: 2026-07-02
 ---
 
 #scaling_laws 
@@ -19,6 +19,6 @@ paper: [\[2206.14486\] Beyond neural scaling laws: beating power law scaling via
 - *This implies that power scaling is probably due to the presence of redundant diversity in the dataset.* as stated in the paper as "..that power law scaling of error with respect to data suggests that many training examples are highly redundant."
 
 ## Questions:
-#to_ponder 
+#to-ponder 
 1. Does the power law imply that a dataset HAS redundant samples that can be removed?'
 2. 
