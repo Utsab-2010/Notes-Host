@@ -190,10 +190,16 @@ def sync_all():
                 # Process markdown (copy + rewrite links)
                 process_markdown(src_file, dest_file, note_map, resource_map)
             else:
-                # Symlink images/assets
-                if os.path.exists(dest_file):
-                    os.remove(dest_file)
-                os.symlink(src_file, dest_file)
+                # Symlink images/assets using slugified paths to match markdown references
+                parts = rel_path.split(os.sep)
+                slugified_parts = [slugify(os.path.splitext(p)[0]) + os.path.splitext(p)[1] if idx == len(parts)-1 else slugify(p) for idx, p in enumerate(parts)]
+                slugified_rel_path = os.sep.join(slugified_parts)
+                dest_file_slugified = os.path.join(CONTENT_DIR, slugified_rel_path)
+                
+                os.makedirs(os.path.dirname(dest_file_slugified), exist_ok=True)
+                if os.path.exists(dest_file_slugified):
+                    os.remove(dest_file_slugified)
+                os.symlink(src_file, dest_file_slugified)
                 
     print("Sync complete.")
 

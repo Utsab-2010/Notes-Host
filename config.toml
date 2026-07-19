@@ -32,3 +32,16 @@ ignoreFiles = [
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [["\\[", "\\]"], ["$$", "$$"]]
           inline = [["\\(", "\\)"], ["$", "$"]]
+
+[module]
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "content"
+    target = "static"
+    excludeFiles = "**.md"
+
