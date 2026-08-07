@@ -51,6 +51,10 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
+      - name: Install dependencies
+        run: |
+          python3 -m pip install cryptography
+
       - name: Run Sync Script
         run: |
           export VAULT_DIR="${{ github.workspace }}/Utsab-Notes"
@@ -66,6 +70,12 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Encrypt private notes
+        env:
+          DECRYPT_PASSWORD: ${{ secrets.DECRYPT_PASSWORD }}
+        run: |
+          python3 encrypt.py
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

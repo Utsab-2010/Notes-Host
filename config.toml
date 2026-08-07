@@ -5,14 +5,7 @@ canonifyURLs = true
 
 ignoreFiles = [
   "\\.obsidian",
-  "\\.git",
-  "^Journal",
-  "Internship Applications\\.md",
-  "Project Ideas\\.md",
-  "Command Center\\.md",
-  "History",
-  "Blogs",
-  "Video Ideas"
+  "\\.git"
 ]
 
 [params]
