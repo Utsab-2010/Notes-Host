@@ -1,25 +1,77 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BTP on Utsab&#39;s Digital Garden</title>
-    <link>http://localhost:1313/Notes-Host/vault/research-work/btp/</link>
-    <description>Recent content in BTP on Utsab&#39;s Digital Garden</description>
-    <generator>Hugo</generator>
+    <title>BTP on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/research-work/btp/</link>
+    <description>Recent content in BTP on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/Notes-Host/vault/research-work/btp/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://localhost:1313/vault/research-work/btp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>KSD for Goodness-of-fit Tests</title>
-      <link>http://localhost:1313/Notes-Host/vault/research-work/btp/ksd-for-goodness-of-fit-tests/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/research-work/btp/ksd-for-goodness-of-fit-tests/</guid>
-      <description>Reproducing Kernel Hilbert Space (RKHS)&#xA;What is a Goodness of Fit Test? The goodness of fit of a statistical model describes how well it fits a set of observations. Measures of goodness of fit typically summarize the discrepancy between observed values and the values expected under the model in question.&#xA;Contributions New discrepancy statistic for measuring differences between two distribution. derive a new class of powerful goodness-of-fit tests that are widely applicable for complex and high dimensional distributions, even for those with computationally intractable normalization constants.</description>
+      <link>http://localhost:1313/vault/research-work/btp/ksd-for-goodness-of-fit-tests/</link>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/btp/ksd-for-goodness-of-fit-tests/</guid>
+      <description>Reproducing Kernel Hilbert Space (RKHS)
+What is a Goodness of Fit Test? The goodness of fit of a statistical model describes how well it fits a set of observations. Measures of goodness of fit typically summarize the discrepancy between observed values and the values expected under the model in question.
+Contributions  New discrepancy statistic for measuring differences between two distribution. derive a new class of powerful goodness-of-fit tests that are widely applicable for complex and high dimensional distributions, even for those with computationally intractable normalization constants.</description>
     </item>
+    
+    <item>
+      <title>BTP Notebook</title>
+      <link>http://localhost:1313/vault/research-work/btp/btp-notebook/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/btp/btp-notebook/</guid>
+      <description>To-Dos  Investigate Scenarios where a learnt kernel would boost the results of the pooled KSD thing with the learnt score function.  Intuition is that is that for simpler distributions pooled KSD already does a lot of the heavy lifting and hence having a learnt kernel would not lead to that much noticeable benefit. Also learnt kernel helped with MMD only.   Create experiment setup with Cifar10,cifar100,svhn and their score models  Compute the histogram of ID and OOD sampels&amp;rsquo;s test statistic using the KSD    Ideas  Maybe we can do an simple ID vs OOD metric value histogram(normalised)  We can do it over Cifar10, cifar100 and svhn using learnt score functions checkpoints (ref.</description>
+    </item>
+    
+    <item>
+      <title>Learning Deep Kernels for Non-Parametric Two-Sample Tests</title>
+      <link>http://localhost:1313/vault/research-work/btp/learning-deep-kernels-for-non-parametric-two-sample-tests/</link>
+      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/btp/learning-deep-kernels-for-non-parametric-two-sample-tests/</guid>
+      <description>#statistics
+Problem Addressed A popular way to solve two sample tests is using a metric called Maximum Mean Discrepancy (MMD), which measures the distance between the two datasets using a &amp;ldquo;kernel&amp;rdquo; (a mathematical function that measures how similar data points are to each other).
+ The problem: Traditional kernels (like the standard Gaussian kernel) are &amp;ldquo;spatially homogeneous&amp;rdquo; or translation-invariant &amp;raquo; k(x, y) = k(x−t, y −t). This means they apply the exact same mathematical lens everywhere across the data.</description>
+    </item>
+    
+    <item>
+      <title>Diffusion Posterior Sampling for General Noisy Problems</title>
+      <link>http://localhost:1313/vault/research-work/btp/diffusion-posterior-sampling-for-general-noisy-problems/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/btp/diffusion-posterior-sampling-for-general-noisy-problems/</guid>
+      <description>#diffusion #inverse-problems
+Main Contributions  we extend diffusion solvers to efficiently handle general noisy (non)linear inverse problems via approximation of the posterior sampling. incorporate various measurement noise statistics such as Gaussian and Poisson, and also efficiently handle noisy nonlinear inverse problems such as Fourier phase retrieval and non-uniform deblurring.  Some inverse problems and their solved results.
+Notes:  In this work, they have considered the variance preserving (VP) form of the SDE (Song et al.</description>
+    </item>
+    
+    <item>
+      <title>Prof. Subhadip</title>
+      <link>http://localhost:1313/vault/research-work/btp/prof.-subhadip/</link>
+      <pubDate>Sun, 21 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/btp/prof.-subhadip/</guid>
+      <description>@Utsab: Can you read the following two papers?
+ https://arxiv.org/abs/2304.14762: they show that hand-crafted perturbation kernels improve KSD power, so the natural next question is whether you can do strictly better by learning the perturbation&amp;hellip;diffusion models give you a principled, expressive family of perturbation kernels (one per noise scale) with pretrained scores already attached. The main idea is: stop choosing the kernel by hand, learn it jointly with the mixture weights to maximize power directly.</description>
+    </item>
+    
     <item>
       <title>Reproducing Kernel Hilbert Space (RKHS)</title>
-      <link>http://localhost:1313/Notes-Host/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Notes-Host/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/</guid>
-      <description>To understand a Reproducing Kernel Hilbert Space (RKHS), it helps to break the name down into its two core mathematical pillars: the Hilbert Space (the setting) and the Reproducing Kernel (the engine).&#xA;1. The Foundation: What is a Hilbert Space? A Hilbert space (denoted as $\mathcal{H}$) is a specific type of vector space where the elements aren&amp;rsquo;t just simple numbers or coordinates—they are entire functions.&#xA;Inner Product ($\langle f, g \rangle_{\mathcal{H}}$): Just like you can take the dot product of two geometric vectors to see how well they align, a Hilbert space has an inner product that lets you measure the &amp;ldquo;angle,&amp;rdquo; &amp;ldquo;distance,&amp;rdquo; and &amp;ldquo;length&amp;rdquo; (norm) between two different functions.</description>
+      <link>http://localhost:1313/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/</link>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/</guid>
+      <description>To understand a Reproducing Kernel Hilbert Space (RKHS), it helps to break the name down into its two core mathematical pillars: the Hilbert Space (the setting) and the Reproducing Kernel (the engine).
+1. The Foundation: What is a Hilbert Space? A Hilbert space (denoted as $\mathcal{H}$) is a specific type of vector space where the elements aren&amp;rsquo;t just simple numbers or coordinates—they are entire functions.
+  **Inner Product ($\langle f, g \rangle_{\mathcal{H}}$):** Just like you can take the dot product of two geometric vectors to see how well they align, a Hilbert space has an inner product that lets you measure the &amp;ldquo;angle,&amp;rdquo; &amp;ldquo;distance,&amp;rdquo; and &amp;ldquo;length&amp;rdquo; (norm) between two different functions.</description>
     </item>
+    
   </channel>
 </rss>

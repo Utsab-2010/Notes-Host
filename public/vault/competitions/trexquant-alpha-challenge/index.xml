@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TrexQuant Alpha Challenge on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/competitions/trexquant-alpha-challenge/</link>
+    <description>Recent content in TrexQuant Alpha Challenge on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/competitions/trexquant-alpha-challenge/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Alpha Info</title>
+      <link>http://localhost:1313/vault/competitions/trexquant-alpha-challenge/alpha-info/</link>
+      <pubDate>Wed, 22 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/competitions/trexquant-alpha-challenge/alpha-info/</guid>
+      <description> 1601.00991 github.com/jingmouren/CrisperX-50_WorldQuant_Alpha_Examples_for_Alphathon/blob/main/alpha50.csv notes/quant_interview/alpha_ideas.md at main · jglazar/notes · GitHub GitHub - yli188/WorldQuant_alpha101_code: Code implementation of the Quantigic 101 Formulaic Alphas · GitHub GitHub - Harvey-Sun/World_Quant_Alphas: World Quant 101 alphas的计算和策略化 · GitHub notes/quant_interview/alpha_ideas.md at main · jglazar/notes · GitHub Decoding Successful Alphas - the combinatory approach  </description>
+    </item>
+    
+  </channel>
+</rss>

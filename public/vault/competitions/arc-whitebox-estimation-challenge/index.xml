@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ARC-WhiteBox-Estimation Challenge on Utsab's Note Repository</title><link>https://Utsab-2010.github.io/Notes-Host/vault/competitions/arc-whitebox-estimation-challenge/</link><description>Recent content in ARC-WhiteBox-Estimation Challenge on Utsab's Note Repository</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/competitions/arc-whitebox-estimation-challenge/index.xml" rel="self" type="application/rss+xml"/><item><title>Challenge Details</title><link>https://Utsab-2010.github.io/Notes-Host/vault/competitions/arc-whitebox-estimation-challenge/challenge-details/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/competitions/arc-whitebox-estimation-challenge/challenge-details/</guid><description>AIcrowd | ARC White-Box Estimation Challenge 2026 | Challenges</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ARC-WhiteBox-Estimation Challenge on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/</link>
+    <description>Recent content in ARC-WhiteBox-Estimation Challenge on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Challenge Details</title>
+      <link>http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/challenge-details/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/challenge-details/</guid>
+      <description>AIcrowd | ARC White-Box Estimation Challenge 2026 | Challenges</description>
+    </item>
+    
+  </channel>
+</rss>

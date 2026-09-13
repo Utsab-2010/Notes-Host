@@ -1,0 +1,12 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Video Ideas"
+        - file.ext == "md"
+    groupBy:
+      property: file.tags
+      direction: ASC
+    order:
+      - file.name

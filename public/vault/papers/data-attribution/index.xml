@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Attribution on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/papers/data-attribution/</link>
+    <description>Recent content in Data Attribution on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/papers/data-attribution/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deep Learning on a Data Diet</title>
+      <link>http://localhost:1313/vault/papers/data-attribution/deep-learning-on-a-data-diet/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/data-attribution/deep-learning-on-a-data-diet/</guid>
+      <description>#data-efficient-ml
+Proposed Ideas  Compared to recent work that prunes data by discarding examples that are rarely forgotten over the course of training, our scores use only local information early in training a scoring method to identify diff and important samples early on in training identify how this score pruned sub-population affect loss surface and the training dynamics  Imp Results  we can prune 25% of CIFAR-100 (verified by IISc task results) compared to 50% of CIFAR-10 due to difficulty in learning more variety.</description>
+    </item>
+    
+    <item>
+      <title>Large-Scale Pruning using Dyna Uncertainty</title>
+      <link>http://localhost:1313/vault/papers/data-attribution/large-scale-pruning-using-dyna-uncertainty/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/data-attribution/large-scale-pruning-using-dyna-uncertainty/</guid>
+      <description>#data-efficient-ml paper: openaccess.thecvf.com/content/CVPR2024W/DDCV/papers/He_Large-scale_Dataset_Pruning_with_Dynamic_Uncertainty_CVPRW_2024_paper.pdf
+Proposed Ideas  Generality Easy to learn samples are pruned out and focus is shifted to the hard(high train loss) samples. They argue that focus be shifted to uncertain samples rather than hard ones. Because hard ones are often mis-labled or noise data. Most of the information regarding the decision boundary is learned from the uncertain samples. They want to prune out a coreset which is subset of the dataset.</description>
+    </item>
+    
+    <item>
+      <title>THEORETICAL ANALYSIS OF CONTRASTIVE LEARNING UNDER IMBALANCED DATA</title>
+      <link>http://localhost:1313/vault/papers/data-attribution/theoretical-analysis-of-contrastive-learning-under-imbalanced-data/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/data-attribution/theoretical-analysis-of-contrastive-learning-under-imbalanced-data/</guid>
+      <description>#data-attribution #data-efficient-ml #learning-theory
+Background  CLIP is useful, but the theoretical understanding about it remains limited, for imbalanced data distributions which are most common in real world datasets. minority classes are underrepresented - hinders capture of discriminative features  Setup  Transformer MLP setup with ReLU activations with imbalanced data Structured data model where each input includes majority and minority features with different frequencies.  Experiments   Alignment of Neurons with the feature vectors:</description>
+    </item>
+    
+    <item>
+      <title>Understanding BlackBox Predictions - Using Influence Functions</title>
+      <link>http://localhost:1313/vault/papers/data-attribution/understanding-blackbox-predictions-using-influence-functions/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/data-attribution/understanding-blackbox-predictions-using-influence-functions/</guid>
+      <description>#continual_learning
+paper: [1703.04730] Understanding Black-box Predictions via Influence Functions
+Setup You have training points $z_1, \dots, z_n$ where each $z_i = (x_i, y_i)$. You train a model by minimising the empirical risk:
+$$\hat{\theta} = \arg\min_\theta \frac{1}{n} \sum_{i=1}^n L(z_i, \theta)$$
+The fundamental question is: **how does removing a single training point $z$ change $\hat{\theta}$, and consequently change predictions on a test point $z_{test}$?**
+Retraining from scratch for every candidate point is prohibitively expensive, so the paper approximates this.</description>
+    </item>
+    
+  </channel>
+</rss>

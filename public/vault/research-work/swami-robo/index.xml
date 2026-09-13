@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Swami Robo on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/research-work/swami-robo/</link>
+    <description>Recent content in Swami Robo on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/research-work/swami-robo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RM3 Setup</title>
+      <link>http://localhost:1313/vault/research-work/swami-robo/rm3-setup/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/swami-robo/rm3-setup/</guid>
+      <description>For metaworld environments, install the environments by cloning this fork of the metaworld repo and installing via pip install -e .
+  Your build will fail probs.
+  Install mujoco200 into the ~/.mujoco/mujoco200 folder (refer to link below)
+ Install MuJoCo 200 &amp;amp; 210 on Linux · GitHub    rename paths properly
+export MUJOCO_PY_MUJOCO_PATH=~/.mujoco/mujoco200 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.mujoco/mujoco200/bin   If still fails , degrade cython pip install &amp;quot;cython == 0.</description>
+    </item>
+    
+  </channel>
+</rss>

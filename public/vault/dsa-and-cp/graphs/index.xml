@@ -1,13 +1,101 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Graphs on Utsab's Note Repository</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/</link><description>Recent content in Graphs on Utsab's Note Repository</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/index.xml" rel="self" type="application/rss+xml"/><item><title>Course Schedule</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/course-schedule/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/course-schedule/</guid><description>#cp-medium
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphs on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/dsa-and-cp/graphs/</link>
+    <description>Recent content in Graphs on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/dsa-and-cp/graphs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connected Components in an Undirected Graph</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/graphs/connected-components-in-an-undirected-graph/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/graphs/connected-components-in-an-undirected-graph/</guid>
+      <description>What is a Connected Component? A connected component is a group of nodes in an undirected graph where every node can reach every other node in the same group — and there&amp;rsquo;s no path to nodes outside it.
+Think of it like islands. Each island is a connected component. You can walk anywhere on an island, but you can&amp;rsquo;t cross to another island.
+1 - 2 4 - 5 7 | | 3 6 The graph above has 3 connected components: {1,2,3}, {4,5,6}, {7}.</description>
+    </item>
+    
+    <item>
+      <title>Detection of a Cycle in a Directed Graph</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-a-cycle-in-a-directed-graph/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-a-cycle-in-a-directed-graph/</guid>
+      <description>#cp-theory
+Kahn&amp;rsquo;s Algo A Topological Sort is a linear ordering of vertices such that for every directed edge from u to v, u comes before v in the ordering. Importantly, a valid topological order exists only if the graph is a Directed Acyclic Graph (DAG).
+This gives us a powerful idea that if we try to generate a topological sort but cannot include all vertices (some nodes remain stuck due to dependencies), then the graph must contain a cycle.</description>
+    </item>
+    
+    <item>
+      <title>Course Schedule II</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule-ii/</link>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule-ii/</guid>
+      <description>#cp-hard
 There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
-For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1. Return true if you can finish all courses.</description></item><item><title>Detection of a Cycle in a Directed Graph</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/detection-of-a-cycle-in-a-directed-graph/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/detection-of-a-cycle-in-a-directed-graph/</guid><description>#cp-theory
-Kahn&amp;rsquo;s Algo A Topological Sort is a linear ordering of vertices such that for every directed edge from u to v, u comes before v in the ordering. Importantly, a valid topological order exists only if the graph is a Directed Acyclic Graph (DAG). This gives us a powerful idea that if we try to generate a topological sort but cannot include all vertices (some nodes remain stuck due to dependencies), then the graph must contain a cycle.</description></item><item><title>Topological Sort</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/topological-sort/</link><pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/topological-sort/</guid><description>What it is A topological sort (topo sort) of a Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge u -&amp;gt; v, u comes before v in the ordering.
-Only defined for DAGs. If the graph has a cycle, no valid topological order exists. Not unique — a graph can have multiple valid topological orderings. Classic use cases: task scheduling with dependencies, build systems (compiling files in the right order), course prerequisite ordering, resolving package dependencies.</description></item><item><title>Nearest 0 from cell in a matrix</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/nearest-0-from-cell-in-a-matrix/</link><pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/nearest-0-from-cell-in-a-matrix/</guid><description>#cp-medium Given an m x n binary matrix mat, return the distance of the nearest 0 for each cell. The distance between two cells sharing a common edge is 1. Example 1: Inpu t: mat = [[0,0,0],[0,1,0],[0,0,0]] Output:[[0,0,0],[0,1,0],[0,0,0]]
+ For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1.  Return the ordering of courses you should take to finish all courses.</description>
+    </item>
+    
+    <item>
+      <title>Rotten Oranges</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/graphs/rotten-oranges/</link>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/graphs/rotten-oranges/</guid>
+      <description>#cp-medium
+You are given an m x n grid where each cell can have one of three values:
+ 0 representing an empty cell, 1 representing a fresh orange, or 2 representing a rotten orange.  Every minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten.
+Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1.</description>
+    </item>
+    
+    <item>
+      <title>Course Schedule</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule/</guid>
+      <description>#cp-medium
+There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai.
+ For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1.  Return true if you can finish all courses.</description>
+    </item>
+    
+    <item>
+      <title>Topological Sort</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/graphs/topological-sort/</link>
+      <pubDate>Sun, 05 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/graphs/topological-sort/</guid>
+      <description>What it is A topological sort (topo sort) of a Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge u -&amp;gt; v, u comes before v in the ordering.
+ Only defined for DAGs. If the graph has a cycle, no valid topological order exists. Not unique — a graph can have multiple valid topological orderings. Classic use cases: task scheduling with dependencies, build systems (compiling files in the right order), course prerequisite ordering, resolving package dependencies.</description>
+    </item>
+    
+    <item>
+      <title>Nearest 0 from cell in a matrix</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/graphs/nearest-0-from-cell-in-a-matrix/</link>
+      <pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/graphs/nearest-0-from-cell-in-a-matrix/</guid>
+      <description>#cp-medium Given an m x n binary matrix mat, return the distance of the nearest 0 for each cell. The distance between two cells sharing a common edge is 1. Example 1: Inpu t: mat = [[0,0,0],[0,1,0],[0,0,0]] Output:[[0,0,0],[0,1,0],[0,0,0]]
 Example 2: Input: mat =\ [0,0,0],[0,1,0],[1,1,1]] Output: [[0,0,0],[0,1,0],[1,2,1]]
 Constraints:
-m == mat.length n == mat[i].length 1 &amp;lt;= m, n &amp;lt;= 104 1 &amp;lt;= m * n &amp;lt;= 104 mat[i][j] is either 0 or 1.</description></item><item><title>Rotten Oranges</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/rotten-oranges/</link><pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/rotten-oranges/</guid><description>#cp-medium
-You are given an m x n grid where each cell can have one of three values:
-0 representing an empty cell, 1 representing a fresh orange, or 2 representing a rotten orange. Every minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten.
-Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1.</description></item><item><title>Detection of Cycle in an Undirected Graph</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/detection-of-cycle-in-an-undirected-graph/</link><pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/detection-of-cycle-in-an-undirected-graph/</guid><description>Approach 1: Using BFS You traverse through the graph using BFS from any starting point. but instead of just storing nodes we store nodes and their parents as tuple (node,parent) When you are adding the neighbours to the queue after visiting them you first check if they have been visited. Now in case they are visited already just check if that neighbour is the parent of the current node or not.</description></item><item><title>Connected Components in a Graph</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/connected-components-in-a-graph/</link><pubDate>Sat, 20 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/graphs/connected-components-in-a-graph/</guid><description>What is a Connected Component? A connected component is a group of nodes in an undirected graph where every node can reach every other node in the same group — and there&amp;rsquo;s no path to nodes outside it.
-Think of it like islands. Each island is a connected component. You can walk anywhere on an island, but you can&amp;rsquo;t cross to another island.
-1 - 2 4 - 5 7 | | 3 6 The graph above has 3 connected components: {1,2,3}, {4,5,6}, {7}.</description></item></channel></rss>
+ m == mat.length n == mat[i].length 1 &amp;lt;= m, n &amp;lt;= 104 1 &amp;lt;= m * n &amp;lt;= 104 mat[i][j] is either 0 or 1.</description>
+    </item>
+    
+    <item>
+      <title>Detection of Cycle in an Undirected Graph</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-cycle-in-an-undirected-graph/</link>
+      <pubDate>Tue, 23 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-cycle-in-an-undirected-graph/</guid>
+      <description>Approach 1: Using BFS  You traverse through the graph using BFS from any starting point. but instead of just storing nodes we store nodes and their parents as tuple (node,parent) When you are adding the neighbours to the queue after visiting them you first check if they have been visited.  Now in case they are visited already just check if that neighbour is the parent of the current node or not.</description>
+    </item>
+    
+  </channel>
+</rss>

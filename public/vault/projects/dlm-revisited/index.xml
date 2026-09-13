@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DLM-Revisited on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/projects/dlm-revisited/</link>
+    <description>Recent content in DLM-Revisited on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/projects/dlm-revisited/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workbench</title>
+      <link>http://localhost:1313/vault/projects/dlm-revisited/workbench/</link>
+      <pubDate>Tue, 14 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/projects/dlm-revisited/workbench/</guid>
+      <description>Main Inspiration - How to Build a Diffusion Language Model | Kuleshov Group
+ Basically take the interesting things from the above paper and implement them. Try to avoid agentic code insertion. LLMs are fine though.  </description>
+    </item>
+    
+  </channel>
+</rss>

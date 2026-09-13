@@ -1,2 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Math on Utsab's Note Repository</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/</link><description>Recent content in Math on Utsab's Note Repository</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/math/index.xml" rel="self" type="application/rss+xml"/><item><title>What is Kernel(function)?</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/what-is-kernelfunction/</link><pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/what-is-kernelfunction/</guid><description>In machine learning and statistics, you’ll see the word kernel thrown around constantly—whether it’s the transition kernel $p_{0t}(\mathbf{x}(t) \mid \mathbf{x}(0))$ in diffusion models, a smoothing kernel in computer vision, or the kernel trick in Support Vector Machines (SVMs).
-While a kernel is mathematically a function, the word &amp;ldquo;function&amp;rdquo; is too generic. Calling something a &amp;ldquo;kernel&amp;rdquo; signals that it possesses a specific structural role and a unique set of geometric properties.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/math/</link>
+    <description>Recent content in Math on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Johnson–Lindenstrauss lemma</title>
+      <link>http://localhost:1313/vault/math/johnsonlindenstrauss-lemma/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/johnsonlindenstrauss-lemma/</guid>
+      <description>The lemma states that a set of points in a high-dimensional space can be embedded into a space of much lower dimension in such a way that distances between the points are nearly preserved. In the classical proof of the lemma, the embedding is a random orthogonal projection.
+source - Johnson–Lindenstrauss lemma - Wikipedia</description>
+    </item>
+    
+    <item>
+      <title>What is Kernel(function)?</title>
+      <link>http://localhost:1313/vault/math/what-is-kernelfunction/</link>
+      <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/what-is-kernelfunction/</guid>
+      <description>In machine learning and statistics, you’ll see the word kernel thrown around constantly—whether it’s the transition kernel $p_{0t}(\mathbf{x}(t) \mid \mathbf{x}(0))$ in diffusion models, a _smoothing kernel_ in computer vision, or the _kernel trick_ in Support Vector Machines (SVMs).
+While a kernel is mathematically a function, the word &amp;ldquo;function&amp;rdquo; is too generic. Calling something a &amp;ldquo;kernel&amp;rdquo; signals that it possesses a specific structural role and a unique set of geometric properties.</description>
+    </item>
+    
+  </channel>
+</rss>

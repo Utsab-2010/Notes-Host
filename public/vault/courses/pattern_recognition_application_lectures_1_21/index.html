@@ -1,0 +1,5537 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern_recognition_application_lectures_1_21 | Utsab&#39;s Note Repository</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/main.css?v=1789302953">
+
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="sidebar">
+  <div class="sidebar-header">
+    <a href="http://localhost:1313/" class="sidebar-brand">
+      <span class="brand-icon">📓</span>
+      <span class="brand-text">Note Repository</span>
+    </a>
+  </div>
+
+  <div class="sidebar-search">
+    <input type="text" id="search-input" placeholder="Search notes..." onkeyup="filterTree()">
+  </div>
+
+  <nav class="file-tree">
+    
+    
+    
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/blogs/" class="folder-title ">Blogs</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/diffusion/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/implementing-clip/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Implementing CLIP</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/list-of-topics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">List of Topics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/need-for-score-networks/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Need for score networks</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/why-iterative-reverse-sampling-recovers-the-data-distribution/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why Iterative Reverse Sampling Recovers the Data Distribution?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/" class="folder-title ">Competitions</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/" class="folder-title ">ARC-WhiteBox-Estimation Challenge</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/challenge-details/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Challenge Details</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/mousevsai/" class="folder-title ">MouseVsAI</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/mousevsai/mouse-vs-ai/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mouse VS AI</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/trexquant-alpha-challenge/" class="folder-title ">TrexQuant Alpha Challenge</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/trexquant-alpha-challenge/alpha-info/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alpha Info</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/lpcv-track-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">LPCV-Track-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/orbit-wars/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Orbit Wars</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+      
+    
+    <li class="tree-item folder open">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▼</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/" class="folder-title ">Courses</a>
+      </div>
+      <div class="folder-content" style="display: block;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/" class="folder-title ">FM and Diff - MIT CSAIL</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/lecture-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Lecture-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/lecture-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Lecture-2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/overview/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Overview</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/" class="folder-title ">Image Processing and Computer Vision</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-1-15/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IVP Lectures 1-15</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-16-37/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IVP Lectures 16-37</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-38-49/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IVP Lectures 38-49</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/signal-processing/" class="folder-title ">Signal Processing</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/signal-processing/digital-communication/" class="folder-title ">Digital Communication</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/signal-processing/digital-communication/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/signal-processing/fundamentals/" class="folder-title ">Fundamentals</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/signal-processing/fundamentals/fourier-transform/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fourier Transform</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/stanfordcs336-llm/" class="folder-title ">Stanford(CS336) - LLM</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/flt-project/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">FLT - Project</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/pattern_recognition_application_lectures_1_21/" class="file-title-link active">
+        <span class="file-icon">📄</span>
+        <span class="file-name">pattern_recognition_application_lectures_1_21</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/cs-stuff/" class="folder-title ">CS Stuff</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/cs-stuff/sql-complete-reference-notes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">SQL — Complete Reference Notes</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/deep-learning/" class="folder-title ">Deep Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/deep-learning/diffusion-and-flow-models/" class="folder-title ">Diffusion and Flow Models</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-and-flow-models/reason-behind-the-creativity-of-diffusion-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reason Behind the Creativity of Diffusion Models</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/actor-critic-rl/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Actor-Critic RL</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/attention-mechanism/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Attention Mechanism</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/continual-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/continual-learning-eval-metrics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning - Eval Metrics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/continual-learning-formulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning Formulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/curriculum-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Curriculum Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/data-attribution/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data Attribution</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/data-driven-inductive-bias/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data-Driven Inductive Bias</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/deep-q-networks-dqn/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Q-Networks (DQN)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/depth-estimation-metrics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Depth Estimation Metrics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/deterministic-vs-probabilistic-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deterministic vs Probabilistic Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/different-ml-optimizers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Different ML Optimizers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-reverse-process/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Reverse Process</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-lm-denoising/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion-LM Denoising</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/energy-based-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Energy based Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/fr%C3%A9chet-inception-distance-fid/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fréchet Inception Distance (FID)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/layer-normalisation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Layer Normalisation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/low-rank-adaptationlora/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Low Rank Adaptation(LoRA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/matryoshka-representation-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Matryoshka Representation Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/mixture-of-experts/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mixture of Experts</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/ml-notes-database-expansion/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">ML Notes Database Expansion</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/moravecs-paradox/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Moravec&#39;s Paradox</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/n-gram-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">N-gram Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/neural-implicit-fields/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Neural Implicit Fields</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/noise-conditioned-score-matching/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Noise Conditioned Score Matching</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/optimal-transport/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Optimal Transport</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/predicting-next-word-with-gpt-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Predicting Next Word with GPT-2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/proximal-policy-optimization-ppo/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Proximal Policy Optimization (PPO)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/reimannian-manifolds/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reimannian Manifolds</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/rotary-positional-embeddings-rope/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Rotary Positional Embeddings (RoPE)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/solvable-models-in-machine-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Solvable Models in Machine Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/stability-vs-plasticity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Stability vs Plasticity</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/the-manifold-hypothesis/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">The Manifold Hypothesis</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/vq-vae-vector-quantized-variational-autoencoder/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">VQ-VAE (Vector Quantized Variational Autoencoder)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/what-is-moco/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is MoCo?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/what-is-perplexity-in-ml/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is Perplexity in ML?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/x_0-parameterization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">x_0-parameterization</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/" class="folder-title ">DSA and CP</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/" class="folder-title ">Binary Search</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/find-1st-and-last-pos-of-element-in-sorted-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Find 1st and last pos of element in sorted array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/find-peak-element/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Find Peak Element</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/koko-eating-banana/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Koko eating Banana</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/note-on-binary-search-methods/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Note on Binary Search Methods</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/search-in-2d-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in 2d - II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/search-in-a-2d-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in a 2d array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/search-in-rotated-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in Rotated Array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/single-element-in-a-sorted-array-of-pairs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Single Element in a Sorted array of pairs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/split-array-largest-sum/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Split Array Largest Sum</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/" class="folder-title ">Binary Trees</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/binary-search-trees/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Search Trees</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/binary-trees/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Trees</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/check-for-a-balanced-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Check for a Balanced BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/inorder-traversal-of-a-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Inorder Traversal of a BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/postorder-traversal-of-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Postorder Traversal of BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/preorder-inorder-postorder-traversals-in-one-traversal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Preorder Inorder Postorder Traversals in One Traversal</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/doubts/" class="folder-title ">Doubts</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/doubts/binary-search-vs-boundary-conditions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Search — `&lt;=` vs `&lt;` Boundary Conditions</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/" class="folder-title ">Dynamic Programming</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/coin-change/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Coin Change</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/subset-sum-equal-to-target/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Subset sum equal to target</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/target-sum/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Target Sum</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/unbounded-knapsack/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Unbounded Knapsack</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/graphs/" class="folder-title ">Graphs</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/connected-components-in-an-undirected-graph/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Connected Components in an Undirected Graph</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Course Schedule</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Course Schedule II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-a-cycle-in-a-directed-graph/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detection of a Cycle in a Directed Graph</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-cycle-in-an-undirected-graph/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detection of Cycle in an Undirected Graph</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/nearest-0-from-cell-in-a-matrix/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Nearest 0 from cell in a matrix</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/rotten-oranges/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Rotten Oranges</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/topological-sort/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Topological Sort</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/greedy/" class="folder-title ">Greedy</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/greedy/insert-interval/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Insert Interval</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/greedy/jump-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Jump-II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/greedy/task-scheduler/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Task Scheduler</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/heaps/" class="folder-title ">Heaps</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/heaps/heaps-priority-queues-detailed-notes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Heaps (Priority Queues) — Detailed Notes</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/maths/" class="folder-title ">Maths</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/maths/sieve-of-eratosthenes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Sieve of Eratosthenes</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/maths/single-number-others-twice/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Single Number Others Twice</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/" class="folder-title ">Sliding WIndow and Two Pointers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/defuse-the-bomb/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Defuse the Bomb</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/fruits-into-basket/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fruits Into Basket</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/max-consecutive-one-iii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Max Consecutive One III</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/maximum-erasure-value/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Maximum Erasure Value</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/sorting/" class="folder-title ">Sorting</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/longest-common-prefix-and-sorting-a-string/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Longest common Prefix and Sorting a String</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/merge-sorted-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Merge Sorted Array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quick Sort</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort-partition/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quick Sort Partition</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/strings/" class="folder-title ">Strings</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/strings/cpp-strings-cheatsheet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">CPP Strings CheatSheet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/strings/largest-odd-number-in-string/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Largest Odd Number in String</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/hand-of-straights/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Hand of Straights</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/house-robber-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">House Robber II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/linked-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Linked List</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/python-snippets-for-cp/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Python Snippets for CP</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/history/" class="folder-title ">History</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/history/battle-of-polashiplassey/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Battle of Polashi(Plassey)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/history/history-of-bengal-politics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">History of Bengal Politics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/history/is-bengal-against-communism/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Is Bengal against Communism?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/journal/" class="folder-title ">Journal</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2025-05-03-motivation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2025-05-03- Motivation?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-02-02/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-02-02</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-02-17-shivam-vats/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-02-17 - Shivam Vats</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-05-14/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-05-14</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-05-16/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-05-16</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-05-21/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-05-21</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-05/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-05</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-24/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-24</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-28/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-28</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-30/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-30</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-07-04/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-07-04</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-08-12/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-12</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-08-30/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-30</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/machine-learning/" class="folder-title ">Machine Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/bias-and-variance-trade-off/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Bias and Variance Trade-off</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/boosting/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Boosting</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/byte-pair-encoding-bpe-tokenization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Byte Pair Encoding (BPE) Tokenization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/decision-trees-a-comprehensive-note/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Decision Trees (A comprehensive Note)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/f1-score-recall-and-precision/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">F1 score, Recall and Precision</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/k-means-clustering/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">K-Means Clustering</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/kernel-density-estimation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Kernel Density Estimation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/long-short-term-memory-lstm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Long Short-Term Memory (LSTM)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/principal-component-analysis-pca/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Principal Component Analysis (PCA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/random-forests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Random Forests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/recurrent-neural-netoworksrnns/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Recurrent Neural Netoworks(RNNs)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/representational-similarity-analysis-rsa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Representational Similarity Analysis (RSA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/t-sne-t-distributed-stochastic-neighbor-embedding/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">t-SNE (t-Distributed Stochastic Neighbor Embedding)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/training-stabilization-in-machine-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Training Stabilization in Machine Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/word2vec/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Word2Vec</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/math/" class="folder-title ">Math</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/math/linear-algebra/" class="folder-title ">Linear Algebra</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/linear-algebra/connection-between-svd-and-evd/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Connection between SVD and EVD</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/linear-algebra/singular-value-decompositionsvd/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Singular Value Decomposition(SVD)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/linear-algebra/spectral-norm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Spectral Norm</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/math/probability-theory/" class="folder-title ">Probability Theory</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/deterministic-random-variable/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deterministic Random Variable</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/gaussian-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Gaussian Distributions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/independent-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Independent Random Variables</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Jointly Gaussian Random Variables — Conditional Distributions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/kolmogorov-smirnov-test/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Kolmogorov-Smirnov Test</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/law-of-iterated-expectations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Law of Iterated Expectations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/linear-mmse-estimation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Linear MMSE Estimation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/markov-chebyshev-and-jensens-inequalities/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Markov, Chebyshev, and Jensen&#39;s Inequalities</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/modes-of-convergence-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Modes of Convergence (Random Variables)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/p-values/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">p-values</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/poisson-distribution-and-poisson-process/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Poisson Distribution and Poisson Process</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/power-of-test-statistic/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Power of Test Statistic</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/probability-and-statistics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Probability and Statistics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/study-materials/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Study Materials</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/sum-of-a-random-number-of-iid-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Sum of a Random Number of IID Random Variables</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/total-expectation-theorem/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Total Expectation Theorem</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/unique-properties-of-gaussian-rvs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Unique Properties of Gaussian RVs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/well-known-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Well Known Distributions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/%CE%B1-significance-level/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">α (Significance Level)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/johnsonlindenstrauss-lemma/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Johnson–Lindenstrauss lemma</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/what-is-kernelfunction/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is Kernel(function)?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/misc/" class="folder-title ">Misc</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/ajb-btp-summary/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AJB BTP Summary</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/how-to-read-papers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">How to Read Papers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/krutarth-meet-20th-march/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Krutarth meet - 20th March</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/meet-summary/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Meet Summary</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/random/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Random</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/reading-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reading List</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/reddit-ml-papers-to-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reddit - ML Papers to Read</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/summer-plan-2026/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Summer Plan 2026</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/untitled-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled 1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/untitled-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled 2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/workout-log/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workout Log</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/workout-routine/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workout Routine</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/" class="folder-title ">Papers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/continual-learning/" class="folder-title ">Continual Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/continual-learning/when-do-curricula-work/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">When Do Curricula Work?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/data-attribution/" class="folder-title ">Data Attribution</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/deep-learning-on-a-data-diet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Learning on a Data Diet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/large-scale-pruning-using-dyna-uncertainty/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Large-Scale Pruning using Dyna Uncertainty</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/theoretical-analysis-of-contrastive-learning-under-imbalanced-data/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">THEORETICAL ANALYSIS OF CONTRASTIVE LEARNING UNDER IMBALANCED DATA</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/understanding-blackbox-predictions-using-influence-functions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Understanding BlackBox Predictions - Using Influence Functions</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/diffusion-and-flows/" class="folder-title ">Diffusion and Flows</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/diffusion-lm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion-LM</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/maxenrl-via-energy-based-normalising-flows-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MaxEnRL via Energy-based Normalising Flows 1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/neural-ordinary-differential-equations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Neural Ordinary Differential Equations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/reading-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reading List</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/good-reads/" class="folder-title ">Good Reads</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/interpretability-and-xai/" class="folder-title ">Interpretability and XAI</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/interpretability-and-xai/maco-feature-visualization-via-magnitude-constrained-optimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MACO-Feature Visualization via Magnitude Constrained Optimization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/interpretability-and-xai/understanding-visual-feature-reliance-through-the-lens-of-complexity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Understanding Visual Feature Reliance through the Lens of Complexity</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/robotics/" class="folder-title ">Robotics</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/crowd-aware-robot-navigation-with-switching-betweenlearning-based-and-rule-based-methods-using-normalizing-flows/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Crowd-Aware Robot Navigation with Switching BetweenLearning-Based and Rule-Based Methods Using Normalizing Flows</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/learning-stable-normalizing-flow-control-for-robotic-manipulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning Stable Normalizing-Flow Control for Robotic Manipulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/recoverychaining-learning-local-recovery-policies-for-robust-manipulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RecoveryChaining-Learning Local Recovery Policies for Robust Manipulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/respo-reachability-estimation-for-safe-policy-optimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RESPO (Reachability Estimation for Safe Policy Optimization)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/scaling-laws/" class="folder-title ">Scaling Laws</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/beyond-neural-scaling-law-data-pruning-improve-power-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Beyond Neural Scaling Law - Data Pruning improve power law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/cram-less-to-fit-more/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Cram Less to Fit More</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/explaining-data-mixing-scaling-laws/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Explaining Data-Mixing Scaling Laws</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/how-feature-learning-can-improve-neural-scaling/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">How Feature Learning can Improve Neural Scaling</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/scaling-for-data-filtering/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling for Data Filtering</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/" class="folder-title ">Theory of Learning Paradigms</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/a-compression-perspective-on-simplicity-bias/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">A Compression Perspective on Simplicity Bias</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/information-theory-for-repr-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Information Theory for Repr Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/invariant-risk-minimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Invariant Risk Minimization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/learned-feature-representations-are-biased-by-complexity-learning-order-position-and-more/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learned feature representations are biased by complexity, learning order, position, and more</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/learning-to-theorise/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning to Theorise</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/mechanistic-mode-connectivity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mechanistic Mode Connectivity</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/not-all-solutions-are-created-equal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Not all solutions are created equal</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/vision/" class="folder-title ">Vision</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/vision/infidepth-arbitrary-high-res-estimation-using-neural-implicit-fields/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name"></span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/world-models-reading-list/" class="folder-title ">World Models Reading List</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/world-models-reading-list/i-jepa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">I-JEPA</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/world-models-reading-list/what-to-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What to Read</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/projects/" class="folder-title ">Projects</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/projects/alphago-black-hole/" class="folder-title ">AlphaGo-Black-Hole</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alpha-beta-algorithm-chess-engines/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alpha-Beta Algorithm (Chess Engines)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alphazero-and-chess/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero and Chess</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alphazero-training/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero Training</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alphazero-workflow/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alphazero Workflow</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/deep-q-network-dqn-training-details/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Q-Network (DQN) Training Details</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/improved-representations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Improved Representations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/mixture-of-experts-approach-to-games/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mixture of Experts Approach to Games</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/personal-notes-on-the-implementation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Personal Notes on the Implementation</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/projects/dlm-revisited/" class="folder-title ">DLM-Revisited</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/dlm-revisited/workbench/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workbench</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/project-ideas/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Project Ideas</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/" class="folder-title ">Research Work</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/btp/" class="folder-title ">BTP</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/btp/meets/" class="folder-title ">Meets</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/meets/2026-08-27/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-27</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/meets/2026-09-10/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-09-10</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/btp-notebook/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">BTP Notebook</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/diffusion-posterior-sampling-for-general-noisy-problems/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Posterior Sampling for General Noisy Problems</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/ksd-for-goodness-of-fit-tests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">KSD for Goodness-of-fit Tests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/learning-deep-kernels-for-non-parametric-two-sample-tests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning Deep Kernels for Non-Parametric Two-Sample Tests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/prof.-subhadip/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Prof. Subhadip</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reproducing Kernel Hilbert Space (RKHS)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/" class="folder-title ">LossFunk Proposal</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/2nd-stage/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2nd stage</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/contlearning-idea/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">ContLearning Idea</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/diff-mem-idea/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">DIff Mem Idea</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/idea-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Idea-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/loss-funk-application/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Loss Funk Application</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/research-writeup/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Research Writeup</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/variations-of-proposal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Variations of Proposal</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/write-up/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Write-up</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/random-ideas/" class="folder-title ">Random Ideas</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/any-other-ways-than-deterministic-and-probabilistic-modelling/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Any other ways than deterministic and Probabilistic Modelling</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/can-we-use-jepa-for-games/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Can we use JEPA for Games??</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/can-you-project-tasks-to-similar-task-spaces/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Can you project tasks to similar Task-spaces?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/capacity-of-a-model/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Capacity of a Model</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/context-conditioned-processing-leads-to-ood-generalisation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Context Conditioned Processing leads to OOD Generalisation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/encoding-future-related-hope-as-a-learning-signal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Encoding Future Related Hope as a Learning Signal?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/information-theory-on-repr-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Information Theory on Repr Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/learned-representation-are-path-dependent/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learned Representation are path dependent</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/manifolds-of-data-vs-implicit-curricula/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Manifolds of Data vs Implicit Curricula</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/marigold-&#43;-jepa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Marigold &#43; Jepa?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/new-way-of-training-small-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">New way of training small models?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/teach-a-model-to-solve-a-patch-jigsaw/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Teach a model to solve a patch jigsaw?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/what-leads-to-representational-biases/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What leads to Representational Biases?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/why-do-diffusion-models-generalise-so-well/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why do Diffusion Models Generalise So Well?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/why-do-we-need-large-embedding-sizes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why do we need large embedding sizes?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/swami-robo/" class="folder-title ">Swami Robo</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/swami-robo/rm3-setup/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RM3 Setup</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/val-del/" class="folder-title ">VAL-DEL</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/val-del/meets/" class="folder-title ">Meets</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/meets/2026-07-20/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-07-20</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/meets/2026-08-26/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-26</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/meets/2026-09-03/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-09-03</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/val-del/papers/" class="folder-title ">Papers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/papers/gradient-weight-alignment-as-a-train-time-proxy-for-generalization-in-classification-tasks/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Gradient-Weight Alignment as a Train-Time Proxy for Generalization in Classification Tasks</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/papers/stable-coresets/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Stable Coresets</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/papers/understanding-why-neural-networks-generalize-well-through-gsnr-of-parameters/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">UNDERSTANDING WHY NEURAL NETWORKS GENERALIZE WELL THROUGH GSNR OF PARAMETERS</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/alpha-0.1-for-monogenic-not-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">alpha =0.1 for monogenic -not learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/avg-el2n-score-difference-between-two-toy-datasets/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Avg El2n score difference between two toy datasets</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/data-efficient-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data-Efficient Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/deriving-neural-scaling-laws-from-lang-stat/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deriving Neural Scaling Laws from Lang Stat</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/detect-the-change-of-implicit-curricula/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detect the change of implicit curricula</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/emergent-properties-with-repeated-examples/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Emergent Properties with Repeated Examples</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/features-contribution-to-pruning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Feature&#39;s Contribution to Pruning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/initial-tests-for-the-scaling-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Initial Tests for the Scaling Law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/open-questions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Open Questions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/polygenic-voting-toy-test/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Polygenic Voting Toy Test</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/quantization-based-hypothesis/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quantization Based Hypothesis</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/scaling-laws/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling Laws</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/scaling-laws-with-rep/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling laws with rep</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/thoughts/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Thoughts</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/val-notebook/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">VAL Notebook</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/novel-depth-esitmationedge-focussed/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Novel Depth Esitmation(Edge focussed)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/personal-notes-on-research/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Personal Notes on Research</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/video-ideas/" class="folder-title ">Video Ideas</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/aep-and-typical-sequences/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AEP and Typical Sequences</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/alphazero/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/large-sparse-matrix-solvers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Large Sparse Matrix Solvers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/law-of-total-expectations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Law of Total Expectations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/map-vs-mle/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MAP vs MLE</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/monte-carlo-tree-search/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Monte Carlo Tree Search</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/2026-09-09/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-09-09</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/command-center/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Command Center</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/cool-things-i-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Cool Things I Read</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/distributions-of-data-that-satisfies-the-power-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Distributions of Data that satisfies the power law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/flt-lecture/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">FLT Lecture</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/fun-resources/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fun Resources</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/infiniai-meet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">InfiniAI Meet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/internship-applications/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Internship Applications</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/professors-and-labs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Professors and Labs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+    
+  </nav>
+</aside>
+        <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+        
+        <div class="main-area">
+            <header class="site-header">
+                <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle Sidebar">☰</button>
+                <a href="http://localhost:1313/" class="site-title-link"><h1>Utsab&#39;s Note Repository</h1></a>
+            </header>
+
+            <main class="content-wrapper">
+<article class="post-content">
+    <header style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+        <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--text-color); font-family: var(--font-main);">pattern_recognition_application_lectures_1_21</h1>
+        <div style="color: #8b949e; font-size: 0.85rem; font-family: var(--font-main);">
+            Last modified: September 13, 2026
+        </div>
+    </header>
+
+    <div class="markdown-body">
+        <h1 id="pattern-recognition-and-application--detailed-notes-lectures-121">Pattern Recognition and Application — Detailed Notes (Lectures 1–21)</h1>
+<p><strong>Course:</strong> Pattern Recognition and Application<br>
+<strong>Instructor:</strong> Prof. Prabir Kumar Biswas, IIT Kharagpur<br>
+<strong>Course code:</strong> NPTEL 117105101<br>
+<strong>Coverage:</strong> Lectures 1–21</p>
+<blockquote>
+<p><strong>Obsidian math notation:</strong> all mathematical expressions in these notes use <code>$$ ... $$</code>. For equations intended as standalone display equations, the delimiters are placed on separate lines.</p>
+</blockquote>
+<hr>
+<h1 id="lecture-1--introduction">Lecture 1 — Introduction</h1>
+<h2 id="1-what-is-pattern-recognition">1. What is Pattern Recognition?</h2>
+<p>A <strong>pattern</strong> is an object, event, signal, image, or measurement that has properties which allow us to distinguish it from other patterns.</p>
+<p>Examples:</p>
+<ul>
+<li>A handwritten digit is a pattern.</li>
+<li>A speech waveform is a pattern.</li>
+<li>A fingerprint is a pattern.</li>
+<li>A character in an OCR system is a pattern.</li>
+<li>A measured sensor signal is a pattern.</li>
+<li>A geometrical object such as a circle, ellipse, or arbitrary closed contour is a pattern.</li>
+</ul>
+<p>The central problem is:</p>
+<blockquote>
+<p>Given an unknown pattern, determine which known class or category it belongs to.</p>
+</blockquote>
+<p>Pattern recognition therefore involves <strong>matching an unknown observation against learned models</strong>.</p>
+<p>A useful conceptual chain is</p>
+<p>$$
+\text{raw pattern}
+\rightarrow
+\text{feature extraction}
+\rightarrow
+\text{feature vector}
+\rightarrow
+\text{classifier/decision rule}
+\rightarrow
+\text{class label}.
+$$</p>
+<p>The raw pattern itself is often high-dimensional and contains much information that is irrelevant to the recognition task. The purpose of feature extraction is to retain information that is useful for discrimination.</p>
+<hr>
+<h2 id="2-machine-perception">2. Machine perception</h2>
+<p>A pattern-recognition system can be viewed as a machine-perception system:</p>
+<ol>
+<li>The physical world produces some object or phenomenon.</li>
+<li>A sensor measures it.</li>
+<li>The measurement is represented numerically.</li>
+<li>Useful features are extracted.</li>
+<li>A learning or decision mechanism is used.</li>
+<li>The system assigns the observation to a class.</li>
+</ol>
+<p>The important point is that the <strong>machine does not generally operate directly on the semantic identity of the object</strong>. It operates on a numerical representation.</p>
+<hr>
+<h2 id="3-pattern-recognition-as-a-matching-problem">3. Pattern recognition as a matching problem</h2>
+<p>Suppose a knowledge base contains representative patterns or models for classes.</p>
+<p>Given a new pattern $$x$$, the system has to decide whether it is similar to:</p>
+<ul>
+<li>class $$\omega_1$$,</li>
+<li>class $$\omega_2$$,</li>
+<li>etc.</li>
+</ul>
+<p>Similarity can be defined directly in pattern space, but this is usually difficult.</p>
+<p>Instead, we map the pattern into a feature space:</p>
+<h1 id="mathbfz">$$
+x
+\mapsto
+\mathbf{z}</h1>
+<p>[z_1,z_2,\ldots,z_d]^T.
+$$</p>
+<p>The recognition problem then becomes a problem of <strong>classification in feature space</strong>.</p>
+<hr>
+<h2 id="4-supervised-versus-unsupervised-learning">4. Supervised versus unsupervised learning</h2>
+<h3 id="supervised-learning">Supervised learning</h3>
+<p>In supervised learning, the class identity of training patterns is known.</p>
+<p>Suppose the training set is</p>
+<h1 id="mathcald">$$
+\mathcal{D}</h1>
+<p>{(\mathbf{x}<em>i,\omega_i)}</em>{i=1}^{N}.
+$$</p>
+<p>The recognizer sees both:</p>
+<ul>
+<li>an input pattern,</li>
+<li>the desired class/label.</li>
+</ul>
+<p>Training therefore tries to learn a mapping from feature vectors to known classes.</p>
+<p>If a training feature vector is assigned the wrong class, the error is known. Learning algorithms can use this error to modify the classifier.</p>
+<h3 id="unsupervised-learning">Unsupervised learning</h3>
+<p>In unsupervised learning, the class labels are not supplied.</p>
+<p>Instead, the system receives a mixture of feature vectors and has to discover natural groups.</p>
+<p>Conceptually:</p>
+<p>$$
+{\mathbf{z}_1,\mathbf{z}_2,\ldots,\mathbf{z}_N}
+\rightarrow
+\text{partition into similar subsets}.
+$$</p>
+<p>After the partitioning, each subset can be treated as an emerging class or cluster.</p>
+<p>The crucial difference is therefore:</p>
+<ul>
+<li><strong>supervised:</strong> class association is known during learning;</li>
+<li><strong>unsupervised:</strong> class association must be discovered from the data.</li>
+</ul>
+<hr>
+<h2 id="5-why-feature-vectors">5. Why feature vectors?</h2>
+<p>Consider a circular arc.</p>
+<p>A circle can be characterized by parameters such as:</p>
+<ul>
+<li>radius,</li>
+<li>center coordinates.</li>
+</ul>
+<p>If translation is not important, the radius alone may be enough for the task. If location matters, the center must also be included.</p>
+<p>For an ellipse, the corresponding description requires more parameters, for example:</p>
+<p>$$
+\frac{x^2}{a^2}+\frac{y^2}{b^2}=1.
+$$</p>
+<p>This illustrates an important principle:</p>
+<blockquote>
+<p>The useful features depend on the problem domain.</p>
+</blockquote>
+<p>There is no universally optimal feature set.</p>
+<hr>
+<h2 id="6-mapping-between-patterns-and-features">6. Mapping between patterns and features</h2>
+<p>A feature-extraction procedure maps a pattern to a feature vector:</p>
+<p>$$
+f:\mathcal{X}\rightarrow\mathbb{R}^d.
+$$</p>
+<p>For a fixed deterministic feature extractor, the same pattern will produce the same feature vector.</p>
+<p>But the reverse mapping generally is not unique:</p>
+<p>$$
+\mathbf{z}\not\rightarrow \text{unique pattern}.
+$$</p>
+<p>Many different patterns may produce identical or very similar feature vectors.</p>
+<p>This is one reason why we normally use <strong>multiple features together</strong>.</p>
+<hr>
+<h2 id="7-types-of-features">7. Types of features</h2>
+<p>Broadly, features can describe:</p>
+<h3 id="shape-features">Shape features</h3>
+<p>These capture the geometry or form of an object:</p>
+<ul>
+<li>circular,</li>
+<li>rectangular,</li>
+<li>elliptical,</li>
+<li>boundary shape,</li>
+<li>symmetry,</li>
+<li>elongation,</li>
+<li>curvature.</li>
+</ul>
+<h3 id="region-features">Region features</h3>
+<p>These describe properties of the region enclosed by the shape:</p>
+<ul>
+<li>intensity,</li>
+<li>color,</li>
+<li>texture,</li>
+<li>local variation.</li>
+</ul>
+<p>For a color image, features may involve hue, saturation, and intensity. For a textured region, texture descriptors may be useful.</p>
+<p>The feature vector is</p>
+<h1 id="mathbfz-1">$$
+\mathbf{z}</h1>
+<p>[z_1,z_2,\ldots,z_d]^T,
+$$</p>
+<p>and the <strong>ordering of the components matters</strong>. The first component must always mean the same thing, the second component must always mean the same thing, etc.</p>
+<hr>
+<h2 id="8-recognition-system-viewpoint">8. Recognition system viewpoint</h2>
+<p>A generic recognition system can therefore be divided into:</p>
+<ol>
+<li>Data acquisition.</li>
+<li>Pre-processing.</li>
+<li>Feature extraction.</li>
+<li>Feature representation.</li>
+<li>Learning/training.</li>
+<li>Decision/classification.</li>
+<li>Evaluation.</li>
+</ol>
+<p>The later lectures focus primarily on statistical decision rules and learning algorithms operating in feature space.</p>
+<hr>
+<h1 id="lecture-2--feature-extraction-i">Lecture 2 — Feature Extraction I</h1>
+<h2 id="1-motivation">1. Motivation</h2>
+<p>Feature extraction converts a raw pattern into a smaller, informative numerical representation.</p>
+<p>The goal is not simply to describe everything about the pattern. The goal is to describe the aspects that matter for <strong>recognition or classification</strong>.</p>
+<hr>
+<h2 id="2-circular-arc-example">2. Circular-arc example</h2>
+<p>Suppose the pattern is a circular arc.</p>
+<p>If the task is to determine which circle generated the arc, useful parameters include:</p>
+<ul>
+<li>center coordinates,</li>
+<li>radius.</li>
+</ul>
+<p>A feature representation might be</p>
+<h1 id="mathbfz-2">$$
+\mathbf{z}</h1>
+<p>[c_x,c_y,r]^T.
+$$</p>
+<p>If translation should be ignored, then the center may not be useful, and</p>
+<p>$$
+\mathbf{z}= [r]
+$$</p>
+<p>may be sufficient.</p>
+<p>Thus feature design depends on the <strong>invariances desired by the application</strong>.</p>
+<hr>
+<h2 id="3-similarity-and-dissimilarity-in-feature-space">3. Similarity and dissimilarity in feature space</h2>
+<p>Once patterns are represented by feature vectors, they can be compared using distance or similarity measures.</p>
+<p>For example, Euclidean distance is</p>
+<h1 id="dmathbfxmathbfy">$$
+d(\mathbf{x},\mathbf{y})</h1>
+<p>\sqrt{
+\sum_{j=1}^{d}(x_j-y_j)^2
+}.
+$$</p>
+<p>If two feature vectors are close, the corresponding patterns may be considered similar.</p>
+<p>A classifier can therefore operate on feature vectors rather than raw patterns.</p>
+<hr>
+<h2 id="4-representative-vectors">4. Representative vectors</h2>
+<p>Suppose several training patterns belong to the same known class.</p>
+<p>Their individual feature vectors may be</p>
+<p>$$
+\mathbf{x}_1,\mathbf{x}_2,\ldots,\mathbf{x}_N.
+$$</p>
+<p>A simple representative feature vector is the mean:</p>
+<h1 id="boldsymbolmu">$$
+\boldsymbol{\mu}</h1>
+<p>\frac{1}{N}
+\sum_{i=1}^{N}\mathbf{x}_i.
+$$</p>
+<p>The mean is a model of the center of a class in feature space.</p>
+<p>This idea leads naturally to statistical classification, where classes are modeled by probability distributions.</p>
+<hr>
+<h2 id="5-supervised-feature-learning">5. Supervised feature learning</h2>
+<p>For a known class, we can collect many feature vectors and estimate a representative model.</p>
+<p>The process is:</p>
+<p>$$
+\text{known patterns}
+\rightarrow
+\text{feature extraction}
+\rightarrow
+\text{class-specific feature statistics}
+\rightarrow
+\text{classifier}.
+$$</p>
+<p>The classifier then receives an unknown pattern, extracts the same features, and compares the resulting vector with the learned class models.</p>
+<hr>
+<h2 id="6-unsupervised-feature-grouping">6. Unsupervised feature grouping</h2>
+<p>When labels are unavailable, the system receives a mixture of feature vectors.</p>
+<p>The vectors have to be partitioned according to similarity.</p>
+<p>Conceptually,</p>
+<h1 id="mathcalx">$$
+\mathcal{X}</h1>
+<p>\mathcal{X}_1\cup\mathcal{X}_2\cup\cdots\cup\mathcal{X}_K.
+$$</p>
+<p>The individual clusters are not initially assigned semantic class names.</p>
+<hr>
+<h2 id="7-feature-extraction-as-information-reduction">7. Feature extraction as information reduction</h2>
+<p>The original pattern may contain a huge number of measurements. A feature extractor maps it into a lower-dimensional vector.</p>
+<p>For example,</p>
+<p>$$
+\mathbf{x}\in\mathbb{R}^{M}
+\quad\rightarrow\quad
+\mathbf{z}\in\mathbb{R}^{d},
+\qquad d\ll M.
+$$</p>
+<p>A good feature representation should:</p>
+<ul>
+<li>preserve class-discriminative information,</li>
+<li>remove irrelevant variation,</li>
+<li>be robust to noise,</li>
+<li>ideally be compact.</li>
+</ul>
+<p>This tension between preserving useful information and reducing dimension becomes important in later lectures.</p>
+<hr>
+<h1 id="lecture-3--feature-extraction-ii">Lecture 3 — Feature Extraction II</h1>
+<h2 id="1-shape-versus-region-information">1. Shape versus region information</h2>
+<p>A pattern may be represented using:</p>
+<h3 id="shape-based-features">Shape-based features</h3>
+<p>These are determined primarily by the boundary:</p>
+<ul>
+<li>perimeter,</li>
+<li>curvature,</li>
+<li>aspect ratio,</li>
+<li>compactness,</li>
+<li>symmetry,</li>
+<li>elongation,</li>
+<li>geometric moments.</li>
+</ul>
+<h3 id="region-based-features">Region-based features</h3>
+<p>These characterize the contents of a region:</p>
+<ul>
+<li>gray-level distribution,</li>
+<li>average intensity,</li>
+<li>variance,</li>
+<li>color,</li>
+<li>texture.</li>
+</ul>
+<p>A practical system often combines both.</p>
+<hr>
+<h2 id="2-why-a-single-feature-is-usually-insufficient">2. Why a single feature is usually insufficient</h2>
+<p>Suppose two patterns have approximately identical area but very different shapes.</p>
+<p>A single scalar feature such as area cannot distinguish them.</p>
+<p>Likewise, two objects may have the same shape but different internal textures.</p>
+<p>Hence a vector is preferred:</p>
+<h1 id="mathbfz-3">$$
+\mathbf{z}</h1>
+<p>[z_1,z_2,\ldots,z_d]^T.
+$$</p>
+<p>Each component captures a different property.</p>
+<p>The complete vector provides a richer description.</p>
+<hr>
+<h2 id="3-feature-vector-dimensionality">3. Feature vector dimensionality</h2>
+<p>The dimension of the feature vector determines the complexity of the feature space.</p>
+<p>If the dimension is too low, different patterns may collapse onto the same representation.</p>
+<p>If the dimension is very high, there may be:</p>
+<ul>
+<li>increased computation,</li>
+<li>increased storage,</li>
+<li>more difficult density estimation,</li>
+<li>sparse observations,</li>
+<li>poorer generalization.</li>
+</ul>
+<p>The dimensionality problem becomes a major topic later.</p>
+<hr>
+<h2 id="4-symmetry-and-ordering">4. Symmetry and ordering</h2>
+<p>For a machine system, consistency is essential.</p>
+<p>Suppose</p>
+<p>$$
+\mathbf{x}=[x_1,x_2,x_3]^T.
+$$</p>
+<p>If $$x_1$$ means area during training but means perimeter during testing, the classifier is effectively operating on a different feature space.</p>
+<p>Therefore:</p>
+<blockquote>
+<p>The semantic interpretation and ordering of feature components must remain fixed.</p>
+</blockquote>
+<hr>
+<h2 id="5-properties-of-useful-features">5. Properties of useful features</h2>
+<p>A desirable feature is:</p>
+<ul>
+<li><strong>discriminative:</strong> different classes have different values;</li>
+<li><strong>stable:</strong> small perturbations do not radically change the value;</li>
+<li><strong>compact:</strong> it avoids unnecessary dimensions;</li>
+<li><strong>invariant:</strong> it ignores nuisance transformations when appropriate;</li>
+<li><strong>computationally reasonable:</strong> it can be extracted efficiently.</li>
+</ul>
+<p>Feature extraction is therefore a form of <strong>representation design</strong>.</p>
+<hr>
+<h1 id="lecture-4--feature-extraction-iii">Lecture 4 — Feature Extraction III</h1>
+<h2 id="1-feature-design-depends-on-the-application">1. Feature design depends on the application</h2>
+<p>The lecturer emphasizes that there is no universally good feature.</p>
+<p>A feature useful for one type of pattern may be useless for another.</p>
+<p>For circles:</p>
+<p>$$
+\text{radius and center}
+$$</p>
+<p>are natural.</p>
+<p>For ellipses, the two semi-axis lengths and orientation become important.</p>
+<p>For arbitrary images, geometric parameters alone are not enough.</p>
+<hr>
+<h2 id="2-shape-and-region-descriptors">2. Shape and region descriptors</h2>
+<p>A recognition system can combine:</p>
+<p>$$
+\text{shape information}
++
+\text{region information}.
+$$</p>
+<p>Region information may include:</p>
+<ul>
+<li>intensity,</li>
+<li>color,</li>
+<li>texture.</li>
+</ul>
+<p>Texture itself can be described statistically through quantities such as mean intensity, variance, local contrast, or more complex descriptors.</p>
+<hr>
+<h2 id="3-feature-extraction-versus-feature-selection">3. Feature extraction versus feature selection</h2>
+<p>These are conceptually different:</p>
+<h3 id="feature-extraction">Feature extraction</h3>
+<p>Construct new features from the original measurements.</p>
+<p>Example:</p>
+<p>$$
+\mathbf{x}\rightarrow\mathbf{z}.
+$$</p>
+<h3 id="feature-selection">Feature selection</h3>
+<p>Choose a subset of existing features.</p>
+<p>Example:</p>
+<p>$$
+[x_1,x_2,x_3,x_4]
+\rightarrow
+[x_1,x_3].
+$$</p>
+<p>Both aim to produce a more useful representation.</p>
+<hr>
+<h2 id="4-one-to-many-reverse-mapping">4. One-to-many reverse mapping</h2>
+<p>A crucial observation is that several raw patterns may correspond to the same feature vector.</p>
+<p>Thus:</p>
+<p>$$
+\text{pattern}\rightarrow\text{feature vector}
+$$</p>
+<p>can be deterministic while</p>
+<p>$$
+\text{feature vector}\rightarrow\text{pattern}
+$$</p>
+<p>is generally ambiguous.</p>
+<p>As feature dimension is reduced, this ambiguity can become larger.</p>
+<p>This gives the main tradeoff:</p>
+<blockquote>
+<p>Lower dimension reduces complexity, but may destroy discriminative information.</p>
+</blockquote>
+<hr>
+<h1 id="lecture-5--bayes-decision-theory">Lecture 5 — Bayes Decision Theory</h1>
+<h2 id="1-why-bayesian-decision-theory">1. Why Bayesian decision theory?</h2>
+<p>Once every pattern is represented by a feature vector, the next task is classification.</p>
+<p>Suppose there are two classes:</p>
+<p>$$
+\omega_1,\omega_2.
+$$</p>
+<p>For an observed feature vector $$\mathbf{x}$$, we wish to decide which class generated it.</p>
+<p>Bayesian decision theory gives a principled answer using probabilities.</p>
+<hr>
+<h2 id="2-prior-probability">2. Prior probability</h2>
+<p>The prior probability of class $$\omega_i$$ is</p>
+<p>$$
+P(\omega_i).
+$$</p>
+<p>It represents how likely the class is before observing the particular feature vector.</p>
+<p>If the classes occur equally often, the priors may satisfy</p>
+<p>$$
+P(\omega_1)=P(\omega_2)=\frac12.
+$$</p>
+<p>But unequal priors are common.</p>
+<hr>
+<h2 id="3-class-conditional-density">3. Class-conditional density</h2>
+<p>The probability density of observing feature vector $$\mathbf{x}$$ given class $$\omega_i$$ is</p>
+<p>$$
+p(\mathbf{x}\mid\omega_i).
+$$</p>
+<p>This describes how feature vectors are distributed within class $$\omega_i$$.</p>
+<hr>
+<h2 id="4-posterior-probability">4. Posterior probability</h2>
+<p>Bayes&rsquo; rule gives</p>
+<h1 id="pomega_imidmathbfx">$$
+P(\omega_i\mid\mathbf{x})</h1>
+<p>\frac{
+p(\mathbf{x}\mid\omega_i)P(\omega_i)
+}{
+p(\mathbf{x})
+}.
+$$</p>
+<p>The evidence is</p>
+<h1 id="pmathbfx">$$
+p(\mathbf{x})</h1>
+<p>\sum_j
+p(\mathbf{x}\mid\omega_j)P(\omega_j).
+$$</p>
+<p>The posterior expresses how likely the class is after observing the feature vector.</p>
+<hr>
+<h2 id="5-minimum-error-classification">5. Minimum-error classification</h2>
+<p>Under a zero-one loss function, the optimal decision is to choose the class with the largest posterior probability:</p>
+<p>$$
+\text{decide }\omega_i
+\quad\text{if}\quad
+P(\omega_i\mid\mathbf{x})</p>
+<blockquote>
+</blockquote>
+<p>P(\omega_j\mid\mathbf{x})
+;;\forall j\neq i.
+$$</p>
+<p>Because $$p(\mathbf{x})$$ is common to all classes, this is equivalent to comparing</p>
+<p>$$
+p(\mathbf{x}\mid\omega_i)P(\omega_i).
+$$</p>
+<p>Thus:</p>
+<p>$$
+\boxed{
+\text{decide }\omega_i
+\text{ if }
+p(\mathbf{x}\mid\omega_i)P(\omega_i)</p>
+<blockquote>
+</blockquote>
+<p>p(\mathbf{x}\mid\omega_j)P(\omega_j)
+}
+$$</p>
+<p>for all competing classes.</p>
+<hr>
+<h2 id="6-loss-function">6. Loss function</h2>
+<p>Not all errors have equal consequences.</p>
+<p>Let</p>
+<p>$$
+\lambda(\alpha_i\mid\omega_j)
+$$</p>
+<p>denote the loss incurred when action $$\alpha_i$$ is taken while the true class is $$\omega_j$$.</p>
+<p>Then the conditional risk of action $$\alpha_i$$ is</p>
+<h1 id="ralpha_imidmathbfx">$$
+R(\alpha_i\mid\mathbf{x})</h1>
+<p>\sum_j
+\lambda(\alpha_i\mid\omega_j)
+P(\omega_j\mid\mathbf{x}).
+$$</p>
+<p>The Bayes decision rule selects the action with the smallest conditional risk.</p>
+<hr>
+<h2 id="7-overall-risk">7. Overall risk</h2>
+<p>If the decision rule is $$\alpha(\mathbf{x})$$, the overall risk is</p>
+<h1 id="r">$$
+R</h1>
+<p>\int
+R(\alpha(\mathbf{x})\mid\mathbf{x})
+p(\mathbf{x})
+,d\mathbf{x}.
+$$</p>
+<p>If the conditional risk is minimized for every $$\mathbf{x}$$, the overall risk is minimized.</p>
+<p>This gives the fundamental Bayesian decision principle.</p>
+<hr>
+<h1 id="lecture-6--bayes-decision-theory-continued">Lecture 6 — Bayes Decision Theory (Continued)</h1>
+<h2 id="1-two-category-classification">1. Two-category classification</h2>
+<p>For two classes, define the posterior probabilities</p>
+<p>$$
+P(\omega_1\mid\mathbf{x}),
+\qquad
+P(\omega_2\mid\mathbf{x}).
+$$</p>
+<p>Since the posteriors sum to one,</p>
+<h1 id="pomega_2midmathbfx">$$
+P(\omega_1\mid\mathbf{x})
++
+P(\omega_2\mid\mathbf{x})</h1>
+<ol>
+<li></li>
+</ol>
+<p>$$</p>
+<p>Under minimum probability of error, decide class 1 if</p>
+<p>$$
+P(\omega_1\mid\mathbf{x})</p>
+<blockquote>
+</blockquote>
+<p>P(\omega_2\mid\mathbf{x}).
+$$</p>
+<hr>
+<h2 id="2-decision-boundary">2. Decision boundary</h2>
+<p>The decision boundary occurs where the two alternatives are equally preferred:</p>
+<h1 id="pomega_1midmathbfx">$$
+P(\omega_1\mid\mathbf{x})</h1>
+<p>P(\omega_2\mid\mathbf{x}).
+$$</p>
+<p>Using Bayes&rsquo; theorem:</p>
+<h1 id="pmathbfxmidomega_1pomega_1">$$
+p(\mathbf{x}\mid\omega_1)P(\omega_1)</h1>
+<p>p(\mathbf{x}\mid\omega_2)P(\omega_2).
+$$</p>
+<p>This defines the boundary in feature space.</p>
+<p>The feature space is divided into <strong>decision regions</strong>.</p>
+<hr>
+<h2 id="3-discriminant-functions">3. Discriminant functions</h2>
+<p>Instead of explicitly writing posterior probabilities, define discriminant functions.</p>
+<p>One convenient choice is</p>
+<h1 id="g_imathbfx">$$
+g_i(\mathbf{x})</h1>
+<p>p(\mathbf{x}\mid\omega_i)P(\omega_i).
+$$</p>
+<p>Then choose the class with the largest discriminant.</p>
+<p>An equivalent logarithmic form is often useful:</p>
+<h1 id="g_imathbfx-1">$$
+g_i(\mathbf{x})</h1>
+<p>\ln p(\mathbf{x}\mid\omega_i)
++
+\ln P(\omega_i).
+$$</p>
+<p>The logarithm preserves ordering because it is monotonic.</p>
+<hr>
+<h2 id="4-decision-surfaces">4. Decision surfaces</h2>
+<p>For classes $$\omega_i$$ and $$\omega_j$$, the decision surface satisfies</p>
+<p>$$
+g_i(\mathbf{x})=g_j(\mathbf{x}).
+$$</p>
+<p>In one dimension this is a point.</p>
+<p>In two dimensions it is a curve.</p>
+<p>In higher dimensions it is a hypersurface.</p>
+<hr>
+<h2 id="5-effect-of-priors">5. Effect of priors</h2>
+<p>The prior probability shifts the decision boundary.</p>
+<p>If one class is much more common, the classifier should require stronger evidence before assigning a rare class.</p>
+<p>Thus classification does not depend only on the likelihoods.</p>
+<p>It depends on</p>
+<p>$$
+\text{likelihood}\times\text{prior}.
+$$</p>
+<hr>
+<h2 id="6-error-regions">6. Error regions</h2>
+<p>For a two-class problem, each decision region can contain samples from both classes.</p>
+<p>Hence two kinds of mistakes are possible:</p>
+<ul>
+<li>samples from $$\omega_1$$ classified as $$\omega_2$$;</li>
+<li>samples from $$\omega_2$$ classified as $$\omega_1$$.</li>
+</ul>
+<p>The total probability of error is the probability mass lying on the wrong side of the decision boundary.</p>
+<hr>
+<h1 id="lecture-7--normal-density-and-discriminant-function">Lecture 7 — Normal Density and Discriminant Function</h1>
+<h2 id="1-gaussian-model">1. Gaussian model</h2>
+<p>A very important assumption in statistical pattern recognition is that class-conditional densities are Gaussian.</p>
+<h3 id="univariate-gaussian">Univariate Gaussian</h3>
+<p>For scalar $$x$$,</p>
+<h1 id="pxmidomega_i">$$
+p(x\mid\omega_i)</h1>
+<p>\frac{1}{
+\sqrt{2\pi}\sigma_i
+}
+\exp
+\left[
+-\frac{
+(x-\mu_i)^2
+}{
+2\sigma_i^2
+}
+\right].
+$$</p>
+<p>Here:</p>
+<ul>
+<li>$$\mu_i$$ is the mean;</li>
+<li>$$\sigma_i^2$$ is the variance.</li>
+</ul>
+<hr>
+<h2 id="2-multivariate-gaussian">2. Multivariate Gaussian</h2>
+<p>For a feature vector $$\mathbf{x}\in\mathbb{R}^d$$,</p>
+<h1 id="pmathbfxmidomega_i">$$
+p(\mathbf{x}\mid\omega_i)</h1>
+<p>\frac{1}{
+(2\pi)^{d/2}
+|\Sigma_i|^{1/2}
+}
+\exp
+\left[
+-\frac12
+(\mathbf{x}-\boldsymbol{\mu}_i)^T
+\Sigma_i^{-1}
+(\mathbf{x}-\boldsymbol{\mu}_i)
+\right].
+$$</p>
+<p>Here:</p>
+<ul>
+<li>$$\boldsymbol{\mu}_i$$ is the class mean vector;</li>
+<li>$$\Sigma_i$$ is the covariance matrix;</li>
+<li>$$|\Sigma_i|$$ is its determinant.</li>
+</ul>
+<hr>
+<h2 id="3-gaussian-discriminant-function">3. Gaussian discriminant function</h2>
+<p>Take the logarithm of the Gaussian density and add the log prior.</p>
+<p>A convenient discriminant is</p>
+<h1 id="g_imathbfx-2">$$
+g_i(\mathbf{x})</h1>
+<p>-\frac12\ln|\Sigma_i|
+-\frac12
+(\mathbf{x}-\boldsymbol{\mu}_i)^T
+\Sigma_i^{-1}
+(\mathbf{x}-\boldsymbol{\mu}_i)
++
+\ln P(\omega_i),
+$$</p>
+<p>where terms common to all classes have been omitted.</p>
+<p>The quadratic term measures the distance of $$\mathbf{x}$$ from the class mean while accounting for covariance.</p>
+<hr>
+<h2 id="4-mahalanobis-distance">4. Mahalanobis distance</h2>
+<p>The covariance-weighted squared distance is</p>
+<h1 id="d_i2mathbfx">$$
+D_i^2(\mathbf{x})</h1>
+<p>(\mathbf{x}-\boldsymbol{\mu}_i)^T
+\Sigma_i^{-1}
+(\mathbf{x}-\boldsymbol{\mu}_i).
+$$</p>
+<p>This is the squared <strong>Mahalanobis distance</strong>.</p>
+<p>Unlike Euclidean distance, it accounts for:</p>
+<ul>
+<li>different feature variances,</li>
+<li>correlations between features.</li>
+</ul>
+<hr>
+<h2 id="5-equal-covariance-case">5. Equal covariance case</h2>
+<p>If all classes share the same covariance matrix,</p>
+<p>$$
+\Sigma_i=\Sigma,
+$$</p>
+<p>then the quadratic terms involving $$\mathbf{x}$$ cancel when comparing classes.</p>
+<p>The discriminant becomes linear in $$\mathbf{x}$$:</p>
+<h1 id="g_imathbfx-3">$$
+g_i(\mathbf{x})</h1>
+<p>\mathbf{w}<em>i^T\mathbf{x}
++
+w</em>{i0}.
+$$</p>
+<p>Thus a Gaussian model with common covariance produces <strong>linear decision boundaries</strong>.</p>
+<hr>
+<h1 id="lecture-8--normal-density-and-discriminant-function-continued">Lecture 8 — Normal Density and Discriminant Function (Continued)</h1>
+<h2 id="1-different-covariance-cases">1. Different covariance cases</h2>
+<p>The form of the decision boundary depends strongly on the covariance matrices.</p>
+<h3 id="case-1-equal-covariance-matrices">Case 1: Equal covariance matrices</h3>
+<p>If</p>
+<p>$$
+\Sigma_1=\Sigma_2,
+$$</p>
+<p>the decision boundary is linear.</p>
+<h3 id="case-2-different-covariance-matrices">Case 2: Different covariance matrices</h3>
+<p>If</p>
+<p>$$
+\Sigma_1\neq\Sigma_2,
+$$</p>
+<p>the quadratic terms do not cancel, producing a <strong>quadratic decision boundary</strong>.</p>
+<p>Thus:</p>
+<ul>
+<li>shared covariance → linear discriminant;</li>
+<li>class-dependent covariance → quadratic discriminant.</li>
+</ul>
+<hr>
+<h2 id="2-diagonal-covariance">2. Diagonal covariance</h2>
+<p>A diagonal covariance matrix has the form</p>
+<h1 id="sigma">$$
+\Sigma</h1>
+<p>\begin{bmatrix}
+\sigma_1^2 &amp; 0 &amp; \cdots &amp; 0\<br>
+0 &amp; \sigma_2^2 &amp; \cdots &amp; 0\<br>
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots\<br>
+0 &amp; 0 &amp; \cdots &amp; \sigma_d^2
+\end{bmatrix}.
+$$</p>
+<p>This assumes feature components are uncorrelated.</p>
+<p>The Gaussian density then factors into a product of one-dimensional Gaussian densities:</p>
+<h1 id="pmathbfxmidomega_i-1">$$
+p(\mathbf{x}\mid\omega_i)</h1>
+<p>\prod_{k=1}^{d}
+p(x_k\mid\omega_i).
+$$</p>
+<hr>
+<h2 id="3-spherical-covariance">3. Spherical covariance</h2>
+<p>If</p>
+<h1 id="sigma_i">$$
+\Sigma_i</h1>
+<p>\sigma_i^2 I,
+$$</p>
+<p>all directions have equal variance and there are no correlations.</p>
+<p>Then the Gaussian contours are spheres (circles in two dimensions).</p>
+<p>If the variances are equal across classes, the decision boundaries become especially simple.</p>
+<hr>
+<h2 id="4-geometric-interpretation">4. Geometric interpretation</h2>
+<p>For a multivariate Gaussian:</p>
+<ul>
+<li>the mean is the center of the distribution;</li>
+<li>covariance determines orientation and spread;</li>
+<li>determinant controls volume/spread;</li>
+<li>the inverse covariance weights deviations in different directions.</li>
+</ul>
+<p>The constant-density surfaces satisfy</p>
+<h1 id="mathbfx-boldsymbolmu">$$
+(\mathbf{x}-\boldsymbol{\mu})^T
+\Sigma^{-1}
+(\mathbf{x}-\boldsymbol{\mu})</h1>
+<p>c,
+$$</p>
+<p>which describes ellipsoids in general.</p>
+<hr>
+<h1 id="lecture-9--bayes-decision-theory-binary-features">Lecture 9 — Bayes Decision Theory: Binary Features</h1>
+<h2 id="1-continuous-versus-discrete-features">1. Continuous versus discrete features</h2>
+<p>Earlier lectures considered continuous-valued feature vectors.</p>
+<p>Now consider a binary feature representation:</p>
+<p>$$
+x_j\in{0,1}.
+$$</p>
+<p>For a vector of binary features,</p>
+<h1 id="mathbfx">$$
+\mathbf{x}</h1>
+<p>[x_1,x_2,\ldots,x_d]^T.
+$$</p>
+<p>The probability model must now be a discrete probability model.</p>
+<hr>
+<h2 id="2-binary-probability-distribution">2. Binary probability distribution</h2>
+<p>For a single binary variable,</p>
+<p>$$
+P(x_j=1\mid\omega_i)=p_{ij}
+$$</p>
+<p>and</p>
+<p>$$
+P(x_j=0\mid\omega_i)=1-p_{ij}.
+$$</p>
+<p>If the features are conditionally independent given the class, then</p>
+<h1 id="pmathbfxmidomega_i-2">$$
+P(\mathbf{x}\mid\omega_i)</h1>
+<p>\prod_{j=1}^{d}
+p_{ij}^{x_j}
+(1-p_{ij})^{1-x_j}.
+$$</p>
+<p>This is the Bernoulli-product model.</p>
+<hr>
+<h2 id="3-bayes-classification-with-binary-features">3. Bayes classification with binary features</h2>
+<p>The Bayes rule remains:</p>
+<p>$$
+\text{decide }\omega_i
+\quad\text{if}\quad
+P(\mathbf{x}\mid\omega_i)P(\omega_i)</p>
+<blockquote>
+</blockquote>
+<p>P(\mathbf{x}\mid\omega_j)P(\omega_j).
+$$</p>
+<p>Taking logarithms gives</p>
+<p>$$
+\ln P(\mathbf{x}\mid\omega_i)
++
+\ln P(\omega_i).
+$$</p>
+<p>For the Bernoulli-product model:</p>
+<h1 id="ln-pmathbfxmidomega_i">$$
+\ln P(\mathbf{x}\mid\omega_i)</h1>
+<p>\sum_j
+\left[
+x_j\ln p_{ij}
++
+(1-x_j)\ln(1-p_{ij})
+\right].
+$$</p>
+<p>The resulting discriminant is linear in the binary feature vector.</p>
+<hr>
+<h2 id="4-important-interpretation">4. Important interpretation</h2>
+<p>Even when the raw observations are discrete, the Bayesian framework is unchanged:</p>
+<ol>
+<li>model how each class generates observations;</li>
+<li>incorporate the prior;</li>
+<li>compute posterior evidence;</li>
+<li>choose the minimum-risk decision.</li>
+</ol>
+<p>The probability model simply changes from a continuous density to a discrete mass function.</p>
+<hr>
+<h1 id="lecture-10--maximum-likelihood-estimation">Lecture 10 — Maximum Likelihood Estimation</h1>
+<h2 id="1-why-estimate-parameters">1. Why estimate parameters?</h2>
+<p>Bayesian classification assumes that class densities such as</p>
+<p>$$
+p(\mathbf{x}\mid\omega_i)
+$$</p>
+<p>are known.</p>
+<p>In real applications they are unknown.</p>
+<p>Instead, we have training data and must estimate their parameters.</p>
+<p>Maximum likelihood estimation (MLE) is one of the central parameter-estimation techniques.</p>
+<hr>
+<h2 id="2-likelihood">2. Likelihood</h2>
+<p>Suppose data</p>
+<h1 id="mathcald-1">$$
+\mathcal{D}</h1>
+<p>{\mathbf{x}_1,\mathbf{x}_2,\ldots,\mathbf{x}_N}
+$$</p>
+<p>are assumed independent and identically distributed according to a density</p>
+<p>$$
+p(\mathbf{x}\mid\boldsymbol{\theta}).
+$$</p>
+<p>The likelihood is</p>
+<h1 id="lboldsymboltheta">$$
+L(\boldsymbol{\theta})</h1>
+<p>\prod_{n=1}^{N}
+p(\mathbf{x}_n\mid\boldsymbol{\theta}).
+$$</p>
+<p>The MLE chooses parameters maximizing this likelihood:</p>
+<h1 id="hatboldsymboltheta_mathrmml">$$
+\hat{\boldsymbol{\theta}}_{\mathrm{ML}}</h1>
+<p>\arg\max_{\boldsymbol{\theta}}
+L(\boldsymbol{\theta}).
+$$</p>
+<hr>
+<h2 id="3-log-likelihood">3. Log-likelihood</h2>
+<p>Because products can be numerically inconvenient, maximize the logarithm instead:</p>
+<h1 id="ellboldsymboltheta">$$
+\ell(\boldsymbol{\theta})</h1>
+<h1 id="ln-lboldsymboltheta">\ln L(\boldsymbol{\theta})</h1>
+<p>\sum_{n=1}^{N}
+\ln p(\mathbf{x}_n\mid\boldsymbol{\theta}).
+$$</p>
+<p>Since logarithm is monotonic,</p>
+<h1 id="argmax_boldsymbolthetalboldsymboltheta">$$
+\arg\max_{\boldsymbol{\theta}}L(\boldsymbol{\theta})</h1>
+<p>\arg\max_{\boldsymbol{\theta}}\ell(\boldsymbol{\theta}).
+$$</p>
+<hr>
+<h2 id="4-mle-of-gaussian-mean">4. MLE of Gaussian mean</h2>
+<p>For scalar Gaussian data with known variance, maximizing likelihood yields</p>
+<h1 id="hatmu">$$
+\hat{\mu}</h1>
+<p>\frac{1}{N}
+\sum_{n=1}^{N}x_n.
+$$</p>
+<p>Thus the ML estimate of the Gaussian mean is the sample mean.</p>
+<hr>
+<h2 id="5-mle-of-variance">5. MLE of variance</h2>
+<p>For a Gaussian model, the ML variance estimate is</p>
+<h1 id="hatsigma2">$$
+\hat{\sigma}^2</h1>
+<p>\frac{1}{N}
+\sum_{n=1}^{N}
+(x_n-\hat{\mu})^2.
+$$</p>
+<p>The denominator is $$N$$ for the ML estimate.</p>
+<p>This differs from the familiar unbiased sample-variance estimator that uses $$N-1$$.</p>
+<p>The distinction comes from optimizing likelihood versus requiring unbiasedness.</p>
+<hr>
+<h2 id="6-multivariate-gaussian-mle">6. Multivariate Gaussian MLE</h2>
+<p>The ML estimate of the mean vector is</p>
+<h1 id="hatboldsymbolmu">$$
+\hat{\boldsymbol{\mu}}</h1>
+<p>\frac{1}{N}
+\sum_{n=1}^{N}\mathbf{x}_n.
+$$</p>
+<p>The covariance estimate is</p>
+<h1 id="hatsigma">$$
+\hat{\Sigma}</h1>
+<p>\frac{1}{N}
+\sum_{n=1}^{N}
+(\mathbf{x}_n-\hat{\boldsymbol{\mu}})
+(\mathbf{x}_n-\hat{\boldsymbol{\mu}})^T.
+$$</p>
+<p>These estimates directly connect training data to Gaussian Bayesian classifiers.</p>
+<hr>
+<h2 id="7-mle-assumptions">7. MLE assumptions</h2>
+<p>Maximum likelihood estimation depends on assumptions about the data-generating distribution.</p>
+<p>If the chosen model is wrong, the resulting parameter estimates may not provide a good classifier.</p>
+<p>Thus there are two distinct issues:</p>
+<ul>
+<li>estimating parameters accurately;</li>
+<li>choosing an appropriate model family.</li>
+</ul>
+<hr>
+<h1 id="lecture-11--probability-density-estimation">Lecture 11 — Probability Density Estimation</h1>
+<h2 id="1-parametric-versus-non-parametric-estimation">1. Parametric versus non-parametric estimation</h2>
+<p>In <strong>parametric estimation</strong>, we assume a density family and estimate a finite number of parameters.</p>
+<p>Example:</p>
+<p>$$
+p(x\mid\theta)
+$$</p>
+<p>with Gaussian parameters $$\theta=(\mu,\sigma^2)$$.</p>
+<p>In <strong>non-parametric density estimation</strong>, fewer assumptions are made about the form of the distribution.</p>
+<p>The distribution is inferred more directly from the training samples.</p>
+<hr>
+<h2 id="2-why-density-estimation-matters">2. Why density estimation matters</h2>
+<p>Bayesian classification requires</p>
+<p>$$
+p(\mathbf{x}\mid\omega_i).
+$$</p>
+<p>If this density is unknown, it must be estimated from data.</p>
+<p>Thus density estimation provides the link:</p>
+<p>$$
+\text{training samples}
+\rightarrow
+\text{estimated density}
+\rightarrow
+\text{Bayes classifier}.
+$$</p>
+<hr>
+<h2 id="3-histogram-estimation">3. Histogram estimation</h2>
+<p>The simplest non-parametric density estimator is a histogram.</p>
+<p>The feature space is divided into bins.</p>
+<p>For a one-dimensional variable, suppose a bin has width $$h$$ and contains $$k$$ samples out of $$N$$.</p>
+<p>The density estimate in that bin is approximately</p>
+<h1 id="hatpx">$$
+\hat{p}(x)</h1>
+<p>\frac{k}{Nh}.
+$$</p>
+<p>The idea generalizes to multidimensional partitions.</p>
+<hr>
+<h2 id="4-problems-with-histograms">4. Problems with histograms</h2>
+<p>Histograms have several disadvantages:</p>
+<ul>
+<li>they depend strongly on bin boundaries;</li>
+<li>results depend on bin width;</li>
+<li>they can become unreliable in high dimensions;</li>
+<li>they are not smooth.</li>
+</ul>
+<p>This motivates kernel-based estimators.</p>
+<hr>
+<h1 id="lecture-12--probability-density-estimation-continued">Lecture 12 — Probability Density Estimation (Continued.)</h1>
+<h2 id="1-parzen-window-idea">1. Parzen-window idea</h2>
+<p>Instead of assigning every observation to a hard histogram bin, place a smooth window around each sample.</p>
+<p>The estimated density can be written as</p>
+<h1 id="hatpmathbfx">$$
+\hat{p}(\mathbf{x})</h1>
+<p>\frac{1}{Nh^d}
+\sum_{n=1}^{N}
+K
+\left(
+\frac{\mathbf{x}-\mathbf{x}_n}{h}
+\right),
+$$</p>
+<p>where:</p>
+<ul>
+<li>$$N$$ is the number of samples;</li>
+<li>$$d$$ is the feature dimension;</li>
+<li>$$h$$ is the smoothing parameter or window width;</li>
+<li>$$K$$ is the kernel/window function.</li>
+</ul>
+<hr>
+<h2 id="2-gaussian-kernel">2. Gaussian kernel</h2>
+<p>A common choice is a Gaussian kernel:</p>
+<h1 id="kmathbfu">$$
+K(\mathbf{u})</h1>
+<p>\frac{1}{(2\pi)^{d/2}}
+\exp
+\left(
+-\frac12|\mathbf{u}|^2
+\right).
+$$</p>
+<p>Then</p>
+<h1 id="hatpmathbfx-1">$$
+\hat{p}(\mathbf{x})</h1>
+<p>\frac{1}{N(2\pi)^{d/2}h^d}
+\sum_{n=1}^{N}
+\exp
+\left[
+-\frac{
+|\mathbf{x}-\mathbf{x}_n|^2
+}{
+2h^2
+}
+\right].
+$$</p>
+<p>Each training point contributes a local bump to the estimated density.</p>
+<hr>
+<h2 id="3-role-of-the-smoothing-parameter">3. Role of the smoothing parameter</h2>
+<p>The parameter $$h$$ controls the bias-variance tradeoff.</p>
+<h3 id="small-h">Small $$h$$</h3>
+<p>The estimate is highly local:</p>
+<ul>
+<li>follows training samples closely;</li>
+<li>may become noisy;</li>
+<li>high variance.</li>
+</ul>
+<h3 id="large-h">Large $$h$$</h3>
+<p>The estimate is smoother:</p>
+<ul>
+<li>less sensitive to individual samples;</li>
+<li>may oversmooth important structure;</li>
+<li>higher bias.</li>
+</ul>
+<p>Hence choosing $$h$$ is crucial.</p>
+<hr>
+<h1 id="lecture-13--probability-density-estimation-continued">Lecture 13 — Probability Density Estimation (Continued.)</h1>
+<h2 id="1-multidimensional-parzen-estimation">1. Multidimensional Parzen estimation</h2>
+<p>In a $$d$$-dimensional feature space:</p>
+<h1 id="hatpmathbfx-2">$$
+\hat{p}(\mathbf{x})</h1>
+<p>\frac{1}{Nh^d}
+\sum_{n=1}^{N}
+K
+\left(
+\frac{\mathbf{x}-\mathbf{x}_n}{h}
+\right).
+$$</p>
+<p>The factor $$h^d$$ is essential because the effective volume of a window scales with the dimension.</p>
+<hr>
+<h2 id="2-curse-of-dimensionality">2. Curse of dimensionality</h2>
+<p>Suppose the window has side length proportional to $$h$$ in each dimension.</p>
+<p>Its volume scales like</p>
+<p>$$
+h^d.
+$$</p>
+<p>As $$d$$ grows, the amount of data required to populate local neighborhoods grows rapidly.</p>
+<p>This is a fundamental manifestation of the <strong>curse of dimensionality</strong>.</p>
+<p>Even a large training set may become sparse in high-dimensional feature space.</p>
+<hr>
+<h2 id="3-nearest-neighbor-density-estimation">3. Nearest-neighbor density estimation</h2>
+<p>A different approach is to choose a region around the query point that contains a specified number of samples.</p>
+<p>Let the volume required to contain $$k$$ samples be $$V_k$$.</p>
+<p>Then the density estimate is approximately</p>
+<h1 id="hatpmathbfx-3">$$
+\hat{p}(\mathbf{x})</h1>
+<p>\frac{k}{N V_k}.
+$$</p>
+<p>This method adapts the neighborhood size to local density.</p>
+<p>Dense regions require small neighborhoods; sparse regions require large neighborhoods.</p>
+<hr>
+<h2 id="4-parzen-versus-nearest-neighbor-methods">4. Parzen versus nearest-neighbor methods</h2>
+<h3 id="parzen-method">Parzen method</h3>
+<ul>
+<li>Fix the neighborhood size/window;</li>
+<li>count or weight data points inside it.</li>
+</ul>
+<h3 id="nearest-neighbor-method">Nearest-neighbor method</h3>
+<ul>
+<li>Fix the number of data points;</li>
+<li>let the neighborhood size vary.</li>
+</ul>
+<p>Both are non-parametric techniques.</p>
+<hr>
+<h1 id="lecture-14--probability-density-estimation-continued">Lecture 14 — Probability Density Estimation (Continued.)</h1>
+<h2 id="1-convergence-intuition">1. Convergence intuition</h2>
+<p>A good density estimator should satisfy the intuition:</p>
+<ul>
+<li>as the amount of data grows, the estimated density should approach the true density;</li>
+<li>the window should shrink enough to resolve local structure;</li>
+<li>but not shrink so rapidly that each local estimate becomes dominated by noise.</li>
+</ul>
+<p>Thus there is a balancing requirement between data size and smoothing.</p>
+<hr>
+<h2 id="2-conditions-on-the-window">2. Conditions on the window</h2>
+<p>For Parzen-type methods, a typical asymptotic intuition is:</p>
+<p>$$
+h_N\rightarrow 0
+$$</p>
+<p>as</p>
+<p>$$
+N\rightarrow\infty,
+$$</p>
+<p>so that local resolution increases.</p>
+<p>At the same time, the effective number of samples in the window should grow sufficiently large.</p>
+<p>This is captured by the qualitative condition</p>
+<p>$$
+Nh_N^d\rightarrow\infty.
+$$</p>
+<p>The two requirements pull in opposite directions:</p>
+<ul>
+<li>$$h_N\rightarrow 0$$ gives increasing resolution;</li>
+<li>$$Nh_N^d\rightarrow\infty$$ keeps enough samples in the effective neighborhood.</li>
+</ul>
+<hr>
+<h2 id="3-density-estimation-and-classification">3. Density estimation and classification</h2>
+<p>For a classifier, we estimate one density for each class:</p>
+<p>$$
+\hat{p}(\mathbf{x}\mid\omega_1),
+\ldots,
+\hat{p}(\mathbf{x}\mid\omega_K).
+$$</p>
+<p>Then the Bayes rule uses</p>
+<p>$$
+\hat{p}(\mathbf{x}\mid\omega_i)P(\omega_i).
+$$</p>
+<p>Thus non-parametric density estimation can be inserted directly into Bayesian decision theory.</p>
+<hr>
+<h2 id="4-practical-issue">4. Practical issue</h2>
+<p>Non-parametric methods can become computationally expensive because every new test point may have to interact with many training samples.</p>
+<p>This becomes especially important as:</p>
+<ul>
+<li>number of samples increases;</li>
+<li>feature dimension increases;</li>
+<li>number of classes increases.</li>
+</ul>
+<hr>
+<h1 id="lecture-15--probability-density-estimation-continued">Lecture 15 — Probability Density Estimation (Continued.)</h1>
+<h2 id="1-choosing-the-smoothing-parameter">1. Choosing the smoothing parameter</h2>
+<p>The window parameter is central to Parzen estimation.</p>
+<p>Conceptually:</p>
+<ul>
+<li>very small window → detailed but noisy estimate;</li>
+<li>very large window → smooth but potentially inaccurate estimate.</li>
+</ul>
+<p>The choice of smoothing therefore controls recognition performance.</p>
+<hr>
+<h2 id="2-density-estimation-and-sample-size">2. Density estimation and sample size</h2>
+<p>Increasing the training-set size allows smaller windows while preserving enough samples to estimate density.</p>
+<p>This means that the same dimensionality can become easier to handle when more data are available.</p>
+<p>However, increasing dimensionality can overwhelm this benefit.</p>
+<hr>
+<h2 id="3-relation-to-the-curse-of-dimensionality">3. Relation to the curse of dimensionality</h2>
+<p>If the feature dimension increases from $$d$$ to $$d+1$$, a local region of side length $$h$$ gains another factor of $$h$$ in volume.</p>
+<p>Therefore data become rapidly sparse.</p>
+<p>This explains why feature selection and dimensionality reduction are not merely computational conveniences.</p>
+<p>They are often essential for reliable statistical learning.</p>
+<hr>
+<h1 id="lecture-16--dimensionality-problem">Lecture 16 — Dimensionality Problem</h1>
+<h2 id="1-why-dimension-is-a-problem">1. Why dimension is a problem</h2>
+<p>As feature dimension increases:</p>
+<ul>
+<li>feature space volume increases dramatically;</li>
+<li>data become sparse;</li>
+<li>density estimation becomes difficult;</li>
+<li>more training data are required;</li>
+<li>distances can become less informative;</li>
+<li>computational requirements increase.</li>
+</ul>
+<p>This collection of problems is called the <strong>curse of dimensionality</strong>.</p>
+<hr>
+<h2 id="2-a-geometric-intuition">2. A geometric intuition</h2>
+<p>Suppose we want a neighborhood containing a fixed fraction of the total volume.</p>
+<p>In one dimension, the neighborhood can be relatively large.</p>
+<p>In high dimensions, to occupy the same fraction of the total space, the corresponding radius becomes much larger.</p>
+<p>For example, for a unit hypercube, the volume is</p>
+<p>$$
+V=1.
+$$</p>
+<p>A centered hypercube of side length $$a$$ has volume</p>
+<p>$$
+V_a=a^d.
+$$</p>
+<p>For a fixed fraction $$\eta$$,</p>
+<p>$$
+a=\eta^{1/d}.
+$$</p>
+<p>As $$d$$ becomes large, the relationship between side length and volume becomes unintuitive.</p>
+<hr>
+<h2 id="3-data-sparsity">3. Data sparsity</h2>
+<p>A classifier that relies on local neighborhoods needs enough data to populate those neighborhoods.</p>
+<p>But the number of points required grows rapidly with dimension.</p>
+<p>Hence:</p>
+<p>$$
+\text{higher dimension}
+\Rightarrow
+\text{more data required}.
+$$</p>
+<p>If data availability is fixed, adding irrelevant dimensions can make the classifier worse.</p>
+<hr>
+<h2 id="4-irrelevant-features">4. Irrelevant features</h2>
+<p>Suppose only a small subset of features contains class information.</p>
+<p>Adding many irrelevant features increases dimension without improving separability.</p>
+<p>For Euclidean distance,</p>
+<h1 id="d2mathbfxmathbfy">$$
+d^2(\mathbf{x},\mathbf{y})</h1>
+<p>\sum_{j=1}^{d}(x_j-y_j)^2.
+$$</p>
+<p>Noise dimensions add positive contributions to the distance.</p>
+<p>This can obscure the informative components.</p>
+<hr>
+<h2 id="5-need-for-dimensionality-reduction">5. Need for dimensionality reduction</h2>
+<p>Possible strategies include:</p>
+<ul>
+<li>feature selection;</li>
+<li>feature extraction;</li>
+<li>principal component analysis;</li>
+<li>discriminant analysis.</li>
+</ul>
+<p>The next lectures develop discriminant-based dimension reduction.</p>
+<hr>
+<h1 id="lecture-17--multiple-discriminant-analysis">Lecture 17 — Multiple Discriminant Analysis</h1>
+<h2 id="1-motivation-1">1. Motivation</h2>
+<p>Suppose there are multiple classes and a high-dimensional feature vector.</p>
+<p>We want to project the data onto a lower-dimensional subspace while preserving class separability.</p>
+<p>This is the purpose of <strong>Multiple Discriminant Analysis (MDA)</strong>, closely related to Fisher&rsquo;s linear discriminant framework.</p>
+<hr>
+<h2 id="2-linear-transformation">2. Linear transformation</h2>
+<p>We seek a projection matrix $$W$$ such that</p>
+<h1 id="mathbfy">$$
+\mathbf{y}</h1>
+<p>W^T\mathbf{x}.
+$$</p>
+<p>If the original dimension is $$d$$ and the reduced dimension is $$r$$, then</p>
+<p>$$
+W\in\mathbb{R}^{d\times r},
+\qquad
+r&lt;d.
+$$</p>
+<hr>
+<h2 id="3-within-class-scatter">3. Within-class scatter</h2>
+<p>For each class $$\omega_i$$, let the class mean be $$\boldsymbol{\mu}_i$$
+The within-class scatter measures variability inside each class.
+For class $i$$:</p>
+<h1 id="s_i">$$
+S_i</h1>
+<p>\sum_{\mathbf{x}\in\omega_i}
+(\mathbf{x}-\boldsymbol{\mu}_i)
+(\mathbf{x}-\boldsymbol{\mu}_i)^T.
+$$</p>
+<p>The total within-class scatter is</p>
+<h1 id="s_w">$$
+S_W</h1>
+<p>\sum_i S_i.
+$$</p>
+<p>A small within-class scatter after projection means class members remain compact.</p>
+<hr>
+<h2 id="4-between-class-scatter">4. Between-class scatter</h2>
+<p>Let the overall mean be $$\boldsymbol{\mu}$$</p>
+<p>The between-class scatter measures separation between class means:</p>
+<h1 id="s_b">$$
+S_B</h1>
+<p>\sum_i
+N_i
+(\boldsymbol{\mu}_i-\boldsymbol{\mu})
+(\boldsymbol{\mu}_i-\boldsymbol{\mu})^T.
+$$</p>
+<p>Here $$N_i$$ is the number of samples in class $$i$$.</p>
+<p>A large between-class scatter means class means are well separated.</p>
+<hr>
+<h2 id="5-fisher-criterion">5. Fisher criterion</h2>
+<h1 id="jw">The basic idea is to maximize
+$$
+J(W)</h1>
+<p>\frac{
+|W^TS_BW|
+}{
+|W^TS_WW|
+}.
+$$</p>
+<p>For one projection direction $$\mathbf{w}$$ this reduces conceptually to</p>
+<h1 id="jmathbfw">$$
+J(\mathbf{w})</h1>
+<p>\frac{
+\mathbf{w}^TS_B\mathbf{w}
+}{
+\mathbf{w}^TS_W\mathbf{w}
+}.
+$$</p>
+<p>We want:</p>
+<ul>
+<li>large between-class variance;</li>
+<li>small within-class variance.</li>
+</ul>
+<hr>
+<h2 id="6-generalized-eigenvalue-problem">6. Generalized eigenvalue problem</h2>
+<p>The optimization leads to a generalized eigenvalue problem:</p>
+<h1 id="s_bmathbfw">$$
+S_B\mathbf{w}</h1>
+<p>\lambda S_W\mathbf{w}.
+$$</p>
+<p>Equivalently,</p>
+<h1 id="s_w-1s_bmathbfw">$$
+S_W^{-1}S_B\mathbf{w}</h1>
+<p>\lambda\mathbf{w},
+$$</p>
+<p>when $$S_W$$ is invertible.</p>
+<p>The eigenvectors corresponding to the largest eigenvalues provide discriminant directions.</p>
+<hr>
+<h2 id="7-maximum-useful-dimension">7. Maximum useful dimension</h2>
+<p>For $$C$$ classes, the rank of the between-class scatter is at most</p>
+<p>$$
+C-1.
+$$</p>
+<p>Therefore there can be at most $$C-1$$ linearly independent discriminant directions.</p>
+<p>This is a fundamental difference between discriminant analysis and generic variance-preserving dimensionality reduction.</p>
+<hr>
+<h1 id="lecture-18--multiple-discriminant-analysis-tutorial">Lecture 18 — Multiple Discriminant Analysis (Tutorial)</h1>
+<h2 id="1-tutorial-viewpoint">1. Tutorial viewpoint</h2>
+<p>The practical objective is to compute the discriminant projection from data.</p>
+<p>Typical workflow:</p>
+<ol>
+<li>Separate training samples class-wise.</li>
+<li>Compute each class mean.</li>
+<li>Compute the overall mean.</li>
+<li>Compute within-class scatter.</li>
+<li>Compute between-class scatter.</li>
+<li>Solve the generalized eigenvalue problem.</li>
+<li>Select the leading eigenvectors.</li>
+<li>Project the data.</li>
+</ol>
+<hr>
+<h2 id="2-class-means">2. Class means</h2>
+<p>For class $$i$$,</p>
+<h1 id="boldsymbolmu_i">$$
+\boldsymbol{\mu}_i</h1>
+<p>\frac{1}{N_i}
+\sum_{\mathbf{x}\in\omega_i}
+\mathbf{x}.
+$$</p>
+<p>The overall mean is</p>
+<h1 id="boldsymbolmu-1">$$
+\boldsymbol{\mu}</h1>
+<p>\frac{1}{N}
+\sum_i
+N_i\boldsymbol{\mu}_i.
+$$</p>
+<hr>
+<h2 id="3-within-class-covariancescatter">3. Within-class covariance/scatter</h2>
+<p>One can form covariance-like quantities</p>
+<h1 id="sigma_i-1">$$
+\Sigma_i</h1>
+<p>\frac{1}{N_i}
+\sum_{\mathbf{x}\in\omega_i}
+(\mathbf{x}-\boldsymbol{\mu}_i)
+(\mathbf{x}-\boldsymbol{\mu}_i)^T.
+$$</p>
+<p>Depending on convention, scatter matrices may omit normalization.</p>
+<p>For discriminant directions, the relative scaling matters more than the particular normalization convention.</p>
+<hr>
+<h2 id="4-interpretation-of-the-generalized-eigenvectors">4. Interpretation of the generalized eigenvectors</h2>
+<p>Each eigenvector gives a direction in the original feature space.</p>
+<p>Projection along that direction produces a scalar:</p>
+<p>$$
+y=\mathbf{w}^T\mathbf{x}.
+$$</p>
+<p>The leading directions are those that best trade off class separation against within-class spread.</p>
+<hr>
+<h2 id="5-two-class-special-case">5. Two-class special case</h2>
+<p>For two classes, only one independent discriminant direction is needed.</p>
+<p>The direction is proportional to</p>
+<p>$$
+\mathbf{w}
+\propto
+S_W^{-1}
+(\boldsymbol{\mu}_1-\boldsymbol{\mu}_2).
+$$</p>
+<p>Thus the projection effectively looks in the direction that best separates the class means after correcting for within-class covariance.</p>
+<hr>
+<h1 id="lecture-19--multiple-discriminant-analysis-tutorial">Lecture 19 — Multiple Discriminant Analysis (Tutorial)</h1>
+<h2 id="1-multi-class-projection">1. Multi-class projection</h2>
+<p>For more than two classes, several discriminant directions may be useful.</p>
+<p>Collect the leading eigenvectors:</p>
+<h1 id="w">$$
+W</h1>
+<p>[\mathbf{w}_1,\mathbf{w}_2,\ldots,\mathbf{w}_r].
+$$</p>
+<p>Then</p>
+<p>$$
+\mathbf{y}=W^T\mathbf{x}.
+$$</p>
+<p>This creates a lower-dimensional discriminant feature space.</p>
+<hr>
+<h2 id="2-why-this-projection-is-supervised">2. Why this projection is supervised</h2>
+<p>MDA uses class labels in the construction of $$S_W$$ and $$S_B$$.</p>
+<p>Therefore it is a supervised dimensionality-reduction method.</p>
+<p>This contrasts with methods such as PCA, which primarily consider the total covariance of the data without using class identities.</p>
+<hr>
+<h2 id="3-geometric-interpretation">3. Geometric interpretation</h2>
+<p>MDA attempts to rotate and project the original feature space so that:</p>
+<ul>
+<li>observations belonging to the same class become compact;</li>
+<li>observations belonging to different classes become separated.</li>
+</ul>
+<p>Thus the reduced coordinates are explicitly chosen to support discrimination.</p>
+<hr>
+<h2 id="4-classification-after-mda">4. Classification after MDA</h2>
+<p>After projection, classification can be performed in the reduced space.</p>
+<p>The complete pipeline becomes</p>
+<p>$$
+\mathbf{x}
+\rightarrow
+W^T\mathbf{x}
+\rightarrow
+\mathbf{y}
+\rightarrow
+\text{classifier}.
+$$</p>
+<p>The benefit is that the classifier operates in fewer dimensions while retaining class-discriminative structure.</p>
+<hr>
+<h1 id="lecture-20--perceptron-criterion">Lecture 20 — Perceptron Criterion</h1>
+<h2 id="1-linear-discriminant-functions">1. Linear discriminant functions</h2>
+<p>A linear classifier represents a discriminant function as</p>
+<h1 id="gmathbfx">$$
+g(\mathbf{x})</h1>
+<p>\mathbf{w}^T\mathbf{x}+b.
+$$</p>
+<p>Often a bias term is absorbed into an augmented vector:</p>
+<h1 id="tildemathbfx">$$
+\tilde{\mathbf{x}}</h1>
+<h1 id="tildemathbfw">\begin{bmatrix}
+\mathbf{x}\<br>
+1
+\end{bmatrix},
+\qquad
+\tilde{\mathbf{w}}</h1>
+<p>\begin{bmatrix}
+\mathbf{w}\<br>
+b
+\end{bmatrix}.
+$$</p>
+<p>Then</p>
+<h1 id="gmathbfx-1">$$
+g(\mathbf{x})</h1>
+<p>\tilde{\mathbf{w}}^T
+\tilde{\mathbf{x}}.
+$$</p>
+<hr>
+<h2 id="2-two-class-encoding">2. Two-class encoding</h2>
+<p>For convenience, encode classes using labels such as</p>
+<p>$$
+y_i\in{+1,-1}.
+$$</p>
+<p>A sample is correctly classified when</p>
+<p>$$
+y_i g(\mathbf{x}_i)&gt;0.
+$$</p>
+<p>It is misclassified when</p>
+<p>$$
+y_i g(\mathbf{x}_i)&lt;0.
+$$</p>
+<p>The quantity</p>
+<p>$$
+y_i g(\mathbf{x}_i)
+$$</p>
+<p>is therefore a signed measure of classification correctness.</p>
+<hr>
+<h2 id="3-perceptron-criterion">3. Perceptron criterion</h2>
+<p>The perceptron criterion focuses on misclassified samples.</p>
+<p>A standard form is</p>
+<h1 id="j_pmathbfw">$$
+J_P(\mathbf{w})</h1>
+<p>-\sum_{\mathbf{x}_i\in\mathcal{M}}
+y_i\mathbf{w}^T\mathbf{x}_i,
+$$</p>
+<p>where $$\mathcal{M}$$ is the set of currently misclassified patterns.</p>
+<p>For every misclassified point,</p>
+<p>$$
+y_i\mathbf{w}^T\mathbf{x}_i&lt;0,
+$$</p>
+<p>so its contribution to the criterion is positive.</p>
+<p>The objective is to find weights that make the criterion zero.</p>
+<hr>
+<h2 id="4-gradient-of-the-criterion">4. Gradient of the criterion</h2>
+<p>For a fixed set of misclassified samples,</p>
+<h1 id="nabla-j_pmathbfw">$$
+\nabla J_P(\mathbf{w})</h1>
+<p>-\sum_{\mathbf{x}_i\in\mathcal{M}}
+y_i\mathbf{x}_i.
+$$</p>
+<p>A gradient-descent step is</p>
+<h1 id="mathbfw_k1">$$
+\mathbf{w}_{k+1}</h1>
+<h2 id="mathbfw_k">\mathbf{w}_k</h2>
+<p>\eta
+\nabla J_P(\mathbf{w}_k),
+$$</p>
+<p>which gives</p>
+<h1 id="mathbfw_k1-1">$$
+\mathbf{w}_{k+1}</h1>
+<p>\mathbf{w}<em>k
++
+\eta
+\sum</em>{\mathbf{x}_i\in\mathcal{M}}
+y_i\mathbf{x}_i.
+$$</p>
+<p>This explains the classical perceptron correction rule.</p>
+<hr>
+<h2 id="5-sequential-perceptron-update">5. Sequential perceptron update</h2>
+<p>For a single misclassified sample,</p>
+<h1 id="mathbfw_k1-2">$$
+\mathbf{w}_{k+1}</h1>
+<p>\mathbf{w}_k
++
+\eta y_i\mathbf{x}_i.
+$$</p>
+<p>Thus:</p>
+<ul>
+<li>positive-class misclassification pushes the boundary toward classifying that point as positive;</li>
+<li>negative-class misclassification pushes it in the opposite direction.</li>
+</ul>
+<hr>
+<h2 id="6-augmented-representation">6. Augmented representation</h2>
+<p>Bias can be included in the vector.</p>
+<p>Let</p>
+<h1 id="tildemathbfx-1">$$
+\tilde{\mathbf{x}}</h1>
+<p>[\mathbf{x}^T,1]^T.
+$$</p>
+<p>Then the decision is</p>
+<p>$$
+\operatorname{sign}
+(
+\tilde{\mathbf{w}}^T\tilde{\mathbf{x}}
+).
+$$</p>
+<p>An update becomes</p>
+<h1 id="tildemathbfw_k1">$$
+\tilde{\mathbf{w}}_{k+1}</h1>
+<p>\tilde{\mathbf{w}}_k
++
+\eta y_i\tilde{\mathbf{x}}_i.
+$$</p>
+<p>This is particularly convenient for derivations and implementations.</p>
+<hr>
+<h2 id="7-separability">7. Separability</h2>
+<p>The perceptron algorithm is guaranteed to find a separating hyperplane if the training data are linearly separable.</p>
+<p>If the data are not linearly separable, the plain perceptron can continue making updates without converging to zero training error.</p>
+<p>Therefore the perceptron criterion is intimately connected with the geometry of linear separability.</p>
+<hr>
+<h1 id="lecture-21--perceptron-criterion-continued">Lecture 21 — Perceptron Criterion (Continued.)</h1>
+<h2 id="1-criterion-based-viewpoint">1. Criterion-based viewpoint</h2>
+<p>The perceptron is not merely an update rule.</p>
+<p>It can be viewed as an optimization procedure for a criterion that penalizes misclassified samples.</p>
+<p>This perspective is useful because many learning algorithms can be understood as:</p>
+<p>$$
+\text{define loss/criterion}
+\rightarrow
+\text{differentiate}
+\rightarrow
+\text{optimize parameters}.
+$$</p>
+<hr>
+<h2 id="2-why-only-misclassified-patterns-matter">2. Why only misclassified patterns matter</h2>
+<p>For correctly classified points,</p>
+<p>$$
+y_i\mathbf{w}^T\mathbf{x}_i&gt;0.
+$$</p>
+<p>The perceptron criterion does not need to penalize these points once they are on the correct side.</p>
+<p>Therefore the learning signal comes from the mistakes.</p>
+<p>This differs from objectives such as squared error, which typically continue assigning a numerical penalty even to correctly classified but imperfectly fitted samples.</p>
+<hr>
+<h2 id="3-batch-and-sequential-forms">3. Batch and sequential forms</h2>
+<h3 id="batch-update">Batch update</h3>
+<p>Collect all misclassified samples:</p>
+<h1 id="mathcalm">$$
+\mathcal{M}</h1>
+<p>{i:y_i\mathbf{w}^T\mathbf{x}_i\leq0}.
+$$</p>
+<p>Then update:</p>
+<h1 id="mathbfw_k1-3">$$
+\mathbf{w}_{k+1}</h1>
+<p>\mathbf{w}<em>k
++
+\eta
+\sum</em>{i\in\mathcal{M}}
+y_i\mathbf{x}_i.
+$$</p>
+<h3 id="sequential-update">Sequential update</h3>
+<p>Process one pattern at a time:</p>
+<h1 id="mathbfw_k1-4">$$
+\mathbf{w}_{k+1}</h1>
+<p>\mathbf{w}_k
++
+\eta y_i\mathbf{x}_i
+$$</p>
+<p>only when sample $$i$$ is misclassified.</p>
+<p>The sequential form is the classic perceptron learning rule.</p>
+<hr>
+<h2 id="4-geometric-interpretation-of-the-update">4. Geometric interpretation of the update</h2>
+<p>Consider a positive sample that is incorrectly classified:</p>
+<p>$$
+\mathbf{w}^T\mathbf{x}&lt;0,
+\qquad y=+1.
+$$</p>
+<p>The update is</p>
+<p>$$
+\mathbf{w}&lsquo;=\mathbf{w}+\eta\mathbf{x}.
+$$</p>
+<p>Then</p>
+<h1 id="mathbfwtmathbfx">$$
+\mathbf{w}&lsquo;^T\mathbf{x}</h1>
+<p>\mathbf{w}^T\mathbf{x}
++
+\eta|\mathbf{x}|^2.
+$$</p>
+<p>The score of the misclassified point therefore increases.</p>
+<p>For a negative misclassification,</p>
+<p>$$
+y=-1,
+$$</p>
+<p>and the update is</p>
+<p>$$
+\mathbf{w}&lsquo;=\mathbf{w}-\eta\mathbf{x},
+$$</p>
+<p>which decreases the score of that point.</p>
+<p>Thus the update directly tries to push each error across the decision boundary.</p>
+<hr>
+<h2 id="5-perceptron-convergence-intuition">5. Perceptron convergence intuition</h2>
+<p>For linearly separable data, suppose there exists a vector $$\mathbf{w}^*$$ satisfying</p>
+<p>$$
+y_i{\mathbf{w}^*}^T\mathbf{x}_i&gt;0
+$$</p>
+<p>for every training sample.</p>
+<p>Under the standard perceptron assumptions, repeated updates eventually stop making mistakes.</p>
+<p>The convergence result depends on linear separability. It does <strong>not</strong> say that perceptron necessarily converges for arbitrary data.</p>
+<hr>
+<h2 id="6-what-the-perceptron-does-not-optimize">6. What the perceptron does not optimize</h2>
+<p>The perceptron criterion is fundamentally concerned with classification correctness.</p>
+<p>It is not directly minimizing:</p>
+<ul>
+<li>squared reconstruction error,</li>
+<li>posterior probability error,</li>
+<li>margin maximization,</li>
+<li>probabilistic negative log-likelihood.</li>
+</ul>
+<p>Those correspond to different learning criteria.</p>
+<p>This distinction is important because changing the criterion changes the learning behavior.</p>
+<hr>
+<h1 id="cross-lecture-connections">Cross-Lecture Connections</h1>
+<h2 id="1-the-complete-statistical-pattern-recognition-pipeline">1. The complete statistical pattern-recognition pipeline</h2>
+<p>The first 21 lectures develop a coherent progression:</p>
+<p>$$
+\boxed{
+\text{Pattern}
+\rightarrow
+\text{Features}
+\rightarrow
+\text{Feature vector}
+\rightarrow
+\text{Probability model}
+\rightarrow
+\text{Bayesian decision}
+\rightarrow
+\text{Dimensionality reduction}
+\rightarrow
+\text{Linear classifier}
+}
+$$</p>
+<p>The course is therefore not presenting disconnected algorithms. Each topic solves a limitation introduced by the previous stage.</p>
+<hr>
+<h2 id="2-features-create-the-space-in-which-classification-happens">2. Features create the space in which classification happens</h2>
+<p>Raw data are usually difficult to classify directly.</p>
+<p>Feature extraction creates</p>
+<p>$$
+\mathbf{x}
+\rightarrow
+\mathbf{z}.
+$$</p>
+<p>All subsequent statistical operations act on $$\mathbf{z}$$.</p>
+<p>Therefore a bad feature representation can limit any classifier, regardless of how sophisticated the classifier is.</p>
+<hr>
+<h2 id="3-bayesian-classification-requires-a-density-model">3. Bayesian classification requires a density model</h2>
+<p>Once feature vectors are available, Bayesian classification asks:</p>
+<p>$$
+\text{Which class most likely generated this feature vector?}
+$$</p>
+<p>That requires</p>
+<p>$$
+p(\mathbf{x}\mid\omega_i)
+$$</p>
+<p>and</p>
+<p>$$
+P(\omega_i).
+$$</p>
+<p>When the density is assumed Gaussian, the problem becomes a parametric estimation problem.</p>
+<p>When the density is unknown, non-parametric estimation is introduced.</p>
+<hr>
+<h2 id="4-density-estimation-creates-the-dimensionality-problem">4. Density estimation creates the dimensionality problem</h2>
+<p>Non-parametric methods rely on local neighborhoods.</p>
+<p>But the number of samples needed to represent local neighborhoods grows rapidly with dimensionality.</p>
+<p>This leads naturally to:</p>
+<p>$$
+\text{density estimation}
+\rightarrow
+\text{curse of dimensionality}
+\rightarrow
+\text{dimensionality reduction}.
+$$</p>
+<hr>
+<h2 id="5-mda-attacks-dimensionality-using-class-information">5. MDA attacks dimensionality using class information</h2>
+<p>MDA uses:</p>
+<p>$$
+S_W
+$$</p>
+<p>to measure within-class spread and</p>
+<p>$$
+S_B
+$$</p>
+<p>to measure between-class separation.</p>
+<p>The goal is therefore not simply to preserve arbitrary variance.</p>
+<p>It is to preserve <strong>discriminative information</strong>.</p>
+<hr>
+<h2 id="6-perceptron-shifts-the-focus-from-probabilistic-modeling-to-discriminative-learning">6. Perceptron shifts the focus from probabilistic modeling to discriminative learning</h2>
+<p>Bayesian methods model how data are generated by each class.</p>
+<p>The perceptron instead directly learns a decision boundary:</p>
+<p>$$
+\mathbf{w}^T\mathbf{x}+b=0.
+$$</p>
+<p>So there is a conceptual transition:</p>
+<p>$$
+\text{generative/statistical modeling}
+\rightarrow
+\text{direct discriminative classification}.
+$$</p>
+<hr>
+<h1 id="important-formula-sheet">Important Formula Sheet</h1>
+<h2 id="bayes-theorem">Bayes theorem</h2>
+<h1 id="pomega_imidmathbfx-1">$$
+P(\omega_i\mid\mathbf{x})</h1>
+<p>\frac{
+p(\mathbf{x}\mid\omega_i)P(\omega_i)
+}{
+\sum_j p(\mathbf{x}\mid\omega_j)P(\omega_j)
+}.
+$$</p>
+<h2 id="minimum-error-bayes-rule">Minimum-error Bayes rule</h2>
+<p>$$
+\text{decide }\omega_i
+\quad\text{if}\quad
+p(\mathbf{x}\mid\omega_i)P(\omega_i)</p>
+<blockquote>
+</blockquote>
+<p>p(\mathbf{x}\mid\omega_j)P(\omega_j)
+\quad\forall j\neq i.
+$$</p>
+<h2 id="conditional-risk">Conditional risk</h2>
+<h1 id="ralpha_imidmathbfx-1">$$
+R(\alpha_i\mid\mathbf{x})</h1>
+<p>\sum_j
+\lambda(\alpha_i\mid\omega_j)
+P(\omega_j\mid\mathbf{x}).
+$$</p>
+<h2 id="multivariate-gaussian-density">Multivariate Gaussian density</h2>
+<h1 id="pmathbfxmidomega_i-3">$$
+p(\mathbf{x}\mid\omega_i)</h1>
+<p>\frac{1}{
+(2\pi)^{d/2}|\Sigma_i|^{1/2}
+}
+\exp
+\left[
+-\frac12
+(\mathbf{x}-\boldsymbol{\mu}_i)^T
+\Sigma_i^{-1}
+(\mathbf{x}-\boldsymbol{\mu}_i)
+\right].
+$$</p>
+<h2 id="gaussian-discriminant">Gaussian discriminant</h2>
+<h1 id="g_imathbfx-4">$$
+g_i(\mathbf{x})</h1>
+<p>-\frac12\ln|\Sigma_i|
+-\frac12
+(\mathbf{x}-\boldsymbol{\mu}_i)^T
+\Sigma_i^{-1}
+(\mathbf{x}-\boldsymbol{\mu}_i)
++
+\ln P(\omega_i).
+$$</p>
+<h2 id="mahalanobis-distance">Mahalanobis distance</h2>
+<h1 id="d_i2mathbfx-1">$$
+D_i^2(\mathbf{x})</h1>
+<p>(\mathbf{x}-\boldsymbol{\mu}_i)^T
+\Sigma_i^{-1}
+(\mathbf{x}-\boldsymbol{\mu}_i).
+$$</p>
+<h2 id="mle">MLE</h2>
+<h1 id="hatboldsymboltheta">$$
+\hat{\boldsymbol{\theta}}</h1>
+<p>\arg\max_{\boldsymbol{\theta}}
+\prod_{n=1}^{N}
+p(\mathbf{x}_n\mid\boldsymbol{\theta}).
+$$</p>
+<h2 id="log-likelihood">Log-likelihood</h2>
+<h1 id="ellboldsymboltheta-1">$$
+\ell(\boldsymbol{\theta})</h1>
+<p>\sum_{n=1}^{N}
+\ln p(\mathbf{x}_n\mid\boldsymbol{\theta}).
+$$</p>
+<h2 id="gaussian-mean-mle">Gaussian mean MLE</h2>
+<h1 id="hatboldsymbolmu-1">$$
+\hat{\boldsymbol{\mu}}</h1>
+<p>\frac1N
+\sum_{n=1}^{N}\mathbf{x}_n.
+$$</p>
+<h2 id="gaussian-covariance-mle">Gaussian covariance MLE</h2>
+<h1 id="hatsigma-1">$$
+\hat{\Sigma}</h1>
+<p>\frac1N
+\sum_{n=1}^{N}
+(\mathbf{x}_n-\hat{\boldsymbol{\mu}})
+(\mathbf{x}_n-\hat{\boldsymbol{\mu}})^T.
+$$</p>
+<h2 id="parzen-window-density-estimate">Parzen-window density estimate</h2>
+<h1 id="hatpmathbfx-4">$$
+\hat{p}(\mathbf{x})</h1>
+<p>\frac{1}{Nh^d}
+\sum_{n=1}^{N}
+K
+\left(
+\frac{\mathbf{x}-\mathbf{x}_n}{h}
+\right).
+$$</p>
+<h2 id="nearest-neighbor-density-estimate">Nearest-neighbor density estimate</h2>
+<h1 id="hatpmathbfx-5">$$
+\hat{p}(\mathbf{x})</h1>
+<p>\frac{k}{NV_k}.
+$$</p>
+<h2 id="mda-projection">MDA projection</h2>
+<h1 id="mathbfy-1">$$
+\mathbf{y}</h1>
+<p>W^T\mathbf{x}.
+$$</p>
+<h2 id="within-class-scatter">Within-class scatter</h2>
+<h1 id="s_w-1">$$
+S_W</h1>
+<p>\sum_i
+\sum_{\mathbf{x}\in\omega_i}
+(\mathbf{x}-\boldsymbol{\mu}_i)
+(\mathbf{x}-\boldsymbol{\mu}_i)^T.
+$$</p>
+<h2 id="between-class-scatter">Between-class scatter</h2>
+<h1 id="s_b-1">$$
+S_B</h1>
+<p>\sum_i
+N_i
+(\boldsymbol{\mu}_i-\boldsymbol{\mu})
+(\boldsymbol{\mu}_i-\boldsymbol{\mu})^T.
+$$</p>
+<h2 id="fisher-criterion">Fisher criterion</h2>
+<h1 id="jmathbfw-1">$$
+J(\mathbf{w})</h1>
+<p>\frac{
+\mathbf{w}^TS_B\mathbf{w}
+}{
+\mathbf{w}^TS_W\mathbf{w}
+}.
+$$</p>
+<h2 id="generalized-eigenvalue-equation">Generalized eigenvalue equation</h2>
+<h1 id="s_bmathbfw-1">$$
+S_B\mathbf{w}</h1>
+<p>\lambda S_W\mathbf{w}.
+$$</p>
+<h2 id="perceptron-discriminant">Perceptron discriminant</h2>
+<h1 id="gmathbfx-2">$$
+g(\mathbf{x})</h1>
+<p>\mathbf{w}^T\mathbf{x}+b.
+$$</p>
+<h2 id="correct-classification-condition">Correct-classification condition</h2>
+<p>$$
+y_i g(\mathbf{x}_i)&gt;0.
+$$</p>
+<h2 id="perceptron-update">Perceptron update</h2>
+<h1 id="mathbfw_k1-5">$$
+\mathbf{w}_{k+1}</h1>
+<p>\mathbf{w}_k
++
+\eta y_i\mathbf{x}_i
+$$</p>
+<p>for a misclassified sample.</p>
+<hr>
+<h1 id="conceptual-map-for-revision">Conceptual Map for Revision</h1>
+<h3 id="stage-1-representation">Stage 1: Representation</h3>
+<p><strong>Lectures 1–4</strong></p>
+<p>$$
+\text{raw pattern}
+\rightarrow
+\text{features}
+\rightarrow
+\text{feature vector}.
+$$</p>
+<p>Key questions:</p>
+<ul>
+<li>What information should be retained?</li>
+<li>What should be invariant?</li>
+<li>How many features are needed?</li>
+<li>Which properties distinguish the classes?</li>
+</ul>
+<h3 id="stage-2-statistical-decision-theory">Stage 2: Statistical decision theory</h3>
+<p><strong>Lectures 5–9</strong></p>
+<p>$$
+p(\mathbf{x}\mid\omega_i),\quad P(\omega_i)
+\rightarrow
+P(\omega_i\mid\mathbf{x})
+\rightarrow
+\text{decision}.
+$$</p>
+<p>Key questions:</p>
+<ul>
+<li>What is the probability a class generated the observation?</li>
+<li>How should priors affect the decision?</li>
+<li>How does the shape of a Gaussian density influence the boundary?</li>
+<li>What changes when features are binary?</li>
+</ul>
+<h3 id="stage-3-estimating-the-unknown-distribution">Stage 3: Estimating the unknown distribution</h3>
+<p><strong>Lectures 10–15</strong></p>
+<p>$$
+\text{training data}
+\rightarrow
+\text{density/parameter estimation}.
+$$</p>
+<p>Key questions:</p>
+<ul>
+<li>What if the class distributions are unknown?</li>
+<li>How can their parameters be estimated?</li>
+<li>How can a density be estimated without assuming a parametric form?</li>
+<li>Why does high dimension make local density estimation difficult?</li>
+</ul>
+<h3 id="stage-4-reducing-dimensionality-using-class-information">Stage 4: Reducing dimensionality using class information</h3>
+<p><strong>Lectures 16–19</strong></p>
+<p>$$
+\mathbf{x}
+\rightarrow
+W^T\mathbf{x}.
+$$</p>
+<p>Key questions:</p>
+<ul>
+<li>How can dimension be reduced?</li>
+<li>What is the difference between within-class and between-class variation?</li>
+<li>Why can the discriminant subspace have at most $$C-1$$ dimensions?</li>
+</ul>
+<h3 id="stage-5-direct-discriminative-learning">Stage 5: Direct discriminative learning</h3>
+<p><strong>Lectures 20–21</strong></p>
+<p>$$
+\mathbf{w}^T\mathbf{x}+b=0.
+$$</p>
+<p>Key questions:</p>
+<ul>
+<li>How can a linear classifier be learned directly?</li>
+<li>What criterion should be optimized?</li>
+<li>Why do perceptron updates only respond to misclassified points?</li>
+<li>Under what condition does perceptron converge?</li>
+</ul>
+<hr>
+<h1 id="lecture-to-lecture-dependency-graph">Lecture-to-Lecture Dependency Graph</h1>
+<p>$$
+\text{Feature Extraction}
+\rightarrow
+\text{Bayes Decision Theory}
+\rightarrow
+\text{Gaussian Models}
+\rightarrow
+\text{Parameter Estimation}
+\rightarrow
+\text{Non-parametric Density Estimation}
+\rightarrow
+\text{Curse of Dimensionality}
+\rightarrow
+\text{MDA}
+\rightarrow
+\text{Perceptron}.
+$$</p>
+<p>A useful way to remember the logic is:</p>
+<blockquote>
+<p>First decide <strong>how to represent</strong> a pattern.<br>
+Then decide <strong>how to classify</strong> it.<br>
+Then ask <strong>how to learn the unknown probability model</strong>.<br>
+Then ask <strong>how to deal with high dimensionality</strong>.<br>
+Finally, learn a classifier <strong>directly from classification errors</strong>.</p>
+</blockquote>
+<hr>
+<h1 id="source--course-reference">Source / Course Reference</h1>
+<p>These notes are based on the NPTEL <strong>Pattern Recognition and Application</strong> course by Prof. Prabir Kumar Biswas, IIT Kharagpur, course code <strong>117105101</strong>. The official NPTEL lecture listing identifies Lectures 1–21 as:</p>
+<ol>
+<li>Introduction</li>
+<li>Feature Extraction - I</li>
+<li>Feature Extraction - II</li>
+<li>Feature Extraction - III</li>
+<li>Bayes Decision Theory</li>
+<li>Bayes Decision Theory (Continued.)</li>
+<li>Normal Density and Discriminant Function</li>
+<li>Normal Density and Discriminant Function (Continued.)</li>
+<li>Bayes Decision Theory - Binary Features</li>
+<li>Maximum Likelihood Estimation</li>
+<li>Probability Density Estimation</li>
+<li>Probability Density Estimation (Continued.)</li>
+<li>Probability Density Estimation (Continued.)</li>
+<li>Probability Density Estimation (Continued.)</li>
+<li>Probability Density Estimation (Continued.)</li>
+<li>Dimensionality Problem</li>
+<li>Multiple Discriminant Analysis</li>
+<li>Multiple Discriminant Analysis (Tutorial)</li>
+<li>Multiple Discriminant Analysis (Tutorial)</li>
+<li>Perceptron Criterion</li>
+<li>Perceptron Criterion (Continued.)</li>
+</ol>
+<p>The official course syllabus groups these topics into feature extraction, Bayes decision theory, density estimation, dimensionality reduction, and perceptron criteria.</p>
+
+    </div>
+</article>
+
+            </main>
+
+            <footer style="margin-top: 5rem; padding-bottom: 2rem; border-top: 1px solid var(--border-color); color: #8b949e; font-size: 0.9rem;">
+                <p>&copy; 2026 Utsab&#39;s Note Repository. Built with Hugo.</p>
+            </footer>
+        </div>
+    </div>
+
+    
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+
+        function toggleFolder(headerElement, event) {
+            
+            if (event.target.tagName.toLowerCase() === 'a') {
+                return;
+            }
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const folderItem = headerElement.closest('.tree-item.folder');
+            const content = folderItem.querySelector('.folder-content');
+            const arrow = headerElement.querySelector('.toggle-arrow');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▼';
+                folderItem.classList.add('open');
+            } else {
+                content.style.display = 'none';
+                arrow.textContent = '▶';
+                folderItem.classList.remove('open');
+            }
+        }
+
+        function filterTree() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const items = document.querySelectorAll('.file-title-link, .folder-title');
+            
+            if (!query) {
+                
+                document.querySelectorAll('.tree-item').forEach(item => {
+                    item.style.display = '';
+                });
+                document.querySelectorAll('.folder-content').forEach(content => {
+                    const folderItem = content.closest('.tree-item.folder');
+                    if (folderItem.classList.contains('open')) {
+                        content.style.display = 'block';
+                        folderItem.querySelector('.toggle-arrow').textContent = '▼';
+                    } else {
+                        content.style.display = 'none';
+                        folderItem.querySelector('.toggle-arrow').textContent = '▶';
+                    }
+                });
+                return;
+            }
+
+            
+            document.querySelectorAll('.tree-item').forEach(item => {
+                item.style.display = 'none';
+            });
+
+            
+            items.forEach(el => {
+                const text = el.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    const item = el.closest('.tree-item');
+                    if (item) {
+                        item.style.display = '';
+                        
+                        
+                        let parent = item.parentElement.closest('.tree-item.folder');
+                        while (parent) {
+                            parent.style.display = '';
+                            parent.classList.add('open');
+                            const content = parent.querySelector('.folder-content');
+                            if (content) content.style.display = 'block';
+                            const arrow = parent.querySelector('.toggle-arrow');
+                            if (arrow) arrow.textContent = '▼';
+                            parent = parent.parentElement.closest('.tree-item.folder');
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

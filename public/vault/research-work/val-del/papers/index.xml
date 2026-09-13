@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Papers on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/research-work/val-del/papers/</link>
+    <description>Recent content in Papers on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/research-work/val-del/papers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gradient-Weight Alignment as a Train-Time Proxy for Generalization in Classification Tasks</title>
+      <link>http://localhost:1313/vault/research-work/val-del/papers/gradient-weight-alignment-as-a-train-time-proxy-for-generalization-in-classification-tasks/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/val-del/papers/gradient-weight-alignment-as-a-train-time-proxy-for-generalization-in-classification-tasks/</guid>
+      <description>#interpretebility #learning-theory
+Background:  Prior work indicates that robust generalization emerges when all training samples contribute coherently towards a shared learning goal, that is, their gradients are directionally well aligned Conflicting directions indicate potential failures to generalise the average gradient alignment over the dataset provides minimal insight into individual samples’ contribution to training e.g GSNR and other pairwise gradient based metrics  They are also computationally and memory heavy to compute during train-time.</description>
+    </item>
+    
+    <item>
+      <title>Stable Coresets</title>
+      <link>http://localhost:1313/vault/research-work/val-del/papers/stable-coresets/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/val-del/papers/stable-coresets/</guid>
+      <description>#data-pruning #data-attribution #learning-theory #data-efficient-ml
+Background  The curvature mismatch and loss landscape misalignment issue is a general challenge inherent to any subset selection, but it becomes peculiarly catastrophic and pronounced in coreset methods that rely purely on first-order gradient matching. While landscape misalignment is a general risk, standard gradient-matching coreset algorithms (such as Craig, Grad-Match, or Glister) suffer from two specific flaws that turn this minor warping into a catastrophic failure:  gradient matching without curvature awareness outliers and noise can produce large gradient   Methods like CREST try to match both gradients and Hessians over time.</description>
+    </item>
+    
+    <item>
+      <title>UNDERSTANDING WHY NEURAL NETWORKS GENERALIZE WELL THROUGH GSNR OF PARAMETERS</title>
+      <link>http://localhost:1313/vault/research-work/val-del/papers/understanding-why-neural-networks-generalize-well-through-gsnr-of-parameters/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/val-del/papers/understanding-why-neural-networks-generalize-well-through-gsnr-of-parameters/</guid>
+      <description>#interpretebility #data-efficient-ml #generalisation #learning-theory
+ Intuitively, GSNR measures the similarity of a parameter’s gradients among different training samples. Large GSNR implies that most training samples agree on the optimization direction of this parameter, thus the parameter is more likely to be associated with a meaningful “pattern” and we assume its update could lead to a better generalization  </description>
+    </item>
+    
+  </channel>
+</rss>

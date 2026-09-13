@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Continual Learning on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/papers/continual-learning/</link>
+    <description>Recent content in Continual Learning on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/papers/continual-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>When Do Curricula Work?</title>
+      <link>http://localhost:1313/vault/papers/continual-learning/when-do-curricula-work/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/continual-learning/when-do-curricula-work/</guid>
+      <description>#curriculum_learning
+Paper: [2012.03107] When Do Curricula Work?
+Contributions  investigate the implicit curricula resulting from achitectural and optimisation bias quantify the benefit of explicit curricula, we conduct extensive experiments over thousands of orderings spanning three kinds of learning: curriculum, anti-curriculum, and random-curriculum train over 25,000 models over four datasets, CIFAR10/100, FOOD101, and FOOD101N covering a wide range of choices in designing curricula curriculum learning, random, and anti-curriculum learning perform almost equally well in the standard setting Curriculum learning improves over standard training when training time is limited Curricula improves over standard training in noisy regime   Each row is an CIFAR image, X axis is the list of different configurations(142 in total) on which the image was trained.</description>
+    </item>
+    
+  </channel>
+</rss>

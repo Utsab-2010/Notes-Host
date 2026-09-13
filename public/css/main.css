@@ -1,11 +1,11 @@
 :root {
-    --bg-color: #1e2326;             /* Deep Everforest forest dark background */
+    --bg-color: #14181a;             /* Deepest everforest dark background */
     --text-color: #d3c6aa;           /* Warm everforest cream text */
-    --accent-color: #a7c080;         /* Everforest warm leaf-green accent */
-    --secondary-color: rgba(43, 51, 57, 0.75); /* Translucent everforest medium dark */
+    --accent-color: #8da874;         /* Rich everforest leaf-green accent */
+    --secondary-color: rgba(28, 34, 37, 0.8); /* Darker translucent everforest base */
     --border-color: rgba(79, 92, 94, 0.35);  /* Subtle everforest sage green border */
-    --card-bg: rgba(43, 51, 57, 0.6);  /* Translucent everforest card bg */
-    --glass-border: rgba(167, 192, 128, 0.15); /* Green-tinted glass border */
+    --card-bg: rgba(28, 34, 37, 0.7);  /* Darker translucent card bg */
+    --glass-border: rgba(141, 168, 116, 0.15); /* Leaf-green tinted glass border */
     --font-main: 'Outfit', system-ui, -apple-system, sans-serif;
     --font-body: 'Lora', Georgia, serif;
     --font-code: 'JetBrains Mono', 'Fira Code', monospace;

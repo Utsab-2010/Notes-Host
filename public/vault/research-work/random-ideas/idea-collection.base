@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("Research Work/Random Ideas")
+        - file.ext != "base"
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - file.tags
+    columnSize:
+      file.name: 724

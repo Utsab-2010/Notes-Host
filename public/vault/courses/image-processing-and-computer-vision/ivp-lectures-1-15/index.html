@@ -1,0 +1,5749 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVP Lectures 1-15 | Utsab&#39;s Note Repository</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/main.css?v=1789302953">
+
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="sidebar">
+  <div class="sidebar-header">
+    <a href="http://localhost:1313/" class="sidebar-brand">
+      <span class="brand-icon">📓</span>
+      <span class="brand-text">Note Repository</span>
+    </a>
+  </div>
+
+  <div class="sidebar-search">
+    <input type="text" id="search-input" placeholder="Search notes..." onkeyup="filterTree()">
+  </div>
+
+  <nav class="file-tree">
+    
+    
+    
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/blogs/" class="folder-title ">Blogs</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/diffusion/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/implementing-clip/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Implementing CLIP</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/list-of-topics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">List of Topics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/need-for-score-networks/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Need for score networks</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/why-iterative-reverse-sampling-recovers-the-data-distribution/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why Iterative Reverse Sampling Recovers the Data Distribution?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/" class="folder-title ">Competitions</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/" class="folder-title ">ARC-WhiteBox-Estimation Challenge</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/challenge-details/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Challenge Details</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/mousevsai/" class="folder-title ">MouseVsAI</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/mousevsai/mouse-vs-ai/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mouse VS AI</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/trexquant-alpha-challenge/" class="folder-title ">TrexQuant Alpha Challenge</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/trexquant-alpha-challenge/alpha-info/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alpha Info</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/lpcv-track-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">LPCV-Track-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/orbit-wars/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Orbit Wars</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+      
+    
+    <li class="tree-item folder open">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▼</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/" class="folder-title ">Courses</a>
+      </div>
+      <div class="folder-content" style="display: block;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/" class="folder-title ">FM and Diff - MIT CSAIL</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/lecture-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Lecture-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/lecture-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Lecture-2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/overview/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Overview</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+      
+    
+    <li class="tree-item folder open">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▼</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/" class="folder-title ">Image Processing and Computer Vision</a>
+      </div>
+      <div class="folder-content" style="display: block;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-1-15/" class="file-title-link active">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IVP Lectures 1-15</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-16-37/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IVP Lectures 16-37</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-38-49/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IVP Lectures 38-49</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/signal-processing/" class="folder-title ">Signal Processing</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/signal-processing/digital-communication/" class="folder-title ">Digital Communication</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/signal-processing/digital-communication/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/signal-processing/fundamentals/" class="folder-title ">Fundamentals</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/signal-processing/fundamentals/fourier-transform/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fourier Transform</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/stanfordcs336-llm/" class="folder-title ">Stanford(CS336) - LLM</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/flt-project/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">FLT - Project</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/pattern_recognition_application_lectures_1_21/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">pattern_recognition_application_lectures_1_21</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/cs-stuff/" class="folder-title ">CS Stuff</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/cs-stuff/sql-complete-reference-notes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">SQL — Complete Reference Notes</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/deep-learning/" class="folder-title ">Deep Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/deep-learning/diffusion-and-flow-models/" class="folder-title ">Diffusion and Flow Models</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-and-flow-models/reason-behind-the-creativity-of-diffusion-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reason Behind the Creativity of Diffusion Models</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/actor-critic-rl/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Actor-Critic RL</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/attention-mechanism/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Attention Mechanism</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/continual-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/continual-learning-eval-metrics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning - Eval Metrics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/continual-learning-formulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning Formulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/curriculum-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Curriculum Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/data-attribution/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data Attribution</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/data-driven-inductive-bias/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data-Driven Inductive Bias</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/deep-q-networks-dqn/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Q-Networks (DQN)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/depth-estimation-metrics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Depth Estimation Metrics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/deterministic-vs-probabilistic-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deterministic vs Probabilistic Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/different-ml-optimizers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Different ML Optimizers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-reverse-process/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Reverse Process</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-lm-denoising/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion-LM Denoising</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/energy-based-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Energy based Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/fr%C3%A9chet-inception-distance-fid/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fréchet Inception Distance (FID)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/layer-normalisation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Layer Normalisation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/low-rank-adaptationlora/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Low Rank Adaptation(LoRA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/matryoshka-representation-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Matryoshka Representation Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/mixture-of-experts/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mixture of Experts</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/ml-notes-database-expansion/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">ML Notes Database Expansion</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/moravecs-paradox/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Moravec&#39;s Paradox</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/n-gram-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">N-gram Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/neural-implicit-fields/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Neural Implicit Fields</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/noise-conditioned-score-matching/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Noise Conditioned Score Matching</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/optimal-transport/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Optimal Transport</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/predicting-next-word-with-gpt-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Predicting Next Word with GPT-2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/proximal-policy-optimization-ppo/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Proximal Policy Optimization (PPO)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/reimannian-manifolds/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reimannian Manifolds</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/rotary-positional-embeddings-rope/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Rotary Positional Embeddings (RoPE)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/solvable-models-in-machine-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Solvable Models in Machine Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/stability-vs-plasticity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Stability vs Plasticity</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/the-manifold-hypothesis/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">The Manifold Hypothesis</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/vq-vae-vector-quantized-variational-autoencoder/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">VQ-VAE (Vector Quantized Variational Autoencoder)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/what-is-moco/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is MoCo?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/what-is-perplexity-in-ml/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is Perplexity in ML?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/x_0-parameterization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">x_0-parameterization</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/" class="folder-title ">DSA and CP</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/" class="folder-title ">Binary Search</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/find-1st-and-last-pos-of-element-in-sorted-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Find 1st and last pos of element in sorted array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/find-peak-element/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Find Peak Element</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/koko-eating-banana/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Koko eating Banana</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/note-on-binary-search-methods/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Note on Binary Search Methods</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/search-in-2d-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in 2d - II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/search-in-a-2d-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in a 2d array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/search-in-rotated-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in Rotated Array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/single-element-in-a-sorted-array-of-pairs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Single Element in a Sorted array of pairs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/split-array-largest-sum/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Split Array Largest Sum</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/" class="folder-title ">Binary Trees</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/binary-search-trees/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Search Trees</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/binary-trees/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Trees</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/check-for-a-balanced-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Check for a Balanced BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/inorder-traversal-of-a-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Inorder Traversal of a BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/postorder-traversal-of-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Postorder Traversal of BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/preorder-inorder-postorder-traversals-in-one-traversal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Preorder Inorder Postorder Traversals in One Traversal</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/doubts/" class="folder-title ">Doubts</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/doubts/binary-search-vs-boundary-conditions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Search — `&lt;=` vs `&lt;` Boundary Conditions</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/" class="folder-title ">Dynamic Programming</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/coin-change/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Coin Change</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/subset-sum-equal-to-target/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Subset sum equal to target</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/target-sum/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Target Sum</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/unbounded-knapsack/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Unbounded Knapsack</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/graphs/" class="folder-title ">Graphs</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/connected-components-in-an-undirected-graph/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Connected Components in an Undirected Graph</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Course Schedule</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Course Schedule II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-a-cycle-in-a-directed-graph/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detection of a Cycle in a Directed Graph</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-cycle-in-an-undirected-graph/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detection of Cycle in an Undirected Graph</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/nearest-0-from-cell-in-a-matrix/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Nearest 0 from cell in a matrix</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/rotten-oranges/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Rotten Oranges</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/topological-sort/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Topological Sort</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/greedy/" class="folder-title ">Greedy</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/greedy/insert-interval/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Insert Interval</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/greedy/jump-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Jump-II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/greedy/task-scheduler/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Task Scheduler</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/heaps/" class="folder-title ">Heaps</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/heaps/heaps-priority-queues-detailed-notes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Heaps (Priority Queues) — Detailed Notes</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/maths/" class="folder-title ">Maths</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/maths/sieve-of-eratosthenes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Sieve of Eratosthenes</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/maths/single-number-others-twice/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Single Number Others Twice</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/" class="folder-title ">Sliding WIndow and Two Pointers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/defuse-the-bomb/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Defuse the Bomb</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/fruits-into-basket/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fruits Into Basket</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/max-consecutive-one-iii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Max Consecutive One III</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/maximum-erasure-value/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Maximum Erasure Value</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/sorting/" class="folder-title ">Sorting</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/longest-common-prefix-and-sorting-a-string/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Longest common Prefix and Sorting a String</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/merge-sorted-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Merge Sorted Array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quick Sort</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort-partition/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quick Sort Partition</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/strings/" class="folder-title ">Strings</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/strings/cpp-strings-cheatsheet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">CPP Strings CheatSheet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/strings/largest-odd-number-in-string/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Largest Odd Number in String</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/hand-of-straights/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Hand of Straights</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/house-robber-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">House Robber II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/linked-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Linked List</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/python-snippets-for-cp/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Python Snippets for CP</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/history/" class="folder-title ">History</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/history/battle-of-polashiplassey/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Battle of Polashi(Plassey)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/history/history-of-bengal-politics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">History of Bengal Politics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/history/is-bengal-against-communism/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Is Bengal against Communism?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/journal/" class="folder-title ">Journal</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2025-05-03-motivation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2025-05-03- Motivation?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-02-02/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-02-02</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-02-17-shivam-vats/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-02-17 - Shivam Vats</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-05-14/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-05-14</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-05-16/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-05-16</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-05-21/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-05-21</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-05/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-05</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-24/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-24</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-28/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-28</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-30/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-30</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-07-04/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-07-04</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-08-12/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-12</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-08-30/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-30</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/machine-learning/" class="folder-title ">Machine Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/bias-and-variance-trade-off/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Bias and Variance Trade-off</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/boosting/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Boosting</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/byte-pair-encoding-bpe-tokenization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Byte Pair Encoding (BPE) Tokenization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/decision-trees-a-comprehensive-note/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Decision Trees (A comprehensive Note)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/f1-score-recall-and-precision/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">F1 score, Recall and Precision</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/k-means-clustering/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">K-Means Clustering</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/kernel-density-estimation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Kernel Density Estimation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/long-short-term-memory-lstm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Long Short-Term Memory (LSTM)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/principal-component-analysis-pca/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Principal Component Analysis (PCA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/random-forests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Random Forests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/recurrent-neural-netoworksrnns/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Recurrent Neural Netoworks(RNNs)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/representational-similarity-analysis-rsa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Representational Similarity Analysis (RSA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/t-sne-t-distributed-stochastic-neighbor-embedding/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">t-SNE (t-Distributed Stochastic Neighbor Embedding)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/training-stabilization-in-machine-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Training Stabilization in Machine Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/word2vec/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Word2Vec</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/math/" class="folder-title ">Math</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/math/linear-algebra/" class="folder-title ">Linear Algebra</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/linear-algebra/connection-between-svd-and-evd/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Connection between SVD and EVD</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/linear-algebra/singular-value-decompositionsvd/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Singular Value Decomposition(SVD)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/linear-algebra/spectral-norm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Spectral Norm</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/math/probability-theory/" class="folder-title ">Probability Theory</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/deterministic-random-variable/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deterministic Random Variable</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/gaussian-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Gaussian Distributions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/independent-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Independent Random Variables</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Jointly Gaussian Random Variables — Conditional Distributions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/kolmogorov-smirnov-test/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Kolmogorov-Smirnov Test</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/law-of-iterated-expectations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Law of Iterated Expectations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/linear-mmse-estimation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Linear MMSE Estimation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/markov-chebyshev-and-jensens-inequalities/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Markov, Chebyshev, and Jensen&#39;s Inequalities</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/modes-of-convergence-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Modes of Convergence (Random Variables)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/p-values/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">p-values</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/poisson-distribution-and-poisson-process/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Poisson Distribution and Poisson Process</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/power-of-test-statistic/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Power of Test Statistic</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/probability-and-statistics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Probability and Statistics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/study-materials/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Study Materials</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/sum-of-a-random-number-of-iid-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Sum of a Random Number of IID Random Variables</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/total-expectation-theorem/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Total Expectation Theorem</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/unique-properties-of-gaussian-rvs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Unique Properties of Gaussian RVs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/well-known-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Well Known Distributions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/%CE%B1-significance-level/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">α (Significance Level)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/johnsonlindenstrauss-lemma/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Johnson–Lindenstrauss lemma</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/what-is-kernelfunction/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is Kernel(function)?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/misc/" class="folder-title ">Misc</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/ajb-btp-summary/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AJB BTP Summary</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/how-to-read-papers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">How to Read Papers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/krutarth-meet-20th-march/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Krutarth meet - 20th March</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/meet-summary/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Meet Summary</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/random/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Random</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/reading-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reading List</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/reddit-ml-papers-to-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reddit - ML Papers to Read</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/summer-plan-2026/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Summer Plan 2026</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/untitled-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled 1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/untitled-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled 2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/workout-log/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workout Log</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/workout-routine/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workout Routine</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/" class="folder-title ">Papers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/continual-learning/" class="folder-title ">Continual Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/continual-learning/when-do-curricula-work/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">When Do Curricula Work?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/data-attribution/" class="folder-title ">Data Attribution</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/deep-learning-on-a-data-diet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Learning on a Data Diet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/large-scale-pruning-using-dyna-uncertainty/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Large-Scale Pruning using Dyna Uncertainty</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/theoretical-analysis-of-contrastive-learning-under-imbalanced-data/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">THEORETICAL ANALYSIS OF CONTRASTIVE LEARNING UNDER IMBALANCED DATA</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/understanding-blackbox-predictions-using-influence-functions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Understanding BlackBox Predictions - Using Influence Functions</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/diffusion-and-flows/" class="folder-title ">Diffusion and Flows</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/diffusion-lm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion-LM</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/maxenrl-via-energy-based-normalising-flows-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MaxEnRL via Energy-based Normalising Flows 1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/neural-ordinary-differential-equations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Neural Ordinary Differential Equations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/reading-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reading List</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/good-reads/" class="folder-title ">Good Reads</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/interpretability-and-xai/" class="folder-title ">Interpretability and XAI</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/interpretability-and-xai/maco-feature-visualization-via-magnitude-constrained-optimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MACO-Feature Visualization via Magnitude Constrained Optimization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/interpretability-and-xai/understanding-visual-feature-reliance-through-the-lens-of-complexity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Understanding Visual Feature Reliance through the Lens of Complexity</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/robotics/" class="folder-title ">Robotics</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/crowd-aware-robot-navigation-with-switching-betweenlearning-based-and-rule-based-methods-using-normalizing-flows/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Crowd-Aware Robot Navigation with Switching BetweenLearning-Based and Rule-Based Methods Using Normalizing Flows</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/learning-stable-normalizing-flow-control-for-robotic-manipulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning Stable Normalizing-Flow Control for Robotic Manipulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/recoverychaining-learning-local-recovery-policies-for-robust-manipulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RecoveryChaining-Learning Local Recovery Policies for Robust Manipulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/respo-reachability-estimation-for-safe-policy-optimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RESPO (Reachability Estimation for Safe Policy Optimization)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/scaling-laws/" class="folder-title ">Scaling Laws</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/beyond-neural-scaling-law-data-pruning-improve-power-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Beyond Neural Scaling Law - Data Pruning improve power law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/cram-less-to-fit-more/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Cram Less to Fit More</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/explaining-data-mixing-scaling-laws/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Explaining Data-Mixing Scaling Laws</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/how-feature-learning-can-improve-neural-scaling/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">How Feature Learning can Improve Neural Scaling</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/scaling-for-data-filtering/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling for Data Filtering</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/" class="folder-title ">Theory of Learning Paradigms</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/a-compression-perspective-on-simplicity-bias/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">A Compression Perspective on Simplicity Bias</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/information-theory-for-repr-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Information Theory for Repr Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/invariant-risk-minimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Invariant Risk Minimization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/learned-feature-representations-are-biased-by-complexity-learning-order-position-and-more/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learned feature representations are biased by complexity, learning order, position, and more</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/learning-to-theorise/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning to Theorise</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/mechanistic-mode-connectivity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mechanistic Mode Connectivity</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/not-all-solutions-are-created-equal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Not all solutions are created equal</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/vision/" class="folder-title ">Vision</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/vision/infidepth-arbitrary-high-res-estimation-using-neural-implicit-fields/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name"></span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/world-models-reading-list/" class="folder-title ">World Models Reading List</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/world-models-reading-list/i-jepa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">I-JEPA</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/world-models-reading-list/what-to-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What to Read</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/projects/" class="folder-title ">Projects</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/projects/alphago-black-hole/" class="folder-title ">AlphaGo-Black-Hole</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alpha-beta-algorithm-chess-engines/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alpha-Beta Algorithm (Chess Engines)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alphazero-and-chess/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero and Chess</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alphazero-training/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero Training</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alphazero-workflow/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alphazero Workflow</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/deep-q-network-dqn-training-details/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Q-Network (DQN) Training Details</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/improved-representations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Improved Representations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/mixture-of-experts-approach-to-games/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mixture of Experts Approach to Games</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/personal-notes-on-the-implementation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Personal Notes on the Implementation</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/projects/dlm-revisited/" class="folder-title ">DLM-Revisited</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/dlm-revisited/workbench/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workbench</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/project-ideas/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Project Ideas</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/" class="folder-title ">Research Work</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/btp/" class="folder-title ">BTP</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/btp/meets/" class="folder-title ">Meets</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/meets/2026-08-27/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-27</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/meets/2026-09-10/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-09-10</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/btp-notebook/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">BTP Notebook</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/diffusion-posterior-sampling-for-general-noisy-problems/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Posterior Sampling for General Noisy Problems</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/ksd-for-goodness-of-fit-tests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">KSD for Goodness-of-fit Tests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/learning-deep-kernels-for-non-parametric-two-sample-tests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning Deep Kernels for Non-Parametric Two-Sample Tests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/prof.-subhadip/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Prof. Subhadip</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reproducing Kernel Hilbert Space (RKHS)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/" class="folder-title ">LossFunk Proposal</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/2nd-stage/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2nd stage</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/contlearning-idea/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">ContLearning Idea</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/diff-mem-idea/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">DIff Mem Idea</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/idea-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Idea-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/loss-funk-application/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Loss Funk Application</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/research-writeup/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Research Writeup</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/variations-of-proposal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Variations of Proposal</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/write-up/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Write-up</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/random-ideas/" class="folder-title ">Random Ideas</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/any-other-ways-than-deterministic-and-probabilistic-modelling/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Any other ways than deterministic and Probabilistic Modelling</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/can-we-use-jepa-for-games/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Can we use JEPA for Games??</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/can-you-project-tasks-to-similar-task-spaces/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Can you project tasks to similar Task-spaces?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/capacity-of-a-model/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Capacity of a Model</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/context-conditioned-processing-leads-to-ood-generalisation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Context Conditioned Processing leads to OOD Generalisation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/encoding-future-related-hope-as-a-learning-signal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Encoding Future Related Hope as a Learning Signal?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/information-theory-on-repr-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Information Theory on Repr Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/learned-representation-are-path-dependent/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learned Representation are path dependent</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/manifolds-of-data-vs-implicit-curricula/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Manifolds of Data vs Implicit Curricula</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/marigold-&#43;-jepa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Marigold &#43; Jepa?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/new-way-of-training-small-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">New way of training small models?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/teach-a-model-to-solve-a-patch-jigsaw/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Teach a model to solve a patch jigsaw?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/what-leads-to-representational-biases/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What leads to Representational Biases?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/why-do-diffusion-models-generalise-so-well/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why do Diffusion Models Generalise So Well?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/why-do-we-need-large-embedding-sizes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why do we need large embedding sizes?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/swami-robo/" class="folder-title ">Swami Robo</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/swami-robo/rm3-setup/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RM3 Setup</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/val-del/" class="folder-title ">VAL-DEL</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/val-del/meets/" class="folder-title ">Meets</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/meets/2026-07-20/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-07-20</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/meets/2026-08-26/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-26</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/meets/2026-09-03/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-09-03</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/val-del/papers/" class="folder-title ">Papers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/papers/gradient-weight-alignment-as-a-train-time-proxy-for-generalization-in-classification-tasks/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Gradient-Weight Alignment as a Train-Time Proxy for Generalization in Classification Tasks</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/papers/stable-coresets/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Stable Coresets</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/papers/understanding-why-neural-networks-generalize-well-through-gsnr-of-parameters/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">UNDERSTANDING WHY NEURAL NETWORKS GENERALIZE WELL THROUGH GSNR OF PARAMETERS</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/alpha-0.1-for-monogenic-not-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">alpha =0.1 for monogenic -not learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/avg-el2n-score-difference-between-two-toy-datasets/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Avg El2n score difference between two toy datasets</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/data-efficient-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data-Efficient Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/deriving-neural-scaling-laws-from-lang-stat/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deriving Neural Scaling Laws from Lang Stat</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/detect-the-change-of-implicit-curricula/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detect the change of implicit curricula</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/emergent-properties-with-repeated-examples/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Emergent Properties with Repeated Examples</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/features-contribution-to-pruning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Feature&#39;s Contribution to Pruning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/initial-tests-for-the-scaling-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Initial Tests for the Scaling Law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/open-questions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Open Questions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/polygenic-voting-toy-test/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Polygenic Voting Toy Test</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/quantization-based-hypothesis/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quantization Based Hypothesis</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/scaling-laws/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling Laws</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/scaling-laws-with-rep/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling laws with rep</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/thoughts/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Thoughts</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/val-notebook/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">VAL Notebook</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/novel-depth-esitmationedge-focussed/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Novel Depth Esitmation(Edge focussed)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/personal-notes-on-research/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Personal Notes on Research</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/video-ideas/" class="folder-title ">Video Ideas</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/aep-and-typical-sequences/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AEP and Typical Sequences</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/alphazero/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/large-sparse-matrix-solvers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Large Sparse Matrix Solvers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/law-of-total-expectations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Law of Total Expectations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/map-vs-mle/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MAP vs MLE</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/monte-carlo-tree-search/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Monte Carlo Tree Search</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/2026-09-09/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-09-09</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/command-center/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Command Center</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/cool-things-i-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Cool Things I Read</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/distributions-of-data-that-satisfies-the-power-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Distributions of Data that satisfies the power law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/flt-lecture/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">FLT Lecture</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/fun-resources/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fun Resources</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/infiniai-meet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">InfiniAI Meet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/internship-applications/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Internship Applications</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/professors-and-labs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Professors and Labs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+    
+  </nav>
+</aside>
+        <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+        
+        <div class="main-area">
+            <header class="site-header">
+                <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle Sidebar">☰</button>
+                <a href="http://localhost:1313/" class="site-title-link"><h1>Utsab&#39;s Note Repository</h1></a>
+            </header>
+
+            <main class="content-wrapper">
+<article class="post-content">
+    <header style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+        <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--text-color); font-family: var(--font-main);">IVP Lectures 1-15</h1>
+        <div style="color: #8b949e; font-size: 0.85rem; font-family: var(--font-main);">
+            Last modified: September 7, 2026
+        </div>
+    </header>
+
+    <div class="markdown-body">
+        <h1 id="digital-image-processing--detailed-speedrun-notes">Digital Image Processing — Detailed Speedrun Notes</h1>
+<h2 id="prof-p-k-biswas-iit-kharagpur">Prof. P. K. Biswas, IIT Kharagpur</h2>
+<h3 id="lectures-115">Lectures 1–15</h3>
+<hr>
+<h2 id="how-to-use-this-document">How to use this document</h2>
+<p>These are <strong>detailed speedrun notes</strong>, not a replacement for the lectures.</p>
+<p>The goal is:</p>
+<blockquote>
+<p><strong>Watch the lectures quickly later, while using these notes as a coverage checklist.</strong></p>
+</blockquote>
+<p>The notes follow the actual sequence of the supplied NPTEL playlist and deliberately preserve
+the way the lecturer develops the subject. Closely related lectures are grouped conceptually,
+but every lecture is separately accounted for.</p>
+<p>The official NPTEL course listing gives the first 15 lectures as:</p>
+<ol>
+<li>Introduction to Digital Image Processing</li>
+<li>Application of Digital Image Processing</li>
+<li>Image Digitalisation, Sampling, Quantization and Display</li>
+<li>Signal Reconstruction from Samples: Convolution Concept</li>
+<li>Signal Reconstruction from Image</li>
+<li>Quantizer Design</li>
+<li>Relationship between Pixels</li>
+<li>Relationship of Adjacency and Connected Components Labeling</li>
+<li>Application of Distance Measures</li>
+<li>Basic Transform</li>
+<li>Image Formation – I</li>
+<li>Image Formation – II</li>
+<li>Image Geometry – I</li>
+<li>Image Geometry – II</li>
+<li>Stereo Imaging Model – II</li>
+</ol>
+<p>The course then moves to interpolation/resampling, so <strong>Lecture 15 is the end of the
+first camera/stereo block</strong>.</p>
+<hr>
+<h1 id="part-i--why-digital-image-processing">Part I — Why Digital Image Processing?</h1>
+<h2 id="lectures-12">Lectures 1–2</h2>
+<hr>
+<h1 id="lecture-1--introduction-to-digital-image-processing">Lecture 1 — Introduction to Digital Image Processing</h1>
+<h2 id="1-what-does-digital-image-processing-mean">1. What does &ldquo;Digital Image Processing&rdquo; mean?</h2>
+<p>The lecturer starts by unpacking the phrase itself.</p>
+<p>A <strong>digital image</strong> is an image represented in digital/numerical form, and <strong>digital image
+processing</strong> means processing such images using a digital computer.</p>
+<p>The important distinction is that the course is not merely about manipulating photographs.
+An image is treated as a signal carrying information, and the computer is used to transform,
+analyze, or extract information from that signal.</p>
+<p>A useful abstraction is:</p>
+<p>$$
+\text{physical scene}
+\rightarrow
+\text{image acquisition}
+\rightarrow
+\text{digital image}
+\rightarrow
+\text{processing}
+\rightarrow
+\text{information / improved image}.
+$$</p>
+<hr>
+<h2 id="2-why-do-we-need-image-processing">2. Why do we need image processing?</h2>
+<p>The lecturer identifies three broad motivations.</p>
+<h3 id="21-improvement-of-pictorial-information-for-human-perception">2.1 Improvement of pictorial information for human perception</h3>
+<p>The first major application is to make an image <strong>look better or become easier to interpret</strong>.</p>
+<p>Examples of operations that fit here:</p>
+<ul>
+<li>removing noise,</li>
+<li>improving contrast,</li>
+<li>sharpening,</li>
+<li>removing blur,</li>
+<li>enhancing details.</li>
+</ul>
+<p>The computer is therefore being used as a tool to improve the visual representation.</p>
+<h3 id="22-autonomous-machine-applications">2.2 Autonomous machine applications</h3>
+<p>The second major motivation is that the image is not necessarily meant to be viewed by a
+human at all.</p>
+<p>Instead, the image can be processed so that a machine can:</p>
+<ul>
+<li>detect an object,</li>
+<li>measure an object,</li>
+<li>recognize an object,</li>
+<li>inspect a manufactured product,</li>
+<li>track something,</li>
+<li>make a decision.</li>
+</ul>
+<p>This is the connection between image processing and <strong>machine vision / computer vision</strong>.</p>
+<h3 id="23-efficient-storage-and-transmission">2.3 Efficient storage and transmission</h3>
+<p>The third motivation is reducing the amount of data required to:</p>
+<ul>
+<li>store an image,</li>
+<li>transmit an image,</li>
+<li>transmit video.</li>
+</ul>
+<p>This introduces the idea that an image contains <strong>redundancy</strong> and that image-processing
+techniques can exploit that redundancy.</p>
+<p>This motivation eventually leads toward image compression.</p>
+<hr>
+<h2 id="3-image-processing-applications-introduced">3. Image-processing applications introduced</h2>
+<p>The lecture uses examples to show the breadth of the field.</p>
+<p>Important application areas include:</p>
+<h3 id="medical-imaging">Medical imaging</h3>
+<p>Examples include:</p>
+<ul>
+<li>X-ray imaging,</li>
+<li>CT,</li>
+<li>mammography,</li>
+<li>medical diagnosis.</li>
+</ul>
+<p>The objective can be enhancement for a doctor as well as extraction of useful information.</p>
+<h3 id="remote-sensing">Remote sensing</h3>
+<p>Images acquired from:</p>
+<ul>
+<li>aircraft,</li>
+<li>satellites,</li>
+</ul>
+<p>can be processed for:</p>
+<ul>
+<li>weather analysis,</li>
+<li>crop assessment,</li>
+<li>geographical analysis,</li>
+<li>atmospheric studies.</li>
+</ul>
+<h3 id="astronomy">Astronomy</h3>
+<p>Image processing is useful when the objects being observed are faint, noisy, or extremely
+far away.</p>
+<p>Examples include:</p>
+<ul>
+<li>stars,</li>
+<li>galaxies,</li>
+<li>star formation.</li>
+</ul>
+<h3 id="machine-vision">Machine vision</h3>
+<p>This is particularly important for industrial automation.</p>
+<p>An imaging system can inspect objects on a production line and determine whether they satisfy
+specified requirements.</p>
+<hr>
+<h2 id="4-image-processing-system-as-a-pipeline">4. Image-processing system as a pipeline</h2>
+<p>The lecture introduces the broad stages of a digital image-processing system.</p>
+<p>The important conceptual pipeline is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Image acquisition
+       ↓
+Preprocessing
+       ↓
+Segmentation
+       ↓
+Representation / description
+       ↓
+Recognition / interpretation
+       ↓
+Image understanding
+</code></pre></div><p>A <strong>knowledge base</strong> can interact with the different stages.</p>
+<h3 id="image-acquisition">Image acquisition</h3>
+<p>Obtaining the image from a sensor.</p>
+<h3 id="preprocessing">Preprocessing</h3>
+<p>Initial operations such as:</p>
+<ul>
+<li>noise removal,</li>
+<li>contrast improvement,</li>
+<li>correction of undesirable effects.</li>
+</ul>
+<p>The purpose is to make the subsequent processing easier.</p>
+<h3 id="segmentation">Segmentation</h3>
+<p>Partitioning the image into meaningful constituent parts.</p>
+<p>For example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">whole image
+     ↓
+background + object(s)
+</code></pre></div><p>Segmentation is therefore a major transition from a raw image to meaningful regions.</p>
+<h3 id="representation-and-description">Representation and description</h3>
+<p>Once objects/regions have been isolated, they have to be represented in a form suitable
+for computer processing.</p>
+<p>Examples include descriptions based on:</p>
+<ul>
+<li>boundaries,</li>
+<li>shapes,</li>
+<li>regions,</li>
+<li>features.</li>
+</ul>
+<h3 id="recognition">Recognition</h3>
+<p>The system uses the extracted description to determine what an object is.</p>
+<h3 id="knowledge-base">Knowledge base</h3>
+<p>The knowledge base can contain prior information and help coordinate the different processing
+stages.</p>
+<hr>
+<h2 id="5-what-lecture-1-is-trying-to-establish">5. What Lecture 1 is trying to establish</h2>
+<p>The lecturer is essentially defining the <strong>scope of the entire subject</strong>.</p>
+<p>Do not reduce DIP to:</p>
+<blockquote>
+<p>&ldquo;filters applied to pictures.&rdquo;</p>
+</blockquote>
+<p>The course covers a pipeline from acquiring a signal all the way to extracting semantic information
+from it.</p>
+<hr>
+<h1 id="lecture-2--applications-of-digital-image-processing">Lecture 2 — Applications of Digital Image Processing</h1>
+<p>Lecture 2 continues the motivation and goes deeper into actual applications.</p>
+<hr>
+<h2 id="1-human-oriented-vs-machine-oriented-processing">1. Human-oriented vs machine-oriented processing</h2>
+<p>A key distinction is:</p>
+<h3 id="human-perception">Human perception</h3>
+<p>The output is primarily intended to be viewed.</p>
+<p>Examples:</p>
+<ul>
+<li>contrast enhancement,</li>
+<li>noise removal,</li>
+<li>deblurring,</li>
+<li>visual enhancement.</li>
+</ul>
+<h3 id="machine-interpretation">Machine interpretation</h3>
+<p>The image is processed to extract a description that a computer can use.
+Examples:</p>
+<ul>
+<li>industrial inspection,</li>
+<li>automated target detection,</li>
+<li>tracking,</li>
+<li>fingerprint recognition,</li>
+<li>analysis of aerial/satellite imagery.</li>
+</ul>
+<p>The same image-processing operation can therefore have very different objectives depending
+on the final consumer of the information.</p>
+<hr>
+<h2 id="2-industrial-machine-vision">2. Industrial machine vision</h2>
+<p>The lecturer discusses automation of industrial processes. A typical example is a bottling/assembly line.</p>
+<p>The general idea is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">manufacturing process
+        ↓
+camera acquires image
+        ↓
+extract relevant object information
+        ↓
+inspect / classify
+        ↓
+accept, reject, or control process
+</code></pre></div><p>This illustrates why machine vision is different from simply making an image visually pleasing.</p>
+<p>The computer has to extract <strong>features/descriptions</strong> useful for a decision.</p>
+<hr>
+<h2 id="3-other-application-examples">3. Other application examples</h2>
+<p>The lecture discusses applications such as:</p>
+<ul>
+<li>automated target detection and tracking,</li>
+<li>fingerprint recognition,</li>
+<li>aerial image processing,</li>
+<li>satellite image processing,</li>
+<li>weather-related analysis,</li>
+<li>crop assessment.</li>
+</ul>
+<p>The important commonality is that the image becomes an <strong>information source</strong>.</p>
+<hr>
+<h2 id="4-the-complete-digital-image-processing-system">4. The complete digital image-processing system</h2>
+<p>The lecture ends by tying the application discussion back to the processing pipeline.</p>
+<p>The stages are:</p>
+<h3 id="1-image-acquisition">1. Image acquisition</h3>
+<p>Capture the image.</p>
+<h3 id="2-preprocessing">2. Preprocessing</h3>
+<p>Correct obvious undesirable effects.</p>
+<h3 id="3-segmentation">3. Segmentation</h3>
+<p>Separate the image into meaningful regions/objects.</p>
+<h3 id="4-representation-and-description">4. Representation and description</h3>
+<p>Represent each relevant object in a compact/useful form and extract features.</p>
+<h3 id="5-recognition-and-interpretation">5. Recognition and interpretation</h3>
+<p>Determine what the objects/features represent.</p>
+<h3 id="6-knowledge-base">6. Knowledge base</h3>
+<p>Prior information can assist the processing stages and facilitate communication between modules.</p>
+<h3 id="why-this-matters-later">Why this matters later</h3>
+<p>The rest of the course develops mathematical tools corresponding to different pieces of this
+pipeline.</p>
+<hr>
+<h1 id="part-ii--turning-an-image-into-numbers">Part II — Turning an Image into Numbers</h1>
+<h2 id="lectures-36">Lectures 3–6</h2>
+<p>This block is foundational.</p>
+<p>The lecturer now asks:</p>
+<blockquote>
+<p><strong>How can a continuous physical image be represented by a finite collection of numbers?</strong></p>
+</blockquote>
+<p>The answer has two principal stages:</p>
+<p>$$
+\boxed{\text{sampling}+\text{quantization}}
+$$</p>
+<p>Sampling discretizes <strong>space</strong>.</p>
+<p>Quantization discretizes <strong>intensity</strong>.</p>
+<hr>
+<h1 id="lecture-3--image-digitalisation-sampling-quantization-and-display">Lecture 3 — Image Digitalisation, Sampling, Quantization and Display</h1>
+<h2 id="1-why-is-digitization-necessary">1. Why is digitization necessary?</h2>
+<p>A physical image is fundamentally continuous.</p>
+<p>The image can be represented as:</p>
+<p>$$
+f(x,y)
+$$</p>
+<p>where:</p>
+<ul>
+<li>$x,y$ are spatial coordinates,</li>
+<li>$f(x,y)$ is the intensity at that location.</li>
+</ul>
+<p>For a real image, the intensity can vary continuously across space.</p>
+<p>A computer, however, cannot store infinitely many spatial positions and arbitrary real-valued
+intensities.</p>
+<p>Therefore we need digitization.</p>
+<hr>
+<h1 id="2-image-digitization-has-two-stages">2. Image digitization has two stages</h1>
+<p>The lecturer emphasizes two separate operations:</p>
+<p>$$
+\boxed{\text{Sampling}}
+\quad+\quad
+\boxed{\text{Quantization}}
+$$</p>
+<h3 id="sampling">Sampling</h3>
+<p>Select discrete spatial positions.</p>
+<h3 id="quantization">Quantization</h3>
+<p>Convert the intensity measured at each selected position into one of a finite number of
+allowed values.
+This distinction should become automatic.</p>
+<hr>
+<h1 id="3-image-sampling">3. Image sampling</h1>
+<p>Suppose the continuous image is</p>
+<p>$$
+f(x,y).
+$$</p>
+<p>Sampling chooses points on a spatial grid:</p>
+<p>$$
+x=m\Delta_x,\qquad y=n\Delta_y.
+$$</p>
+<p>The resulting samples are:</p>
+<p>$$
+f[m,n]=f(m\Delta_x,n\Delta_y).
+$$</p>
+<p>Thus the image is converted from a continuous surface to a discrete set of spatial samples.</p>
+<hr>
+<h2 id="4-intensity-profile">4. Intensity profile</h2>
+<p>The lecturer motivates the continuous nature of the image by considering a line through an
+image.</p>
+<p>If we select a horizontal line, the image becomes a 1-D intensity profile:</p>
+<p>$$
+g(x)=f(x,y_0).
+$$</p>
+<p>The intensity can take values between a minimum and maximum along that line.</p>
+<p>The same idea applies to vertical lines or arbitrary directions.</p>
+<p>This lets the lecturer reduce the initial image problem to the familiar problem of sampling a
+1-D signal.</p>
+<hr>
+<h1 id="5-signal-bandwidth">5. Signal bandwidth</h1>
+<p>To understand how densely a signal must be sampled, we need its <strong>frequency content</strong>.</p>
+<p>For a periodic 1-D signal, Fourier series can be used.</p>
+<p>For an aperiodic signal, the Fourier transform is used.</p>
+<p>The frequency spectrum tells us the range of frequencies present in the signal.</p>
+<p>If the highest frequency present is $B$, the sampling theorem gives the familiar condition:</p>
+<p>$$
+\boxed{f_s\geq 2B}
+$$</p>
+<p>where $f_s$ is the sampling frequency.</p>
+<p>The minimum value $2B$ is the <strong>Nyquist rate</strong>.</p>
+<hr>
+<h1 id="6-aliasing">6. Aliasing</h1>
+<p>If:</p>
+<p>$$
+f_s &lt; 2B,
+$$</p>
+<p>the signal is undersampled.</p>
+<p>The spectral replicas generated by sampling overlap.</p>
+<p>The resulting distortion is called <strong>aliasing</strong>.</p>
+<p>The key conceptual picture is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">adequate sampling
+spectral replicas separated
+        ↓
+reconstruction possible
+
+insufficient sampling
+spectral replicas overlap
+        ↓
+aliasing
+</code></pre></div><p>Once aliasing has occurred, the original signal cannot in general be uniquely recovered from
+the samples.</p>
+<hr>
+<h1 id="7-sampling-a-2-d-image">7. Sampling a 2-D image</h1>
+<p>An image is a 2-D signal, so frequency is also 2-D.</p>
+<p>Instead of a single frequency variable, we have spatial frequency components in two directions.</p>
+<p>Conceptually:</p>
+<p>$$
+(\omega_x,\omega_y).
+$$</p>
+<p>The sampling operation therefore creates a 2-D grid of samples.</p>
+<p>The same basic idea applies:</p>
+<blockquote>
+<p>the spatial sampling density must be sufficiently high relative to the highest spatial
+frequencies in the image.</p>
+</blockquote>
+<hr>
+<h1 id="8-quantization">8. Quantization</h1>
+<p>After sampling, the spatial coordinates are discrete, but the measured sample value can still
+be continuous.</p>
+<p>Suppose a sampled value is $x$.</p>
+<p>A quantizer maps it to one of $L$ allowed reconstruction levels:</p>
+<p>$$
+x\rightarrow Q(x).
+$$</p>
+<p>Therefore:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">continuous image
+      ↓
+spatial sampling
+      ↓
+discrete locations + continuous intensities
+      ↓
+quantization
+      ↓
+digital image
+</code></pre></div><hr>
+<h1 id="9-number-of-bits">9. Number of bits</h1>
+<p>If there are $L$ intensity levels, the number of bits required per sample is:</p>
+<p>$$
+b=\log_2 L.
+$$</p>
+<p>For example, 256 gray levels require:</p>
+<p>$$
+b=\log_2(256)=8
+$$</p>
+<p>bits per pixel.</p>
+<p>For a typical RGB color image, there are three color planes:</p>
+<ul>
+<li>red,</li>
+<li>green,</li>
+<li>blue.</li>
+</ul>
+<p>If each plane uses 8 bits, then:</p>
+<p>$$
+8+8+8=24
+$$</p>
+<p>bits per pixel.</p>
+<hr>
+<h1 id="10-display">10. Display</h1>
+<p>The final digital values need to be displayed in a way that humans can perceive.</p>
+<p>The important conceptual point is that the digital representation is an intermediate numerical
+representation:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">physical image
+      ↓
+digitization
+      ↓
+numbers / pixel matrix
+      ↓
+processing
+      ↓
+display
+</code></pre></div><hr>
+<h1 id="lecture-4--signal-reconstruction-from-samples-convolution-concept">Lecture 4 — Signal Reconstruction from Samples: Convolution Concept</h1>
+<p>Lecture 4 temporarily steps back from images and develops the 1-D signal reconstruction machinery.</p>
+<p>The purpose is to understand <strong>how a continuous signal can be reconstructed from its samples</strong>.</p>
+<hr>
+<h1 id="1-representing-sampling-mathematically">1. Representing sampling mathematically</h1>
+<p>Let the original continuous signal be:</p>
+<p>$$
+x(t).
+$$</p>
+<p>Sampling can be represented by multiplying $x(t)$ by a periodic impulse train, often written
+as a comb function.</p>
+<p>Conceptually:</p>
+<p>$$
+x_s(t)=x(t)\operatorname{comb}(t,\Delta t).
+$$</p>
+<p>The impulse train selects the values of $x(t)$ at regular intervals.</p>
+<hr>
+<h1 id="2-why-fourier-analysis-is-useful">2. Why Fourier analysis is useful</h1>
+<p>Sampling in the time/spatial domain has a very simple interpretation in the frequency domain.</p>
+<p>Multiplication in one domain corresponds to convolution in the other.</p>
+<p>Thus the spectral effect of sampling can be understood through the Fourier transform.</p>
+<p>The sampled spectrum consists of repeated copies of the original spectrum.</p>
+<p>This is the frequency-domain explanation of the Nyquist condition and aliasing.</p>
+<hr>
+<h1 id="3-convolution">3. Convolution</h1>
+<p>The lecturer introduces convolution as an operation between two signals.</p>
+<p>For continuous signals:</p>
+<p>$$
+y(t)=x(t)*h(t)
+$$</p>
+<p>with</p>
+<p>$$
+y(t)=
+\int_{-\infty}^{\infty}
+x(\tau)h(t-\tau),d\tau.
+$$</p>
+<p>Equivalently, one signal can be thought of as being:</p>
+<ol>
+<li>reversed,</li>
+<li>shifted,</li>
+<li>multiplied,</li>
+<li>integrated.</li>
+</ol>
+<p>The important signal-processing property is:</p>
+<p>$$
+\boxed{
+x(t)*h(t)
+\quad\longleftrightarrow\quad
+X(\omega)H(\omega)
+}
+$$</p>
+<p>under the Fourier transform.</p>
+<p>So convolution in the signal domain corresponds to multiplication in the frequency domain.</p>
+<hr>
+<h1 id="4-reconstruction-idea">4. Reconstruction idea</h1>
+<p>After sampling, we have impulses whose amplitudes are the sample values.</p>
+<p>To reconstruct the original continuous signal, we pass the sampled signal through a suitable
+reconstruction/interpolation operation.</p>
+<p>The ideal reconstruction filter has a frequency response that:</p>
+<ul>
+<li>retains the original spectral copy,</li>
+<li>rejects the unwanted replicated spectra.</li>
+</ul>
+<p>For a band-limited signal satisfying the sampling theorem, the original signal can theoretically
+be reconstructed.</p>
+<hr>
+<h1 id="5-why-this-lecture-matters">5. Why this lecture matters</h1>
+<p>The key chain is:</p>
+<p>$$
+\text{sampling}
+\rightarrow
+\text{spectral replicas}
+\rightarrow
+\text{reconstruction filter}
+\rightarrow
+\text{original signal}.
+$$</p>
+<p>This is the mathematical foundation for the image-reconstruction discussion in the next lecture.</p>
+<hr>
+<h1 id="lecture-5--signal-reconstruction-from-image">Lecture 5 — Signal Reconstruction from Image</h1>
+<p>Lecture 5 transfers the reconstruction idea from 1-D signals to images.</p>
+<hr>
+<h1 id="1-image-as-a-2-d-signal">1. Image as a 2-D signal</h1>
+<p>The continuous image is:</p>
+<p>$$
+f(x,y).
+$$</p>
+<p>Sampling creates:</p>
+<p>$$
+f[m,n].
+$$</p>
+<p>The inverse problem is:</p>
+<blockquote>
+<p>Given the discrete samples $f[m,n]$, how can we reconstruct a continuous image?</p>
+</blockquote>
+<hr>
+<h1 id="2-two-dimensional-sampling">2. Two-dimensional sampling</h1>
+<p>Instead of a 1-D impulse train, a 2-D sampling grid is used.</p>
+<p>The sample locations form a lattice:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">•   •   •   •
+
+•   •   •   •
+
+•   •   •   •
+</code></pre></div><p>Each dot is a sampled image location.</p>
+<hr>
+<h1 id="3-2-d-frequency-domain">3. 2-D frequency domain</h1>
+<p>An image has spatial frequencies in both directions.</p>
+<p>We can think of the spectrum as:</p>
+<p>$$
+F(\omega_x,\omega_y).
+$$</p>
+<p>Sampling produces repeated copies of the 2-D spectrum.</p>
+<p>The separation between copies depends on the sampling frequencies in the two directions.</p>
+<p>Therefore the sampling requirements are fundamentally 2-D versions of the 1-D sampling theorem.</p>
+<hr>
+<h1 id="4-reconstruction">4. Reconstruction</h1>
+<p>The reconstruction process attempts to isolate the original spectral region from the periodic
+spectral replicas.</p>
+<p>Conceptually:</p>
+<p>$$
+\text{sampled image}
+\rightarrow
+\text{2-D reconstruction filter}
+\rightarrow
+\text{continuous image}.
+$$</p>
+<p>The important idea is that interpolation/reconstruction is not an arbitrary visual trick.
+It has a signal-processing interpretation.</p>
+<hr>
+<h1 id="5-quantization-revisited">5. Quantization revisited</h1>
+<p>The lecturer connects the two stages of digitization:</p>
+<h3 id="sampling-1">Sampling</h3>
+<p>$$
+f(x,y)\rightarrow f[m,n]
+$$</p>
+<h3 id="quantization-1">Quantization</h3>
+<p>$$
+f[m,n]\rightarrow Q(f[m,n]).
+$$</p>
+<p>Only after both operations do we have a true digital image.</p>
+<hr>
+<h1 id="6-key-takeaway-from-lectures-35">6. Key takeaway from Lectures 3–5</h1>
+<p>Keep the following distinction absolutely clear:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Sampling
+→ discretizes spatial coordinates.
+
+Quantization
+→ discretizes intensity values.
+
+Reconstruction
+→ attempts to recover a continuous signal/image from samples.
+
+Aliasing
+→ information loss caused by insufficient sampling.
+</code></pre></div><hr>
+<h1 id="lecture-6--quantizer-design">Lecture 6 — Quantizer Design</h1>
+<p>Now the lecturer focuses on the second half of digitization:</p>
+<blockquote>
+<p><strong>Given a finite number of intensity levels, where should the quantization levels be placed?</strong></p>
+</blockquote>
+<p>This is more subtle than simply dividing the intensity range uniformly.</p>
+<hr>
+<h1 id="1-quantization-model">1. Quantization model</h1>
+<p>Let:</p>
+<ul>
+<li>$u$ = input value,</li>
+<li>$u'$ = quantized/reconstructed value.</li>
+</ul>
+<p>The quantization error is:</p>
+<p>$$
+e=u-u&rsquo;.
+$$</p>
+<p>A good quantizer should make this error small.</p>
+<hr>
+<h1 id="2-decision-levels-and-reconstruction-levels">2. Decision levels and reconstruction levels</h1>
+<p>A scalar quantizer divides the input range into intervals.</p>
+<p>Each interval is represented by a reconstruction value.</p>
+<p>Schematically:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">input axis
+
+---|---------|---------|---------|---
+  t1        t2        t3        t4
+    r1        r2        r3
+</code></pre></div><p>Here:</p>
+<ul>
+<li>$t_k$ are <strong>transition/decision levels</strong>,</li>
+<li>$r_k$ are <strong>reconstruction levels</strong>.</li>
+</ul>
+<p>An input falling inside a particular interval is mapped to the corresponding $r_k$.</p>
+<hr>
+<h1 id="3-mean-square-quantization-error">3. Mean-square quantization error</h1>
+<p>A natural objective is:</p>
+<p>$$
+D=E[(u-u&rsquo;)^2].
+$$</p>
+<p>For a continuous random variable with probability density $p_u(u)$, the distortion is
+computed by integrating the squared error weighted by the input probability density.</p>
+<p>The design problem is therefore:</p>
+<blockquote>
+<p>choose the decision levels and reconstruction levels that minimize mean-square error.</p>
+</blockquote>
+<hr>
+<h1 id="4-lloydmax-quantizer">4. Lloyd–Max quantizer</h1>
+<p>The lecturer introduces the <strong>Lloyd–Max optimum mean-square-error quantizer</strong>.</p>
+<p>The goal is to minimize:</p>
+<p>$$
+E[(u-u&rsquo;)^2]
+$$</p>
+<p>for a specified number of quantization levels and a specified input probability density.</p>
+<p>The optimum conditions produce two important relationships.</p>
+<hr>
+<h2 id="41-optimum-reconstruction-level">4.1 Optimum reconstruction level</h2>
+<p>For a given quantization interval $[t_k,t_{k+1}]$, the optimum reconstruction value is
+the conditional mean:</p>
+<p>$$
+\boxed{
+r_k=
+\frac{
+\int_{t_k}^{t_{k+1}}u,p_u(u),du
+}{
+\int_{t_k}^{t_{k+1}}p_u(u),du
+}
+}
+$$</p>
+<p>Interpretation:</p>
+<blockquote>
+<p>The reconstruction level should be the probability-weighted center of the input values
+that get mapped to that level.</p>
+</blockquote>
+<hr>
+<h2 id="42-optimum-decision-level">4.2 Optimum decision level</h2>
+<p>For two neighboring reconstruction values $r_k$ and $r_{k+1}$, the optimum transition
+level lies midway between them:</p>
+<p>$$
+\boxed{
+t_{k+1}=\frac{r_k+r_{k+1}}{2}
+}
+$$</p>
+<p>for the standard squared-error criterion.</p>
+<p>So the Lloyd–Max design alternates between:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">decision levels → determine reconstruction levels
+        ↓
+reconstruction levels → determine decision levels
+        ↓
+iterate
+</code></pre></div><hr>
+<h1 id="5-why-the-equations-are-nonlinear">5. Why the equations are nonlinear</h1>
+<p>The optimum conditions depend on one another.</p>
+<p>The transition levels determine the integration intervals, while the reconstruction levels depend
+on those intervals.</p>
+<p>Thus the equations have to be solved simultaneously.</p>
+<p>The lecturer notes that numerical methods such as <strong>Newton iteration</strong> can be used.</p>
+<hr>
+<h1 id="6-large-number-of-quantization-levels">6. Large number of quantization levels</h1>
+<p>When the number of levels is large, the probability density can sometimes be approximated
+locally as piecewise constant.</p>
+<p>This leads to simpler approximations.</p>
+<p>The general principle remains:</p>
+<blockquote>
+<p>allocate quantization resolution according to the statistics of the input.</p>
+</blockquote>
+<hr>
+<h1 id="7-uniform-input-distribution">7. Uniform input distribution</h1>
+<p>If the input is uniformly distributed over a range, the optimum quantizer becomes a
+<strong>uniform quantizer</strong>.</p>
+<p>For a uniform density, the transition levels and reconstruction levels are equally spaced.</p>
+<p>Let the quantization step be:</p>
+<p>$$
+q.
+$$</p>
+<p>Then:</p>
+<p>$$
+q=\frac{t_{L+1}-t_1}{L}
+$$</p>
+<p>for $L$ equal intervals.</p>
+<p>The reconstruction level is centered within its interval:</p>
+<p>$$
+r_k=t_k+\frac q2.
+$$</p>
+<hr>
+<h1 id="8-quantization-error-for-a-uniform-quantizer">8. Quantization error for a uniform quantizer</h1>
+<p>For a uniform quantizer, the error is uniformly distributed over:</p>
+<p>$$
+-\frac q2\leq e\leq\frac q2.
+$$</p>
+<p>The mean-square error is:</p>
+<p>$$
+E[e^2]=\frac{q^2}{12}.
+$$</p>
+<p>This is an important result.</p>
+<hr>
+<h1 id="9-relationship-with-number-of-bits">9. Relationship with number of bits</h1>
+<p>If the full input range has width $A$ and the quantizer uses $B$ bits, there are:</p>
+<p>$$
+L=2^B
+$$</p>
+<p>levels.</p>
+<p>Therefore:</p>
+<p>$$
+q=\frac{A}{2^B}.
+$$</p>
+<p>As $B$ increases, the quantization step decreases exponentially.</p>
+<p>Since:</p>
+<p>$$
+D=\frac{q^2}{12},
+$$</p>
+<p>the quantization error decreases rapidly with the number of bits.</p>
+<hr>
+<h1 id="10-non-uniform-input-distributions">10. Non-uniform input distributions</h1>
+<p>The lecturer also discusses the case where the input probability density is not uniform,
+including distributions such as Gaussian/Laplacian-type densities.</p>
+<p>The important lesson is:</p>
+<blockquote>
+<p><strong>The optimum quantizer depends on the probability distribution of the input.</strong></p>
+</blockquote>
+<p>If values are concentrated heavily in one region, it can be wasteful to assign the same
+resolution everywhere.</p>
+<hr>
+<h1 id="11-practical-issue">11. Practical issue</h1>
+<p>In many practical situations, the exact probability density of the input is not known in
+advance.</p>
+<p>A uniform quantizer is therefore attractive because it is simple and does not require detailed
+prior statistical knowledge.</p>
+<hr>
+<h1 id="part-iii--relationships-between-pixels">Part III — Relationships Between Pixels</h1>
+<h2 id="lectures-79">Lectures 7–9</h2>
+<p>Once the image is a matrix of numbers, we need a language for describing the spatial relationship
+between its elements.</p>
+<p>This block develops:</p>
+<ul>
+<li>neighborhoods,</li>
+<li>adjacency,</li>
+<li>connectivity,</li>
+<li>connected components,</li>
+<li>distance,</li>
+<li>image operations.</li>
+</ul>
+<hr>
+<h1 id="lecture-7--relationship-between-pixels">Lecture 7 — Relationship Between Pixels</h1>
+<h2 id="1-digital-image-as-a-matrix">1. Digital image as a matrix</h2>
+<p>A digital image can be represented as:</p>
+<p>$$
+f(x,y)
+$$</p>
+<p>where $x,y$ are now discrete coordinates.</p>
+<p>Each matrix element is a <strong>pixel</strong>.</p>
+<p>The lecturer asks:</p>
+<blockquote>
+<p>How are these pixels related to one another?</p>
+</blockquote>
+<hr>
+<h1 id="2-neighborhood">2. Neighborhood</h1>
+<p>For a pixel:</p>
+<p>$$
+p=(x,y),
+$$</p>
+<p>its immediate spatial neighbors can be defined in different ways.</p>
+<hr>
+<h2 id="21-4-neighborhood">2.1 4-neighborhood</h2>
+<p>The four horizontally/vertically adjacent pixels are:</p>
+<p>$$
+N_4(p)=
+{(x-1,y),(x+1,y),(x,y-1),(x,y+1)}.
+$$</p>
+<p>These correspond to:</p>
+<ul>
+<li>left,</li>
+<li>right,</li>
+<li>up,</li>
+<li>down.</li>
+</ul>
+<hr>
+<h2 id="22-diagonal-neighborhood">2.2 Diagonal neighborhood</h2>
+<p>The four diagonal pixels are:</p>
+<p>$$
+N_D(p)=
+{(x-1,y-1),(x-1,y+1),(x+1,y-1),(x+1,y+1)}.
+$$</p>
+<hr>
+<h2 id="23-8-neighborhood">2.3 8-neighborhood</h2>
+<p>The full surrounding neighborhood is:</p>
+<p>$$
+N_8(p)=N_4(p)\cup N_D(p).
+$$</p>
+<p>It contains up to eight surrounding pixels.</p>
+<hr>
+<h1 id="3-adjacency">3. Adjacency</h1>
+<p>Neighborhood tells us which pixels are spatially close.</p>
+<p><strong>Adjacency</strong> additionally depends on the set of pixels under consideration.</p>
+<p>For example, in a binary image we may care only about pixels whose value is 1.</p>
+<p>Two pixels can be called adjacent if:</p>
+<ol>
+<li>they satisfy the selected neighborhood relationship, and</li>
+<li>their values belong to the relevant set.</li>
+</ol>
+<hr>
+<h1 id="4-4--8--and-m-adjacency">4. 4-, 8-, and m-adjacency</h1>
+<h3 id="4-adjacency">4-adjacency</h3>
+<p>Two pixels are adjacent if one lies in the other&rsquo;s 4-neighborhood.</p>
+<h3 id="8-adjacency">8-adjacency</h3>
+<p>Two pixels are adjacent if one lies in the other&rsquo;s 8-neighborhood.</p>
+<h3 id="m-adjacency">m-adjacency</h3>
+<p>Mixed adjacency is introduced to avoid certain ambiguities produced by 8-connectivity.</p>
+<p>The diagonal connection is accepted under a condition involving the common 4-neighbors.</p>
+<p>The purpose is to avoid treating diagonal connections as connected in situations where they
+produce ambiguous connectivity.</p>
+<hr>
+<h1 id="5-paths">5. Paths</h1>
+<p>A path is a sequence of pixels in which consecutive pixels satisfy the chosen adjacency rule.</p>
+<p>Conceptually:</p>
+<p>$$
+p_0\rightarrow p_1\rightarrow p_2\rightarrow\cdots\rightarrow p_n.
+$$</p>
+<p>If every consecutive pair is adjacent according to the chosen definition, the sequence forms
+a valid path.</p>
+<hr>
+<h1 id="6-connectivity">6. Connectivity</h1>
+<p>Two pixels are connected if there exists an allowed path between them.</p>
+<p>This gives us a way to define image regions.</p>
+<p>A <strong>connected component</strong> is a maximal set of mutually connected pixels.</p>
+<hr>
+<h1 id="lecture-8--adjacency-and-connected-components-labeling">Lecture 8 — Adjacency and Connected Components Labeling</h1>
+<p>Lecture 8 develops connectivity into an actual algorithm.</p>
+<hr>
+<h1 id="1-why-connected-components-matter">1. Why connected components matter</h1>
+<p>Suppose a binary image contains multiple objects.</p>
+<p>We can interpret:</p>
+<ul>
+<li>one intensity value as background,</li>
+<li>another intensity value as object.</li>
+</ul>
+<p>Then we want to determine which object pixels belong together.</p>
+<p>Connected-component labeling solves this problem.</p>
+<p>It is therefore a bridge from:</p>
+<p>$$
+\text{raw binary image}
+\rightarrow
+\text{separate objects / regions}.
+$$</p>
+<hr>
+<h1 id="2-connected-component-labeling">2. Connected-component labeling</h1>
+<p>The lecturer discusses the standard labeling idea using a <strong>two-pass approach</strong>.</p>
+<h3 id="first-pass">First pass</h3>
+<p>Scan the image systematically.</p>
+<p>When an object pixel is encountered:</p>
+<ul>
+<li>inspect already-processed neighbors,</li>
+<li>assign a new label if no labeled neighbor exists,</li>
+<li>otherwise copy an existing label,</li>
+<li>if multiple different labels are found to represent the same connected region,
+record their equivalence.</li>
+</ul>
+<p>This can produce temporary labels such as:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">1 1 0 2
+1 3 3 2
+0 3 4 0
+</code></pre></div><p>where labels 3 and 4 may later be found to belong to the same connected component.</p>
+<hr>
+<h1 id="3-equivalence-classes">3. Equivalence classes</h1>
+<p>If the scan discovers that two labels actually correspond to the same connected region,
+the labels are placed into an equivalence class.</p>
+<p>For example:</p>
+<p>$$
+3\sim4.
+$$</p>
+<p>Then the algorithm can later replace both with a single canonical label.</p>
+<p>This is why the first pass may contain more labels than the final number of components.</p>
+<hr>
+<h1 id="4-second-pass">4. Second pass</h1>
+<p>The image is scanned again.</p>
+<p>Every temporary label is replaced by its final representative.</p>
+<p>For example, if:</p>
+<p>$$
+3\sim4,
+$$</p>
+<p>then all pixels carrying 4 may be reassigned to 3.</p>
+<p>At the end:</p>
+<blockquote>
+<p>every pixel belonging to one connected component has the same final label.</p>
+</blockquote>
+<hr>
+<h1 id="5-why-this-is-important-for-image-understanding">5. Why this is important for image understanding</h1>
+<p>Connected-component labeling provides a simple route from pixels to objects.</p>
+<p>Once components are labeled, we can calculate properties such as:</p>
+<ul>
+<li>area,</li>
+<li>bounding box,</li>
+<li>centroid,</li>
+<li>shape descriptors,</li>
+<li>size.</li>
+</ul>
+<p>This makes it an early example of the transition from <strong>low-level image representation to
+higher-level image understanding</strong>.</p>
+<hr>
+<h1 id="lecture-9--application-of-distance-measures">Lecture 9 — Application of Distance Measures</h1>
+<p>The lecture continues the pixel-relationship discussion.</p>
+<p>The main topics are:</p>
+<ol>
+<li>distance measures,</li>
+<li>distance transformations,</li>
+<li>skeletonization,</li>
+<li>arithmetic/logical image operations,</li>
+<li>neighborhood operations.</li>
+</ol>
+<hr>
+<h1 id="1-euclidean-distance">1. Euclidean distance</h1>
+<p>For two points:</p>
+<p>$$
+p=(x_1,y_1),\qquad q=(x_2,y_2),
+$$</p>
+<p>the Euclidean distance is:</p>
+<p>$$
+\boxed{
+D_E(p,q)=
+\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
+}
+$$</p>
+<p>This corresponds to ordinary straight-line geometric distance.</p>
+<hr>
+<h1 id="2-city-block-distance">2. City-block distance</h1>
+<p>The city-block distance is:</p>
+<p>$$
+\boxed{
+D_4(p,q)=
+|x_1-x_2|+|y_1-y_2|
+}
+$$</p>
+<p>It corresponds to movement restricted to horizontal and vertical steps.</p>
+<p>This is analogous to navigating city streets.</p>
+<hr>
+<h1 id="3-chessboard-distance">3. Chessboard distance</h1>
+<p>The chessboard distance is:</p>
+<p>$$
+\boxed{
+D_8(p,q)=
+\max(
+|x_1-x_2|,
+|y_1-y_2|
+)
+}
+$$</p>
+<p>It corresponds to movement where diagonal motion is allowed at the same unit cost.</p>
+<hr>
+<h1 id="4-why-different-distance-measures">4. Why different distance measures?</h1>
+<p>They correspond to different notions of neighborhood.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">4-neighborhood
+    ↓
+city-block style movement
+
+8-neighborhood
+    ↓
+chessboard style movement
+
+continuous plane
+    ↓
+Euclidean movement
+</code></pre></div><p>The choice of distance should therefore match the geometry of the application.</p>
+<hr>
+<h1 id="5-distance-transformation">5. Distance transformation</h1>
+<p>The lecturer discusses applying distance concepts to a binary image.</p>
+<p>A distance transform assigns to pixels a value representing their distance from another
+specified set of pixels, commonly the background.</p>
+<p>For example:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">object boundary → small distance
+object interior → larger distance
+</code></pre></div><p>The resulting image is a <strong>distance map</strong>.</p>
+<hr>
+<h1 id="6-skeleton-of-a-binary-object">6. Skeleton of a binary object</h1>
+<p>The distance transform can be used to obtain a compact representation of the shape.</p>
+<p>The <strong>skeleton</strong> captures the central structural information of a region.</p>
+<p>Intuitively:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">thick object
+    ↓
+distance transform
+    ↓
+central/maximal structure
+    ↓
+skeleton
+</code></pre></div><p>The skeleton is useful because it can represent a complex shape with fewer structural
+elements.</p>
+<p>The lecturer describes it as a compact description of shape.</p>
+<hr>
+<h1 id="7-arithmetic-operations-on-images">7. Arithmetic operations on images</h1>
+<p>Images can be treated as numerical arrays, so pixel-wise arithmetic operations are possible.</p>
+<p>For two images $f$ and $g$:</p>
+<h3 id="addition">Addition</h3>
+<p>$$
+h(x,y)=f(x,y)+g(x,y).
+$$</p>
+<h3 id="subtraction">Subtraction</h3>
+<p>$$
+h(x,y)=f(x,y)-g(x,y).
+$$</p>
+<h3 id="multiplication">Multiplication</h3>
+<p>$$
+h(x,y)=f(x,y)g(x,y).
+$$</p>
+<h3 id="division">Division</h3>
+<p>$$
+h(x,y)=\frac{f(x,y)}{g(x,y)}
+$$</p>
+<p>where defined.</p>
+<p>These operations can be useful for:</p>
+<ul>
+<li>combining information,</li>
+<li>background subtraction,</li>
+<li>masking,</li>
+<li>normalization,</li>
+<li>enhancement.</li>
+</ul>
+<hr>
+<h1 id="8-logical-operations">8. Logical operations</h1>
+<p>For binary images, logical operations such as:</p>
+<ul>
+<li>AND,</li>
+<li>OR,</li>
+<li>NOT,</li>
+</ul>
+<p>can be performed pixel-by-pixel.</p>
+<p>These are useful for manipulating binary masks and regions.</p>
+<hr>
+<h1 id="9-pixel-by-pixel-operations-vs-neighborhood-operations">9. Pixel-by-pixel operations vs neighborhood operations</h1>
+<p>This is an important distinction.</p>
+<h3 id="pixel-by-pixel-operation">Pixel-by-pixel operation</h3>
+<p>The output at $(x,y)$ depends only on the input value at $(x,y)$:</p>
+<p>$$
+g(x,y)=T(f(x,y)).
+$$</p>
+<h3 id="neighborhood-operation">Neighborhood operation</h3>
+<p>The output at $(x,y)$ depends on a collection of neighboring pixels.</p>
+<p>Conceptually:</p>
+<p>$$
+g(x,y)=
+T\left(
+{f(x+i,y+j)}
+\right).
+$$</p>
+<p>This distinction becomes fundamental later when the course discusses spatial filtering.</p>
+<hr>
+<h1 id="part-iv--geometric-transformations">Part IV — Geometric Transformations</h1>
+<h2 id="lecture-10">Lecture 10</h2>
+<p>Lecture 10 begins the transition from discrete image geometry to <strong>camera/image formation</strong>.</p>
+<p>The lecturer introduces basic mathematical transformations in both 2-D and 3-D.</p>
+<p>The main transformations are:</p>
+<ul>
+<li>translation,</li>
+<li>rotation,</li>
+<li>scaling.</li>
+</ul>
+<p>He also introduces:</p>
+<ul>
+<li>inverse transformations,</li>
+<li>homogeneous coordinates,</li>
+<li>perspective transformation.</li>
+</ul>
+<hr>
+<h1 id="lecture-10--basic-transform">Lecture 10 — Basic Transform</h1>
+<h1 id="1-translation">1. Translation</h1>
+<p>For a 2-D point:</p>
+<p>$$
+P=
+\begin{bmatrix}
+x\y
+\end{bmatrix},
+$$</p>
+<p>translation by:</p>
+<p>$$
+(t_x,t_y)
+$$</p>
+<p>gives:</p>
+<p>$$
+x'=x+t_x,
+\qquad
+y'=y+t_y.
+$$</p>
+<p>In matrix form using homogeneous coordinates:</p>
+<h1 id="endbmatrix">$$
+\begin{bmatrix}
+x&rsquo;\y&rsquo;\1
+\end{bmatrix}</h1>
+<p>\begin{bmatrix}
+1&amp;0&amp;t_x\<br>
+0&amp;1&amp;t_y\<br>
+0&amp;0&amp;1
+\end{bmatrix}
+\begin{bmatrix}
+x\y\1
+\end{bmatrix}.
+$$</p>
+<hr>
+<h1 id="2-scaling">2. Scaling</h1>
+<p>Scaling is:</p>
+<p>$$
+x'=s_xx,
+\qquad
+y'=s_yy.
+$$</p>
+<p>Homogeneous form:</p>
+<h1 id="endbmatrix-1">$$
+\begin{bmatrix}
+x&rsquo;\y&rsquo;\1
+\end{bmatrix}</h1>
+<p>\begin{bmatrix}
+s_x&amp;0&amp;0\<br>
+0&amp;s_y&amp;0\<br>
+0&amp;0&amp;1
+\end{bmatrix}
+\begin{bmatrix}
+x\y\1
+\end{bmatrix}.
+$$</p>
+<p>If:</p>
+<p>$$
+s_x=s_y,
+$$</p>
+<p>the object is scaled equally in both directions.</p>
+<hr>
+<h1 id="3-rotation">3. Rotation</h1>
+<p>Rotation by angle $\theta$ about the origin is:</p>
+<h1 id="endbmatrix-2">$$
+\begin{bmatrix}
+x&rsquo;\y&rsquo;
+\end{bmatrix}</h1>
+<p>\begin{bmatrix}
+\cos\theta&amp;-\sin\theta\<br>
+\sin\theta&amp;\cos\theta
+\end{bmatrix}
+\begin{bmatrix}
+x\y
+\end{bmatrix}.
+$$</p>
+<p>The rotation matrix is:</p>
+<p>$$
+R(\theta)=
+\begin{bmatrix}
+\cos\theta&amp;-\sin\theta\<br>
+\sin\theta&amp;\cos\theta
+\end{bmatrix}.
+$$</p>
+<hr>
+<h1 id="4-inverse-transformations">4. Inverse transformations</h1>
+<p>Every transformation is also considered from the inverse perspective.</p>
+<p>For example, inverse translation is:</p>
+<p>$$
+x=x&rsquo;-t_x,
+\qquad
+y=y&rsquo;-t_y.
+$$</p>
+<p>Inverse scaling uses:</p>
+<p>$$
+\frac1{s_x},\qquad\frac1{s_y}
+$$</p>
+<p>provided the scale factors are nonzero.</p>
+<p>Inverse rotation is:</p>
+<p>$$
+R^{-1}(\theta)=R(-\theta).
+$$</p>
+<p>This inverse viewpoint becomes important when mapping image coordinates back into the scene.</p>
+<hr>
+<h1 id="5-3-d-transformations">5. 3-D transformations</h1>
+<p>The same ideas are extended to 3-D coordinates:</p>
+<p>$$
+(X,Y,Z).
+$$</p>
+<p>Scaling becomes:</p>
+<p>$$
+X'=s_xX,\qquad
+Y'=s_yY,\qquad
+Z'=s_zZ.
+$$</p>
+<p>Translation becomes:</p>
+<p>$$
+X'=X+t_x,
+\qquad
+Y'=Y+t_y,
+\qquad
+Z'=Z+t_z.
+$$</p>
+<p>Rotations can be defined about the $X$, $Y$, and $Z$ axes.</p>
+<hr>
+<h1 id="6-why-homogeneous-coordinates">6. Why homogeneous coordinates?</h1>
+<p>Ordinary Cartesian coordinates make translation different from matrix multiplication.</p>
+<p>Homogeneous coordinates solve this by adding an additional coordinate.</p>
+<p>A 2-D point:</p>
+<p>$$
+(x,y)
+$$</p>
+<p>becomes:</p>
+<p>$$
+(x,y,1).
+$$</p>
+<p>A 3-D point:</p>
+<p>$$
+(X,Y,Z)
+$$</p>
+<p>becomes:</p>
+<p>$$
+(X,Y,Z,1).
+$$</p>
+<p>This lets translation, rotation, scaling, and perspective transformations be represented
+using matrix multiplication.</p>
+<p>This is particularly convenient when transformations are composed.</p>
+<hr>
+<h1 id="7-perspective-transformation">7. Perspective transformation</h1>
+<p>The lecturer then connects transformations to camera imaging.</p>
+<p>A 3-D point:</p>
+<p>$$
+(X,Y,Z)
+$$</p>
+<p>is mapped to an image point:</p>
+<p>$$
+(x,y).
+$$</p>
+<p>For the standard pinhole/perspective model:</p>
+<p>$$
+x=\lambda\frac{X}{Z},
+\qquad
+y=\lambda\frac{Y}{Z},
+$$</p>
+<p>where $\lambda$ represents the focal-length parameter under the lecture&rsquo;s convention.</p>
+<p>The crucial feature is:</p>
+<p>$$
+\boxed{\text{image coordinate}\propto \frac{\text{world coordinate}}{Z}}
+$$</p>
+<p>so depth directly affects image position.</p>
+<hr>
+<h1 id="8-example">8. Example</h1>
+<p>The lecturer gives numerical exercises such as:</p>
+<ul>
+<li>given a camera focal length,</li>
+<li>given a 3-D point,</li>
+<li>find the corresponding image coordinate.</li>
+</ul>
+<p>For example, with focal length $f=5$ and:</p>
+<p>$$
+(X,Y,Z)=(50,70,100),
+$$</p>
+<p>the ideal aligned-coordinate pinhole projection gives:</p>
+<p>$$
+x=5\frac{50}{100}=2.5,
+$$</p>
+<p>$$
+y=5\frac{70}{100}=3.5.
+$$</p>
+<p>The exact sign convention depends on the chosen image-plane convention, but the important
+relationship is the $1/Z$ dependence.</p>
+<hr>
+<h1 id="9-composition-matters">9. Composition matters</h1>
+<p>Transformations are generally <strong>not commutative</strong>.</p>
+<p>For example:</p>
+<p>$$
+T,S\neq S,T
+$$</p>
+<p>in general.</p>
+<p>So:</p>
+<blockquote>
+<p>translating and then scaling does not necessarily produce the same result as scaling
+and then translating.</p>
+</blockquote>
+<p>This is why the lecturer uses questions involving the order of translation and scaling.</p>
+<hr>
+<h1 id="part-v--image-formation">Part V — Image Formation</h1>
+<h2 id="lectures-1112">Lectures 11–12</h2>
+<p>The next conceptual step is:</p>
+<blockquote>
+<p><strong>Given a 3-D world and a camera, how exactly does a 3-D point become an image point?</strong></p>
+</blockquote>
+<hr>
+<h1 id="lecture-11--image-formation-i">Lecture 11 — Image Formation I</h1>
+<h2 id="1-camera-as-a-mapping">1. Camera as a mapping</h2>
+<p>The camera performs a mapping:</p>
+<p>$$
+(X,Y,Z)
+\rightarrow
+(x,y).
+$$</p>
+<p>The lecturer uses an idealized camera model to make this relationship mathematically tractable.</p>
+<p>The central model is perspective projection.</p>
+<hr>
+<h1 id="2-pinhole-camera-geometry">2. Pinhole camera geometry</h1>
+<p>Imagine a tiny aperture through which rays from the scene pass.</p>
+<p>A 3-D point and its image point lie on the same line passing through the camera center.</p>
+<p>Thus the geometry is based on similar triangles.</p>
+<hr>
+<h1 id="3-perspective-projection-equation">3. Perspective projection equation</h1>
+<p>For a camera coordinate system aligned with the world coordinate system:</p>
+<p>$$
+x=f\frac{X}{Z},
+\qquad
+y=f\frac{Y}{Z}.
+$$</p>
+<p>This is the fundamental equation.</p>
+<hr>
+<h1 id="4-depth-dependence">4. Depth dependence</h1>
+<p>Consider two points with identical $X,Y$ but different $Z$.</p>
+<p>The farther point has a smaller projected coordinate magnitude.</p>
+<p>Therefore:</p>
+<p>$$
+Z\uparrow
+\Rightarrow
+\text{projected size}\downarrow.
+$$</p>
+<p>This explains perspective:</p>
+<blockquote>
+<p>distant objects appear smaller.</p>
+</blockquote>
+<hr>
+<h1 id="5-homogeneous-representation">5. Homogeneous representation</h1>
+<p>Perspective projection contains division by $Z$, so homogeneous coordinates are especially
+useful.</p>
+<p>A projective mapping can be written as a matrix transformation followed by normalization.</p>
+<p>Conceptually:</p>
+<p>$$
+\begin{bmatrix}
+x\y\1
+\end{bmatrix}
+\sim
+P
+\begin{bmatrix}
+X\Y\Z\1
+\end{bmatrix},
+$$</p>
+<p>where $P$ represents the camera projection mapping.</p>
+<p>The symbol $\sim$ means equality up to a nonzero scale factor.</p>
+<hr>
+<h1 id="6-inverse-perspective-problem">6. Inverse perspective problem</h1>
+<p>A single image point does <strong>not</strong> determine a unique 3-D point.</p>
+<p>If the image point is fixed, all 3-D points along the corresponding viewing ray can project
+to it.</p>
+<p>So the inverse mapping is not:</p>
+<p>$$
+(x,y)\rightarrow(X,Y,Z)
+$$</p>
+<p>as a unique point.</p>
+<p>Instead:</p>
+<p>$$
+(x,y)\rightarrow\text{a ray in 3-D}.
+$$</p>
+<p>This is a very important computer-vision concept.</p>
+<hr>
+<h1 id="lecture-12--image-formation-ii">Lecture 12 — Image Formation II</h1>
+<p>Lecture 12 generalizes the imaging geometry.</p>
+<hr>
+<h1 id="1-why-the-simple-model-is-insufficient">1. Why the simple model is insufficient</h1>
+<p>The simplest derivation assumes:</p>
+<ul>
+<li>world coordinate system and camera coordinate system are aligned,</li>
+<li>camera is conveniently positioned,</li>
+<li>camera axes correspond directly to world axes.</li>
+</ul>
+<p>A real camera can be translated and rotated arbitrarily.</p>
+<p>Therefore we need a <strong>generalized imaging model</strong>.</p>
+<hr>
+<h1 id="2-world-coordinates-vs-camera-coordinates">2. World coordinates vs camera coordinates</h1>
+<p>Let a point in the world coordinate system be:</p>
+<p>$$
+P_w=
+\begin{bmatrix}
+X_w\Y_w\Z_w
+\end{bmatrix}.
+$$</p>
+<p>The same point in the camera coordinate system is:</p>
+<p>$$
+P_c=
+\begin{bmatrix}
+X_c\Y_c\Z_c
+\end{bmatrix}.
+$$</p>
+<p>The two coordinate systems are related by:</p>
+<p>$$
+P_c=RP_w+t
+$$</p>
+<p>under the standard rigid transformation convention.</p>
+<p>Here:</p>
+<ul>
+<li>$R$ is a rotation matrix,</li>
+<li>$t$ is a translation vector.</li>
+</ul>
+<hr>
+<h1 id="3-generalized-camera-mapping">3. Generalized camera mapping</h1>
+<p>The complete conceptual chain becomes:</p>
+<p>$$
+\boxed{
+\text{world coordinates}
+\rightarrow
+\text{camera coordinates}
+\rightarrow
+\text{perspective projection}
+\rightarrow
+\text{image coordinates}
+}
+$$</p>
+<p>This separation is extremely important.</p>
+<p>The first stage tells us how the camera is positioned relative to the world.</p>
+<p>The second stage tells us how the camera projects its own coordinate system onto the image.</p>
+<hr>
+<h1 id="4-inverse-perspective-transformation">4. Inverse perspective transformation</h1>
+<p>Given an image point, the inverse perspective operation produces the line/ray in 3-D
+that could have generated that point.</p>
+<p>This is useful in:</p>
+<ul>
+<li>ray tracing,</li>
+<li>camera geometry,</li>
+<li>3-D reconstruction,</li>
+<li>stereo.</li>
+</ul>
+<hr>
+<h1 id="5-important-conceptual-distinction">5. Important conceptual distinction</h1>
+<p>Do not confuse:</p>
+<h3 id="camera-pose">Camera pose</h3>
+<p>Where the camera is and how it is oriented.</p>
+<p>with:</p>
+<h3 id="perspective-projection">Perspective projection</h3>
+<p>How a camera-coordinate 3-D point maps onto the 2-D image plane.</p>
+<p>The generalized imaging model combines both.</p>
+<hr>
+<h1 id="part-vi--image-geometry">Part VI — Image Geometry</h1>
+<h2 id="lectures-1314">Lectures 13–14</h2>
+<p>The camera is now treated as a geometrical object whose position and orientation can be
+arbitrary.</p>
+<hr>
+<h1 id="lecture-13--image-geometry-i">Lecture 13 — Image Geometry I</h1>
+<h2 id="1-coordinate-systems">1. Coordinate systems</h2>
+<p>The lecturer distinguishes:</p>
+<h3 id="world-coordinate-system">World coordinate system</h3>
+<p>Describes where objects exist in the physical scene.</p>
+<p>$$
+(X,Y,Z)
+$$</p>
+<h3 id="camera-coordinate-system">Camera coordinate system</h3>
+<p>Describes points relative to the camera.</p>
+<p>$$
+(X_c,Y_c,Z_c)
+$$</p>
+<h3 id="image-coordinate-system">Image coordinate system</h3>
+<p>Describes the projected location on the image plane.</p>
+<p>$$
+(x,y)
+$$</p>
+<h3 id="pixel-coordinate-system">Pixel coordinate system</h3>
+<p>The final coordinates used to address the digital image array.</p>
+<p>The complete chain is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">World coordinates
+       ↓
+Camera coordinates
+       ↓
+Image-plane coordinates
+       ↓
+Pixel coordinates
+</code></pre></div><hr>
+<h1 id="2-camera-orientation">2. Camera orientation</h1>
+<p>The camera may be rotated relative to the world.</p>
+<p>The lecturer discusses camera orientation using rotational parameters, including concepts
+such as:</p>
+<ul>
+<li>pan,</li>
+<li>tilt,</li>
+</ul>
+<p>and the corresponding transformations.</p>
+<p>The exact parameterization is less important than understanding:</p>
+<blockquote>
+<p>camera orientation changes the coordinate system in which the 3-D point is expressed
+before projection.</p>
+</blockquote>
+<hr>
+<h1 id="3-translation-of-camera-center">3. Translation of camera center</h1>
+<p>The camera center need not coincide with the world origin.</p>
+<p>If the camera center is displaced, a translation is required before applying the camera rotation.</p>
+<p>Thus the world-to-camera mapping includes both:</p>
+<p>$$
+R
+$$</p>
+<p>and:</p>
+<p>$$
+t.
+$$</p>
+<hr>
+<h1 id="4-general-camera-mapping">4. General camera mapping</h1>
+<p>The basic structure is:</p>
+<p>$$
+P_c=R(P_w-C)
+$$</p>
+<p>if $C$ denotes the camera center in world coordinates.</p>
+<p>Equivalent formulations may absorb the translation differently.</p>
+<p>The key is that the camera coordinate system is obtained by:</p>
+<ol>
+<li>shifting the origin,</li>
+<li>rotating the axes,</li>
+<li>projecting.</li>
+</ol>
+<hr>
+<h1 id="5-worked-geometry-problems">5. Worked geometry problems</h1>
+<p>The lecturer uses numerical examples involving:</p>
+<ul>
+<li>a displaced camera center,</li>
+<li>pan angle,</li>
+<li>tilt angle,</li>
+<li>a specified 3-D world point,</li>
+</ul>
+<p>and asks for the resulting image coordinates.</p>
+<p>These exercises are important because they force the transformation chain to be applied in
+the correct order.</p>
+<hr>
+<h1 id="lecture-14--image-geometry-ii">Lecture 14 — Image Geometry II</h1>
+<p>Lecture 14 continues the generalized imaging model and works through the geometry in more detail.</p>
+<hr>
+<h1 id="1-camera-pose-as-a-transformation">1. Camera pose as a transformation</h1>
+<p>The complete camera pose is encoded through rotation and translation.</p>
+<p>A homogeneous rigid transformation can be written:</p>
+<h1 id="endbmatrix-3">$$
+\begin{bmatrix}
+X_c\Y_c\Z_c\1
+\end{bmatrix}</h1>
+<p>\begin{bmatrix}
+R&amp;t\<br>
+0&amp;1
+\end{bmatrix}
+\begin{bmatrix}
+X_w\Y_w\Z_w\1
+\end{bmatrix}.
+$$</p>
+<p>This form is useful because the entire pose becomes a single matrix multiplication.</p>
+<hr>
+<h1 id="2-projection-after-pose-transformation">2. Projection after pose transformation</h1>
+<p>After converting the world point to camera coordinates:</p>
+<p>$$
+(X_c,Y_c,Z_c),
+$$</p>
+<p>perspective projection is applied:</p>
+<p>$$
+x=f\frac{X_c}{Z_c},
+\qquad
+y=f\frac{Y_c}{Z_c}.
+$$</p>
+<p>Therefore:</p>
+<p>$$
+\boxed{
+P_w
+\rightarrow
+P_c
+\rightarrow
+(x,y)
+}
+$$</p>
+<p>is the complete geometric process.</p>
+<hr>
+<h1 id="3-inverse-problem">3. Inverse problem</h1>
+<p>If an image point is known, we can recover the corresponding viewing ray in camera coordinates.</p>
+<p>But without depth, we cannot determine the unique 3-D point.</p>
+<p>This is the fundamental ambiguity of monocular vision.</p>
+<hr>
+<h1 id="4-why-stereo-becomes-necessary">4. Why stereo becomes necessary</h1>
+<p>If we observe the same physical point from a second camera position, the second image provides
+another viewing ray.</p>
+<p>Their intersection gives the 3-D point.</p>
+<p>This leads directly into stereo imaging.</p>
+<hr>
+<h1 id="5-example-structure">5. Example structure</h1>
+<p>The lecturer uses a camera whose center is displaced relative to a world coordinate system,
+with specified orientation parameters.</p>
+<p>A typical problem is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">given:
+camera displacement
+camera pan
+camera tilt
+world point
+
+find:
+camera-coordinate point
+then image coordinate
+</code></pre></div><p>The important part is the sequence, not memorizing one numerical example.</p>
+<hr>
+<h1 id="part-vii--stereo-imaging">Part VII — Stereo Imaging</h1>
+<h2 id="lecture-15">Lecture 15</h2>
+<p>Lecture 15 completes the first camera-geometry block by introducing stereo.</p>
+<p>The central question is:</p>
+<blockquote>
+<p><strong>How can two 2-D images provide enough information to recover a 3-D point?</strong></p>
+</blockquote>
+<hr>
+<h1 id="1-basic-stereo-setup">1. Basic stereo setup</h1>
+<p>Use two cameras observing the same scene:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Camera 1                         Camera 2
+    \                               /
+     \                             /
+      \                           /
+       \                         /
+        \                       /
+             3-D point
+</code></pre></div><p>A physical point projects to:</p>
+<p>$$
+(x_L,y_L)
+$$</p>
+<p>in the left image and:</p>
+<p>$$
+(x_R,y_R)
+$$</p>
+<p>in the right image.</p>
+<p>These are called <strong>corresponding points</strong>.</p>
+<hr>
+<h1 id="2-why-corresponding-points-differ">2. Why corresponding points differ</h1>
+<p>The cameras observe the point from different locations.</p>
+<p>Therefore the viewing rays are different.</p>
+<p>Consequently, the same 3-D point appears at different image positions.</p>
+<p>The difference between those positions is the <strong>disparity</strong>.</p>
+<hr>
+<h1 id="3-simplified-rectified-stereo-geometry">3. Simplified rectified stereo geometry</h1>
+<p>Consider two cameras with baseline:</p>
+<p>$$
+B.
+$$</p>
+<p>Assume:</p>
+<ul>
+<li>cameras have parallel optical axes,</li>
+<li>image planes are aligned,</li>
+<li>corresponding points lie on the same horizontal scanline.</li>
+</ul>
+<p>Then disparity can be defined as:</p>
+<p>$$
+d=x_L-x_R
+$$</p>
+<p>under one common sign convention.</p>
+<hr>
+<h1 id="4-depth-from-disparity">4. Depth from disparity</h1>
+<p>For the standard pinhole stereo setup:</p>
+<p>$$
+\boxed{
+Z=\frac{fB}{d}
+}
+$$</p>
+<p>where:</p>
+<ul>
+<li>$Z$ = depth,</li>
+<li>$f$ = focal length,</li>
+<li>$B$ = baseline,</li>
+<li>$d$ = disparity.</li>
+</ul>
+<p>This is one of the most important equations in the first 15 lectures.</p>
+<hr>
+<h1 id="5-intuition">5. Intuition</h1>
+<p>The equation says:</p>
+<p>$$
+Z\propto\frac1d.
+$$</p>
+<p>Therefore:</p>
+<h3 id="nearby-point">Nearby point</h3>
+<p>Large disparity:</p>
+<p>$$
+d\text{ large}
+$$</p>
+<p>so:</p>
+<p>$$
+Z\text{ small}.
+$$</p>
+<h3 id="distant-point">Distant point</h3>
+<p>Small disparity:</p>
+<p>$$
+d\text{ small}
+$$</p>
+<p>so:</p>
+<p>$$
+Z\text{ large}.
+$$</p>
+<p>Thus:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">large disparity → close
+small disparity → far
+</code></pre></div><hr>
+<h1 id="6-derivation-intuition">6. Derivation intuition</h1>
+<p>For a point at depth $Z$, the left and right image coordinates depend on the camera centers.</p>
+<p>Using similar triangles:</p>
+<p>$$
+x_L=f\frac{X+B/2}{Z},
+$$</p>
+<p>$$
+x_R=f\frac{X-B/2}{Z}
+$$</p>
+<p>for a symmetric camera arrangement.</p>
+<p>Subtracting:</p>
+<p>$$
+d=x_L-x_R
+$$</p>
+<p>gives:</p>
+<p>$$
+d=f\frac{B}{Z}.
+$$</p>
+<p>Therefore:</p>
+<p>$$
+\boxed{
+Z=\frac{fB}{d}.
+}
+$$</p>
+<p>The exact coordinate origin can differ, but the depth-disparity relationship is unchanged.</p>
+<hr>
+<h1 id="7-stereo-reconstruction">7. Stereo reconstruction</h1>
+<p>The stereo problem can therefore be viewed as:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Left image       Right image
+     ↓                ↓
+find corresponding points
+          ↓
+       disparity
+          ↓
+      depth estimate
+          ↓
+       3-D point
+</code></pre></div><p>This is a major conceptual transition:</p>
+<p><strong>single-view image formation gives a ray; stereo gives enough constraints to estimate depth.</strong></p>
+<hr>
+<h1 id="8-the-correspondence-problem">8. The correspondence problem</h1>
+<p>The depth equation is easy once the correspondence is known.</p>
+<p>The difficult practical problem is:</p>
+<blockquote>
+<p>Given a pixel in the left image, which pixel in the right image represents the same
+physical point?</p>
+</blockquote>
+<p>This is the <strong>stereo correspondence problem</strong>.</p>
+<p>Later computer-vision algorithms solve this using image appearance, local matching,
+constraints, and optimization.</p>
+<p>The present lecture is primarily establishing the geometric model.</p>
+<hr>
+<h1 id="9-relation-to-camera-calibration">9. Relation to camera calibration</h1>
+<p>Stereo depth requires knowledge of camera parameters such as:</p>
+<ul>
+<li>focal length,</li>
+<li>relative camera geometry,</li>
+<li>baseline.</li>
+</ul>
+<p>Therefore camera calibration is essential.</p>
+<p>The broader pipeline is:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">calibrate camera
+       ↓
+acquire stereo pair
+       ↓
+find correspondences
+       ↓
+compute disparity
+       ↓
+triangulate / recover depth
+</code></pre></div><hr>
+<h1 id="part-viii--the-complete-conceptual-chain-of-lectures-115">Part VIII — The Complete Conceptual Chain of Lectures 1–15</h1>
+<p>At this point, the first 15 lectures form one coherent story.</p>
+<hr>
+<h2 id="stage-1--why-images-are-processed">Stage 1 — Why images are processed</h2>
+<h3 id="lectures-12-1">Lectures 1–2</h3>
+<p>You begin with the motivation:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">image
+ ↓
+improve it / analyze it / extract information / compress it
+</code></pre></div><p>The lecturer introduces the full image-processing pipeline.</p>
+<hr>
+<h2 id="stage-2--how-an-image-becomes-digital">Stage 2 — How an image becomes digital</h2>
+<h3 id="lectures-36-1">Lectures 3–6</h3>
+<p>The physical image:</p>
+<p>$$
+f(x,y)
+$$</p>
+<p>is converted to a finite numerical representation.</p>
+<h3 id="sampling-2">Sampling</h3>
+<p>$$
+f(x,y)
+\rightarrow
+f[m,n]
+$$</p>
+<p>discretizes space.</p>
+<h3 id="quantization-2">Quantization</h3>
+<p>$$
+f[m,n]
+\rightarrow
+Q(f[m,n])
+$$</p>
+<p>discretizes intensity.</p>
+<h3 id="sampling-theory">Sampling theory</h3>
+<p>Ensures that the original signal can be reconstructed when sampled sufficiently densely.</p>
+<h3 id="quantizer-design">Quantizer design</h3>
+<p>Determines how the finite intensity levels should be placed.</p>
+<hr>
+<h2 id="stage-3--how-pixels-form-meaningful-regions">Stage 3 — How pixels form meaningful regions</h2>
+<h3 id="lectures-79-1">Lectures 7–9</h3>
+<p>Now the image is a matrix.</p>
+<p>The course defines:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">pixels
+ ↓
+neighborhood
+ ↓
+adjacency
+ ↓
+connectivity
+ ↓
+connected components
+</code></pre></div><p>and then:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">pixels
+ ↓
+distance
+ ↓
+distance transform
+ ↓
+shape/skeleton information
+</code></pre></div><p>It also introduces pixel-wise and neighborhood operations.</p>
+<hr>
+<h2 id="stage-4--how-coordinates-are-transformed">Stage 4 — How coordinates are transformed</h2>
+<h3 id="lecture-10-1">Lecture 10</h3>
+<p>The lecturer introduces:</p>
+<ul>
+<li>translation,</li>
+<li>scaling,</li>
+<li>rotation,</li>
+<li>inverse transformations,</li>
+<li>homogeneous coordinates,</li>
+<li>perspective transformation.</li>
+</ul>
+<p>These become the mathematical language of camera geometry.</p>
+<hr>
+<h2 id="stage-5--how-cameras-form-images">Stage 5 — How cameras form images</h2>
+<h3 id="lectures-1114">Lectures 11–14</h3>
+<p>The course asks:</p>
+<p>$$
+(X,Y,Z)\rightarrow(x,y).
+$$</p>
+<p>It develops:</p>
+<ul>
+<li>pinhole camera geometry,</li>
+<li>perspective projection,</li>
+<li>world coordinates,</li>
+<li>camera coordinates,</li>
+<li>camera translation,</li>
+<li>camera rotation,</li>
+<li>homogeneous transformations,</li>
+<li>inverse perspective mapping.</li>
+</ul>
+<hr>
+<h2 id="stage-6--how-depth-can-be-recovered">Stage 6 — How depth can be recovered</h2>
+<h3 id="lecture-15-1">Lecture 15</h3>
+<p>A single camera gives a viewing ray.</p>
+<p>Two cameras give two rays.</p>
+<p>Their relative displacement creates disparity.</p>
+<p>Then:</p>
+<p>$$
+\boxed{
+Z=\frac{fB}{d}
+}
+$$</p>
+<p>gives depth under the standard stereo assumptions.</p>
+<hr>
+<h1 id="master-checklist--if-you-want-to-speedrun-lectures-115">Master Checklist — If You Want to Speedrun Lectures 1–15</h1>
+<h2 id="a-digital-image-fundamentals">A. Digital image fundamentals</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Define digital image processing.</li>
+<li><input disabled="" type="checkbox"> Explain the three broad motivations for DIP.</li>
+<li><input disabled="" type="checkbox"> Explain the complete image-processing pipeline.</li>
+<li><input disabled="" type="checkbox"> Distinguish enhancement for humans from machine vision.</li>
+</ul>
+<h2 id="b-digitization">B. Digitization</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Define $f(x,y)$.</li>
+<li><input disabled="" type="checkbox"> Explain sampling.</li>
+<li><input disabled="" type="checkbox"> Explain quantization.</li>
+<li><input disabled="" type="checkbox"> Explain why both are necessary.</li>
+<li><input disabled="" type="checkbox"> Define spatial resolution.</li>
+<li><input disabled="" type="checkbox"> Define intensity/gray-level resolution.</li>
+<li><input disabled="" type="checkbox"> Explain bandwidth.</li>
+<li><input disabled="" type="checkbox"> Explain Fourier spectrum conceptually.</li>
+<li><input disabled="" type="checkbox"> State the Nyquist condition.</li>
+<li><input disabled="" type="checkbox"> Explain aliasing.</li>
+<li><input disabled="" type="checkbox"> Explain spectral replicas caused by sampling.</li>
+<li><input disabled="" type="checkbox"> Explain 2-D spatial frequency.</li>
+</ul>
+<h2 id="c-reconstruction">C. Reconstruction</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Understand the sampling comb.</li>
+<li><input disabled="" type="checkbox"> Understand convolution.</li>
+<li><input disabled="" type="checkbox"> Understand multiplication/convolution duality.</li>
+<li><input disabled="" type="checkbox"> Understand spectral replication.</li>
+<li><input disabled="" type="checkbox"> Understand reconstruction filtering.</li>
+<li><input disabled="" type="checkbox"> Extend the idea from 1-D signals to 2-D images.</li>
+</ul>
+<h2 id="d-quantization">D. Quantization</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Define quantization error.</li>
+<li><input disabled="" type="checkbox"> Define transition/decision levels.</li>
+<li><input disabled="" type="checkbox"> Define reconstruction levels.</li>
+<li><input disabled="" type="checkbox"> Write mean-square error.</li>
+<li><input disabled="" type="checkbox"> Understand Lloyd–Max quantization.</li>
+<li><input disabled="" type="checkbox"> Know the centroid/conditional-mean reconstruction condition.</li>
+<li><input disabled="" type="checkbox"> Know the midpoint decision-level condition.</li>
+<li><input disabled="" type="checkbox"> Understand iterative optimization.</li>
+<li><input disabled="" type="checkbox"> Understand the uniform-input special case.</li>
+<li><input disabled="" type="checkbox"> Know:
+$$
+D=\frac{q^2}{12}.
+$$</li>
+<li><input disabled="" type="checkbox"> Know:
+$$
+q=\frac{A}{2^B}.
+$$</li>
+</ul>
+<h2 id="e-pixel-relationships">E. Pixel relationships</h2>
+<ul>
+<li><input disabled="" type="checkbox"> 4-neighborhood.</li>
+<li><input disabled="" type="checkbox"> Diagonal neighborhood.</li>
+<li><input disabled="" type="checkbox"> 8-neighborhood.</li>
+<li><input disabled="" type="checkbox"> 4-adjacency.</li>
+<li><input disabled="" type="checkbox"> 8-adjacency.</li>
+<li><input disabled="" type="checkbox"> m-adjacency.</li>
+<li><input disabled="" type="checkbox"> Path.</li>
+<li><input disabled="" type="checkbox"> Connectivity.</li>
+<li><input disabled="" type="checkbox"> Connected component.</li>
+<li><input disabled="" type="checkbox"> Connected-component labeling.</li>
+<li><input disabled="" type="checkbox"> Two-pass labeling.</li>
+<li><input disabled="" type="checkbox"> Equivalence classes.</li>
+</ul>
+<h2 id="f-distance-and-image-operations">F. Distance and image operations</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Euclidean distance.</li>
+<li><input disabled="" type="checkbox"> City-block distance.</li>
+<li><input disabled="" type="checkbox"> Chessboard distance.</li>
+<li><input disabled="" type="checkbox"> Distance transform.</li>
+<li><input disabled="" type="checkbox"> Skeleton.</li>
+<li><input disabled="" type="checkbox"> Pixel-wise arithmetic operations.</li>
+<li><input disabled="" type="checkbox"> Pixel-wise logical operations.</li>
+<li><input disabled="" type="checkbox"> Neighborhood operations.</li>
+</ul>
+<h2 id="g-transformations">G. Transformations</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Translation.</li>
+<li><input disabled="" type="checkbox"> Scaling.</li>
+<li><input disabled="" type="checkbox"> Rotation.</li>
+<li><input disabled="" type="checkbox"> Inverse transformations.</li>
+<li><input disabled="" type="checkbox"> 2-D transformations.</li>
+<li><input disabled="" type="checkbox"> 3-D transformations.</li>
+<li><input disabled="" type="checkbox"> Homogeneous coordinates.</li>
+<li><input disabled="" type="checkbox"> Transformation composition.</li>
+<li><input disabled="" type="checkbox"> Non-commutativity of transformations.</li>
+<li><input disabled="" type="checkbox"> Perspective transformation.</li>
+</ul>
+<h2 id="h-camera-geometry">H. Camera geometry</h2>
+<ul>
+<li><input disabled="" type="checkbox"> World coordinate system.</li>
+<li><input disabled="" type="checkbox"> Camera coordinate system.</li>
+<li><input disabled="" type="checkbox"> Image coordinate system.</li>
+<li><input disabled="" type="checkbox"> Pixel coordinate system.</li>
+<li><input disabled="" type="checkbox"> Pinhole camera model.</li>
+<li><input disabled="" type="checkbox"> Perspective projection:
+$$
+x=fX/Z,\quad y=fY/Z.
+$$</li>
+<li><input disabled="" type="checkbox"> Camera translation.</li>
+<li><input disabled="" type="checkbox"> Camera rotation.</li>
+<li><input disabled="" type="checkbox"> Rigid world-to-camera transformation.</li>
+<li><input disabled="" type="checkbox"> Inverse perspective transformation.</li>
+<li><input disabled="" type="checkbox"> Viewing ray interpretation.</li>
+</ul>
+<h2 id="i-stereo">I. Stereo</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Stereo camera setup.</li>
+<li><input disabled="" type="checkbox"> Corresponding points.</li>
+<li><input disabled="" type="checkbox"> Disparity.</li>
+<li><input disabled="" type="checkbox"> Baseline.</li>
+<li><input disabled="" type="checkbox"> Triangulation intuition.</li>
+<li><input disabled="" type="checkbox"> Depth-disparity relationship:
+$$
+Z=\frac{fB}{d}.
+$$</li>
+<li><input disabled="" type="checkbox"> Why large disparity means small depth.</li>
+<li><input disabled="" type="checkbox"> Why correspondence is the hard practical problem.</li>
+</ul>
+<hr>
+<h1 id="essential-equations--lectures-115">Essential Equations — Lectures 1–15</h1>
+<h2 id="sampling-3">Sampling</h2>
+<p>$$
+f[m,n]=f(m\Delta_x,n\Delta_y)
+$$</p>
+<h2 id="nyquist-rate">Nyquist rate</h2>
+<p>$$
+f_s\geq2B
+$$</p>
+<h2 id="quantization-error">Quantization error</h2>
+<p>$$
+e=u-u&rsquo;
+$$</p>
+<h2 id="mean-square-quantization-error">Mean-square quantization error</h2>
+<p>$$
+D=E[(u-u&rsquo;)^2]
+$$</p>
+<h2 id="lloydmax-reconstruction-condition">Lloyd–Max reconstruction condition</h2>
+<p>$$
+r_k=
+\frac{
+\int_{t_k}^{t_{k+1}}u,p_u(u),du
+}{
+\int_{t_k}^{t_{k+1}}p_u(u),du
+}
+$$</p>
+<h2 id="lloydmax-decision-condition">Lloyd–Max decision condition</h2>
+<h1 id="t_k1">$$
+t_{k+1}</h1>
+<p>\frac{r_k+r_{k+1}}{2}
+$$</p>
+<h2 id="uniform-quantization-step">Uniform quantization step</h2>
+<p>$$
+q=\frac{A}{2^B}
+$$</p>
+<h2 id="uniform-quantization-mse">Uniform quantization MSE</h2>
+<p>$$
+D=\frac{q^2}{12}
+$$</p>
+<h2 id="euclidean-distance">Euclidean distance</h2>
+<p>$$
+D_E(p,q)=
+\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
+$$</p>
+<h2 id="city-block-distance">City-block distance</h2>
+<p>$$
+D_4(p,q)=
+|x_1-x_2|+|y_1-y_2|
+$$</p>
+<h2 id="chessboard-distance">Chessboard distance</h2>
+<p>$$
+D_8(p,q)=
+\max(|x_1-x_2|,|y_1-y_2|)
+$$</p>
+<h2 id="2-d-translation">2-D translation</h2>
+<p>$$
+x'=x+t_x,\qquad y'=y+t_y
+$$</p>
+<h2 id="2-d-scaling">2-D scaling</h2>
+<p>$$
+x'=s_xx,\qquad y'=s_yy
+$$</p>
+<h2 id="2-d-rotation">2-D rotation</h2>
+<h1 id="endbmatrix-4">$$
+\begin{bmatrix}
+x&rsquo;\y&rsquo;
+\end{bmatrix}</h1>
+<p>\begin{bmatrix}
+\cos\theta&amp;-\sin\theta\<br>
+\sin\theta&amp;\cos\theta
+\end{bmatrix}
+\begin{bmatrix}
+x\y
+\end{bmatrix}
+$$</p>
+<h2 id="world-to-camera-transformation">World-to-camera transformation</h2>
+<p>$$
+P_c=RP_w+t
+$$</p>
+<p>or, depending on the definition of camera center,</p>
+<p>$$
+P_c=R(P_w-C).
+$$</p>
+<h2 id="perspective-projection-1">Perspective projection</h2>
+<p>$$
+x=f\frac{X_c}{Z_c},
+\qquad
+y=f\frac{Y_c}{Z_c}
+$$</p>
+<h2 id="stereo-depth">Stereo depth</h2>
+<p>$$
+Z=\frac{fB}{d}.
+$$</p>
+<hr>
+<h1 id="what-not-to-confuse">What Not to Confuse</h1>
+<h3 id="sampling-vs-quantization">Sampling vs quantization</h3>
+<p>Sampling:</p>
+<blockquote>
+<p>&ldquo;Where do I measure?&rdquo;</p>
+</blockquote>
+<p>Quantization:</p>
+<blockquote>
+<p>&ldquo;What numerical value am I allowed to store?&rdquo;</p>
+</blockquote>
+<hr>
+<h3 id="neighborhood-vs-adjacency">Neighborhood vs adjacency</h3>
+<p>Neighborhood:</p>
+<blockquote>
+<p>spatially nearby locations.</p>
+</blockquote>
+<p>Adjacency:</p>
+<blockquote>
+<p>a relationship between pixels based on a chosen neighborhood and the relevant pixel set.</p>
+</blockquote>
+<hr>
+<h3 id="connectivity-vs-distance">Connectivity vs distance</h3>
+<p>Connectivity asks:</p>
+<blockquote>
+<p>&ldquo;Can I get from here to there through valid neighboring pixels?&rdquo;</p>
+</blockquote>
+<p>Distance asks:</p>
+<blockquote>
+<p>&ldquo;How far apart are these two locations according to a chosen metric?&rdquo;</p>
+</blockquote>
+<hr>
+<h3 id="perspective-projection-vs-camera-pose">Perspective projection vs camera pose</h3>
+<p>Camera pose:</p>
+<blockquote>
+<p>Where is the camera and how is it oriented?</p>
+</blockquote>
+<p>Perspective projection:</p>
+<blockquote>
+<p>Given a point in camera coordinates, where does it appear in the image?</p>
+</blockquote>
+<hr>
+<h3 id="single-view-reconstruction-vs-stereo">Single-view reconstruction vs stereo</h3>
+<p>Single camera:</p>
+<p>$$
+\text{pixel}\rightarrow\text{3-D ray}.
+$$</p>
+<p>Stereo:</p>
+<p>$$
+\text{two pixels}\rightarrow\text{two rays}\rightarrow\text{3-D point/depth}.
+$$</p>
+<hr>
+<h1 id="the-main-story-to-remember">The Main Story to Remember</h1>
+<p>If you remember only one conceptual chain from the first 15 lectures, remember this:</p>
+<p>$$
+\boxed{
+\text{Physical scene}
+\rightarrow
+\text{continuous image}
+\rightarrow
+\text{sampling}
+\rightarrow
+\text{quantization}
+\rightarrow
+\text{digital image}
+}
+$$</p>
+<p>Then:</p>
+<p>$$
+\boxed{
+\text{digital pixels}
+\rightarrow
+\text{neighborhood}
+\rightarrow
+\text{connectivity}
+\rightarrow
+\text{regions / objects}
+}
+$$</p>
+<p>Then:</p>
+<p>$$
+\boxed{
+\text{coordinates}
+\rightarrow
+\text{transformations}
+\rightarrow
+\text{camera}
+\rightarrow
+\text{projection}
+}
+$$</p>
+<p>And finally:</p>
+<p>$$
+\boxed{
+\text{two projections}
+\rightarrow
+\text{disparity}
+\rightarrow
+\text{depth}
+\rightarrow
+\text{3-D reconstruction}.
+}
+$$</p>
+<p>That is the conceptual progression that the lecturer is building across Lectures 1–15.</p>
+<hr>
+<h1 id="source--verification-notes">Source / Verification Notes</h1>
+<p>The lecture sequence and titles were cross-checked against the official NPTEL course listing
+for <strong>Digital Image Processing, IIT Kharagpur, Prof. Prabir Kumar Biswas</strong>, as well as NPTEL
+course mirrors and indexed lecture transcripts.</p>
+<p>In particular, the official NPTEL listing confirms the sequence through Lecture 15:
+Introduction → Applications → Digitization → Reconstruction → Quantizer Design → Pixel
+Relationships → Connected Components → Distance Measures → Basic Transform → Image Formation
+→ Image Geometry → Stereo Imaging.</p>
+<p>Indexed transcript material was also used to preserve the lecturer&rsquo;s actual progression, including
+the sampling/aliasing discussion, Lloyd–Max quantizer conditions, connected-component labeling,
+distance transforms/skeletonization, homogeneous transformations, generalized camera geometry,
+and stereo imaging.</p>
+<p><strong>Important:</strong> these notes are a detailed paraphrased study document. They are not a verbatim
+transcript of the lectures.</p>
+
+    </div>
+</article>
+
+            </main>
+
+            <footer style="margin-top: 5rem; padding-bottom: 2rem; border-top: 1px solid var(--border-color); color: #8b949e; font-size: 0.9rem;">
+                <p>&copy; 2026 Utsab&#39;s Note Repository. Built with Hugo.</p>
+            </footer>
+        </div>
+    </div>
+
+    
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+
+        function toggleFolder(headerElement, event) {
+            
+            if (event.target.tagName.toLowerCase() === 'a') {
+                return;
+            }
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const folderItem = headerElement.closest('.tree-item.folder');
+            const content = folderItem.querySelector('.folder-content');
+            const arrow = headerElement.querySelector('.toggle-arrow');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▼';
+                folderItem.classList.add('open');
+            } else {
+                content.style.display = 'none';
+                arrow.textContent = '▶';
+                folderItem.classList.remove('open');
+            }
+        }
+
+        function filterTree() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const items = document.querySelectorAll('.file-title-link, .folder-title');
+            
+            if (!query) {
+                
+                document.querySelectorAll('.tree-item').forEach(item => {
+                    item.style.display = '';
+                });
+                document.querySelectorAll('.folder-content').forEach(content => {
+                    const folderItem = content.closest('.tree-item.folder');
+                    if (folderItem.classList.contains('open')) {
+                        content.style.display = 'block';
+                        folderItem.querySelector('.toggle-arrow').textContent = '▼';
+                    } else {
+                        content.style.display = 'none';
+                        folderItem.querySelector('.toggle-arrow').textContent = '▶';
+                    }
+                });
+                return;
+            }
+
+            
+            document.querySelectorAll('.tree-item').forEach(item => {
+                item.style.display = 'none';
+            });
+
+            
+            items.forEach(el => {
+                const text = el.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    const item = el.closest('.tree-item');
+                    if (item) {
+                        item.style.display = '';
+                        
+                        
+                        let parent = item.parentElement.closest('.tree-item.folder');
+                        while (parent) {
+                            parent.style.display = '';
+                            parent.classList.add('open');
+                            const content = parent.querySelector('.folder-content');
+                            if (content) content.style.display = 'block';
+                            const arrow = parent.querySelector('.toggle-arrow');
+                            if (arrow) arrow.textContent = '▼';
+                            parent = parent.parentElement.closest('.tree-item.folder');
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

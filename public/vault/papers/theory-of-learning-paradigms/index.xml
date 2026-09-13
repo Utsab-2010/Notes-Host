@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theory of Learning Paradigms on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/papers/theory-of-learning-paradigms/</link>
+    <description>Recent content in Theory of Learning Paradigms on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Compression Perspective on Simplicity Bias</title>
+      <link>http://localhost:1313/vault/papers/theory-of-learning-paradigms/a-compression-perspective-on-simplicity-bias/</link>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/theory-of-learning-paradigms/a-compression-perspective-on-simplicity-bias/</guid>
+      <description>#compvis #interpretebility #ood-generalisation #robust-learning
+Paper- [2603.25839] A Compression Perspective on Simplicity Bias
+ Plots and Observations Model Complexity/Candidate predictor length vs Dataset size. - As we go to high data regime, the model learns more complex features till it starts overfitting. We observe two regime changes the plots.
+ What is the color? - We introduce Digit, Color and Watermark test sets, where the label correlates exclusively with a single feature, measuring the model’s reliance on that specific feature.</description>
+    </item>
+    
+    <item>
+      <title>Information Theory for Repr Learning</title>
+      <link>http://localhost:1313/vault/papers/theory-of-learning-paradigms/information-theory-for-repr-learning/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/theory-of-learning-paradigms/information-theory-for-repr-learning/</guid>
+      <description>The weight of evidence regarding a particular hypothesis over the other(defined hre as prob distributiosns) is just log p/q. that is log of the ratios of the posteriors.
+KL Divergence can be thought of as the expected weight of evidence
+VAEs . world P is what we build, world Q is desirable. Taking kl divergence gives us just the VAE architecture Variational Information Bottleneck repr without augmentated variations of inputs if you express each input as a new random variatble you can encode a much richer set of relationships like heirarchies,etc.</description>
+    </item>
+    
+    <item>
+      <title>Invariant Risk Minimization</title>
+      <link>http://localhost:1313/vault/papers/theory-of-learning-paradigms/invariant-risk-minimization/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/theory-of-learning-paradigms/invariant-risk-minimization/</guid>
+      <description>Main Issue ML models learn complex prediction rules by minimizing the training error. But while doing so they often overloop the proper features and get marred by selection biases. They essentially cheat by absorbing irrelevant correlations that are found in the training data and lead to a lower loss but not the intended correlation we would want.
+ A very simple example would be the following. Imagine the problem of classifying images of cows and camels.</description>
+    </item>
+    
+    <item>
+      <title>Learned feature representations are biased by complexity, learning order, position, and more</title>
+      <link>http://localhost:1313/vault/papers/theory-of-learning-paradigms/learned-feature-representations-are-biased-by-complexity-learning-order-position-and-more/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/theory-of-learning-paradigms/learned-feature-representations-are-biased-by-complexity-learning-order-position-and-more/</guid>
+      <description>#data-efficient-ml #interpretebility #curriculum_learning #representations
+[2405.05847] Learned feature representations are biased by complexity, learning order, position, and more
+Core Claim  Surprising dissociations between representation and computation Learned feature representations are systematically biased towards some features over others Bias depends on: feature complexity, learning order, feature distribution over inputs &amp;ldquo;using representations to understand or improve computation depends fundamentally on the linking assumptions we make about their relationship&amp;rdquo;   Definitions Feature — abstract, task-relevant property of an input; result of applying some function f(I).</description>
+    </item>
+    
+    <item>
+      <title>Learning to Theorise</title>
+      <link>http://localhost:1313/vault/papers/theory-of-learning-paradigms/learning-to-theorise/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/theory-of-learning-paradigms/learning-to-theorise/</guid>
+      <description>#world-models #representations
+What are Primitives? Primitives are the foundational, reusable operations that serve as the basic vocabulary of a learned &amp;ldquo;Language of Thought&amp;rdquo;. Within the Learning-to-Theorize (L2T) framework, they are abstract symbols without any pre-defined symbolic meaning; instead, their operational semantics are learned directly from raw observations based on how they transform states
+1. The Generative Process (Equations 1 &amp;amp; 2) The marginal conditional likelihood of the target observation $y$ given the source observation $x$ is defined as: $$p_\theta(y | x) = \int p_\theta(y | s_{K+1}) p_\theta(\tau, s | x) d\tau ds \quad \text{— (Eq.</description>
+    </item>
+    
+    <item>
+      <title>Mechanistic Mode Connectivity</title>
+      <link>http://localhost:1313/vault/papers/theory-of-learning-paradigms/mechanistic-mode-connectivity/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/theory-of-learning-paradigms/mechanistic-mode-connectivity/</guid>
+      <description>#interpretebility #continual_learning
+Def: Mechanistic Similarity between two models (Mechanistic Similarity.) Consider a set of unit interventions Ab := {Ai}, where i ∈ [m]. For parameters θ, denote the subset of interventions that f (.; θ) is invariant to as I(θ) ⊂ Ab. Then, f (.; θ1) and f (.; θ2) are called mechanistically similar if I(θ1) = I(θ2).
+Definition 5. (Mechanistic Connectivity.) Consider two minimizers θ1 and θ2 of loss L(f (D; θ)) on a dataset D.</description>
+    </item>
+    
+    <item>
+      <title>Not all solutions are created equal</title>
+      <link>http://localhost:1313/vault/papers/theory-of-learning-paradigms/not-all-solutions-are-created-equal/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/theory-of-learning-paradigms/not-all-solutions-are-created-equal/</guid>
+      <description>Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks New terms - respresentational alignment, functional alignment
+Background There is limited analytical understanding of how a network’s representation and function relate, despite this being essential to any quantitative notion of underlying function or functional similarity.
+ The structure of artificial and biological networks is often non-identifiable in the sense that networks can be structurally distinct, yet implement the same input-output mapping.</description>
+    </item>
+    
+  </channel>
+</rss>

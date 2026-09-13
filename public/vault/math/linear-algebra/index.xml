@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linear Algebra on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/math/linear-algebra/</link>
+    <description>Recent content in Linear Algebra on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/math/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Connection between SVD and EVD</title>
+      <link>http://localhost:1313/vault/math/linear-algebra/connection-between-svd-and-evd/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/linear-algebra/connection-between-svd-and-evd/</guid>
+      <description>The Two Decompositions, Side by Side Eigenvalue decomposition (EVD): only defined (nicely) for square matrices, and only guaranteed to exist in this clean form if the matrix is diagonalizable. $$A = Q \Lambda Q^{-1}$$ If $A$ is symmetric, this gets even nicer: $Q$ is orthogonal ($Q^{-1} = Q^T$) and $\Lambda$ is real. $$A = Q \Lambda Q^T$$
+Singular value decomposition (SVD): exists for any matrix, square or not. $$A = U \Sigma V^T$$ $U$ and $V$ are orthogonal (different spaces — $U$ lives in the output/column space, $V$ in the input/row space), $\Sigma$ is diagonal and non-negative.</description>
+    </item>
+    
+    <item>
+      <title>Singular Value Decomposition(SVD)</title>
+      <link>http://localhost:1313/vault/math/linear-algebra/singular-value-decompositionsvd/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/linear-algebra/singular-value-decompositionsvd/</guid>
+      <description>A decomposition that reveals the skeleton of any matrix — no matter how complex.
+  1. The Core Idea Every matrix $A$ (even non-square ones) can be factored into three matrices:
+$$A = U \Sigma V^T$$
+Think of it this way: any linear transformation can be broken into three simple steps:
+ Rotate the input space (via $V^T$) Scale along each axis (via $\Sigma$) Rotate again in the output space (via $U$)  That&amp;rsquo;s it.</description>
+    </item>
+    
+    <item>
+      <title>Spectral Norm</title>
+      <link>http://localhost:1313/vault/math/linear-algebra/spectral-norm/</link>
+      <pubDate>Tue, 21 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/linear-algebra/spectral-norm/</guid>
+      <description>Definition The spectral norm of a matrix $A$ is its largest singular value:
+$$|A|_2 = \sigma_{\max}(A)$$
+That&amp;rsquo;s it. Out of all the singular values you get from SVD ($A = U\Sigma V^T$), the spectral norm just picks out the biggest one, $\sigma_1$.
+Equivalent definitions that are worth keeping in your head simultaneously, because each one is useful in a different context:
+ Operator definition: $|A|_2 = \max_{x \neq 0} \dfrac{|Ax|_2}{|x|_2} = \max_{|x|_2 = 1} |Ax|_2$ Eigenvalue definition: $|A|_2 = \sqrt{\lambda_{\max}(A^T A)}$ (largest eigenvalue of $A^TA$, then square root) SVD definition: largest singular value of $A$  These three are the same number.</description>
+    </item>
+    
+  </channel>
+</rss>

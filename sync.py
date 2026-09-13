@@ -9,6 +9,7 @@ import datetime
 VAULT_DIR = os.environ.get("VAULT_DIR", "/home/utsab/Utsab-Notes")
 CONTENT_DIR = os.environ.get("CONTENT_DIR", "/home/utsab/notes-hosted/hugo-site/content/vault")
 CONFIG_FILE = "/home/utsab/notes-hosted/hugo-site/config.toml"
+STATIC_CANVAS_DIR = os.environ.get("STATIC_CANVAS_DIR", "/home/utsab/notes-hosted/hugo-site/static/canvas")
 
 # Exclude lists
 EXCLUDE_DIRS = {'.git', '.github', '.obsidian'}
@@ -53,6 +54,11 @@ def build_indices():
                 title = os.path.splitext(file)[0]
                 url = get_hugo_url_path(rel_path)
                 note_map[title.lower()] = url
+            elif file.endswith('.canvas'):
+                # Canvas pages are accessible via their slugified path, same as notes
+                title = os.path.splitext(file)[0]
+                url = get_hugo_url_path(rel_path.replace('.canvas', '.md'))
+                note_map[title.lower()] = url
             else:
                 # E.g. image.png -> /vault/Assets/Images/image.png
                 parts = rel_path.split(os.sep)
@@ -60,6 +66,40 @@ def build_indices():
                 resource_map[file.lower()] = "/vault/" + "/".join(slugified_parts)
                 
     return note_map, resource_map
+
+def process_canvas(src_path, note_map):
+    """Generate a Hugo markdown stub for a .canvas file and copy the JSON to static/canvas/."""
+    import json
+    
+    title = os.path.splitext(os.path.basename(src_path))[0]
+    rel_path = os.path.relpath(src_path, VAULT_DIR)
+    
+    # Build a slugified path for the static JSON file: e.g. "research-work/val-del/scaling-laws.json"
+    parts = rel_path.split(os.sep)
+    slugified_parts = [slugify(os.path.splitext(p)[0]) if idx == len(parts)-1 else slugify(p) for idx, p in enumerate(parts)]
+    json_rel = "/".join(slugified_parts) + ".json"
+    json_static_path = os.path.join(STATIC_CANVAS_DIR, json_rel)
+    
+    # Copy the raw canvas JSON to static/canvas/
+    os.makedirs(os.path.dirname(json_static_path), exist_ok=True)
+    shutil.copy2(src_path, json_static_path)
+    
+    # The URL where Hugo will serve the JSON file
+    canvas_json_url = "/canvas/" + json_rel
+    
+    # Generate the Hugo markdown stub
+    clean_title = title.replace('"', '\\"')
+    mtime = os.path.getmtime(src_path)
+    date_str = datetime.datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
+    
+    stub = f"""---
+title: \"{clean_title}\"
+layout: "canvas"
+canvasFile: "{canvas_json_url}"
+lastmod: {date_str}
+---
+"""
+    return stub
 
 def get_git_mtime(repo_dir, file_path):
     try:
@@ -151,6 +191,11 @@ def sync_all():
         shutil.rmtree(CONTENT_DIR)
     os.makedirs(CONTENT_DIR, exist_ok=True)
     
+    # Clean and recreate static canvas directory
+    if os.path.exists(STATIC_CANVAS_DIR):
+        shutil.rmtree(STATIC_CANVAS_DIR)
+    os.makedirs(STATIC_CANVAS_DIR, exist_ok=True)
+    
     # Write _index.md for the root vault directory
     with open(os.path.join(CONTENT_DIR, "_index.md"), 'w', encoding='utf-8') as f:
         f.write("---\ntitle: \"Vault\"\n---\n")
@@ -189,6 +234,14 @@ def sync_all():
             if file.endswith('.md'):
                 # Process markdown (copy + rewrite links)
                 process_markdown(src_file, dest_file, note_map, resource_map)
+            elif file.endswith('.canvas'):
+                # Generate a Hugo markdown stub and copy canvas JSON to static/
+                stub_content = process_canvas(src_file, note_map)
+                # Write stub as .md (replacing .canvas extension)
+                stub_dest = dest_file.replace('.canvas', '.md')
+                with open(stub_dest, 'w', encoding='utf-8') as f:
+                    f.write(stub_content)
+                print(f"  🎨 Canvas: {rel_path}")
             else:
                 # Symlink images/assets using slugified paths to match markdown references
                 parts = rel_path.split(os.sep)

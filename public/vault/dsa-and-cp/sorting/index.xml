@@ -1,7 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sorting on Utsab's Note Repository</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/</link><description>Recent content in Sorting on Utsab's Note Repository</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/index.xml" rel="self" type="application/rss+xml"/><item><title>Quick Sort</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/quick-sort/</link><pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/quick-sort/</guid><description>Quick Sort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sorting on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/dsa-and-cp/sorting/</link>
+    <description>Recent content in Sorting on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/dsa-and-cp/sorting/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Longest common Prefix and Sorting a String</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/sorting/longest-common-prefix-and-sorting-a-string/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/sorting/longest-common-prefix-and-sorting-a-string/</guid>
+      <description>#include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; class Solution { public: // Returns the longest common prefix in a list of strings  string longestCommonPrefix(vector&amp;lt;string&amp;gt;&amp;amp; str) { // Handle the case where input is empty  if (str.empty()) return &amp;#34;&amp;#34;; // Sort the strings lexicographically  sort(str.begin(), str.end()); // First string in sorted order  string first = str[0]; // Last string in sorted order  string last = str[str.size() - 1]; // To store the common prefix  string ans = &amp;#34;&amp;#34;; // Compare up to the length of the shorter string  int minLength = min(first.</description>
+    </item>
+    
+    <item>
+      <title>Quick Sort</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort/</guid>
+      <description>Quick Sort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot.
 Step-by-Step Breakdown Let&amp;rsquo;s trace the algorithm using an example array: [10, 80, 30, 90, 40, 50, 70]
 1. Choose a Pivot There are many different versions of quickSort that pick pivot in different ways:
-Always pick the first element as a pivot. Always pick the last element as a pivot (we will use this common approach below).</description></item><item><title>Quick Sort Partition</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/quick-sort-partition/</link><pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/quick-sort-partition/</guid><description>The Partition Algorithm is the operational core of Quick Sort. Its entire job is to take an array (or a subsection of one), select one element to be the pivot, and rearrange the surrounding elements so that everything smaller than the pivot moves to its left, and everything larger moves to its right.
-By the end of a single partition step, the pivot element lands in its exact, final sorted position.</description></item><item><title>Merge Sorted Array</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/merge-sorted-array/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/sorting/merge-sorted-array/</guid><description>You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
+ Always pick the first element as a pivot. Always pick the last element as a pivot (we will use this common approach below).</description>
+    </item>
+    
+    <item>
+      <title>Quick Sort Partition</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort-partition/</link>
+      <pubDate>Tue, 16 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort-partition/</guid>
+      <description>The Partition Algorithm is the operational core of Quick Sort. Its entire job is to take an array (or a subsection of one), select one element to be the pivot, and rearrange the surrounding elements so that everything smaller than the pivot moves to its left, and everything larger moves to its right.
+By the end of a single partition step, the pivot element lands in its exact, final sorted position.</description>
+    </item>
+    
+    <item>
+      <title>Merge Sorted Array</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/sorting/merge-sorted-array/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/sorting/merge-sorted-array/</guid>
+      <description>You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
 Merge nums1 and nums2 into a single array sorted in non-decreasing order.
-The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored.</description></item></channel></rss>
+The final sorted array should not be returned by the function, but instead be stored inside the array nums1. To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored.</description>
+    </item>
+    
+  </channel>
+</rss>

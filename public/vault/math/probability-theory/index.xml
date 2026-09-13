@@ -1,19 +1,240 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Probability Theory on Utsab's Note Repository</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/</link><description>Recent content in Probability Theory on Utsab's Note Repository</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/index.xml" rel="self" type="application/rss+xml"/><item><title>Markov, Chebyshev, and Jensen's Inequalities</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/markov-chebyshev-and-jensens-inequalities/</link><pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/markov-chebyshev-and-jensens-inequalities/</guid><description>Markov&amp;rsquo;s Inequality Statement Let $X$ be a non-negative random variable (i.e., $X \geq 0$ almost surely), and let $a > 0$. Then
-$$ P(X \geq a) \leq \frac{E[X]}{a}. $$ Proof Define the indicator random variable
-$$ \mathbb{1}_{{X \geq a}} = \begin{cases} 1 &amp; \text{if } X \geq a \ 0 &amp; \text{otherwise}. \end{cases} $$ Key pointwise inequality. We claim that for every outcome $\omega$,
-$$ a \cdot \mathbb{1}_{{X(\omega) \geq a}} \leq X(\omega).</description></item><item><title>Convergences in Probability vs Almost Sure</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/convergences-in-probability-vs-almost-sure/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/convergences-in-probability-vs-almost-sure/</guid><description/></item><item><title>Deterministic Random Variable</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/deterministic-random-variable/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/deterministic-random-variable/</guid><description>A random variable $X$ is said to be deterministic (or degenerate) if there exists some constant $c$ such that the probability of $X$ being equal to $c$ is exactly $1$.
-Mathematically:
-$$P(X = c) = 1$$ In this case, the probability of any other value occurring is zero.
-Essentially, it is not &amp;ldquo;random&amp;rdquo; but to be inclusive in the definition we have this case where it&amp;rsquo;s deterministic.</description></item><item><title>Independent Random Variables</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/independent-random-variables/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/independent-random-variables/</guid><description>Two RVs X and Y are independent if knowing one tells you nothing about the other.
-Mathematically:
-$$P(X=x,Y=y) = P(X=x) P(Y=y)$$ Equivalent condition: $$ E[XY]=E[X]E[Y] $$</description></item><item><title>Law of Iterated Expectations</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/law-of-iterated-expectations/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/law-of-iterated-expectations/</guid><description>Mathematical Definition For any two random variables $X$ and $Y$, the law states:
-$$E[X] = E[E[X|Y]]$$ Breaking down the notation: $E[X|Y]$ (The &amp;ldquo;Inner&amp;rdquo; Expectation): This is the average of $X$ given that you already know the value of $Y$. It is a function of $Y$, meaning it varies depending on what $Y$ is. $E[\dots]$ (The &amp;ldquo;Outer&amp;rdquo; Expectation): This takes the average of all those conditional results, weighted by the probability of each $Y$ occurring.</description></item><item><title>Probability and Statistics</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/probability-and-statistics/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/probability-and-statistics/</guid><description> Total Expectation Theorem Well Known Distributions Law of Iterated Expectations Independent Random Variables Doubts Deterministic Random Variable</description></item><item><title>Total Expectation Theorem</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/total-expectation-theorem/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/total-expectation-theorem/</guid><description>Law of Total Expectation (Partition of Events) $$ \text{Let } {A_1, A_2, \dots, A_n} \text{ be a partition of } \Omega \text{ with } P(A_i) > 0. $$ $$\large \mathbb{E}[X] = \sum_{i=1}^{n} \mathbb{E}[X \mid A_i] . P(A_i) $$ Law of Total Expectation (Conditioning on a Discrete Random Variable) $$\large \mathbb{E}[X] = \sum_{y} \mathbb{E}[X \mid Y = y]. P(Y = y) $$ Law of Iterated Expectation (General / Tower Property) $$ \large \mathbb{E}[X] = \mathbb{E}\left[\mathbb{E}[X \mid Y] \right] $$ Law of Total Expectation (Continuous Case) $$ \large \mathbb{E}[X] = \int_{-\infty}^{\infty} \mathbb{E}[X \mid Y = y] , f_Y(y), dy $$ Conditional Law of Total Expectation $$ \large \mathbb{E}[X \mid Z] = \mathbb{E}\left[ \mathbb{E}[X \mid Y, Z] \mid Z \right] $$ Conditional Event-Based Version Let (A) be an event with $\mathbb{P}(A) > 0$ and let ${E_1, E_2, \dots, E_n}$ be a partition of (A).</description></item><item><title>Unique Properties of Gaussian RVs</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/unique-properties-of-gaussian-rvs/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/unique-properties-of-gaussian-rvs/</guid><description>All linear combinations of independent Gaussian RVs are Gaussian
-A Gaussian random vector is a random vector all of whose linear projections are Gaussian.
-If $\underline{X}$ is Gaussian , then
-$X_{i}$ and $X_{j}$ are independent $equivalent$ Cov(Xi,Xj)=0 (uncorrelated) RVs are jointly Gaussian if they constitute a Gaussian random vector.
-It is possible for random variables to be individually Gaussian but not jointly Gaussian. Jointly Gaussian is a stronger property.</description></item><item><title>Well Known Distributions</title><link>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/well-known-distributions/</link><pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/math/probability-theory/well-known-distributions/</guid><description>1. Bernoulli Distribution Use case: Single experiment with success/failure
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Probability Theory on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/math/probability-theory/</link>
+    <description>Recent content in Probability Theory on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/math/probability-theory/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>α (Significance Level)</title>
+      <link>http://localhost:1313/vault/math/probability-theory/%CE%B1-significance-level/</link>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/%CE%B1-significance-level/</guid>
+      <description>Definition α is a threshold you fix in advance, before seeing any data. It&amp;rsquo;s the maximum probability of a Type I error (false positive — rejecting H₀ when H₀ is actually true) that you&amp;rsquo;re willing to tolerate.
+Formally, if you reject H₀ when your data falls in some rejection region $R$, then a level-α test requires:
+$$\sup_{\theta \in \Theta_0} P_\theta\big((X_1,\ldots,X_n) \in R\big) \leq \alpha$$
+In words: no matter which specific θ in the null region $\Theta_0$ happens to be true, the chance your test wrongly rejects H₀ is at most α.</description>
+    </item>
+    
+    <item>
+      <title>Linear MMSE Estimation</title>
+      <link>http://localhost:1313/vault/math/probability-theory/linear-mmse-estimation/</link>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/linear-mmse-estimation/</guid>
+      <description>The Problem This Solves You want to estimate an unobserved random variable $X$ from an observed $Y = y$. The best possible estimator in a mean-squared-error sense is the full conditional expectation:
+$$\large g(y) = E[X \mid Y = y]$$
+This is the &amp;ldquo;true&amp;rdquo; MMSE estimator — no other function of $y$ beats it on average squared error. The catch is that it&amp;rsquo;s often impractical: computing $E[X|Y=y]$ requires knowing the full conditional density $f_{X|Y}(x|y)$, which can be nasty or entirely unknown, especially once $X, Y$ become vectors.</description>
+    </item>
+    
+    <item>
+      <title>Poisson Distribution and Poisson Process</title>
+      <link>http://localhost:1313/vault/math/probability-theory/poisson-distribution-and-poisson-process/</link>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/poisson-distribution-and-poisson-process/</guid>
+      <description>Definition It is a discrete value distribution given by $$\large P(X = k) = \frac{e^{-\lambda}\lambda^k}{k!}$$ where k is the number of events. It is used to describe the number of events that happen (independently and one at a time) in a fixed time interval when the average event rate per interval is given by $\lambda$.
+Derivation and Intuition Start With Binomial Binomial$(n, p)$ counts successes out of $n$ independent trials, each with success probability $p$, mean $np$.</description>
+    </item>
+    
+    <item>
+      <title>Sum of a Random Number of IID Random Variables</title>
+      <link>http://localhost:1313/vault/math/probability-theory/sum-of-a-random-number-of-iid-random-variables/</link>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/sum-of-a-random-number-of-iid-random-variables/</guid>
+      <description>The Setup Normally when you sum random variables, $Y = X_1 + \cdots + X_n$, the number of terms $n$ is fixed and known in advance. This note is about the twist where the number of terms is itself random:
+$$Y = X_1 + X_2 + \cdots + X_N$$
+where $N$ is a random variable taking nonnegative integer values, and $X_1, X_2, \dots$ are i.i.d. Crucially, $N$ is assumed independent of the $X_i$&#39;s — how many terms you sum doesn&amp;rsquo;t depend on what those terms turn out to be.</description>
+    </item>
+    
+    <item>
+      <title>Well Known Distributions</title>
+      <link>http://localhost:1313/vault/math/probability-theory/well-known-distributions/</link>
+      <pubDate>Mon, 27 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/well-known-distributions/</guid>
+      <description>Discrete Distributions  1. Bernoulli Distribution Use case: Single experiment with success/failure
 PMF
-$$ P(X = 1) = p, \quad P(X = 0) = 1 - p $$ Mean $\mathbb{E}[X] = p$ Variance $\mathrm{Var}(X) = p(1 - p)$ Special Properties
-Indicator random variable Building block of Binomial distribution 2. Binomial Distribution Use case: Number of successes in (n) independent Bernoulli trials
+$$ P(X = 1) = p, \quad P(X = 0) = 1 - p
+$$
+Mean $\mathbb{E}[X] = p$ Variance $\mathrm{Var}(X) = p(1 - p)$ Special Properties
+ Indicator random variable Building block of Binomial distribution   2. Binomial Distribution Use case: Number of successes in (n) independent Bernoulli trials
 PMF
-$$ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k} $$ Mean $np$ Variance $np(1-p)$</description></item></channel></rss>
+$$ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}</description>
+    </item>
+    
+    <item>
+      <title>Kolmogorov-Smirnov Test</title>
+      <link>http://localhost:1313/vault/math/probability-theory/kolmogorov-smirnov-test/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/kolmogorov-smirnov-test/</guid>
+      <description>What Problem It&amp;rsquo;s Solving You have a sample of data and you want to answer: &amp;ldquo;does this data come from some specific distribution?&amp;rdquo; or &amp;ldquo;do these two samples come from the same distribution?&amp;rdquo; The KS test answers exactly this, and the reason it&amp;rsquo;s nice is that it&amp;rsquo;s nonparametric — it doesn&amp;rsquo;t assume your data is Gaussian or anything else. It works directly off the empirical CDF, so it makes almost no assumptions about the underlying distribution shape.</description>
+    </item>
+    
+    <item>
+      <title>Modes of Convergence (Random Variables)</title>
+      <link>http://localhost:1313/vault/math/probability-theory/modes-of-convergence-random-variables/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/modes-of-convergence-random-variables/</guid>
+      <description>Why There&amp;rsquo;s More Than One Kind With regular sequences of numbers, convergence is unambiguous — $x_n \to x$ means the distance $|x_n - x|$ eventually gets and stays small. With sequences of random variables, there isn&amp;rsquo;t one obvious notion of &amp;ldquo;closeness&amp;rdquo; anymore, because each $X_n$ is a whole distribution, not a single number. Depending on what you actually care about — individual sample paths, probabilities of deviation, the shape of the distribution, or average error — you get a genuinely different (and non-equivalent) definition of convergence.</description>
+    </item>
+    
+    <item>
+      <title>Jointly Gaussian Random Variables — Conditional Distributions</title>
+      <link>http://localhost:1313/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/</guid>
+      <description>1. Setup Let $X, Y$ be jointly Gaussian scalar random variables with
+$$ \mu_X = E[X], \quad \mu_Y = E[Y], \quad \sigma_X^2 = \text{Var}(X), \quad \sigma_Y^2 = \text{Var}(Y), \quad \rho = \frac{\text{Cov}(X,Y)}{\sigma_X\sigma_Y} $$
+Key fact: the Gaussian family is closed under conditioning. If $(X,Y)$ is jointly Gaussian, then $Y \mid X = x$ is also Gaussian — not just approximately, exactly.
+ 2. Scalar result $$ Y \mid X = x ;\sim; \mathcal{N}!</description>
+    </item>
+    
+    <item>
+      <title>p-values</title>
+      <link>http://localhost:1313/vault/math/probability-theory/p-values/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/p-values/</guid>
+      <description>Step 1: Recall what α actually is α is a threshold you pick in advance, before seeing data. It&amp;rsquo;s the maximum false-positive rate you&amp;rsquo;re willing to tolerate. You commit to a rule: &amp;ldquo;I&amp;rsquo;ll reject H₀ if my data lands in some rejection region R, and I&amp;rsquo;ve built R so that P(reject H₀ | H₀ true) ≤ α.&amp;rdquo;
+Common choices: α = 0.05, α = 0.01. You pick one α, run your test, and get a binary answer: reject or don&amp;rsquo;t reject.</description>
+    </item>
+    
+    <item>
+      <title>Power of Test Statistic</title>
+      <link>http://localhost:1313/vault/math/probability-theory/power-of-test-statistic/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/power-of-test-statistic/</guid>
+      <description>Parent: Probability and Statistics
+Power is β(θ) evaluated at a specific θ in Θ₁ Recall the power function:
+$$\beta(\theta) = P_\theta\big((X_1,\ldots,X_n) \in R\big)$$
+This is defined for every θ, but it means different things depending on which region θ sits in:
+ When $\theta \in \Theta_0$: $\beta(\theta)$ = probability of a false positive at that θ. You want this small (≤ α). When $\theta \in \Theta_1$: $\beta(\theta)$ = probability of correctly rejecting H₀ — this is the power at that θ.</description>
+    </item>
+    
+    <item>
+      <title>Study Materials</title>
+      <link>http://localhost:1313/vault/math/probability-theory/study-materials/</link>
+      <pubDate>Sun, 19 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/study-materials/</guid>
+      <description>Hypothesis Testing  stat.cmu.edu/~larry/=stat700/Lecture15.pdf stat.cmu.edu/~ryantibs/journalclub/hdconf.pdf stat.cmu.edu/~larry/=stat700/Lecture8.pdf  </description>
+    </item>
+    
+    <item>
+      <title>Gaussian Distributions</title>
+      <link>http://localhost:1313/vault/math/probability-theory/gaussian-distributions/</link>
+      <pubDate>Mon, 06 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/gaussian-distributions/</guid>
+      <description>1. Univariate Gaussian 1.1 Definition $X \sim \mathcal{N}(\mu, \sigma^2)$ has density
+$$ p(x) = \frac{1}{\sqrt{2\pi\sigma^2}} \exp\left(-\frac{(x-\mu)^2}{2\sigma^2}\right). $$
+Standard normal: $Z \sim \mathcal{N}(0,1)$, with $X = \mu + \sigma Z$.
+1.2 Moments  $E= \mu$, $\text{Var}(X) = \sigma^2$ All odd central moments vanish; $E[(X-\mu)^4] = 3\sigma^4$ (this &amp;ldquo;3&amp;rdquo; is why kurtosis is defined relative to Gaussian as baseline — excess kurtosis $= 0$ for Gaussian). Moment Generating Function (MGF): $$ M_X(t) = E[e^{tX}] = \exp\left(\mu t + \frac{\sigma^2 t^2}{2}\right).</description>
+    </item>
+    
+    <item>
+      <title>Markov, Chebyshev, and Jensen&#39;s Inequalities</title>
+      <link>http://localhost:1313/vault/math/probability-theory/markov-chebyshev-and-jensens-inequalities/</link>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/markov-chebyshev-and-jensens-inequalities/</guid>
+      <description>Markov&amp;rsquo;s Inequality Statement Let $X$ be a non-negative random variable (i.e., $X \geq 0$ almost surely), and let $a &amp;gt; 0$. Then
+$$ P(X \geq a) \leq \frac{E[X]}{a}. $$
+Proof Define the indicator random variable
+$$ \mathbb{1}_{{X \geq a}} = \begin{cases} 1 &amp;amp; \text{if } X \geq a \ 0 &amp;amp; \text{otherwise}. \end{cases} $$
+Key pointwise inequality. We claim that for every outcome $\omega$,
+$$ a \cdot \mathbb{1}_{{X(\omega) \geq a}} \leq X(\omega).</description>
+    </item>
+    
+    <item>
+      <title>Deterministic Random Variable</title>
+      <link>http://localhost:1313/vault/math/probability-theory/deterministic-random-variable/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/deterministic-random-variable/</guid>
+      <description>A random variable $X$ is said to be deterministic (or degenerate) if there exists some constant $c$ such that the probability of $X$ being equal to $c$ is exactly $1$.
+Mathematically:
+$$P(X = c) = 1$$
+In this case, the probability of any other value occurring is zero.
+Essentially, it is not &amp;ldquo;random&amp;rdquo; but to be inclusive in the definition we have this case where it&amp;rsquo;s deterministic.</description>
+    </item>
+    
+    <item>
+      <title>Independent Random Variables</title>
+      <link>http://localhost:1313/vault/math/probability-theory/independent-random-variables/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/independent-random-variables/</guid>
+      <description>Two RVs X and Y are independent if knowing one tells you nothing about the other.
+Mathematically:
+$$P(X=x,Y=y) = P(X=x) P(Y=y)$$
+Equivalent condition: $$ E[XY]=E[X]E[Y] $$</description>
+    </item>
+    
+    <item>
+      <title>Law of Iterated Expectations</title>
+      <link>http://localhost:1313/vault/math/probability-theory/law-of-iterated-expectations/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/law-of-iterated-expectations/</guid>
+      <description>Mathematical Definition For any two random variables $X$ and $Y$, the law states:
+$$E[X] = E[E[X|Y]]$$
+Breaking down the notation:  $E[X|Y]$ (The &amp;ldquo;Inner&amp;rdquo; Expectation): This is the average of $X$ given that you already know the value of $Y$. It is a function of $Y$, meaning it varies depending on what $Y$ is. $E[\dots]$ (The &amp;ldquo;Outer&amp;rdquo; Expectation): This takes the average of all those conditional results, weighted by the probability of each $Y$ occurring.</description>
+    </item>
+    
+    <item>
+      <title>Probability and Statistics</title>
+      <link>http://localhost:1313/vault/math/probability-theory/probability-and-statistics/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/probability-and-statistics/</guid>
+      <description> Total Expectation Theorem Well Known Distributions Law of Iterated Expectations Independent Random Variables  Doubts  Deterministic Random Variable   </description>
+    </item>
+    
+    <item>
+      <title>Total Expectation Theorem</title>
+      <link>http://localhost:1313/vault/math/probability-theory/total-expectation-theorem/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/total-expectation-theorem/</guid>
+      <description>Law of Total Expectation (Partition of Events) $$
+\text{Let } {A_1, A_2, \dots, A_n} \text{ be a partition of } \Omega
+\text{ with } P(A_i) &amp;gt; 0.
+$$
+$$\large
+\mathbb{E}[X]
+= \sum_{i=1}^{n} \mathbb{E}[X \mid A_i] . P(A_i)
+$$
+ Law of Total Expectation (Conditioning on a Discrete Random Variable) $$\large \mathbb{E}[X]
+= \sum_{y} \mathbb{E}[X \mid Y = y]. P(Y = y)
+$$
+ Law of Iterated Expectation (General / Tower Property) $$ \large \mathbb{E}[X]</description>
+    </item>
+    
+    <item>
+      <title>Unique Properties of Gaussian RVs</title>
+      <link>http://localhost:1313/vault/math/probability-theory/unique-properties-of-gaussian-rvs/</link>
+      <pubDate>Sat, 30 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/math/probability-theory/unique-properties-of-gaussian-rvs/</guid>
+      <description>All linear combinations of independent Gaussian RVs are Gaussian
+  A Gaussian random vector is a random vector all of whose linear projections are Gaussian.
+  If $\underline{X}$ is Gaussian , then
+ $X_{i}$ and $X_{j}$ are independent $equivalent$ Cov(Xi,Xj)=0 (uncorrelated)    RVs are jointly Gaussian if they constitute a Gaussian random vector.
+  It is possible for random variables to be individually Gaussian but not jointly Gaussian.</description>
+    </item>
+    
+  </channel>
+</rss>

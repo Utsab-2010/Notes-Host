@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MouseVsAI on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/competitions/mousevsai/</link>
+    <description>Recent content in MouseVsAI on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/competitions/mousevsai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mouse VS AI</title>
+      <link>http://localhost:1313/vault/competitions/mousevsai/mouse-vs-ai/</link>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/competitions/mousevsai/mouse-vs-ai/</guid>
+      <description>Paper Summary: What the Paper Is Trying to Do The paper introduces the Mouse vs. AI: Robust Foraging Competition, a benchmark designed to jointly evaluate visual robustness and neural alignment in artificial agents using a shared active sensorimotor task.
+1. Goal &amp;amp; Core Problem Standard reinforcement learning and computer vision models are notoriously brittle to real-world visual variations (such as fog or occlusion), whereas biological systems like mice easily maintain stable performance under degraded visual inputs.</description>
+    </item>
+    
+  </channel>
+</rss>

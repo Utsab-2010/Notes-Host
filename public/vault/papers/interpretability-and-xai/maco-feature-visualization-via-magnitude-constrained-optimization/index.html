@@ -1,0 +1,3617 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MACO-Feature Visualization via Magnitude Constrained Optimization | Utsab&#39;s Note Repository</title>
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/main.css?v=1789302953">
+
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false},
+                    {left: "\\[", right: "\\]", display: true}
+                ]
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <div class="app-container">
+        
+        <aside class="sidebar">
+  <div class="sidebar-header">
+    <a href="http://localhost:1313/" class="sidebar-brand">
+      <span class="brand-icon">📓</span>
+      <span class="brand-text">Note Repository</span>
+    </a>
+  </div>
+
+  <div class="sidebar-search">
+    <input type="text" id="search-input" placeholder="Search notes..." onkeyup="filterTree()">
+  </div>
+
+  <nav class="file-tree">
+    
+    
+    
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/blogs/" class="folder-title ">Blogs</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/diffusion/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/implementing-clip/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Implementing CLIP</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/list-of-topics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">List of Topics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/need-for-score-networks/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Need for score networks</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/blogs/why-iterative-reverse-sampling-recovers-the-data-distribution/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why Iterative Reverse Sampling Recovers the Data Distribution?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/" class="folder-title ">Competitions</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/" class="folder-title ">ARC-WhiteBox-Estimation Challenge</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/arc-whitebox-estimation-challenge/challenge-details/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Challenge Details</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/mousevsai/" class="folder-title ">MouseVsAI</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/mousevsai/mouse-vs-ai/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mouse VS AI</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/competitions/trexquant-alpha-challenge/" class="folder-title ">TrexQuant Alpha Challenge</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/trexquant-alpha-challenge/alpha-info/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alpha Info</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/lpcv-track-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">LPCV-Track-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/competitions/orbit-wars/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Orbit Wars</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/" class="folder-title ">Courses</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/" class="folder-title ">FM and Diff - MIT CSAIL</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/lecture-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Lecture-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/lecture-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Lecture-2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/fm-and-diff-mit-csail/overview/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Overview</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/" class="folder-title ">Image Processing and Computer Vision</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-1-15/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IVP Lectures 1-15</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-16-37/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IVP Lectures 16-37</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-38-49/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">IVP Lectures 38-49</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/signal-processing/" class="folder-title ">Signal Processing</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/signal-processing/digital-communication/" class="folder-title ">Digital Communication</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/signal-processing/digital-communication/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/signal-processing/fundamentals/" class="folder-title ">Fundamentals</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/signal-processing/fundamentals/fourier-transform/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fourier Transform</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/courses/stanfordcs336-llm/" class="folder-title ">Stanford(CS336) - LLM</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/flt-project/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">FLT - Project</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/courses/pattern_recognition_application_lectures_1_21/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">pattern_recognition_application_lectures_1_21</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/cs-stuff/" class="folder-title ">CS Stuff</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/cs-stuff/sql-complete-reference-notes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">SQL — Complete Reference Notes</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/deep-learning/" class="folder-title ">Deep Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/deep-learning/diffusion-and-flow-models/" class="folder-title ">Diffusion and Flow Models</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-and-flow-models/reason-behind-the-creativity-of-diffusion-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reason Behind the Creativity of Diffusion Models</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/actor-critic-rl/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Actor-Critic RL</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/attention-mechanism/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Attention Mechanism</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/continual-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/continual-learning-eval-metrics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning - Eval Metrics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/continual-learning-formulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Continual Learning Formulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/curriculum-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Curriculum Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/data-attribution/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data Attribution</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/data-driven-inductive-bias/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data-Driven Inductive Bias</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/deep-q-networks-dqn/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Q-Networks (DQN)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/depth-estimation-metrics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Depth Estimation Metrics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/deterministic-vs-probabilistic-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deterministic vs Probabilistic Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/different-ml-optimizers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Different ML Optimizers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-reverse-process/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Reverse Process</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/diffusion-lm-denoising/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion-LM Denoising</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/energy-based-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Energy based Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/fr%C3%A9chet-inception-distance-fid/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fréchet Inception Distance (FID)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/layer-normalisation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Layer Normalisation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/low-rank-adaptationlora/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Low Rank Adaptation(LoRA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/matryoshka-representation-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Matryoshka Representation Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/mixture-of-experts/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mixture of Experts</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/ml-notes-database-expansion/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">ML Notes Database Expansion</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/moravecs-paradox/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Moravec&#39;s Paradox</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/n-gram-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">N-gram Models</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/neural-implicit-fields/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Neural Implicit Fields</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/noise-conditioned-score-matching/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Noise Conditioned Score Matching</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/optimal-transport/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Optimal Transport</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/predicting-next-word-with-gpt-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Predicting Next Word with GPT-2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/proximal-policy-optimization-ppo/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Proximal Policy Optimization (PPO)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/reimannian-manifolds/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reimannian Manifolds</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/rotary-positional-embeddings-rope/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Rotary Positional Embeddings (RoPE)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/solvable-models-in-machine-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Solvable Models in Machine Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/stability-vs-plasticity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Stability vs Plasticity</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/the-manifold-hypothesis/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">The Manifold Hypothesis</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/vq-vae-vector-quantized-variational-autoencoder/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">VQ-VAE (Vector Quantized Variational Autoencoder)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/what-is-moco/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is MoCo?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/what-is-perplexity-in-ml/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is Perplexity in ML?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/deep-learning/x_0-parameterization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">x_0-parameterization</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/" class="folder-title ">DSA and CP</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/" class="folder-title ">Binary Search</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/find-1st-and-last-pos-of-element-in-sorted-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Find 1st and last pos of element in sorted array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/find-peak-element/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Find Peak Element</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/koko-eating-banana/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Koko eating Banana</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/note-on-binary-search-methods/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Note on Binary Search Methods</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/search-in-2d-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in 2d - II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/search-in-a-2d-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in a 2d array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/search-in-rotated-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Search in Rotated Array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/single-element-in-a-sorted-array-of-pairs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Single Element in a Sorted array of pairs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-search/split-array-largest-sum/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Split Array Largest Sum</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/" class="folder-title ">Binary Trees</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/binary-search-trees/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Search Trees</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/binary-trees/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Trees</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/check-for-a-balanced-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Check for a Balanced BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/inorder-traversal-of-a-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Inorder Traversal of a BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/postorder-traversal-of-bt/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Postorder Traversal of BT</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/binary-trees/preorder-inorder-postorder-traversals-in-one-traversal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Preorder Inorder Postorder Traversals in One Traversal</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/doubts/" class="folder-title ">Doubts</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/doubts/binary-search-vs-boundary-conditions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Binary Search — `&lt;=` vs `&lt;` Boundary Conditions</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/" class="folder-title ">Dynamic Programming</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/coin-change/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Coin Change</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/subset-sum-equal-to-target/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Subset sum equal to target</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/target-sum/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Target Sum</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/dynamic-programming/unbounded-knapsack/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Unbounded Knapsack</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/graphs/" class="folder-title ">Graphs</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/connected-components-in-an-undirected-graph/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Connected Components in an Undirected Graph</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Course Schedule</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/course-schedule-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Course Schedule II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-a-cycle-in-a-directed-graph/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detection of a Cycle in a Directed Graph</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/detection-of-cycle-in-an-undirected-graph/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detection of Cycle in an Undirected Graph</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/nearest-0-from-cell-in-a-matrix/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Nearest 0 from cell in a matrix</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/rotten-oranges/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Rotten Oranges</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/graphs/topological-sort/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Topological Sort</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/greedy/" class="folder-title ">Greedy</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/greedy/insert-interval/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Insert Interval</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/greedy/jump-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Jump-II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/greedy/task-scheduler/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Task Scheduler</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/heaps/" class="folder-title ">Heaps</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/heaps/heaps-priority-queues-detailed-notes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Heaps (Priority Queues) — Detailed Notes</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/maths/" class="folder-title ">Maths</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/maths/sieve-of-eratosthenes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Sieve of Eratosthenes</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/maths/single-number-others-twice/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Single Number Others Twice</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/" class="folder-title ">Sliding WIndow and Two Pointers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/defuse-the-bomb/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Defuse the Bomb</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/fruits-into-basket/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fruits Into Basket</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/max-consecutive-one-iii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Max Consecutive One III</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sliding-window-and-two-pointers/maximum-erasure-value/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Maximum Erasure Value</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/sorting/" class="folder-title ">Sorting</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/longest-common-prefix-and-sorting-a-string/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Longest common Prefix and Sorting a String</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/merge-sorted-array/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Merge Sorted Array</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quick Sort</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/sorting/quick-sort-partition/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quick Sort Partition</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/dsa-and-cp/strings/" class="folder-title ">Strings</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/strings/cpp-strings-cheatsheet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">CPP Strings CheatSheet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/strings/largest-odd-number-in-string/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Largest Odd Number in String</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/hand-of-straights/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Hand of Straights</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/house-robber-ii/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">House Robber II</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/linked-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Linked List</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/dsa-and-cp/python-snippets-for-cp/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Python Snippets for CP</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/history/" class="folder-title ">History</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/history/battle-of-polashiplassey/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Battle of Polashi(Plassey)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/history/history-of-bengal-politics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">History of Bengal Politics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/history/is-bengal-against-communism/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Is Bengal against Communism?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/journal/" class="folder-title ">Journal</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2025-05-03-motivation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2025-05-03- Motivation?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-02-02/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-02-02</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-02-17-shivam-vats/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-02-17 - Shivam Vats</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-05-14/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-05-14</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-05-16/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-05-16</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-05-21/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-05-21</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-05/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-05</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-24/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-24</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-28/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-28</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-06-30/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-06-30</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-07-04/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-07-04</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-08-12/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-12</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/journal/2026-08-30/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-30</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/machine-learning/" class="folder-title ">Machine Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/bias-and-variance-trade-off/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Bias and Variance Trade-off</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/boosting/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Boosting</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/byte-pair-encoding-bpe-tokenization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Byte Pair Encoding (BPE) Tokenization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/decision-trees-a-comprehensive-note/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Decision Trees (A comprehensive Note)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/f1-score-recall-and-precision/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">F1 score, Recall and Precision</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/k-means-clustering/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">K-Means Clustering</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/kernel-density-estimation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Kernel Density Estimation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/long-short-term-memory-lstm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Long Short-Term Memory (LSTM)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/principal-component-analysis-pca/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Principal Component Analysis (PCA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/random-forests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Random Forests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/recurrent-neural-netoworksrnns/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Recurrent Neural Netoworks(RNNs)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/representational-similarity-analysis-rsa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Representational Similarity Analysis (RSA)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/t-sne-t-distributed-stochastic-neighbor-embedding/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">t-SNE (t-Distributed Stochastic Neighbor Embedding)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/training-stabilization-in-machine-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Training Stabilization in Machine Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/machine-learning/word2vec/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Word2Vec</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/math/" class="folder-title ">Math</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/math/linear-algebra/" class="folder-title ">Linear Algebra</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/linear-algebra/connection-between-svd-and-evd/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Connection between SVD and EVD</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/linear-algebra/singular-value-decompositionsvd/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Singular Value Decomposition(SVD)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/linear-algebra/spectral-norm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Spectral Norm</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/math/probability-theory/" class="folder-title ">Probability Theory</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/deterministic-random-variable/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deterministic Random Variable</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/gaussian-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Gaussian Distributions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/independent-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Independent Random Variables</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Jointly Gaussian Random Variables — Conditional Distributions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/kolmogorov-smirnov-test/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Kolmogorov-Smirnov Test</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/law-of-iterated-expectations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Law of Iterated Expectations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/linear-mmse-estimation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Linear MMSE Estimation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/markov-chebyshev-and-jensens-inequalities/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Markov, Chebyshev, and Jensen&#39;s Inequalities</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/modes-of-convergence-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Modes of Convergence (Random Variables)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/p-values/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">p-values</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/poisson-distribution-and-poisson-process/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Poisson Distribution and Poisson Process</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/power-of-test-statistic/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Power of Test Statistic</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/probability-and-statistics/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Probability and Statistics</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/study-materials/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Study Materials</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/sum-of-a-random-number-of-iid-random-variables/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Sum of a Random Number of IID Random Variables</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/total-expectation-theorem/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Total Expectation Theorem</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/unique-properties-of-gaussian-rvs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Unique Properties of Gaussian RVs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/well-known-distributions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Well Known Distributions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/probability-theory/%CE%B1-significance-level/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">α (Significance Level)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/johnsonlindenstrauss-lemma/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Johnson–Lindenstrauss lemma</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/math/what-is-kernelfunction/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What is Kernel(function)?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/misc/" class="folder-title ">Misc</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/ajb-btp-summary/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AJB BTP Summary</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/how-to-read-papers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">How to Read Papers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/krutarth-meet-20th-march/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Krutarth meet - 20th March</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/meet-summary/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Meet Summary</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/random/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Random</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/reading-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reading List</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/reddit-ml-papers-to-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reddit - ML Papers to Read</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/summer-plan-2026/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Summer Plan 2026</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/untitled-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled 1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/untitled-2/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled 2</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/workout-log/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workout Log</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/misc/workout-routine/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workout Routine</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+      
+    
+    <li class="tree-item folder open">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▼</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/" class="folder-title ">Papers</a>
+      </div>
+      <div class="folder-content" style="display: block;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/continual-learning/" class="folder-title ">Continual Learning</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/continual-learning/when-do-curricula-work/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">When Do Curricula Work?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/data-attribution/" class="folder-title ">Data Attribution</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/deep-learning-on-a-data-diet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Learning on a Data Diet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/large-scale-pruning-using-dyna-uncertainty/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Large-Scale Pruning using Dyna Uncertainty</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/theoretical-analysis-of-contrastive-learning-under-imbalanced-data/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">THEORETICAL ANALYSIS OF CONTRASTIVE LEARNING UNDER IMBALANCED DATA</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/data-attribution/understanding-blackbox-predictions-using-influence-functions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Understanding BlackBox Predictions - Using Influence Functions</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/diffusion-and-flows/" class="folder-title ">Diffusion and Flows</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/diffusion-lm/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion-LM</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/maxenrl-via-energy-based-normalising-flows-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MaxEnRL via Energy-based Normalising Flows 1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/neural-ordinary-differential-equations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Neural Ordinary Differential Equations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/diffusion-and-flows/reading-list/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reading List</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/good-reads/" class="folder-title ">Good Reads</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+      
+    
+    <li class="tree-item folder open">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▼</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/interpretability-and-xai/" class="folder-title ">Interpretability and XAI</a>
+      </div>
+      <div class="folder-content" style="display: block;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/interpretability-and-xai/maco-feature-visualization-via-magnitude-constrained-optimization/" class="file-title-link active">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MACO-Feature Visualization via Magnitude Constrained Optimization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/interpretability-and-xai/understanding-visual-feature-reliance-through-the-lens-of-complexity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Understanding Visual Feature Reliance through the Lens of Complexity</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/robotics/" class="folder-title ">Robotics</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/crowd-aware-robot-navigation-with-switching-betweenlearning-based-and-rule-based-methods-using-normalizing-flows/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Crowd-Aware Robot Navigation with Switching BetweenLearning-Based and Rule-Based Methods Using Normalizing Flows</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/learning-stable-normalizing-flow-control-for-robotic-manipulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning Stable Normalizing-Flow Control for Robotic Manipulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/recoverychaining-learning-local-recovery-policies-for-robust-manipulation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RecoveryChaining-Learning Local Recovery Policies for Robust Manipulation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/robotics/respo-reachability-estimation-for-safe-policy-optimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RESPO (Reachability Estimation for Safe Policy Optimization)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/scaling-laws/" class="folder-title ">Scaling Laws</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/beyond-neural-scaling-law-data-pruning-improve-power-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Beyond Neural Scaling Law - Data Pruning improve power law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/cram-less-to-fit-more/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Cram Less to Fit More</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/explaining-data-mixing-scaling-laws/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Explaining Data-Mixing Scaling Laws</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/how-feature-learning-can-improve-neural-scaling/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">How Feature Learning can Improve Neural Scaling</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/scaling-laws/scaling-for-data-filtering/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling for Data Filtering</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/" class="folder-title ">Theory of Learning Paradigms</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/a-compression-perspective-on-simplicity-bias/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">A Compression Perspective on Simplicity Bias</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/information-theory-for-repr-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Information Theory for Repr Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/invariant-risk-minimization/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Invariant Risk Minimization</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/learned-feature-representations-are-biased-by-complexity-learning-order-position-and-more/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learned feature representations are biased by complexity, learning order, position, and more</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/learning-to-theorise/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning to Theorise</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/mechanistic-mode-connectivity/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mechanistic Mode Connectivity</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/theory-of-learning-paradigms/not-all-solutions-are-created-equal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Not all solutions are created equal</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/vision/" class="folder-title ">Vision</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/vision/infidepth-arbitrary-high-res-estimation-using-neural-implicit-fields/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name"></span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/papers/world-models-reading-list/" class="folder-title ">World Models Reading List</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/world-models-reading-list/i-jepa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">I-JEPA</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/papers/world-models-reading-list/what-to-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What to Read</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/projects/" class="folder-title ">Projects</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/projects/alphago-black-hole/" class="folder-title ">AlphaGo-Black-Hole</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alpha-beta-algorithm-chess-engines/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alpha-Beta Algorithm (Chess Engines)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alphazero-and-chess/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero and Chess</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alphazero-training/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero Training</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/alphazero-workflow/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Alphazero Workflow</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/deep-q-network-dqn-training-details/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deep Q-Network (DQN) Training Details</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/improved-representations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Improved Representations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/mixture-of-experts-approach-to-games/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Mixture of Experts Approach to Games</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/alphago-black-hole/personal-notes-on-the-implementation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Personal Notes on the Implementation</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/projects/dlm-revisited/" class="folder-title ">DLM-Revisited</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/dlm-revisited/workbench/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Workbench</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/projects/project-ideas/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Project Ideas</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/" class="folder-title ">Research Work</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/btp/" class="folder-title ">BTP</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/btp/meets/" class="folder-title ">Meets</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/meets/2026-08-27/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-27</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/meets/2026-09-10/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-09-10</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/btp-notebook/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">BTP Notebook</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/diffusion-posterior-sampling-for-general-noisy-problems/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Diffusion Posterior Sampling for General Noisy Problems</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/ksd-for-goodness-of-fit-tests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">KSD for Goodness-of-fit Tests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/learning-deep-kernels-for-non-parametric-two-sample-tests/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learning Deep Kernels for Non-Parametric Two-Sample Tests</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/prof.-subhadip/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Prof. Subhadip</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Reproducing Kernel Hilbert Space (RKHS)</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/" class="folder-title ">LossFunk Proposal</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/2nd-stage/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2nd stage</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/contlearning-idea/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">ContLearning Idea</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/diff-mem-idea/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">DIff Mem Idea</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/idea-1/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Idea-1</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/loss-funk-application/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Loss Funk Application</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/research-writeup/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Research Writeup</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/variations-of-proposal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Variations of Proposal</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/lossfunk-proposal/write-up/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Write-up</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/random-ideas/" class="folder-title ">Random Ideas</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/any-other-ways-than-deterministic-and-probabilistic-modelling/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Any other ways than deterministic and Probabilistic Modelling</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/can-we-use-jepa-for-games/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Can we use JEPA for Games??</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/can-you-project-tasks-to-similar-task-spaces/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Can you project tasks to similar Task-spaces?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/capacity-of-a-model/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Capacity of a Model</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/context-conditioned-processing-leads-to-ood-generalisation/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Context Conditioned Processing leads to OOD Generalisation</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/encoding-future-related-hope-as-a-learning-signal/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Encoding Future Related Hope as a Learning Signal?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/information-theory-on-repr-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Information Theory on Repr Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/learned-representation-are-path-dependent/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Learned Representation are path dependent</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/manifolds-of-data-vs-implicit-curricula/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Manifolds of Data vs Implicit Curricula</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/marigold-&#43;-jepa/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Marigold &#43; Jepa?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/new-way-of-training-small-models/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">New way of training small models?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/teach-a-model-to-solve-a-patch-jigsaw/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Teach a model to solve a patch jigsaw?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/what-leads-to-representational-biases/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">What leads to Representational Biases?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/why-do-diffusion-models-generalise-so-well/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why do Diffusion Models Generalise So Well?</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/random-ideas/why-do-we-need-large-embedding-sizes/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Why do we need large embedding sizes?</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/swami-robo/" class="folder-title ">Swami Robo</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/swami-robo/rm3-setup/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">RM3 Setup</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/val-del/" class="folder-title ">VAL-DEL</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/val-del/meets/" class="folder-title ">Meets</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/meets/2026-07-20/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-07-20</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/meets/2026-08-26/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-08-26</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/meets/2026-09-03/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-09-03</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/research-work/val-del/papers/" class="folder-title ">Papers</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/papers/gradient-weight-alignment-as-a-train-time-proxy-for-generalization-in-classification-tasks/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Gradient-Weight Alignment as a Train-Time Proxy for Generalization in Classification Tasks</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/papers/stable-coresets/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Stable Coresets</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/papers/understanding-why-neural-networks-generalize-well-through-gsnr-of-parameters/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">UNDERSTANDING WHY NEURAL NETWORKS GENERALIZE WELL THROUGH GSNR OF PARAMETERS</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/alpha-0.1-for-monogenic-not-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">alpha =0.1 for monogenic -not learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/avg-el2n-score-difference-between-two-toy-datasets/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Avg El2n score difference between two toy datasets</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/data-efficient-learning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Data-Efficient Learning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/deriving-neural-scaling-laws-from-lang-stat/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Deriving Neural Scaling Laws from Lang Stat</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/detect-the-change-of-implicit-curricula/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Detect the change of implicit curricula</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/emergent-properties-with-repeated-examples/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Emergent Properties with Repeated Examples</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/features-contribution-to-pruning/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Feature&#39;s Contribution to Pruning</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/initial-tests-for-the-scaling-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Initial Tests for the Scaling Law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/open-questions/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Open Questions</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/polygenic-voting-toy-test/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Polygenic Voting Toy Test</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/quantization-based-hypothesis/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Quantization Based Hypothesis</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/scaling-laws/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling Laws</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/scaling-laws-with-rep/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Scaling laws with rep</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/thoughts/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Thoughts</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/val-del/val-notebook/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">VAL Notebook</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/novel-depth-esitmationedge-focussed/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Novel Depth Esitmation(Edge focussed)</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/research-work/personal-notes-on-research/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Personal Notes on Research</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+    
+    
+    <li class="tree-item folder ">
+      <div class="folder-header" onclick="toggleFolder(this, event)">
+        <span class="toggle-arrow">▶</span>
+        <span class="folder-icon">📁</span>
+        <a href="http://localhost:1313/vault/video-ideas/" class="folder-title ">Video Ideas</a>
+      </div>
+      <div class="folder-content" style="display: none;">
+        
+
+
+<ul class="tree-list">
+  
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/aep-and-typical-sequences/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AEP and Typical Sequences</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/alphazero/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">AlphaZero</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/large-sparse-matrix-solvers/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Large Sparse Matrix Solvers</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/law-of-total-expectations/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Law of Total Expectations</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/map-vs-mle/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">MAP vs MLE</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/monte-carlo-tree-search/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Monte Carlo Tree Search</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/video-ideas/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </li>
+  
+
+  
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/2026-09-09/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">2026-09-09</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/command-center/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Command Center</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/cool-things-i-read/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Cool Things I Read</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/distributions-of-data-that-satisfies-the-power-law/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Distributions of Data that satisfies the power law</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/flt-lecture/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">FLT Lecture</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/fun-resources/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Fun Resources</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/infiniai-meet/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">InfiniAI Meet</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/internship-applications/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Internship Applications</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/professors-and-labs/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Professors and Labs</span>
+      </a>
+    </li>
+  
+    <li class="tree-item file">
+      <a href="http://localhost:1313/vault/untitled/" class="file-title-link ">
+        <span class="file-icon">📄</span>
+        <span class="file-name">Untitled</span>
+      </a>
+    </li>
+  
+</ul>
+
+    
+  </nav>
+</aside>
+        <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+        
+        <div class="main-area">
+            <header class="site-header">
+                <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle Sidebar">☰</button>
+                <a href="http://localhost:1313/" class="site-title-link"><h1>Utsab&#39;s Note Repository</h1></a>
+            </header>
+
+            <main class="content-wrapper">
+<article class="post-content">
+    <header style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
+        <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--text-color); font-family: var(--font-main);">MACO-Feature Visualization via Magnitude Constrained Optimization</h1>
+        <div style="color: #8b949e; font-size: 0.85rem; font-family: var(--font-main);">
+            Last modified: July 19, 2026
+        </div>
+    </header>
+
+    <div class="markdown-body">
+        <p>#compvis #interpretebility #ml_tools</p>
+<h3 id="contributions">Contributions</h3>
+<p>The <strong>MACO (Magnitude Constrained Optimization)</strong> algorithm is a feature visualization method that generates interpretable images for deep neural networks by exclusively optimizing the phase spectrum of an image while holding its Fourier magnitude constant.</p>
+<p>Traditional feature visualization methods optimize the entire Fourier spectrum and rely on high-frequency penalties to keep images readable. However, when scaling to modern, deeper architectures like Vision Transformers (ViTs) and deep ResNets, these techniques fail because high-frequency noise leaks through and pollutes the visualizations. Inspired by human vision research showing that object recognition is driven more by phase than by magnitude, MACO treats the natural image magnitude spectrum as a hard constraint. This completely eliminates the need for complex high-frequency regularization hyperparameters or statistical generative prior models (such as GANs or autoencoders).</p>
+<h2 id="proposed-method">Proposed Method</h2>
+<h3 id="the-core-concept-phase-vs-magnitude">The Core Concept: Phase vs. Magnitude</h3>
+<p>In Fourier space, a complex-valued image spectrum $z$ can be decomposed into its polar form: $$z = r e^{i\varphi}$$ where <strong>$r$ represents the magnitude spectrum</strong> and <strong>$\varphi$ represents the phase spectrum</strong>.</p>
+<ol>
+<li><strong>Fixed Magnitude ($r$)</strong>: MACO precomputes $r$ as the average Fourier magnitude of a set of natural images (typically from the entire ImageNet dataset ): $$r = \mathbb{E}_{x \sim \mathcal{D}}(|F(x)|)$$ This spectrum captures a natural distribution (which naturally attenuates high frequencies) and only needs to be calculated once.</li>
+<li><strong>Optimized Phase ($\varphi$)</strong>: The algorithm optimizes only the phase parameters $\varphi \in \mathbb{R}^{W \times H}$ via gradient ascent, cutting the number of parameters to optimize by half and ensuring the generated image naturally respects the frequency domain of natural images.</li>
+</ol>
+<hr>
+<h3 id="step-by-step-feature-visualization-process">Step-by-Step Feature Visualization Process</h3>
+<p>The exact process of generating a feature visualization using MACO involves an optimization loop designed to maximize a target network activation $L_v$ (which can represent a single neuron, channel, layer, or output logit):</p>
+<h4 id="1-initialization">1. Initialization</h4>
+<ul>
+<li><strong>Magnitude Constraining</strong>: Load the precomputed natural magnitude spectrum $r$.</li>
+<li><strong>Initial Phase</strong>: Sample an initial phase vector randomly from a uniform distribution: $\varphi_0 \sim U([-\pi, \pi])^{W \times H}$. <em>You start with a random image essentially this way.</em></li>
+<li><strong>Transparency Accumulator</strong>: Initialize the transparency map accumulator $\alpha = 0$.</li>
+</ul>
+<h4 id="2-the-optimization-loop-typically-for-n--256-steps">2. The Optimization Loop (typically for $N = 256$ steps)</h4>
+<p>For each step $n$ in the optimization loop, the following sequence is executed:</p>
+<ul>
+<li><strong>Construct the Complex Spectrum</strong>: Combine the fixed natural magnitude $r$ and the current phase $\varphi_n$ to form the Fourier spectrum $z_n = r e^{i\varphi_n}$.</li>
+<li><strong>Reconstruct the Image</strong>: Apply the Inverse 2-D Discrete Fourier Transform ($F^{-1}$) to translate the spectrum back into the pixel-space image: $$x_n = F^{-1}(r e^{i\varphi_n})$$</li>
+<li><strong>Apply Transformation Robustness ($\tau$)</strong>: To prevent the optimizer from finding high-frequency adversarial patterns, apply two specific data augmentations to the reconstructed image:
+<ol>
+<li><strong>Additive Uniform Noise</strong>: Add noise $\delta \sim U([-0.1, 0.1])^{W \times H}$.</li>
+<li><strong>Random Cropping and Resizing</strong>: Crop the image using a crop size drawn from a normal distribution $\mathcal{N}(0.25, 0.1)$ (on average representing 25% of the image size) and resize it back to the original dimensions.</li>
+</ol>
+</li>
+<li><strong>Forward Pass and Activation Evaluation</strong>: Feed the transformed image into the classifier/network to compute the target activation score $L_v(x_n)$.</li>
+<li><strong>Backward Pass (Gradient Ascent)</strong>:
+<ul>
+<li>Compute the gradient of the <em>target activation</em>(intermediate layer,latent vector,etc) with respect to the phase parameters: $\nabla_{\varphi} L_v(x_n)$.</li>
+<li>Update the phase using an optimizer (typically NAdam with a learning rate of $1.0$): $\varphi_{n+1} = \varphi_n + \eta \nabla_{\varphi} L_v(x_n)$.</li>
+</ul>
+</li>
+<li><strong>Accumulate Spatial Importance (The Transparency Map, $\alpha$)</strong>: During backpropagation, the gradient of the activation with respect to the input pixels $\nabla_{x_n} L_v(x_n)$ is computed &ldquo;for free&rdquo; as an intermediate step to get the phase gradient. MACO stores and accumulates the absolute values of these gradients over all steps: $$\alpha = \alpha + |\nabla_{x_n} L_v(x_n)|$$ Averaging these input-space gradients behaves similarly to the SmoothGrad attribution method, highlighting which areas of the image the model attended to or modified the most during optimization.</li>
+</ul>
+<h4 id="3-output-generation">3. Output Generation</h4>
+<p>At the end of $N$ steps, the final feature visualization and transparency map are output:</p>
+<ul>
+<li><strong>Final Image</strong>: Apply the final inverse Fourier transform using the optimized phase $\varphi_N$: $$x^* = F^{-1}(r e^{i\varphi_N})$$</li>
+<li><strong>Transparency Mask</strong>: The accumulated map $\alpha$ is returned alongside the image and can be applied as a post-processing mask to fade out unimportant background patterns and isolate key diagnostic features.</li>
+</ul>
+<h2 id="transparency-map-alpha">Transparency Map $\alpha$</h2>
+<p>In the MACO algorithm, <strong>$\alpha$ (alpha)</strong> represents the <strong>transparency map</strong> (or <strong>transparency mask</strong>). It is generated &ldquo;for free&rdquo; alongside the feature visualization to provide a visual attribution mechanism, explaining both &ldquo;what&rdquo; activates a target neuron/channel and &ldquo;where&rdquo; those key features are spatially located.</p>
+<p>During the backpropagation process of optimizing the phase ($\varphi$), the intermediate gradient of the activation with respect to the input pixels ($\frac{\partial L_v(x)}{\partial x}$) is calculated naturally as part of the chain rule: $$\frac{\partial L_v(x)}{\partial \varphi} = \frac{\partial L_v(x)}{\partial x} \frac{\partial x}{\partial \varphi}$$
+MACO intercepts and stores it at every optimization step without incurring any additional computational cost. Over the course of the $N$ optimization steps, the absolute values of these input gradients are accumulated: $$\alpha = \alpha + |\nabla_{x_n} L_v(x_n)|$$At the end of the optimization, averaging these accumulated gradients over all steps behaves theoretically similarly to **SmoothGrad**.</p>
+<ul>
+<li><strong>Locating Attention</strong>: The map $\alpha$ highlights the specific spatial regions of the image that were modified or attended to the most by the model during the optimization process.</li>
+<li><strong>Fading Unimportant Patterns</strong>: Feature visualizations often generate repetitive patterns or noisy background elements that can distract the user or lead to confirmation bias. Applying $\alpha$ as a transparency mask fades out these unimportant background details to isolate the core diagnostic features.</li>
+<li><strong>Post-Processing Only</strong>: Ablation studies confirm that $\alpha$ acts strictly as a post-processing enhancement. Applying the transparency mask does not alter the optimization itself or affect the underlying objective scores (such as logit magnitude).</li>
+</ul>
+<hr>
+<h2 id="moco-with-craft-for-featureconcept-visualizaiton">MOCO with CRAFT for feature/concept Visualizaiton</h2>
+<ul>
+<li>Using CRAFT we can decompose an images representations into a dictionary of concepts/features.</li>
+<li>Then we use the MACO algorithm to visualise the said concepts - instead of computing the loss w.r.t the activations , we compute loss based on whether the current generated visual(image) when passed through the network gives us the target concept vector or not. - <strong>This is called Feature Inversion.</strong></li>
+</ul>
+<hr>
+<h2 id="objective-function">Objective Function</h2>
+<p>The optimization criterion— <strong>$L_v(x)$</strong> in the paper—is mathematically defined as a real-valued function ($L_v(x) \in \mathbb{R}$) that measures the activation or similarity of a generated image $x$ with respect to a target component of a neural network.</p>
+<p>Rather than using a single, rigid mathematical loss formula, the creators of MACO define $L_v(x)$ dynamically depending on the specific feature visualization task being performed. In the general MACO optimization framework, the goal is to find the optimal phase vector $\varphi^<em>$ that maximizes the expected value of $L_v$ across random robustness transformations $\tau$:
+$$\varphi^</em> = \operatorname{argmax}<em>{\varphi \in \mathbb{R}^{W \times H}} \mathbb{E}</em>{\tau \sim T} \left( L_v\left((\tau \circ F^{-1})(r e^{i\varphi})\right) \right)$$</p>
+<p>Depending on what you want to visualize, the loss function $L_v(x)$ is defined in one of three ways:</p>
+<h3 id="1-logit-and-internal-channel-visualization-standard-maco">1. Logit and Internal Channel Visualization (Standard MACO)</h3>
+<p>When the goal is to understand what a specific part of the network&rsquo;s architecture is looking for, $L_v(x)$ directly targets activation magnitudes:</p>
+<ul>
+<li><strong>For Class Logit Visualization</strong>: $L_v(x)$ is defined to <strong>maximize the activation of a specific unit in the output logit vector</strong> (corresponding to an ImageNet class like &ldquo;White Shark&rdquo;).</li>
+<li><strong>For Internal State (Channel) Visualization</strong>: $L_v(x)$ is defined to <strong>maximize the activation of specific channels</strong> located in different intermediate blocks of the network (such as Block 1, 2, 6, or 10 of a Vision Transformer or ResNet).</li>
+</ul>
+<h3 id="2-feature-inversion">2. Feature Inversion</h3>
+<p>When you want to reconstruct what a network &ldquo;sees&rdquo; and preserves from a real-world image at a specific layer, the network&rsquo;s response to a reference image is used to construct the loss:</p>
+<ul>
+<li><strong>The Activation Target</strong>: First, a reference image is passed through the model to obtain its actual activation pattern at a target layer.</li>
+<li><strong>The Loss Definition</strong>: $L_v(x)$ is defined to <strong>maximize the similarity</strong> between the activation pattern produced by the generated image $x$ and the pre-computed activation pattern of the reference image. This optimization reconstructs the semantic information of the original image while naturally omitting any background details or noise that the network discarded.</li>
+</ul>
+<h3 id="3-concept-visualization-maco--craft">3. Concept Visualization (MACO + CRAFT)</h3>
+<p>When explaining the latent space of a network by decomposing its activation patterns into distinct semantic directions (concepts), the loss is defined to align with these directions:</p>
+<ul>
+<li><strong>The Loss Definition</strong>: $L_v(x)$ is defined to <strong>maximize the angle of superposition</strong> with the target concept direction vector in the network’s activation space. This forces the generated image&rsquo;s activations to match and strongly activate that specific conceptual pathway.</li>
+</ul>
+
+    </div>
+</article>
+
+            </main>
+
+            <footer style="margin-top: 5rem; padding-bottom: 2rem; border-top: 1px solid var(--border-color); color: #8b949e; font-size: 0.9rem;">
+                <p>&copy; 2026 Utsab&#39;s Note Repository. Built with Hugo.</p>
+            </footer>
+        </div>
+    </div>
+
+    
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+
+        function toggleFolder(headerElement, event) {
+            
+            if (event.target.tagName.toLowerCase() === 'a') {
+                return;
+            }
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const folderItem = headerElement.closest('.tree-item.folder');
+            const content = folderItem.querySelector('.folder-content');
+            const arrow = headerElement.querySelector('.toggle-arrow');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                arrow.textContent = '▼';
+                folderItem.classList.add('open');
+            } else {
+                content.style.display = 'none';
+                arrow.textContent = '▶';
+                folderItem.classList.remove('open');
+            }
+        }
+
+        function filterTree() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const items = document.querySelectorAll('.file-title-link, .folder-title');
+            
+            if (!query) {
+                
+                document.querySelectorAll('.tree-item').forEach(item => {
+                    item.style.display = '';
+                });
+                document.querySelectorAll('.folder-content').forEach(content => {
+                    const folderItem = content.closest('.tree-item.folder');
+                    if (folderItem.classList.contains('open')) {
+                        content.style.display = 'block';
+                        folderItem.querySelector('.toggle-arrow').textContent = '▼';
+                    } else {
+                        content.style.display = 'none';
+                        folderItem.querySelector('.toggle-arrow').textContent = '▶';
+                    }
+                });
+                return;
+            }
+
+            
+            document.querySelectorAll('.tree-item').forEach(item => {
+                item.style.display = 'none';
+            });
+
+            
+            items.forEach(el => {
+                const text = el.textContent.toLowerCase();
+                if (text.includes(query)) {
+                    const item = el.closest('.tree-item');
+                    if (item) {
+                        item.style.display = '';
+                        
+                        
+                        let parent = item.parentElement.closest('.tree-item.folder');
+                        while (parent) {
+                            parent.style.display = '';
+                            parent.classList.add('open');
+                            const content = parent.querySelector('.folder-content');
+                            if (content) content.style.display = 'block';
+                            const arrow = parent.querySelector('.toggle-arrow');
+                            if (arrow) arrow.textContent = '▼';
+                            parent = parent.parentElement.closest('.tree-item.folder');
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

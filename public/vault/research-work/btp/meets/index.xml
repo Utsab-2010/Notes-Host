@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meets on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/research-work/btp/meets/</link>
+    <description>Recent content in Meets on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/research-work/btp/meets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2026-09-10</title>
+      <link>http://localhost:1313/vault/research-work/btp/meets/2026-09-10/</link>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/btp/meets/2026-09-10/</guid>
+      <description> Finding the underlying dimension of the dataset. Basically the manifold dimension OOD image should be distant from the the manifold  How to find this distance of this img from the manifold. Use this to design the test statistic   Global idea of underlying manifold Stein&amp;rsquo;s unbiased estimate. Try the ID vs OOD things on the CelebA dataset  </description>
+    </item>
+    
+    <item>
+      <title>2026-08-27</title>
+      <link>http://localhost:1313/vault/research-work/btp/meets/2026-08-27/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/btp/meets/2026-08-27/</guid>
+      <description>We need to check scenarios where the learnt kernel will actually bring about smth better compared to just pooling.  Ablate over the gains given by each term of the test statistic   Pooling seems to be killing the signal the first term of the u-stat is qutie large for both null and alt dist. samples  The remaining terms should be large in case of alt and small in case of the null distribution   Read the EigenScore and KLIP papers what if we do discrepancy on a patchwise basis on the main image.</description>
+    </item>
+    
+  </channel>
+</rss>

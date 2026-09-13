@@ -1,2 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blogs on Utsab's Note Repository</title><link>https://Utsab-2010.github.io/Notes-Host/vault/blogs/</link><description>Recent content in Blogs on Utsab's Note Repository</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/blogs/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://Utsab-2010.github.io/Notes-Host/vault/blogs/why-is-diffusion-an-iterative-process/</link><pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/blogs/why-is-diffusion-an-iterative-process/</guid><description/></item><item><title>List of Topics</title><link>https://Utsab-2010.github.io/Notes-Host/vault/blogs/list-of-topics/</link><pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/blogs/list-of-topics/</guid><description> Intro to Diffusion AlphaZero Implementation Deeper Diving into Diffusion Maths Implementing CLIP Why use Residual Networks? Data Pruning Methods? Scaling Laws? Continual Learning and the limits of plasticity</description></item><item><title>Diffusion</title><link>https://Utsab-2010.github.io/Notes-Host/vault/blogs/diffusion/</link><pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/blogs/diffusion/</guid><description>#diffusion #blog Title- Diffusion: A simple hands-on introduction
-Resources Simplest Implementation of Diffusion Models | Emilio’s Blog Generative AI has been the buzz and face of AI industry for the last few years. Particularly image and video generative models. How do they models generative an image when given a prompt? But how exactly does a model take in text prompt and transform it into a visual output catering to the context of that prompt?</description></item><item><title>Implementing CLIP</title><link>https://Utsab-2010.github.io/Notes-Host/vault/blogs/implementing-clip/</link><pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/blogs/implementing-clip/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/blogs/</link>
+    <description>Recent content in Blogs on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/blogs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>List of Topics</title>
+      <link>http://localhost:1313/vault/blogs/list-of-topics/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/blogs/list-of-topics/</guid>
+      <description> Intro to Diffusion AlphaZero Implementation What is PAC-Bayes? Deeper Diving into Diffusion Maths What are Score Networks? Score matching training. Implementing CLIP Why use Residual Networks? Data Pruning Methods? Scaling Laws? Continual Learning and the limits of plasticity  </description>
+    </item>
+    
+    <item>
+      <title>Need for score networks</title>
+      <link>http://localhost:1313/vault/blogs/need-for-score-networks/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/blogs/need-for-score-networks/</guid>
+      <description>Start with langevin dynamics and why we need it? Why given a score network we need the dynamics to sample p(x)?
+ we talk about the interplay of drift due to score and the randomness due to the brownian motion in the reverse SDE. We show that given only the score of a dist, we can effectively sample from it even though the score only leads us to a mode of the distribution.</description>
+    </item>
+    
+    <item>
+      <title>Why Iterative Reverse Sampling Recovers the Data Distribution?</title>
+      <link>http://localhost:1313/vault/blogs/why-iterative-reverse-sampling-recovers-the-data-distribution/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/blogs/why-iterative-reverse-sampling-recovers-the-data-distribution/</guid>
+      <description>1. The setup: a forward corruption process Let $X_0 \sim p_{\mathrm{data}}$. Define a forward diffusion (SDE) that gradually destroys structure:
+$$ dX_t = f(X_t,t),dt + g(t),dW_t, \qquad X_0 \sim p_{\mathrm{data}}. $$
+For the common variance-exploding choice, $f=0$ and $g(t)=\sigma(t)$, this reduces to additive Gaussian corruption $X_t = X_0 + \sigma(t)\epsilon$. Denote by $p_t$ the marginal density of $X_t$. As $t$ ranges from $0$ to $T$, $p_t$ traces a path
+$$ p_0 = p_{\mathrm{data}} ;\longrightarrow; p_T \approx \mathcal N(0,\sigma_T^2 I), $$</description>
+    </item>
+    
+    <item>
+      <title>Diffusion</title>
+      <link>http://localhost:1313/vault/blogs/diffusion/</link>
+      <pubDate>Sat, 09 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/blogs/diffusion/</guid>
+      <description>#diffusion #blog Title- Diffusion: A simple hands-on introduction
+Resources  Simplest Implementation of Diffusion Models | Emilio’s Blog   Generative AI has been the buzz and face of AI industry for the last few years. Particularly image and video generative models. How do they models generative an image when given a prompt? But how exactly does a model take in text prompt and transform it into a visual output catering to the context of that prompt?</description>
+    </item>
+    
+    <item>
+      <title>Implementing CLIP</title>
+      <link>http://localhost:1313/vault/blogs/implementing-clip/</link>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/blogs/implementing-clip/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

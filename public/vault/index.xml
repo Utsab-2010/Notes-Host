@@ -1,9 +1,115 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vault on Utsab's Note Repository</title><link>https://Utsab-2010.github.io/Notes-Host/vault/</link><description>Recent content in Vault on Utsab's Note Repository</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/index.xml" rel="self" type="application/rss+xml"/><item><title>Hand of Straights</title><link>https://Utsab-2010.github.io/Notes-Host/vault/hand-of-straights/</link><pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/hand-of-straights/</guid><description>#cp-medium
-Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.
-Given an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.
-Example 1:
-Input: hand = [1,2,3,6,2,3,4,7,8], groupSize = 3 Output: true Explanation: Alice&amp;rsquo;s hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]</description></item><item><title>House Robber II</title><link>https://Utsab-2010.github.io/Notes-Host/vault/house-robber-ii/</link><pubDate>Fri, 03 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/house-robber-ii/</guid><description>#cp-medium You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.</description></item><item><title>Not all solutions are created equal</title><link>https://Utsab-2010.github.io/Notes-Host/vault/not-all-solutions-are-created-equal/</link><pubDate>Sun, 28 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/not-all-solutions-are-created-equal/</guid><description>Not all solutions are created equal: An analytical dissociation of functional and representational similarity in deep linear neural networks New terms - respresentational alignment, functional alignment
-Background There is limited analytical understanding of how a network’s representation and function relate, despite this being essential to any quantitative notion of underlying function or functional similarity.
-The structure of artificial and biological networks is often non-identifiable in the sense that networks can be structurally distinct, yet implement the same input-output mapping.</description></item><item><title>Untitled</title><link>https://Utsab-2010.github.io/Notes-Host/vault/untitled/</link><pubDate>Thu, 25 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/untitled/</guid><description>Deep Q-Network (DQN) Training Details This document explains the DQN training architecture, self-play mechanics, exploration schedules, and the differences between the single-threaded and vectorized implementations in the repository.
-🧠 1. The Core DQN Architecture: QNetwork The network architecture (defined in black_hole/model.py) maps the board state to action Q-values:
-Board Input Transformation: Takes the flat board observation and reconstructs the active board into an $L \times L \times 1$ grid ($9 \times 9 \times 1$ for default 9 layers).</description></item><item><title>Longest common Prefix and Sorting a String</title><link>https://Utsab-2010.github.io/Notes-Host/vault/longest-common-prefix-and-sorting-a-string/</link><pubDate>Sun, 07 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/longest-common-prefix-and-sorting-a-string/</guid><description>#include &amp;lt;bits/stdc++.h&amp;gt; using namespace std; class Solution { public: // Returns the longest common prefix in a list of strings string longestCommonPrefix(vector&amp;lt;string&amp;gt;&amp;amp; str) { // Handle the case where input is empty if (str.empty()) return &amp;#34;&amp;#34;; // Sort the strings lexicographically sort(str.begin(), str.end()); // First string in sorted order string first = str[0]; // Last string in sorted order string last = str[str.size() - 1]; // To store the common prefix string ans = &amp;#34;&amp;#34;; // Compare up to the length of the shorter string int minLength = min(first.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vault on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/</link>
+    <description>Recent content in Vault on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Command Center</title>
+      <link>http://localhost:1313/vault/command-center/</link>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/command-center/</guid>
+      <description>Advice for the day
+ Don&amp;rsquo;t distract yourself too much. Focus on the work you have right now, allot some dedicated time to it and become an expert in your current projects. Don&amp;rsquo;t get bothered by people larping about their own expertised areas.
+ Priorities  VAL Work Diffusion-LM Fix  Things to Learn  Pretraining - posttraining pipeline for LLMs How agents are made? Backbone of reasoning and why it works?</description>
+    </item>
+    
+    <item>
+      <title>FLT Lecture</title>
+      <link>http://localhost:1313/vault/flt-lecture/</link>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/flt-lecture/</guid>
+      <description>Intuition Behind Generative Modelling - samples from a data distribution First of all what is the problem that we are trying to solve? What does it mean to generate data and how would we do? What we have right now is my current dataset of images say thousands of pictures of animals - dogs, cats, giraffes,etc.
+The main notion behind generative modelling is that we assume that all the data point be it be images,text ,etc are essentially sampled from some high-dimensional underlying distribution p_0.</description>
+    </item>
+    
+    <item>
+      <title>Fun Resources</title>
+      <link>http://localhost:1313/vault/fun-resources/</link>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/fun-resources/</guid>
+      <description>Blogs  Matthew Landers Gregory Gundersen co/scope - Build a Strong Foundation for Your Research Project - Blog Series by Cohere Labs The Illustrated Transformer – Jay Alammar – Visualizing machine learning one concept at a time. FeynmanWiki - Technical Blogs, Explained Lil&amp;rsquo;Log Work at a Frontier Lab — Learn ML Systems &amp;amp; Research https://silviasapora.github.io/blog/ml-interviews.html https://nishanthjkumar.com/blog/2026/Navigating-the-Industry-Job-Search-as-a-Robotics-PhD-in-2026/   Courses &amp;amp; Learning Guides  DEEP LEARNING · Deep Learning - NYU DL course by LeCun Stanford CS336 | Language Modeling from Scratch Carnegie Mellon University: Computer Vision Courses | Basic to Advanced EECS 4422 Computer Vision Deep Learning in Computer Vision Foundations of Computer Vision - MIT&amp;rsquo;s book on Computer Vision Welcome to Spinning Up in Deep RL!</description>
+    </item>
+    
+    <item>
+      <title>Untitled</title>
+      <link>http://localhost:1313/vault/untitled/</link>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/untitled/</guid>
+      <description>Ran command: git status Ran command: git add . Ran command: git status Ran command: git commit -m &amp;quot;KSD experiments with c10 as the main distribution and checking ID vs OOD histogram plots for the test statistic.&amp;quot; Ran command: git push origin main Viewed ksd_utils.py:67-104
+Here is the complete step-by-step mathematical breakdown of the vectorized KSD calculation in compute_per_sample_ksd_single_scale:
+ 1. Inputs &amp;amp; Data Vectors (Lines 45–50)  Input: $N$ image samples $x_1, x_2, \dots, x_N$, each of dimension $d = 32 \times 32 \times 3 = 3072$.</description>
+    </item>
+    
+    <item>
+      <title>2026-09-09</title>
+      <link>http://localhost:1313/vault/2026-09-09/</link>
+      <pubDate>Wed, 09 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/2026-09-09/</guid>
+      <description>How are people reaching different conclusions and why What groups are looking at it theoretically and how groups look at it empirically? You have to go into depth into the nuances? Bitter Lesson:  Pretraining loss they are using. LLMs saturate in 4 epochs. unlike ImageNet. Language is very notorious to data-repetitions. check if the model based analysis compute aligned?   Maybe data gets adversarial which might degrade things.</description>
+    </item>
+    
+    <item>
+      <title>InfiniAI Meet</title>
+      <link>http://localhost:1313/vault/infiniai-meet/</link>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/infiniai-meet/</guid>
+      <description> The Journey till PhD  prioritise assisstant profs   Life at CMU What are you working on?  inference optimisation speculative decoding continual learning with agentic memory   What others are working on?  Automated Agentic Workflows building benchmarks inference optimisation rl rollout efficiency interactive video generation   Fall 2027 Semester Away  </description>
+    </item>
+    
+    <item>
+      <title>Distributions of Data that satisfies the power law</title>
+      <link>http://localhost:1313/vault/distributions-of-data-that-satisfies-the-power-law/</link>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/distributions-of-data-that-satisfies-the-power-law/</guid>
+      <description>#to-ponder #interpretebility #data-attribution
+Basically everyone knows about the data scaling laws, that is the validation loss or test accuracy changes with a power law over the dataset size being used.
+But does that need the dataset to have some particular properly.
+Say the dataset has a uniform distribution over the different kinds of features or sample complexity or smth. Will it scale differently compared some other distribution say smth like the normal distribution or zipfian?</description>
+    </item>
+    
+    <item>
+      <title>Cool Things I Read</title>
+      <link>http://localhost:1313/vault/cool-things-i-read/</link>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/cool-things-i-read/</guid>
+      <description> June, 2026
+  A Visual Guide to Gemma 4 12B - by Maarten Grootendorst   July, 2026
+  Less is More: Recursive Reasoning with Tiny Networks The Platonic Representation Hypothesis Learning Multi-Agent Coordination via Sheaf-ADMM Learning to Theorize the World from Observation | Doojin Baek https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/   August, 2026
+  A gentle introduction to sparse autoencoders — LessWrong Some Theoretical and Practical Thoughts on Diffusion Language Models | Junbo Zhao (Jake) towards-demystifying-the-creativity-of-diffusion-models  Reason Behind the Creativity of Diffusion Models     </description>
+    </item>
+    
+    <item>
+      <title>Professors and Labs</title>
+      <link>http://localhost:1313/vault/professors-and-labs/</link>
+      <pubDate>Wed, 08 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/professors-and-labs/</guid>
+      <description>Research Labs  MIT CSAIL – Scene Representation Group Group / RLLAB opportunities | Algorithmic Robotics Group Machine Learning and Mind Lab  MIP: MLML Internship Program -   Artificial Intelligence and Machine Learning Lab @ TU Darmstadt krishnaswamylab.org/members   Profs  Renjie Liao - deep gen modelling How We Work — Graham Taylor Kaushik Roy - Elmore Family School of Electrical and Computer Engineering - Purdue University Anji Liu Dhanya Sridhar Tamara Broderick Vishakh Padmakumar  Group - He He   Contact - Ermon Group  docs.</description>
+    </item>
+    
+    <item>
+      <title>Internship Applications</title>
+      <link>http://localhost:1313/vault/internship-applications/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/internship-applications/</guid>
+      <description>University Programs    University Program Status Deadline Link     NUS SoC Rejected     SURF Purdue Rejected     CMU LTI Rejected     IITH Not Applied 10th March Applications are invited for Summer Undergraduate Research Exposure (SURE) Internships 2026 | IIT Hyderabad   IITG Not Applied 27th March Application for Summer Internship 2026 at Dept of EEE IIT Guwahati (Page 1 of 3)   E3 EPFL Rejected     Vector Insti Applied 22nd June AI Research Internships | Vector Institute    Company Interns    **Company ** Status Deadline Link     Google Research Intern Rejected     Intrinsic Robotics Rejected     Adobe Research Lab Ghosted     LossFunk BLR Ongoing     info@unconv.</description>
+    </item>
+    
+  </channel>
+</rss>

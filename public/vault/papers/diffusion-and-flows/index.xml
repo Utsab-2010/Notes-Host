@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diffusion and Flows on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/papers/diffusion-and-flows/</link>
+    <description>Recent content in Diffusion and Flows on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/papers/diffusion-and-flows/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reading List</title>
+      <link>http://localhost:1313/vault/papers/diffusion-and-flows/reading-list/</link>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/diffusion-and-flows/reading-list/</guid>
+      <description> Estimation of Non-Normalized Statistical Models by Score Matching P. Vincent. A connection between score matching and denoising autoencoders. Neural computation, 23(7):1661–1674, 2011.   </description>
+    </item>
+    
+    <item>
+      <title>Diffusion-LM</title>
+      <link>http://localhost:1313/vault/papers/diffusion-and-flows/diffusion-lm/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/diffusion-and-flows/diffusion-lm/</guid>
+      <description>#diffusion #nlp Link: Diffusion-LM Improves Controllable Text Generation | alphaXiv
+The training workflow of Diffusion-LM adapts continuous diffusion models to discrete text by modifying the standard diffusion process to include an embedding step mapping discrete words to a continuous space, and a rounding step mapping continuous vectors back to words. The model is trained end-to-end, jointly learning the diffusion model&amp;rsquo;s parameters and the word embeddings.
+Here is the detailed workflow and the underlying mathematics:</description>
+    </item>
+    
+    <item>
+      <title>MaxEnRL via Energy-based Normalising Flows 1</title>
+      <link>http://localhost:1313/vault/papers/diffusion-and-flows/maxenrl-via-energy-based-normalising-flows-1/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/diffusion-and-flows/maxenrl-via-energy-based-normalising-flows-1/</guid>
+      <description>Abstract In traditional Max Entropy RL methods for continuous action spaces , typically actor-critic is used. There are usually two parts of the training which happen at each iteration:
+ policy eval: update the Q-fuction(Critic) policy improvement: updating the Actor  Proposed method is a single objective training process.
+ supports multi-modal action distributions with efficient action sampling does policy evaluation without monte carlo approximation  1. Soft Actor-Critic (SAC) Approximation This is the most common method, used in algorithms like SAC.</description>
+    </item>
+    
+    <item>
+      <title>Neural Ordinary Differential Equations</title>
+      <link>http://localhost:1313/vault/papers/diffusion-and-flows/neural-ordinary-differential-equations/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/diffusion-and-flows/neural-ordinary-differential-equations/</guid>
+      <description>#flows continuous normalizing flows
+Continuous-Depth Residual Models In traditional Residual Networks (ResNets), the model is built from a sequence of layers that make discrete jumps. Each layer transforms the data by adding a small change to it: $h_{t+1} = h_t + f(h_t, \theta_t)$.
+ From Jumps to Flow:  As you add more layers and make the steps smaller, this process starts to look like a continuous flow.   Neural ODEs:  Instead of specifying a fixed number of layers, a Neural Ordinary Differential Equation (ODE) defines the rate of change of the hidden state using a neural network:$$\large \frac{dh(t)}{dt} = f(h(t), t, \theta)$$   Depth as Time:  In this view, the &amp;ldquo;depth&amp;rdquo; of the model is like &amp;ldquo;time.</description>
+    </item>
+    
+  </channel>
+</rss>

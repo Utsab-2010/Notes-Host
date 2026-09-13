@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Meets on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/research-work/val-del/meets/</link>
+    <description>Recent content in Meets on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/research-work/val-del/meets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2026-07-20</title>
+      <link>http://localhost:1313/vault/research-work/val-del/meets/2026-07-20/</link>
+      <pubDate>Tue, 08 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/val-del/meets/2026-07-20/</guid>
+      <description>Image features
+ Easy, spurirous, hard    In power law paper, only expressions are shown. doesn&amp;rsquo;t transfer to image domain.
+ operation complexity varies no. of operations same Images  No of features can vary unlike their test setup here. Spurious Features also play a part in images  These are learnt by the model quickly. Gives wrong direction.     Different K values? Define controllable synthetic image datasets.</description>
+    </item>
+    
+    <item>
+      <title>2026-09-03</title>
+      <link>http://localhost:1313/vault/research-work/val-del/meets/2026-09-03/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/val-del/meets/2026-09-03/</guid>
+      <description> cifar- 5m controlled setups  Repeat easier samples     </description>
+    </item>
+    
+    <item>
+      <title>2026-08-26</title>
+      <link>http://localhost:1313/vault/research-work/val-del/meets/2026-08-26/</link>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/research-work/val-del/meets/2026-08-26/</guid>
+      <description>semantic dups removal pruning leads to compute optimality? does pruning provide any gains - in acc or compute? what scenarios does pruning work actually? what are the good baselines for pruning scenarios? artificially controlled setups and check where pruning is helping and what isn&amp;rsquo;t helping. intra and inter class dissimilarities, outliers , power law of complexity. if you can control the dataset distribution of data artificially(maybe with pruning involved), does it lead to improvements or not?</description>
+    </item>
+    
+  </channel>
+</rss>

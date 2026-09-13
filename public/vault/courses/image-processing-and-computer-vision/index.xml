@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Image Processing and Computer Vision on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/courses/image-processing-and-computer-vision/</link>
+    <description>Recent content in Image Processing and Computer Vision on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/courses/image-processing-and-computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>IVP Lectures 1-15</title>
+      <link>http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-1-15/</link>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-1-15/</guid>
+      <description>Digital Image Processing — Detailed Speedrun Notes Prof. P. K. Biswas, IIT Kharagpur Lectures 1–15  How to use this document These are detailed speedrun notes, not a replacement for the lectures.
+The goal is:
+ Watch the lectures quickly later, while using these notes as a coverage checklist.
+ The notes follow the actual sequence of the supplied NPTEL playlist and deliberately preserve the way the lecturer develops the subject.</description>
+    </item>
+    
+    <item>
+      <title>IVP Lectures 16-37</title>
+      <link>http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-16-37/</link>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-16-37/</guid>
+      <description>Digital Image Processing — Detailed Speedrun Notes Prof. P. K. Biswas, IIT Kharagpur Lectures 16–37  Purpose: detailed notes for speedrunning the lectures later.
+Closely related lectures are grouped into conceptual blocks, but every lecture is covered in sequence.
+ The official NPTEL course sequence for Lectures 16–37 is:
+ 16 — Interpolation and Resampling 17 — Interpolation Techniques 18 — Interpolation with examples – I 19 — Interpolation with Examples – II 20 — Image Transformation – I 21 — Image Transformation – II 22 — Separable Transformation 23 — Basis Images 24 — Fourier Transformation 25 — Properties of FT 26 — FT Result Display – II 27 — Rotation Invariance Property 28 — DCT and Walsh Transform 29 — Hadamard Transformation 30 — Histogram Equalization and Specifications – I 31 — KL Transform – II 32 — Image Enhancement: Point Processing Techniques 33 — Contrast Stretching Operation 34 — Histogram Equalization and Specification – I 35 — Histogram Equalization and Specification – II 36 — Histogram Implementation – I 37 — Histogram Implementation – II  This sequence is confirmed by the current NPTEL course page and course mirrors.</description>
+    </item>
+    
+    <item>
+      <title>IVP Lectures 38-49</title>
+      <link>http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-38-49/</link>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/courses/image-processing-and-computer-vision/ivp-lectures-38-49/</guid>
+      <description>Digital Image Processing — Lectures 38–49 Detailed Speedrun Notes — Obsidian Version  Course: NPTEL Digital Image Processing, IIT Kharagpur
+Instructor: Prof. Prabir Kumar Biswas
+Coverage: Lectures 38–49
+The official NPTEL sequence places L38–40 under mask-processing enhancement, L41 under frequency-domain processing, L42–47 under image restoration, and L48–49 under image registration. citeturn2search2
+  0. Big Picture This block moves from enhancement to restoration and then to registration:
+ L38–40: spatial/mask processing — improve an image using local neighborhoods.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Utsab's Note Repository</title><link>https://Utsab-2010.github.io/Notes-Host/tags/blog/</link><description>Recent content in Blog on Utsab's Note Repository</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 02 Jul 2026 17:03:24 +0530</lastBuildDate><atom:link href="https://Utsab-2010.github.io/Notes-Host/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://Utsab-2010.github.io/Notes-Host/vault/blogs/why-is-diffusion-an-iterative-process/</link><pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/blogs/why-is-diffusion-an-iterative-process/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/tags/blog/</link>
+    <description>Recent content in blog on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Jul 2026 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/vault/blogs/why-is-diffusion-an-iterative-process/</link>
+      <pubDate>Thu, 02 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/blogs/why-is-diffusion-an-iterative-process/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

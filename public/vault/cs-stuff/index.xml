@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CS Stuff on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/cs-stuff/</link>
+    <description>Recent content in CS Stuff on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/cs-stuff/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>SQL — Complete Reference Notes</title>
+      <link>http://localhost:1313/vault/cs-stuff/sql-complete-reference-notes/</link>
+      <pubDate>Wed, 12 Aug 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/cs-stuff/sql-complete-reference-notes/</guid>
+      <description>A practical, from-scratch-to-advanced reference. Covers table creation, data types, constraints, the clause execution order, joins, subqueries, aggregation, window functions, indexes, and transactions.
+ 1. SQL Command Categories    Category Full Form Commands Purpose     DDL Data Definition Language CREATE, ALTER, DROP, TRUNCATE Defines schema/structure   DML Data Manipulation Language INSERT, UPDATE, DELETE Modifies data   DQL Data Query Language SELECT Reads data   DCL Data Control Language GRANT, REVOKE Permissions   TCL Transaction Control Language COMMIT, ROLLBACK, SAVEPOINT Transaction management     2.</description>
+    </item>
+    
+  </channel>
+</rss>

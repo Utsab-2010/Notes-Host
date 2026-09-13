@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"bba74d8b3d00e5c1","type":"group","x":-2280,"y":-2280,"width":3240,"height":1280,"label":"Active Papers"},
+		{"id":"948849fb0567f1e4","type":"text","text":"Factors of Features","x":-1080,"y":-468,"width":230,"height":60},
+		{"id":"c7d26edfb2b96d00","type":"text","text":"frequency in the data","x":-1461,"y":-276,"width":250,"height":60},
+		{"id":"a742cef2d757fc0a","type":"text","text":"Toy Setup","x":-2080,"y":-571,"width":158,"height":60},
+		{"id":"ffa35e0741a976a4","type":"text","text":"quantization of knowledge","x":-1700,"y":-571,"width":286,"height":58},
+		{"id":"bdf222f87d71e193","type":"text","text":"simplicity bias - preference for linear features","x":-1285,"y":-723,"width":310,"height":63},
+		{"id":"f581ec8b5a7637e6","type":"file","file":"Papers/Understanding Visual Feature Reliance through the Lens of Complexity.md","x":-2238,"y":-2200,"width":474,"height":280},
+		{"id":"c9ad3ad785f01591","type":"file","file":"Papers/Learned feature representations are biased by complexity, learning order, position, and more.md","x":-1720,"y":-2200,"width":540,"height":280},
+		{"id":"064d732831c0315d","type":"file","file":"Papers/A Compression Perspective on Simplicity Bias.md","x":-1160,"y":-2200,"width":440,"height":280},
+		{"id":"89a4000105842ddc","type":"text","text":"Complexity of features","x":-1100,"y":-276,"width":250,"height":60},
+		{"id":"04bbef01b6bb8323","type":"text","text":"Correlation vs Causality","x":-220,"y":-408,"width":280,"height":60},
+		{"id":"d9518c20c84e3756","type":"text","text":"Importance of Features","x":-740,"y":-276,"width":260,"height":60},
+		{"id":"812db2744ce4af3b","type":"text","text":"Experiments","x":1351,"y":-799,"width":250,"height":60},
+		{"id":"c27e76f156fdb8e9","type":"text","text":"# Questions\n1. We observe that both pruned and unpruned natural datasets have a zipfian distribution over the different features/quantas of information present in the data.\n\t- Makes sense coz pruned or unpruned, its still natural data.\n\t- However the relative ordering of  the quanta frequencies change.\n\t\t- I tried random pruning which led to very little change in relative pruning ordering. However, its well known that el2n better than random on cifar100. Hence relative frequency ranking is not the main \n\t- Curriculum learning from the perpective of feature availability\n2. Some lit mention the importance of data diversity for OOD generalisation. How to quantify this diversity? How to prune to ensure diversity?\n3. Even if the features are present in encoded format in the representation space they are mixed into the representation vector. I am not sure how \"extractable\" they are . Given for a sample we only see the aggregated representation.","x":500,"y":-700,"width":660,"height":720}
+	],
+	"edges":[
+		{"id":"ddf1d3d5356af853","fromNode":"948849fb0567f1e4","fromSide":"bottom","toNode":"c7d26edfb2b96d00","toSide":"top"},
+		{"id":"3dba8f9ea724ee05","fromNode":"948849fb0567f1e4","fromSide":"bottom","toNode":"89a4000105842ddc","toSide":"top"},
+		{"id":"d2b614c863c65596","fromNode":"948849fb0567f1e4","fromSide":"bottom","toNode":"d9518c20c84e3756","toSide":"top"},
+		{"id":"fe3db461d2eb1713","fromNode":"948849fb0567f1e4","fromSide":"bottom","toNode":"04bbef01b6bb8323","toSide":"top"},
+		{"id":"1bc1aa561bcf86e3","fromNode":"812db2744ce4af3b","fromSide":"bottom","toNode":"c27e76f156fdb8e9","toSide":"top"}
+	]
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scaling Laws on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/papers/scaling-laws/</link>
+    <description>Recent content in Scaling Laws on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/papers/scaling-laws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Beyond Neural Scaling Law - Data Pruning improve power law</title>
+      <link>http://localhost:1313/vault/papers/scaling-laws/beyond-neural-scaling-law-data-pruning-improve-power-law/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/scaling-laws/beyond-neural-scaling-law-data-pruning-improve-power-law/</guid>
+      <description>#scaling-laws paper: [2206.14486] Beyond neural scaling laws: beating power law scaling via data pruning
+Main Points  They are NOT focusing on trainining/compute efficiency in this work even though they are working with data pruning methods They try to show that use of data pruning can lead to the creation of better datasets which can help scale up performance beyond the traditional power law trend. They tested with a toy model and designed a scoring metric to score samples based on their quality.</description>
+    </item>
+    
+    <item>
+      <title>Cram Less to Fit More</title>
+      <link>http://localhost:1313/vault/papers/scaling-laws/cram-less-to-fit-more/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/scaling-laws/cram-less-to-fit-more/</guid>
+      <description>#nlp #model_capacity #scaling-laws source: [2604.08519] Cram Less to Fit More: Training Data Pruning Improves Memorization of Facts</description>
+    </item>
+    
+    <item>
+      <title>Explaining Data-Mixing Scaling Laws</title>
+      <link>http://localhost:1313/vault/papers/scaling-laws/explaining-data-mixing-scaling-laws/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/scaling-laws/explaining-data-mixing-scaling-laws/</guid>
+      <description>#data-attribution #data-efficient-ml #interpretebility #scaling-laws
+Paper: [2606.08167] Explaining Data Mixing Scaling Laws
+Core: </description>
+    </item>
+    
+    <item>
+      <title>How Feature Learning can Improve Neural Scaling</title>
+      <link>http://localhost:1313/vault/papers/scaling-laws/how-feature-learning-can-improve-neural-scaling/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/scaling-laws/how-feature-learning-can-improve-neural-scaling/</guid>
+      <description>#scaling-laws #representations
+They mentioned some lazy-training regime?
+ What is the lazy training regime? The lazy training regime (aka the NTK/kernel regime) is a description of how very wide neural networks behave during gradient descent — and it&amp;rsquo;s a bit counterintuitive: the network trains successfully, but its internal features barely move.
+ </description>
+    </item>
+    
+    <item>
+      <title>Scaling for Data Filtering</title>
+      <link>http://localhost:1313/vault/papers/scaling-laws/scaling-for-data-filtering/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/scaling-laws/scaling-for-data-filtering/</guid>
+      <description>#data-efficient-ml Data curation cannot be compute-agnostic!
+Paper: IEEE Xplore - Unable to Load Page
+Brief  presents a methodical study on how &amp;ldquo;quality&amp;rdquo; of data is not fixed and is actually compute dependent(how long you train the model). Past research considered web-data to be homogeneous(belonging to the same distribution) which they haven&amp;rsquo;t assumed in their work. filtering metrics must be designed by assessing the trade-off between the diminishing utility of a small pool of ‘high-quality’ data, and the initially lower but slowly diminishing utility of a larger pool that includes ‘lower-quality’ data.</description>
+    </item>
+    
+  </channel>
+</rss>

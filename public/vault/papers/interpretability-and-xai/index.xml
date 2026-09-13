@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interpretability and XAI on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/papers/interpretability-and-xai/</link>
+    <description>Recent content in Interpretability and XAI on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/papers/interpretability-and-xai/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MACO-Feature Visualization via Magnitude Constrained Optimization</title>
+      <link>http://localhost:1313/vault/papers/interpretability-and-xai/maco-feature-visualization-via-magnitude-constrained-optimization/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/interpretability-and-xai/maco-feature-visualization-via-magnitude-constrained-optimization/</guid>
+      <description>#compvis #interpretebility #ml_tools
+Contributions The MACO (Magnitude Constrained Optimization) algorithm is a feature visualization method that generates interpretable images for deep neural networks by exclusively optimizing the phase spectrum of an image while holding its Fourier magnitude constant.
+Traditional feature visualization methods optimize the entire Fourier spectrum and rely on high-frequency penalties to keep images readable. However, when scaling to modern, deeper architectures like Vision Transformers (ViTs) and deep ResNets, these techniques fail because high-frequency noise leaks through and pollutes the visualizations.</description>
+    </item>
+    
+    <item>
+      <title>Understanding Visual Feature Reliance through the Lens of Complexity</title>
+      <link>http://localhost:1313/vault/papers/interpretability-and-xai/understanding-visual-feature-reliance-through-the-lens-of-complexity/</link>
+      <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/papers/interpretability-and-xai/understanding-visual-feature-reliance-through-the-lens-of-complexity/</guid>
+      <description>#compvis #interpretebility #compvis paper: [2407.06076] Understanding Visual Feature Reliance through the Lens of Complexity
+Key Takeaways  a new metric for quantifying feature complexity, based on V-information and capturing whether a feature requires complex computational transformations to be extracted. They create a dictionary of 10k features based on the penultimate layer representations such that each representation is a linear combination of dictionary vectors Define complexity of feature based on the V information Define importance of a feature Analyse when features are learned during training and where within the network complex features flow.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,3 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DSA and CP on Utsab's Note Repository</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/</link><description>Recent content in DSA and CP on Utsab's Note Repository</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/index.xml" rel="self" type="application/rss+xml"/><item><title>Linked List</title><link>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/linked-list/</link><pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate><guid>https://Utsab-2010.github.io/Notes-Host/vault/dsa-and-cp/linked-list/</guid><description>1. What is a Linked List? A linked list is a data structure made up of a chain of nodes, where each node holds:
-Some data A pointer to the next node Unlike arrays, linked list elements are not stored in contiguous memory. Each node can be anywhere in memory — they&amp;rsquo;re connected only through pointers.
-[data | next] --&amp;gt; [data | next] --&amp;gt; [data | next] --&amp;gt; NULL Node 1 Node 2 Node 3 2.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DSA and CP on Utsab&#39;s Note Repository</title>
+    <link>http://localhost:1313/vault/dsa-and-cp/</link>
+    <description>Recent content in DSA and CP on Utsab&#39;s Note Repository</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/vault/dsa-and-cp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Snippets for CP</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/python-snippets-for-cp/</link>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/python-snippets-for-cp/</guid>
+      <description>Fast I/O import sys input = sys.stdin.readline data = sys.stdin.read().split() # read everything at once, fastest for many tokens # single line ints n, m = map(int, input().split()) # array of ints arr = list(map(int, input().split())) # read whole input, use an index pointer instead of repeated input() it = iter(sys.stdin.read().split()) n = int(next(it)); arr = [int(next(it)) for _ in range(n)] print(*arr) # space-separated print sys.stdout.write(&amp;#34;\n&amp;#34;.join(map(str, arr)) + &amp;#34;\n&amp;#34;) # bulk print, faster than loop Sorting arr.</description>
+    </item>
+    
+    <item>
+      <title>Hand of Straights</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/hand-of-straights/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/hand-of-straights/</guid>
+      <description>#cp-medium
+Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards.
+Given an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.
+Example 1:
+Input: hand = [1,2,3,6,2,3,4,7,8], groupSize = 3 Output: true Explanation: Alice&amp;rsquo;s hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]</description>
+    </item>
+    
+    <item>
+      <title>House Robber II</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/house-robber-ii/</link>
+      <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/house-robber-ii/</guid>
+      <description>#cp-medium You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and it will automatically contact the police if two adjacent houses were broken into on the same night.</description>
+    </item>
+    
+    <item>
+      <title>Linked List</title>
+      <link>http://localhost:1313/vault/dsa-and-cp/linked-list/</link>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/vault/dsa-and-cp/linked-list/</guid>
+      <description>1. What is a Linked List? A linked list is a data structure made up of a chain of nodes, where each node holds:
+ Some data A pointer to the next node  Unlike arrays, linked list elements are not stored in contiguous memory. Each node can be anywhere in memory — they&amp;rsquo;re connected only through pointers.
+[data | next] --&amp;gt; [data | next] --&amp;gt; [data | next] --&amp;gt; NULL Node 1 Node 2 Node 3  2.</description>
+    </item>
+    
+  </channel>
+</rss>

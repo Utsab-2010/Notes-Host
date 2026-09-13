@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder.startsWith("Papers")
+        - '!file.ext.endsWith("base")'
+        - '!file.folder.contains("attachments")'
+    order:
+      - file.name
+      - file.tags
+      - file.mtime
+    columnSize:
+      file.name: 901
+      file.tags: 520

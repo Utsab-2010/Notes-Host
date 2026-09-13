@@ -1,0 +1,413 @@
+{{ define "main" }}
+<div class="canvas-page-wrapper">
+    <header class="canvas-page-header">
+        <span class="canvas-icon">🎨</span>
+        <h1 class="canvas-title">{{ .Title }}</h1>
+        <div class="canvas-controls">
+            <button id="canvas-fit-btn" title="Fit to screen">⊡ Fit</button>
+            <button id="canvas-reset-btn" title="Reset zoom">↺ Reset</button>
+            <span id="canvas-zoom-label">100%</span>
+        </div>
+    </header>
+    <div id="canvas-viewport" class="canvas-viewport">
+        <div id="canvas-world" class="canvas-world">
+            <svg id="canvas-edges-svg" class="canvas-edges-svg" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                        <polygon points="0 0, 10 3.5, 0 7" fill="#7fbbb3" opacity="0.7" />
+                    </marker>
+                </defs>
+            </svg>
+        </div>
+        <div id="canvas-loading" class="canvas-loading">
+            <div class="canvas-spinner"></div>
+            <p>Loading canvas…</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.content-wrapper {
+    padding: 0 !important;
+    max-width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+}
+.main-area { overflow: hidden; }
+
+.canvas-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 4rem);
+    background: #14181a;
+}
+.canvas-page-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    background: #1e2428;
+    flex-shrink: 0;
+}
+.canvas-icon { font-size: 1.2rem; }
+.canvas-title {
+    font-family: var(--font-main);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    flex-grow: 1;
+    background: linear-gradient(90deg, #8da874, #7fbbb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.canvas-controls { display: flex; align-items: center; gap: 0.5rem; }
+.canvas-controls button {
+    background: #2d353b;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+.canvas-controls button:hover { background: #3d484d; border-color: var(--accent-color); }
+#canvas-zoom-label {
+    font-family: var(--font-code);
+    font-size: 0.8rem;
+    color: #9da9a0;
+    min-width: 3rem;
+    text-align: right;
+}
+.canvas-viewport {
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+}
+.canvas-viewport:active { cursor: grabbing; }
+.canvas-world {
+    position: absolute;
+    top: 0; left: 0;
+    transform-origin: 0 0;
+    width: 1px; height: 1px;
+}
+.canvas-edges-svg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    overflow: visible;
+}
+.canvas-loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #9da9a0;
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+}
+.canvas-spinner {
+    width: 36px; height: 36px;
+    border: 3px solid #2d353b;
+    border-top-color: #8da874;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.cv-node {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    transition: box-shadow 0.15s;
+    overflow: hidden;
+}
+.cv-node:hover { box-shadow: 0 0 0 2px rgba(141, 168, 116, 0.4); z-index: 10; }
+.cv-node-text { background: #1e2428; border: 1px solid #3d484d; padding: 0.85rem 1rem; overflow-y: auto; }
+.cv-node-file { background: #1a2226; border: 1px solid #3d484d; display: flex; flex-direction: column; }
+.cv-node-file-header {
+    padding: 0.6rem 0.85rem;
+    border-bottom: 1px solid #2d353b;
+    font-family: var(--font-main);
+    font-size: 0.8rem;
+    color: #9da9a0;
+    display: flex; align-items: center; gap: 0.4rem;
+    flex-shrink: 0;
+}
+.cv-node-file-body { padding: 0.85rem 1rem; overflow-y: auto; flex-grow: 1; }
+.cv-node-file-link { color: var(--accent-color); text-decoration: none; font-weight: 600; font-family: var(--font-main); }
+.cv-node-file-link:hover { color: #7fbbb3; text-decoration: underline; }
+.cv-node-link { background: #1e2428; border: 1px solid #3d484d; padding: 0.85rem 1rem; display: flex; align-items: center; gap: 0.5rem; }
+.cv-node-link a { color: var(--accent-color); word-break: break-all; }
+.cv-node-group { background: rgba(141,168,116,0.04); border: 1.5px dashed rgba(141,168,116,0.3); border-radius: 10px; }
+.cv-node-group-label {
+    position: absolute; top: -1.4rem; left: 0.75rem;
+    font-family: var(--font-main); font-size: 0.78rem; font-weight: 600;
+    color: rgba(141,168,116,0.7); white-space: nowrap;
+}
+.cv-color-1 { border-color: #e67e80 !important; }
+.cv-color-2 { border-color: #e69875 !important; }
+.cv-color-3 { border-color: #dbbc7f !important; }
+.cv-color-4 { border-color: #a7c080 !important; }
+.cv-color-5 { border-color: #7fbbb3 !important; }
+.cv-color-6 { border-color: #d699b6 !important; }
+.cv-md h1,.cv-md h2,.cv-md h3 { font-family:var(--font-main); font-weight:600; color:var(--text-color); margin:0.5rem 0 0.25rem; line-height:1.3; }
+.cv-md h1 { font-size:1.1rem; }
+.cv-md h2 { font-size:0.98rem; }
+.cv-md h3 { font-size:0.88rem; }
+.cv-md p { margin:0 0 0.5rem; }
+.cv-md ul,.cv-md ol { padding-left:1.25rem; margin:0 0 0.5rem; }
+.cv-md li { margin-bottom:0.2rem; }
+.cv-md code { background:#2d353b; padding:0.1rem 0.3rem; border-radius:3px; font-family:var(--font-code); font-size:0.82rem; color:#e67e80; }
+.cv-md strong { color:#e0d4b8; }
+.cv-md em { color:#9da9a0; font-style:italic; }
+.cv-md hr { border:none; border-top:1px solid var(--border-color); margin:0.75rem 0; }
+.cv-md a { color:var(--accent-color); }
+.cv-md blockquote { border-left:3px solid var(--accent-color); padding:0.2rem 0.6rem; margin:0.5rem 0; color:#9da9a0; font-style:italic; }
+</style>
+
+<script>
+(function() {
+    const CANVAS_FILE = "{{ .Params.canvasFile }}";
+    const viewport   = document.getElementById('canvas-viewport');
+    const world      = document.getElementById('canvas-world');
+    const svg        = document.getElementById('canvas-edges-svg');
+    const loading    = document.getElementById('canvas-loading');
+    const zoomLabel  = document.getElementById('canvas-zoom-label');
+    const fitBtn     = document.getElementById('canvas-fit-btn');
+    const resetBtn   = document.getElementById('canvas-reset-btn');
+
+    let scale = 1, tx = 0, ty = 0;
+    let isPanning = false, startX = 0, startY = 0, startTx = 0, startTy = 0;
+    let nodeEls  = {};
+    let nodeData = {};
+    let edgeData = [];
+
+    /* ── Minimal Markdown renderer ── */
+    function renderMd(text) {
+        if (!text) return '';
+        return text
+            .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+            .replace(/```[\s\S]*?```/g, m => {
+                const code = m.replace(/^```[^\n]*\n?/,'').replace(/\n?```$/,'');
+                return '<pre><code>'+code+'</code></pre>';
+            })
+            .replace(/`([^`]+)`/g,'<code>$1</code>')
+            .replace(/\*\*\*(.+?)\*\*\*/g,'<strong><em>$1</em></strong>')
+            .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+            .replace(/__(.+?)__/g,'<strong>$1</strong>')
+            .replace(/\*(.+?)\*/g,'<em>$1</em>')
+            .replace(/_(.+?)_/g,'<em>$1</em>')
+            .replace(/^#### (.+)$/gm,'<h4>$1</h4>')
+            .replace(/^### (.+)$/gm,'<h3>$1</h3>')
+            .replace(/^## (.+)$/gm,'<h2>$1</h2>')
+            .replace(/^# (.+)$/gm,'<h1>$1</h1>')
+            .replace(/^---+$/gm,'<hr>')
+            .replace(/^&gt; (.+)$/gm,'<blockquote><p>$1</p></blockquote>')
+            .replace(/^[\-\*] (.+)$/gm,'<li>$1</li>')
+            .replace(/^\d+\. (.+)$/gm,'<li>$1</li>')
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>')
+            .replace(/\[\[([^\]]+)\]\]/g,(_,p) => {
+                const slug=p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9\-]/g,'');
+                return '<a href="/vault/'+slug+'/">'+p+'</a>';
+            })
+            .replace(/^(?!<[hlbdp]|<\/|<pre|<blockquote|<li)(.+)$/gm,'<p>$1</p>')
+            .replace(/(<li>[\s\S]+?<\/li>)/g, m => m.includes('</ul>') ? m : '<ul>'+m+'</ul>');
+    }
+
+    /* ── Transform ── */
+    function applyTransform() {
+        world.style.transform = 'translate('+tx+'px,'+ty+'px) scale('+scale+')';
+        zoomLabel.textContent = Math.round(scale*100)+'%';
+        redrawEdges();
+    }
+
+    /* ── Node anchor ── */
+    function getAnchor(node, side) {
+        const cx=node.x*scale+tx, cy=node.y*scale+ty;
+        const w=node.width*scale, h=node.height*scale;
+        switch(side){
+            case 'top':    return {x:cx+w/2,y:cy};
+            case 'bottom': return {x:cx+w/2,y:cy+h};
+            case 'left':   return {x:cx,    y:cy+h/2};
+            case 'right':  return {x:cx+w,  y:cy+h/2};
+            default:       return {x:cx+w/2,y:cy+h/2};
+        }
+    }
+
+    /* ── Draw edges ── */
+    function redrawEdges() {
+        svg.querySelectorAll('path.cv-edge').forEach(p=>p.remove());
+        const colorMap={'1':'#e67e80','2':'#e69875','3':'#dbbc7f','4':'#a7c080','5':'#7fbbb3','6':'#d699b6'};
+        for (const edge of edgeData) {
+            const fn=nodeData[edge.fromNode], tn=nodeData[edge.toNode];
+            if(!fn||!tn) continue;
+            const from=getAnchor(fn,edge.fromSide), to=getAnchor(tn,edge.toSide);
+            const dist=Math.max(80*scale, Math.hypot(to.x-from.x,to.y-from.y)*0.45);
+            function cpOff(side,d){
+                switch(side){case 'top':return{x:0,y:-d};case 'bottom':return{x:0,y:d};case 'left':return{x:-d,y:0};case 'right':return{x:d,y:0};default:return{x:0,y:0};}
+            }
+            const cf=cpOff(edge.fromSide,dist), ct=cpOff(edge.toSide,dist);
+            const color=(fn.color&&colorMap[fn.color])||'#7fbbb3';
+            const path=document.createElementNS('http://www.w3.org/2000/svg','path');
+            path.setAttribute('class','cv-edge');
+            path.setAttribute('d','M'+from.x+','+from.y+' C'+(from.x+cf.x)+','+(from.y+cf.y)+' '+(to.x+ct.x)+','+(to.y+ct.y)+' '+to.x+','+to.y);
+            path.setAttribute('fill','none');
+            path.setAttribute('stroke',color);
+            path.setAttribute('stroke-width','1.5');
+            path.setAttribute('stroke-opacity','0.65');
+            path.setAttribute('marker-end','url(#arrowhead)');
+            svg.appendChild(path);
+        }
+    }
+
+    /* ── Build node DOM ── */
+    function buildNode(node) {
+        const el=document.createElement('div');
+        el.className='cv-node';
+        if(node.color) el.classList.add('cv-color-'+node.color);
+        el.style.left=node.x+'px'; el.style.top=node.y+'px';
+        el.style.width=node.width+'px'; el.style.height=node.height+'px';
+
+        if(node.type==='text'){
+            el.classList.add('cv-node-text');
+            const inner=document.createElement('div');
+            inner.className='cv-md';
+            inner.innerHTML=renderMd(node.text||'');
+            el.appendChild(inner);
+            if(window.renderMathInElement){
+                renderMathInElement(el,{delimiters:[{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}],throwOnError:false});
+            }
+        } else if(node.type==='file'){
+            el.classList.add('cv-node-file');
+            const filePath=node.file||'';
+            const fileName=filePath.split('/').pop().replace(/\.md$/,'');
+            const pathSlug=filePath.replace(/\.md$/,'').split('/').map(p=>p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9\-]/g,'')).join('/');
+            const header=document.createElement('div');
+            header.className='cv-node-file-header';
+            header.innerHTML='📄 <a class="cv-node-file-link" href="/vault/'+pathSlug+'/">'+fileName+'</a>';
+            const body=document.createElement('div');
+            body.className='cv-node-file-body';
+            body.innerHTML='<p style="color:#9da9a0;font-size:0.8rem;margin:0;">Linked note — <a style="color:var(--accent-color)" href="/vault/'+pathSlug+'/">Open →</a></p>';
+            el.appendChild(header); el.appendChild(body);
+        } else if(node.type==='link'){
+            el.classList.add('cv-node-link');
+            el.innerHTML='🔗 <a href="'+(node.url||'#')+'" target="_blank" rel="noopener">'+(node.url||'')+'</a>';
+        } else if(node.type==='group'){
+            el.classList.add('cv-node-group');
+            el.style.zIndex='-1';
+            if(node.label){
+                const lbl=document.createElement('div');
+                lbl.className='cv-node-group-label';
+                lbl.textContent=node.label;
+                el.appendChild(lbl);
+            }
+        }
+        world.appendChild(el);
+        nodeEls[node.id]=el;
+    }
+
+    /* ── Fit to screen ── */
+    function fitToScreen(nodes) {
+        if(!nodes.length) return;
+        const PAD=60, vw=viewport.clientWidth, vh=viewport.clientHeight;
+        let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
+        for(const n of nodes){minX=Math.min(minX,n.x);minY=Math.min(minY,n.y);maxX=Math.max(maxX,n.x+n.width);maxY=Math.max(maxY,n.y+n.height);}
+        const cw=maxX-minX+PAD*2, ch=maxY-minY+PAD*2;
+        scale=Math.min(Math.max(Math.min(vw/cw,vh/ch),0.1),1.5);
+        tx=-minX*scale+(vw-(maxX-minX)*scale)/2;
+        ty=-minY*scale+(vh-(maxY-minY)*scale)/2;
+        applyTransform();
+    }
+
+    /* ── Load ── */
+    async function loadCanvas() {
+        try {
+            const res=await fetch(CANVAS_FILE);
+            if(!res.ok) throw new Error('HTTP '+res.status);
+            const data=await res.json();
+            const nodes=data.nodes||[], edges=data.edges||[];
+            nodeData={};
+            for(const n of nodes) nodeData[n.id]=n;
+            edgeData=edges;
+            const groups=nodes.filter(n=>n.type==='group');
+            const others=nodes.filter(n=>n.type!=='group');
+            for(const n of [...groups,...others]) buildNode(n);
+            loading.style.display='none';
+            fitToScreen(nodes);
+        } catch(err){
+            loading.innerHTML='<p style="color:#e67e80">⚠️ Failed to load canvas: '+err.message+'</p>';
+            console.error('Canvas load error:',err);
+        }
+    }
+
+    /* ── Pan ── */
+    viewport.addEventListener('mousedown',e=>{
+        if(e.button!==0) return;
+        isPanning=true; startX=e.clientX; startY=e.clientY; startTx=tx; startTy=ty;
+        viewport.style.cursor='grabbing';
+    });
+    window.addEventListener('mousemove',e=>{
+        if(!isPanning) return;
+        tx=startTx+(e.clientX-startX); ty=startTy+(e.clientY-startY);
+        applyTransform();
+    });
+    window.addEventListener('mouseup',()=>{ isPanning=false; viewport.style.cursor='grab'; });
+
+    /* ── Zoom ── */
+    viewport.addEventListener('wheel',e=>{
+        e.preventDefault();
+        const rect=viewport.getBoundingClientRect();
+        const mx=e.clientX-rect.left, my=e.clientY-rect.top;
+        const delta=e.deltaY<0?1.1:0.9;
+        const ns=Math.min(Math.max(scale*delta,0.08),4);
+        tx=mx-(mx-tx)*(ns/scale); ty=my-(my-ty)*(ns/scale); scale=ns;
+        applyTransform();
+    },{passive:false});
+
+    /* ── Touch ── */
+    let lastT=[];
+    viewport.addEventListener('touchstart',e=>{lastT=[...e.touches];},{passive:true});
+    viewport.addEventListener('touchmove',e=>{
+        e.preventDefault();
+        if(e.touches.length===1&&lastT.length===1){
+            tx+=e.touches[0].clientX-lastT[0].clientX;
+            ty+=e.touches[0].clientY-lastT[0].clientY;
+        } else if(e.touches.length===2&&lastT.length===2){
+            const d=(t)=>Math.hypot(t[0].clientX-t[1].clientX,t[0].clientY-t[1].clientY);
+            const od=d(lastT), nd=d([...e.touches]);
+            if(od>0){
+                const cx=(e.touches[0].clientX+e.touches[1].clientX)/2;
+                const cy=(e.touches[0].clientY+e.touches[1].clientY)/2;
+                const rect=viewport.getBoundingClientRect();
+                const mx=cx-rect.left, my=cy-rect.top;
+                const ns=Math.min(Math.max(scale*(nd/od),0.08),4);
+                tx=mx-(mx-tx)*(ns/scale); ty=my-(my-ty)*(ns/scale); scale=ns;
+            }
+        }
+        lastT=[...e.touches]; applyTransform();
+    },{passive:false});
+
+    /* ── Buttons ── */
+    fitBtn.addEventListener('click',()=>fitToScreen(Object.values(nodeData)));
+    resetBtn.addEventListener('click',()=>{scale=1;tx=0;ty=0;applyTransform();});
+
+    loadCanvas();
+})();
+</script>
+{{ end }}

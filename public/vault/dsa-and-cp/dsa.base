@@ -1,0 +1,9 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.path.contains("DSA and CP")
+    groupBy:
+      property: file.folder
+      direction: ASC
