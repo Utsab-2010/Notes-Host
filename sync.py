@@ -71,36 +71,24 @@ def build_indices():
     return note_map, resource_map
 
 def process_canvas(src_path, note_map):
-    """Generate a Hugo markdown stub for a .canvas file and copy the JSON to static/canvas/."""
-    import json
-    
+    """Generate a Hugo markdown stub embedding the .canvas JSON directly."""
     title = os.path.splitext(os.path.basename(src_path))[0]
-    rel_path = os.path.relpath(src_path, VAULT_DIR)
-    
-    # Build a slugified path for the static JSON file: e.g. "research-work/val-del/scaling-laws.json"
-    parts = rel_path.split(os.sep)
-    slugified_parts = [slugify(os.path.splitext(p)[0]) if idx == len(parts)-1 else slugify(p) for idx, p in enumerate(parts)]
-    json_rel = "/".join(slugified_parts) + ".json"
-    json_static_path = os.path.join(STATIC_CANVAS_DIR, json_rel)
-    
-    # Copy the raw canvas JSON to static/canvas/
-    os.makedirs(os.path.dirname(json_static_path), exist_ok=True)
-    shutil.copy2(src_path, json_static_path)
-    
-    # The URL where Hugo will serve the JSON file
-    canvas_json_url = "/canvas/" + json_rel
-    
-    # Generate the Hugo markdown stub
     clean_title = title.replace('"', '\\"')
     mtime = os.path.getmtime(src_path)
     date_str = datetime.datetime.fromtimestamp(mtime).strftime('%Y-%m-%d')
     
+    with open(src_path, 'r', encoding='utf-8', errors='ignore') as f:
+        canvas_json = f.read()
+        
     stub = f"""---
-title: \"{clean_title}\"
+title: "{clean_title}"
 layout: "canvas"
-canvasFile: "{canvas_json_url}"
 lastmod: {date_str}
 ---
+
+<script id="canvas-data" type="application/json">
+{canvas_json}
+</script>
 """
     return stub
 

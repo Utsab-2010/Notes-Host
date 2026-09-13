@@ -25,6 +25,7 @@
         </div>
     </div>
 </div>
+{{ .Content }}
 
 <style>
 .content-wrapper {
@@ -298,12 +299,14 @@
             const filePath=node.file||'';
             const fileName=filePath.split('/').pop().replace(/\.md$/,'');
             const pathSlug=filePath.replace(/\.md$/,'').split('/').map(p=>p.toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9\-]/g,'')).join('/');
+            const baseRel="{{ "" | relURL }}";
+            const noteUrl=baseRel+'vault/'+pathSlug+'/';
             const header=document.createElement('div');
             header.className='cv-node-file-header';
-            header.innerHTML='📄 <a class="cv-node-file-link" href="/vault/'+pathSlug+'/">'+fileName+'</a>';
+            header.innerHTML='📄 <a class="cv-node-file-link" href="'+noteUrl+'">'+fileName+'</a>';
             const body=document.createElement('div');
             body.className='cv-node-file-body';
-            body.innerHTML='<p style="color:#9da9a0;font-size:0.8rem;margin:0;">Linked note — <a style="color:var(--accent-color)" href="/vault/'+pathSlug+'/">Open →</a></p>';
+            body.innerHTML='<p style="color:#9da9a0;font-size:0.8rem;margin:0;">Linked note — <a style="color:var(--accent-color)" href="'+noteUrl+'">Open →</a></p>';
             el.appendChild(header); el.appendChild(body);
         } else if(node.type==='link'){
             el.classList.add('cv-node-link');
@@ -336,23 +339,23 @@
     }
 
     /* ── Load ── */
-    async function loadCanvas() {
+    function loadCanvas() {
         try {
-            const res=await fetch(CANVAS_FILE);
-            if(!res.ok) throw new Error('HTTP '+res.status);
-            const data=await res.json();
-            const nodes=data.nodes||[], edges=data.edges||[];
-            nodeData={};
-            for(const n of nodes) nodeData[n.id]=n;
-            edgeData=edges;
-            const groups=nodes.filter(n=>n.type==='group');
-            const others=nodes.filter(n=>n.type!=='group');
-            for(const n of [...groups,...others]) buildNode(n);
-            loading.style.display='none';
+            const dataEl = document.getElementById('canvas-data');
+            if(!dataEl) throw new Error('Canvas data script element missing');
+            const data = JSON.parse(dataEl.textContent);
+            const nodes = data.nodes||[], edges = data.edges||[];
+            nodeData = {};
+            for(const n of nodes) nodeData[n.id] = n;
+            edgeData = edges;
+            const groups = nodes.filter(n => n.type==='group');
+            const others = nodes.filter(n => n.type!=='group');
+            for(const n of [...groups, ...others]) buildNode(n);
+            loading.style.display = 'none';
             fitToScreen(nodes);
         } catch(err){
-            loading.innerHTML='<p style="color:#e67e80">⚠️ Failed to load canvas: '+err.message+'</p>';
-            console.error('Canvas load error:',err);
+            loading.innerHTML = '<p style="color:#e67e80">⚠️ Failed to load canvas: ' + err.message + '</p>';
+            console.error('Canvas load error:', err);
         }
     }
 
