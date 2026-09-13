@@ -16,9 +16,6 @@ ignoreFiles = [
   lastmod = [":git", ":fileModTime", "lastmod", "date"]
 
 [markup]
-  [markup.highlight]
-    noClasses = false
-    codeFences = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
