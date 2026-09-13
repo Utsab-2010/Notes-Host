@@ -6,10 +6,13 @@ import time
 import subprocess
 import datetime
 
-VAULT_DIR = os.environ.get("VAULT_DIR", "/home/utsab/Utsab-Notes")
-CONTENT_DIR = os.environ.get("CONTENT_DIR", "/home/utsab/notes-hosted/hugo-site/content/vault")
-CONFIG_FILE = "/home/utsab/notes-hosted/hugo-site/config.toml"
-STATIC_CANVAS_DIR = os.environ.get("STATIC_CANVAS_DIR", "/home/utsab/notes-hosted/hugo-site/static/canvas")
+# Derive repo root from this script's location so paths work on any machine
+_REPO_DIR = os.path.dirname(os.path.abspath(__file__))
+
+VAULT_DIR         = os.environ.get("VAULT_DIR",         os.path.join(os.path.dirname(_REPO_DIR), "Utsab-Notes"))
+CONTENT_DIR       = os.environ.get("CONTENT_DIR",       os.path.join(_REPO_DIR, "content", "vault"))
+CONFIG_FILE       = os.environ.get("CONFIG_FILE",        os.path.join(_REPO_DIR, "config.toml"))
+STATIC_CANVAS_DIR = os.environ.get("STATIC_CANVAS_DIR", os.path.join(_REPO_DIR, "static", "canvas"))
 
 # Exclude lists
 EXCLUDE_DIRS = {'.git', '.github', '.obsidian'}
