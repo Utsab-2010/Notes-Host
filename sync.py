@@ -5,6 +5,7 @@ import shutil
 import time
 import subprocess
 import datetime
+import json
 
 # Derive repo root from this script's location so paths work on any machine
 _REPO_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -13,6 +14,8 @@ VAULT_DIR         = os.environ.get("VAULT_DIR",         os.path.join(os.path.dir
 CONTENT_DIR       = os.environ.get("CONTENT_DIR",       os.path.join(_REPO_DIR, "content", "vault"))
 CONFIG_FILE       = os.environ.get("CONFIG_FILE",        os.path.join(_REPO_DIR, "config.toml"))
 STATIC_CANVAS_DIR = os.environ.get("STATIC_CANVAS_DIR", os.path.join(_REPO_DIR, "static", "canvas"))
+DATA_DIR          = os.path.join(_REPO_DIR, "data")
+STATIC_DIR        = os.path.join(_REPO_DIR, "static")
 
 # Exclude lists
 EXCLUDE_DIRS = {'.git', '.github', '.obsidian'}
@@ -174,9 +177,59 @@ def process_markdown(src_path, dest_path, note_map, resource_map):
         pass
 
 def sync_all():
+    if not os.path.exists(VAULT_DIR):
+        print(f"Notice: Vault directory '{VAULT_DIR}' does not exist on this machine. Skipping sync.")
+        return
+
     print("Indexing vault...")
     note_map, resource_map = build_indices()
     
+    print("Extracting link graph and computing backlinks...")
+    link_re = re.compile(r'\[\[([^\]|]+)(?:\|([^\]]+))?\]\]')
+    backlinks = {}
+    nodes = []
+    links = []
+
+    for root, dirs, files in os.walk(VAULT_DIR):
+        dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS]
+        for file in files:
+            if not file.endswith('.md') or file in EXCLUDE_FILES:
+                continue
+            src_file = os.path.join(root, file)
+            rel_path = os.path.relpath(src_file, VAULT_DIR)
+            src_url = get_hugo_url_path(rel_path)
+            title = os.path.splitext(file)[0]
+            parts = rel_path.split(os.sep)
+            folder = parts[0] if len(parts) > 1 else 'root'
+            
+            nodes.append({'id': src_url, 'title': title, 'group': folder})
+            
+            try:
+                with open(src_file, 'r', encoding='utf-8', errors='ignore') as f:
+                    txt = f.read()
+                for match in link_re.finditer(txt):
+                    target = match.group(1).strip().lower()
+                    if target in note_map:
+                        target_url = note_map[target]
+                        if target_url != src_url:
+                            links.append({'source': src_url, 'target': target_url})
+                            if target_url not in backlinks:
+                                backlinks[target_url] = []
+                            if not any(b['url'] == src_url for b in backlinks[target_url]):
+                                backlinks[target_url].append({'title': title, 'url': src_url})
+            except Exception:
+                pass
+
+    os.makedirs(DATA_DIR, exist_ok=True)
+    with open(os.path.join(DATA_DIR, "backlinks.json"), 'w', encoding='utf-8') as f:
+        json.dump(backlinks, f, indent=2)
+
+    os.makedirs(STATIC_DIR, exist_ok=True)
+    with open(os.path.join(STATIC_DIR, "graph.json"), 'w', encoding='utf-8') as f:
+        json.dump({'nodes': nodes, 'links': links}, f, indent=2)
+
+    print(f"Generated {len(backlinks)} backlinks and knowledge graph ({len(nodes)} nodes, {len(links)} connections).")
+
     print("Cleaning destination content/vault directory...")
     if os.path.exists(CONTENT_DIR):
         shutil.rmtree(CONTENT_DIR)
@@ -234,16 +287,22 @@ def sync_all():
                     f.write(stub_content)
                 print(f"  🎨 Canvas: {rel_path}")
             else:
-                # Symlink images/assets using slugified paths to match markdown references
+                # Copy images/assets using slugified paths to match markdown references
                 parts = rel_path.split(os.sep)
                 slugified_parts = [slugify(os.path.splitext(p)[0]) + os.path.splitext(p)[1] if idx == len(parts)-1 else slugify(p) for idx, p in enumerate(parts)]
                 slugified_rel_path = os.sep.join(slugified_parts)
                 dest_file_slugified = os.path.join(CONTENT_DIR, slugified_rel_path)
                 
                 os.makedirs(os.path.dirname(dest_file_slugified), exist_ok=True)
-                if os.path.exists(dest_file_slugified):
-                    os.remove(dest_file_slugified)
-                os.symlink(src_file, dest_file_slugified)
+                if os.path.exists(dest_file_slugified) or os.path.islink(dest_file_slugified):
+                    try:
+                        os.remove(dest_file_slugified)
+                    except Exception:
+                        pass
+                try:
+                    shutil.copy2(src_file, dest_file_slugified)
+                except Exception as e:
+                    print(f"Warning: could not copy asset {src_file}: {e}")
                 
     print("Sync complete.")
 

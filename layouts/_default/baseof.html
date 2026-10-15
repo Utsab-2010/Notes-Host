@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     
-    <!-- Fonts -->
+    <!-- Modern Natural Typography Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
+    <!-- Site Stylesheet -->
     <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?v={{ now.Unix }}">
 
-    <!-- KaTeX for LaTeX -->
+    <!-- KaTeX for LaTeX Math -->
     {{ if .Params.math | default true }}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
@@ -26,114 +26,73 @@
                     {left: "$", right: "$", display: false},
                     {left: "\\(", right: "\\)", display: false},
                     {left: "\\[", right: "\\]", display: true}
-                ]
+                ],
+                throwOnError: false
             });
         });
     </script>
     {{ end }}
 </head>
-<body>
+<body data-basepath="{{ "" | relURL }}" data-slug="{{ .RelPermalink }}">
     <div class="app-container">
-        <!-- Sidebar -->
+        <!-- Left Navigation Sidebar -->
         {{ partial "sidebar.html" . }}
         <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
 
-        <!-- Main Content Area -->
+        <!-- Main Content Column -->
         <div class="main-area">
             <header class="site-header">
-                <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle Sidebar">☰</button>
-                <a href="{{ "" | relURL }}" class="site-title-link"><h1>{{ .Site.Title }}</h1></a>
+                <div class="header-left">
+                    <button class="sidebar-toggle" onclick="toggleSidebar()" aria-label="Toggle Navigation">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                    <a href="{{ "" | relURL }}" class="site-title-link">
+                        <span class="header-brand-icon">🌿</span>
+                        <span class="header-brand-text">{{ .Site.Title }}</span>
+                    </a>
+                </div>
+                <div class="header-right">
+                    <button class="header-search-btn" onclick="focusSearch()" title="Search (Press /)">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                        <span class="header-search-hint">Search</span>
+                        <kbd>/</kbd>
+                    </button>
+                </div>
             </header>
 
             <main class="content-wrapper">
                 {{- block "main" . }}{{- end }}
             </main>
 
-            <footer style="margin-top: 5rem; padding-bottom: 2rem; border-top: 1px solid var(--border-color); color: #8b949e; font-size: 0.9rem;">
-                <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. Built with Hugo.</p>
+            <footer class="site-footer">
+                <div class="footer-inner">
+                    <p class="footer-copy">&copy; {{ now.Format "2006" }} {{ .Site.Title }}. An interconnected digital garden.</p>
+                    <p class="footer-powered">Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &amp; Everforest Design System.</p>
+                </div>
             </footer>
         </div>
     </div>
 
-    <!-- Interactive JS for Navigation -->
-    <script>
-        function toggleSidebar() {
-            document.querySelector('.sidebar').classList.toggle('active');
-        }
+    <!-- Quartz-style Hover Popover Preview Card -->
+    <div id="garden-popover" class="garden-popover" style="display: none;" aria-hidden="true">
+        <div class="popover-inner">
+            <div class="popover-header">
+                <span class="popover-icon">📄</span>
+                <span class="popover-title">Note Preview</span>
+            </div>
+            <div class="popover-body">Loading...</div>
+            <div class="popover-footer">Click to navigate →</div>
+        </div>
+    </div>
 
-        function toggleFolder(headerElement, event) {
-            // Let normal link navigation happen if clicked directly on the anchor
-            if (event.target.tagName.toLowerCase() === 'a') {
-                return;
-            }
-            event.preventDefault();
-            event.stopPropagation();
-            
-            const folderItem = headerElement.closest('.tree-item.folder');
-            const content = folderItem.querySelector('.folder-content');
-            const arrow = headerElement.querySelector('.toggle-arrow');
-            
-            if (content.style.display === 'none') {
-                content.style.display = 'block';
-                arrow.textContent = '▼';
-                folderItem.classList.add('open');
-            } else {
-                content.style.display = 'none';
-                arrow.textContent = '▶';
-                folderItem.classList.remove('open');
-            }
-        }
-
-        function filterTree() {
-            const query = document.getElementById('search-input').value.toLowerCase();
-            const items = document.querySelectorAll('.file-title-link, .folder-title');
-            
-            if (!query) {
-                // Restore default visibility
-                document.querySelectorAll('.tree-item').forEach(item => {
-                    item.style.display = '';
-                });
-                document.querySelectorAll('.folder-content').forEach(content => {
-                    const folderItem = content.closest('.tree-item.folder');
-                    if (folderItem.classList.contains('open')) {
-                        content.style.display = 'block';
-                        folderItem.querySelector('.toggle-arrow').textContent = '▼';
-                    } else {
-                        content.style.display = 'none';
-                        folderItem.querySelector('.toggle-arrow').textContent = '▶';
-                    }
-                });
-                return;
-            }
-
-            // Hide everything first
-            document.querySelectorAll('.tree-item').forEach(item => {
-                item.style.display = 'none';
-            });
-
-            // Show matched elements and their ancestors
-            items.forEach(el => {
-                const text = el.textContent.toLowerCase();
-                if (text.includes(query)) {
-                    const item = el.closest('.tree-item');
-                    if (item) {
-                        item.style.display = '';
-                        
-                        // Traverse up and expand parents
-                        let parent = item.parentElement.closest('.tree-item.folder');
-                        while (parent) {
-                            parent.style.display = '';
-                            parent.classList.add('open');
-                            const content = parent.querySelector('.folder-content');
-                            if (content) content.style.display = 'block';
-                            const arrow = parent.querySelector('.toggle-arrow');
-                            if (arrow) arrow.textContent = '▼';
-                            parent = parent.parentElement.closest('.tree-item.folder');
-                        }
-                    }
-                }
-            });
-        }
-    </script>
+    <!-- Digital Garden Interactive Script -->
+    <script src="{{ "js/garden.js" | relURL }}?v={{ now.Unix }}"></script>
 </body>
 </html>

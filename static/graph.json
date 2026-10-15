@@ -1,0 +1,1889 @@
+{
+  "nodes": [
+    {
+      "id": "/vault/professors-and-labs/",
+      "title": "Professors and Labs",
+      "group": "root"
+    },
+    {
+      "id": "/vault/distributions-of-data-that-satisfies-the-power-law/",
+      "title": "Distributions of Data that satisfies the power law",
+      "group": "root"
+    },
+    {
+      "id": "/vault/internship-applications/",
+      "title": "Internship Applications",
+      "group": "root"
+    },
+    {
+      "id": "/vault/cool-things-i-read/",
+      "title": "Cool Things I Read",
+      "group": "root"
+    },
+    {
+      "id": "/vault/infiniai-meet/",
+      "title": "InfiniAI Meet",
+      "group": "root"
+    },
+    {
+      "id": "/vault/-index/",
+      "title": "Vault",
+      "group": "root"
+    },
+    {
+      "id": "/vault/command-center/",
+      "title": "Command Center",
+      "group": "root"
+    },
+    {
+      "id": "/vault/untitled/",
+      "title": "Untitled",
+      "group": "root"
+    },
+    {
+      "id": "/vault/fun-resources/",
+      "title": "Fun Resources",
+      "group": "root"
+    },
+    {
+      "id": "/vault/2026-09-09/",
+      "title": "2026-09-09",
+      "group": "root"
+    },
+    {
+      "id": "/vault/flt-lecture/",
+      "title": "FLT Lecture",
+      "group": "root"
+    },
+    {
+      "id": "/vault/math/johnsonlindenstrauss-lemma/",
+      "title": "Johnson\u2013Lindenstrauss lemma",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/-index/",
+      "title": "Math",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/what-is-kernelfunction/",
+      "title": "What is Kernel(function)?",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/linear-algebra/connection-between-svd-and-evd/",
+      "title": "Connection between SVD and EVD",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/linear-algebra/-index/",
+      "title": "Linear Algebra",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/linear-algebra/spectral-norm/",
+      "title": "Spectral Norm",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/linear-algebra/singular-value-decompositionsvd/",
+      "title": "Singular Value Decomposition(SVD)",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/sum-of-a-random-number-of-iid-random-variables/",
+      "title": "Sum of a Random Number of IID Random Variables",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/-significance-level/",
+      "title": "\u03b1 (Significance Level)",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/gaussian-distributions/",
+      "title": "Gaussian Distributions",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/power-of-test-statistic/",
+      "title": "Power of Test Statistic",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/total-expectation-theorem/",
+      "title": "Total Expectation Theorem",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/poisson-distribution-and-poisson-process/",
+      "title": "Poisson Distribution and Poisson Process",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/p-values/",
+      "title": "p-values",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/markov-chebyshev-and-jensens-inequalities/",
+      "title": "Markov, Chebyshev, and Jensen's Inequalities",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/well-known-distributions/",
+      "title": "Well Known Distributions",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/probability-and-statistics/",
+      "title": "Probability and Statistics",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/",
+      "title": "Jointly Gaussian Random Variables \u2014 Conditional Distributions",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/unique-properties-of-gaussian-rvs/",
+      "title": "Unique Properties of Gaussian RVs",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/deterministic-random-variable/",
+      "title": "Deterministic Random Variable",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/study-materials/",
+      "title": "Study Materials",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/-index/",
+      "title": "Probability Theory",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/linear-mmse-estimation/",
+      "title": "Linear MMSE Estimation",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/law-of-iterated-expectations/",
+      "title": "Law of Iterated Expectations",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/modes-of-convergence-random-variables/",
+      "title": "Modes of Convergence (Random Variables)",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/kolmogorov-smirnov-test/",
+      "title": "Kolmogorov-Smirnov Test",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/math/probability-theory/independent-random-variables/",
+      "title": "Independent Random Variables",
+      "group": "Math"
+    },
+    {
+      "id": "/vault/projects/-index/",
+      "title": "Projects",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/project-ideas/",
+      "title": "Project Ideas",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/alphago-black-hole/alphazero-workflow/",
+      "title": "Alphazero Workflow",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/alphago-black-hole/alphazero-and-chess/",
+      "title": "AlphaZero and Chess",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/alphago-black-hole/mixture-of-experts-approach-to-games/",
+      "title": "Mixture of Experts Approach to Games",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/alphago-black-hole/alpha-beta-algorithm-chess-engines/",
+      "title": "Alpha-Beta Algorithm (Chess Engines)",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/alphago-black-hole/alphazero-training/",
+      "title": "AlphaZero Training",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/alphago-black-hole/-index/",
+      "title": "AlphaGo-Black-Hole",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/alphago-black-hole/improved-representations/",
+      "title": "Improved Representations",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/alphago-black-hole/personal-notes-on-the-implementation/",
+      "title": "Personal Notes on the Implementation",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/alphago-black-hole/deep-q-network-dqn-training-details/",
+      "title": "Deep Q-Network (DQN) Training Details",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/dlm-revisited/workbench/",
+      "title": "Workbench",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/projects/dlm-revisited/-index/",
+      "title": "DLM-Revisited",
+      "group": "Projects"
+    },
+    {
+      "id": "/vault/papers/-index/",
+      "title": "Papers",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/continual-learning/when-do-curricula-work/",
+      "title": "When Do Curricula Work?",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/continual-learning/-index/",
+      "title": "Continual Learning",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/good-reads/-index/",
+      "title": "Good Reads",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/world-models-reading-list/i-jepa/",
+      "title": "I-JEPA",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/world-models-reading-list/-index/",
+      "title": "World Models Reading List",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/world-models-reading-list/what-to-read/",
+      "title": "What to Read",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/diffusion-and-flows/reading-list/",
+      "title": "Reading List",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/diffusion-and-flows/neural-ordinary-differential-equations/",
+      "title": "Neural Ordinary Differential Equations",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/diffusion-and-flows/-index/",
+      "title": "Diffusion and Flows",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/diffusion-and-flows/diffusion-lm/",
+      "title": "Diffusion-LM",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/diffusion-and-flows/maxenrl-via-energy-based-normalising-flows-1/",
+      "title": "MaxEnRL via Energy-based Normalising Flows 1",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/interpretability-and-xai/-index/",
+      "title": "Interpretability and XAI",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/interpretability-and-xai/maco-feature-visualization-via-magnitude-constrained-optimization/",
+      "title": "MACO-Feature Visualization via Magnitude Constrained Optimization",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/interpretability-and-xai/understanding-visual-feature-reliance-through-the-lens-of-complexity/",
+      "title": "Understanding Visual Feature Reliance through the Lens of Complexity",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/scaling-laws/how-feature-learning-can-improve-neural-scaling/",
+      "title": "How Feature Learning can Improve Neural Scaling",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/scaling-laws/cram-less-to-fit-more/",
+      "title": "Cram Less to Fit More",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/scaling-laws/beyond-neural-scaling-law-data-pruning-improve-power-law/",
+      "title": "Beyond Neural Scaling Law - Data Pruning improve power law",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/scaling-laws/explaining-data-mixing-scaling-laws/",
+      "title": "Explaining Data-Mixing Scaling Laws",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/scaling-laws/-index/",
+      "title": "Scaling Laws",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/scaling-laws/scaling-for-data-filtering/",
+      "title": "Scaling for Data Filtering",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/vision/infidepth-arbitrary-high-res-estimation-using-neural-implicit-fields/",
+      "title": "InfiDepth - Arbitrary High Res Estimation using Neural Implicit Fields",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/vision/-index/",
+      "title": "Vision",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/data-attribution/large-scale-pruning-using-dyna-uncertainty/",
+      "title": "Large-Scale Pruning using Dyna Uncertainty",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/data-attribution/theoretical-analysis-of-contrastive-learning-under-imbalanced-data/",
+      "title": "THEORETICAL ANALYSIS OF CONTRASTIVE LEARNING UNDER IMBALANCED DATA",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/data-attribution/-index/",
+      "title": "Data Attribution",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/data-attribution/deep-learning-on-a-data-diet/",
+      "title": "Deep Learning on a Data Diet",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/data-attribution/understanding-blackbox-predictions-using-influence-functions/",
+      "title": "Understanding BlackBox Predictions - Using Influence Functions",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/robotics/learning-stable-normalizing-flow-control-for-robotic-manipulation/",
+      "title": "Learning Stable Normalizing-Flow Control for Robotic Manipulation",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/robotics/recoverychaining-learning-local-recovery-policies-for-robust-manipulation/",
+      "title": "RecoveryChaining-Learning Local Recovery Policies for Robust Manipulation",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/robotics/crowd-aware-robot-navigation-with-switching-betweenlearning-based-and-rule-based-methods-using-normalizing-flows/",
+      "title": "Crowd-Aware Robot Navigation with Switching BetweenLearning-Based and Rule-Based Methods Using Normalizing Flows",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/robotics/-index/",
+      "title": "Robotics",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/robotics/respo-reachability-estimation-for-safe-policy-optimization/",
+      "title": "RESPO (Reachability Estimation for Safe Policy Optimization)",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/theory-of-learning-paradigms/learned-feature-representations-are-biased-by-complexity-learning-order-position-and-more/",
+      "title": "Learned feature representations are biased by complexity, learning order, position, and more",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/theory-of-learning-paradigms/a-compression-perspective-on-simplicity-bias/",
+      "title": "A Compression Perspective on Simplicity Bias",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/theory-of-learning-paradigms/mechanistic-mode-connectivity/",
+      "title": "Mechanistic Mode Connectivity",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/theory-of-learning-paradigms/not-all-solutions-are-created-equal/",
+      "title": "Not all solutions are created equal",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/theory-of-learning-paradigms/-index/",
+      "title": "Theory of Learning Paradigms",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/theory-of-learning-paradigms/learning-to-theorise/",
+      "title": "Learning to Theorise",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/theory-of-learning-paradigms/information-theory-for-repr-learning/",
+      "title": "Information Theory for Repr Learning",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/papers/theory-of-learning-paradigms/invariant-risk-minimization/",
+      "title": "Invariant Risk Minimization",
+      "group": "Papers"
+    },
+    {
+      "id": "/vault/cs-stuff/sql-complete-reference-notes/",
+      "title": "SQL \u2014 Complete Reference Notes",
+      "group": "CS Stuff"
+    },
+    {
+      "id": "/vault/cs-stuff/-index/",
+      "title": "CS Stuff",
+      "group": "CS Stuff"
+    },
+    {
+      "id": "/vault/dsa-and-cp/python-snippets-for-cp/",
+      "title": "Python Snippets for CP",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/house-robber-ii/",
+      "title": "House Robber II",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/-index/",
+      "title": "DSA and CP",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/hand-of-straights/",
+      "title": "Hand of Straights",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/linked-list/",
+      "title": "Linked List",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/dynamic-programming/unbounded-knapsack/",
+      "title": "Unbounded Knapsack",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/dynamic-programming/target-sum/",
+      "title": "Target Sum",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/dynamic-programming/-index/",
+      "title": "Dynamic Programming",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/dynamic-programming/coin-change/",
+      "title": "Coin Change",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/dynamic-programming/subset-sum-equal-to-target/",
+      "title": "Subset sum equal to target",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sliding-window-and-two-pointers/defuse-the-bomb/",
+      "title": "Defuse the Bomb",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sliding-window-and-two-pointers/max-consecutive-one-iii/",
+      "title": "Max Consecutive One III",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sliding-window-and-two-pointers/-index/",
+      "title": "Sliding WIndow and Two Pointers",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sliding-window-and-two-pointers/maximum-erasure-value/",
+      "title": "Maximum Erasure Value",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sliding-window-and-two-pointers/fruits-into-basket/",
+      "title": "Fruits Into Basket",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/strings/largest-odd-number-in-string/",
+      "title": "Largest Odd Number in String",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/strings/cpp-strings-cheatsheet/",
+      "title": "CPP Strings CheatSheet",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/strings/-index/",
+      "title": "Strings",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/doubts/-index/",
+      "title": "Doubts",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/doubts/binary-search-vs-boundary-conditions/",
+      "title": "Binary Search \u2014 `<=` vs `<` Boundary Conditions",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/maths/sieve-of-eratosthenes/",
+      "title": "Sieve of Eratosthenes",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/maths/single-number-others-twice/",
+      "title": "Single Number Others Twice",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/maths/-index/",
+      "title": "Maths",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/heaps/heaps-priority-queues-detailed-notes/",
+      "title": "Heaps (Priority Queues) \u2014 Detailed Notes",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/heaps/-index/",
+      "title": "Heaps",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sorting/longest-common-prefix-and-sorting-a-string/",
+      "title": "Longest common Prefix and Sorting a String",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sorting/quick-sort/",
+      "title": "Quick Sort",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sorting/quick-sort-partition/",
+      "title": "Quick Sort Partition",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sorting/-index/",
+      "title": "Sorting",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/sorting/merge-sorted-array/",
+      "title": "Merge Sorted Array",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-trees/postorder-traversal-of-bt/",
+      "title": "Postorder Traversal of BT",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-trees/check-for-a-balanced-bt/",
+      "title": "Check for a Balanced BT",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-trees/preorder-inorder-postorder-traversals-in-one-traversal/",
+      "title": "Preorder Inorder Postorder Traversals in One Traversal",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-trees/inorder-traversal-of-a-bt/",
+      "title": "Inorder Traversal of a BT",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-trees/binary-search-trees/",
+      "title": "Binary Search Trees",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-trees/-index/",
+      "title": "Binary Trees",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-trees/binary-trees/",
+      "title": "Binary Trees",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/graphs/rotten-oranges/",
+      "title": "Rotten Oranges",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/graphs/connected-components-in-an-undirected-graph/",
+      "title": "Connected Components in an Undirected Graph",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/graphs/detection-of-cycle-in-an-undirected-graph/",
+      "title": "Detection of Cycle in an Undirected Graph",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/graphs/nearest-0-from-cell-in-a-matrix/",
+      "title": "Nearest 0 from cell in a matrix",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/graphs/course-schedule/",
+      "title": "Course Schedule",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/graphs/-index/",
+      "title": "Graphs",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/graphs/topological-sort/",
+      "title": "Topological Sort",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/graphs/course-schedule-ii/",
+      "title": "Course Schedule II",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/graphs/detection-of-a-cycle-in-a-directed-graph/",
+      "title": "Detection of a Cycle in a Directed Graph",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/search-in-rotated-array/",
+      "title": "Search in Rotated Array",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/search-in-2d-ii/",
+      "title": "Search in 2d - II",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/-index/",
+      "title": "Binary Search",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/koko-eating-banana/",
+      "title": "Koko eating Banana",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/find-1st-and-last-pos-of-element-in-sorted-array/",
+      "title": "Find 1st and last pos of element in sorted array",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/find-peak-element/",
+      "title": "Find Peak Element",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/single-element-in-a-sorted-array-of-pairs/",
+      "title": "Single Element in a Sorted array of pairs",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/note-on-binary-search-methods/",
+      "title": "Note on Binary Search Methods",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/search-in-a-2d-array/",
+      "title": "Search in a 2d array",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/binary-search/split-array-largest-sum/",
+      "title": "Split Array Largest Sum",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/greedy/insert-interval/",
+      "title": "Insert Interval",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/greedy/-index/",
+      "title": "Greedy",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/greedy/jump-ii/",
+      "title": "Jump-II",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/dsa-and-cp/greedy/task-scheduler/",
+      "title": "Task Scheduler",
+      "group": "DSA and CP"
+    },
+    {
+      "id": "/vault/video-ideas/law-of-total-expectations/",
+      "title": "Law of Total Expectations",
+      "group": "Video Ideas"
+    },
+    {
+      "id": "/vault/video-ideas/monte-carlo-tree-search/",
+      "title": "Monte Carlo Tree Search",
+      "group": "Video Ideas"
+    },
+    {
+      "id": "/vault/video-ideas/alphazero/",
+      "title": "AlphaZero",
+      "group": "Video Ideas"
+    },
+    {
+      "id": "/vault/video-ideas/aep-and-typical-sequences/",
+      "title": "AEP and Typical Sequences",
+      "group": "Video Ideas"
+    },
+    {
+      "id": "/vault/video-ideas/map-vs-mle/",
+      "title": "MAP vs MLE",
+      "group": "Video Ideas"
+    },
+    {
+      "id": "/vault/video-ideas/-index/",
+      "title": "Video Ideas",
+      "group": "Video Ideas"
+    },
+    {
+      "id": "/vault/video-ideas/large-sparse-matrix-solvers/",
+      "title": "Large Sparse Matrix Solvers",
+      "group": "Video Ideas"
+    },
+    {
+      "id": "/vault/video-ideas/untitled/",
+      "title": "Untitled",
+      "group": "Video Ideas"
+    },
+    {
+      "id": "/vault/history/history-of-bengal-politics/",
+      "title": "History of Bengal Politics",
+      "group": "History"
+    },
+    {
+      "id": "/vault/history/battle-of-polashiplassey/",
+      "title": "Battle of Polashi(Plassey)",
+      "group": "History"
+    },
+    {
+      "id": "/vault/history/-index/",
+      "title": "History",
+      "group": "History"
+    },
+    {
+      "id": "/vault/history/is-bengal-against-communism/",
+      "title": "Is Bengal against Communism?",
+      "group": "History"
+    },
+    {
+      "id": "/vault/machine-learning/random-forests/",
+      "title": "Random Forests",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/byte-pair-encoding-bpe-tokenization/",
+      "title": "Byte Pair Encoding (BPE) Tokenization",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/word2vec/",
+      "title": "Word2Vec",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/decision-trees-a-comprehensive-note/",
+      "title": "Decision Trees (A comprehensive Note)",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/boosting/",
+      "title": "Boosting",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/t-sne-t-distributed-stochastic-neighbor-embedding/",
+      "title": "t-SNE (t-Distributed Stochastic Neighbor Embedding)",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/representational-similarity-analysis-rsa/",
+      "title": "Representational Similarity Analysis (RSA)",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/f1-score-recall-and-precision/",
+      "title": "F1 score, Recall and Precision",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/bias-and-variance-trade-off/",
+      "title": "Bias and Variance Trade-off",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/principal-component-analysis-pca/",
+      "title": "Principal Component Analysis (PCA)",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/long-short-term-memory-lstm/",
+      "title": "Long Short-Term Memory (LSTM)",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/-index/",
+      "title": "Machine Learning",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/kernel-density-estimation/",
+      "title": "Kernel Density Estimation",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/training-stabilization-in-machine-learning/",
+      "title": "Training Stabilization in Machine Learning",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/recurrent-neural-netoworksrnns/",
+      "title": "Recurrent Neural Netoworks(RNNs)",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/machine-learning/k-means-clustering/",
+      "title": "K-Means Clustering",
+      "group": "Machine Learning"
+    },
+    {
+      "id": "/vault/research-work/personal-notes-on-research/",
+      "title": "Personal Notes on Research",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/-index/",
+      "title": "Research Work",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/novel-depth-esitmationedge-focussed/",
+      "title": "Novel Depth Esitmation(Edge focussed)",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/encoding-future-related-hope-as-a-learning-signal/",
+      "title": "Encoding Future Related Hope as a Learning Signal?",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/teach-a-model-to-solve-a-patch-jigsaw/",
+      "title": "Teach a model to solve a patch jigsaw?",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/can-we-use-jepa-for-games/",
+      "title": "Can we use JEPA for Games??",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/any-other-ways-than-deterministic-and-probabilistic-modelling/",
+      "title": "Any other ways than deterministic and Probabilistic Modelling",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/what-leads-to-representational-biases/",
+      "title": "What leads to Representational Biases?",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/capacity-of-a-model/",
+      "title": "Capacity of a Model",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/manifolds-of-data-vs-implicit-curricula/",
+      "title": "Manifolds of Data vs Implicit Curricula",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/-index/",
+      "title": "Random Ideas",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/why-do-diffusion-models-generalise-so-well/",
+      "title": "Why do Diffusion Models Generalise So Well?",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/context-conditioned-processing-leads-to-ood-generalisation/",
+      "title": "Context Conditioned Processing leads to OOD Generalisation",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/marigold-jepa/",
+      "title": "Marigold + Jepa?",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/learned-representation-are-path-dependent/",
+      "title": "Learned Representation are path dependent",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/new-way-of-training-small-models/",
+      "title": "New way of training small models?",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/can-you-project-tasks-to-similar-task-spaces/",
+      "title": "Can you project tasks to similar Task-spaces?",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/why-do-we-need-large-embedding-sizes/",
+      "title": "Why do we need large embedding sizes?",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/random-ideas/information-theory-on-repr-learning/",
+      "title": "Information Theory on Repr Learning",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/learning-deep-kernels-for-non-parametric-two-sample-tests/",
+      "title": "Learning Deep Kernels for Non-Parametric Two-Sample Tests",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/btp-notebook/",
+      "title": "BTP Notebook",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/diffusion-posterior-sampling-for-general-noisy-problems/",
+      "title": "Diffusion Posterior Sampling for General Noisy Problems",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/-index/",
+      "title": "BTP",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/prof-subhadip/",
+      "title": "Prof. Subhadip",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/ksd-for-goodness-of-fit-tests/",
+      "title": "KSD for Goodness-of-fit Tests",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/",
+      "title": "Reproducing Kernel Hilbert Space (RKHS)",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/meets/2026-09-10/",
+      "title": "2026-09-10",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/meets/2026-08-27/",
+      "title": "2026-08-27",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/btp/meets/-index/",
+      "title": "Meets",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/research-writeup/",
+      "title": "Research Writeup",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/contlearning-idea/",
+      "title": "ContLearning Idea",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/variations-of-proposal/",
+      "title": "Variations of Proposal",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/idea-1/",
+      "title": "Idea-1",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/-index/",
+      "title": "LossFunk Proposal",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/untitled/",
+      "title": "Untitled",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/diff-mem-idea/",
+      "title": "DIff Mem Idea",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/write-up/",
+      "title": "Write-up",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/loss-funk-application/",
+      "title": "Loss Funk Application",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/lossfunk-proposal/2nd-stage/",
+      "title": "2nd stage",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/avg-el2n-score-difference-between-two-toy-datasets/",
+      "title": "Avg El2n score difference between two toy datasets",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/alpha-01-for-monogenic-not-learning/",
+      "title": "alpha =0.1 for monogenic -not learning",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/thoughts/",
+      "title": "Thoughts",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/open-questions/",
+      "title": "Open Questions",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/quantization-based-hypothesis/",
+      "title": "Quantization Based Hypothesis",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/val-notebook/",
+      "title": "VAL Notebook",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/features-contribution-to-pruning/",
+      "title": "Feature's Contribution to Pruning",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/scaling-laws/",
+      "title": "Scaling Laws",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/polygenic-voting-toy-test/",
+      "title": "Polygenic Voting Toy Test",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/data-efficient-learning/",
+      "title": "Data-Efficient Learning",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/-index/",
+      "title": "VAL-DEL",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/scaling-laws-with-rep/",
+      "title": "Scaling laws with rep",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/emergent-properties-with-repeated-examples/",
+      "title": "Emergent Properties with Repeated Examples",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/deriving-neural-scaling-laws-from-lang-stat/",
+      "title": "Deriving Neural Scaling Laws from Lang Stat",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/detect-the-change-of-implicit-curricula/",
+      "title": "Detect the change of implicit curricula",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/initial-tests-for-the-scaling-law/",
+      "title": "Initial Tests for the Scaling Law",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/papers/-index/",
+      "title": "Papers",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/papers/understanding-why-neural-networks-generalize-well-through-gsnr-of-parameters/",
+      "title": "UNDERSTANDING WHY NEURAL NETWORKS GENERALIZE WELL THROUGH GSNR OF PARAMETERS",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/papers/gradient-weight-alignment-as-a-train-time-proxy-for-generalization-in-classification-tasks/",
+      "title": "Gradient-Weight Alignment as a Train-Time Proxy for Generalization in Classification Tasks",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/papers/stable-coresets/",
+      "title": "Stable Coresets",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/meets/2026-09-03/",
+      "title": "2026-09-03",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/meets/2026-08-26/",
+      "title": "2026-08-26",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/meets/-index/",
+      "title": "Meets",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/val-del/meets/2026-07-20/",
+      "title": "2026-07-20",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/swami-robo/-index/",
+      "title": "Swami Robo",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/research-work/swami-robo/rm3-setup/",
+      "title": "RM3 Setup",
+      "group": "Research Work"
+    },
+    {
+      "id": "/vault/journal/2026-06-05/",
+      "title": "2026-06-05",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-07-04/",
+      "title": "2026-07-04",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-08-12/",
+      "title": "2026-08-12",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-05-21/",
+      "title": "2026-05-21",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-02-02/",
+      "title": "2026-02-02",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-02-17-shivam-vats/",
+      "title": "2026-02-17 - Shivam Vats",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-08-30/",
+      "title": "2026-08-30",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-06-30/",
+      "title": "2026-06-30",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/-index/",
+      "title": "Journal",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-06-28/",
+      "title": "2026-06-28",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-06-24/",
+      "title": "2026-06-24",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-05-16/",
+      "title": "2026-05-16",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2026-05-14/",
+      "title": "2026-05-14",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/journal/2025-05-03-motivation/",
+      "title": "2025-05-03- Motivation?",
+      "group": "Journal"
+    },
+    {
+      "id": "/vault/misc/untitled-1/",
+      "title": "Untitled 1",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/krutarth-meet-20th-march/",
+      "title": "Krutarth meet - 20th March",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/summer-plan-2026/",
+      "title": "Summer Plan 2026",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/meet-summary/",
+      "title": "Meet Summary",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/reddit-ml-papers-to-read/",
+      "title": "Reddit - ML Papers to Read",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/random/",
+      "title": "Random",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/reading-list/",
+      "title": "Reading List",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/workout-routine/",
+      "title": "Workout Routine",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/-index/",
+      "title": "Misc",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/untitled-2/",
+      "title": "Untitled 2",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/workout-log/",
+      "title": "Workout Log",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/how-to-read-papers/",
+      "title": "How to Read Papers",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/misc/ajb-btp-summary/",
+      "title": "AJB BTP Summary",
+      "group": "Misc"
+    },
+    {
+      "id": "/vault/blogs/need-for-score-networks/",
+      "title": "Need for score networks",
+      "group": "Blogs"
+    },
+    {
+      "id": "/vault/blogs/implementing-clip/",
+      "title": "Implementing CLIP",
+      "group": "Blogs"
+    },
+    {
+      "id": "/vault/blogs/list-of-topics/",
+      "title": "List of Topics",
+      "group": "Blogs"
+    },
+    {
+      "id": "/vault/blogs/-index/",
+      "title": "Blogs",
+      "group": "Blogs"
+    },
+    {
+      "id": "/vault/blogs/diffusion/",
+      "title": "Diffusion",
+      "group": "Blogs"
+    },
+    {
+      "id": "/vault/blogs/why-iterative-reverse-sampling-recovers-the-data-distribution/",
+      "title": "Why Iterative Reverse Sampling Recovers the Data Distribution?",
+      "group": "Blogs"
+    },
+    {
+      "id": "/vault/courses/flt-project/",
+      "title": "FLT - Project",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/-index/",
+      "title": "Courses",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/pattern-recognition-application-lectures-1-21/",
+      "title": "pattern_recognition_application_lectures_1_21",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/signal-processing/-index/",
+      "title": "Signal Processing",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/signal-processing/fundamentals/fourier-transform/",
+      "title": "Fourier Transform",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/signal-processing/fundamentals/-index/",
+      "title": "Fundamentals",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/signal-processing/digital-communication/-index/",
+      "title": "Digital Communication",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/signal-processing/digital-communication/untitled/",
+      "title": "Untitled",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/fm-and-diff-mit-csail/lecture-2/",
+      "title": "Lecture-2",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/fm-and-diff-mit-csail/overview/",
+      "title": "Overview",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/fm-and-diff-mit-csail/lecture-1/",
+      "title": "Lecture-1",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/fm-and-diff-mit-csail/-index/",
+      "title": "FM and Diff - MIT CSAIL",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/image-processing-and-computer-vision/ivp-lectures-38-49/",
+      "title": "IVP Lectures 38-49",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/image-processing-and-computer-vision/-index/",
+      "title": "Image Processing and Computer Vision",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/image-processing-and-computer-vision/ivp-lectures-16-37/",
+      "title": "IVP Lectures 16-37",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/image-processing-and-computer-vision/ivp-lectures-1-15/",
+      "title": "IVP Lectures 1-15",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/courses/stanfordcs336-llm/-index/",
+      "title": "Stanford(CS336) - LLM",
+      "group": "Courses"
+    },
+    {
+      "id": "/vault/competitions/orbit-wars/",
+      "title": "Orbit Wars",
+      "group": "Competitions"
+    },
+    {
+      "id": "/vault/competitions/-index/",
+      "title": "Competitions",
+      "group": "Competitions"
+    },
+    {
+      "id": "/vault/competitions/lpcv-track-1/",
+      "title": "LPCV-Track-1",
+      "group": "Competitions"
+    },
+    {
+      "id": "/vault/competitions/trexquant-alpha-challenge/alpha-info/",
+      "title": "Alpha Info",
+      "group": "Competitions"
+    },
+    {
+      "id": "/vault/competitions/trexquant-alpha-challenge/-index/",
+      "title": "TrexQuant Alpha Challenge",
+      "group": "Competitions"
+    },
+    {
+      "id": "/vault/competitions/mousevsai/mouse-vs-ai/",
+      "title": "Mouse VS AI",
+      "group": "Competitions"
+    },
+    {
+      "id": "/vault/competitions/mousevsai/-index/",
+      "title": "MouseVsAI",
+      "group": "Competitions"
+    },
+    {
+      "id": "/vault/competitions/arc-whitebox-estimation-challenge/challenge-details/",
+      "title": "Challenge Details",
+      "group": "Competitions"
+    },
+    {
+      "id": "/vault/competitions/arc-whitebox-estimation-challenge/-index/",
+      "title": "ARC-WhiteBox-Estimation Challenge",
+      "group": "Competitions"
+    },
+    {
+      "id": "/vault/deep-learning/noise-conditioned-score-matching/",
+      "title": "Noise Conditioned Score Matching",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/moravecs-paradox/",
+      "title": "Moravec's Paradox",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/continual-learning/",
+      "title": "Continual Learning",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/matryoshka-representation-learning/",
+      "title": "Matryoshka Representation Learning",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/what-is-moco/",
+      "title": "What is MoCo?",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/data-attribution/",
+      "title": "Data Attribution",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/proximal-policy-optimization-ppo/",
+      "title": "Proximal Policy Optimization (PPO)",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/predicting-next-word-with-gpt-2/",
+      "title": "Predicting Next Word with GPT-2",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/different-ml-optimizers/",
+      "title": "Different ML Optimizers",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/the-manifold-hypothesis/",
+      "title": "The Manifold Hypothesis",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/neural-implicit-fields/",
+      "title": "Neural Implicit Fields",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/depth-estimation-metrics/",
+      "title": "Depth Estimation Metrics",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/x-0-parameterization/",
+      "title": "x_0-parameterization",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/actor-critic-rl/",
+      "title": "Actor-Critic RL",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/data-driven-inductive-bias/",
+      "title": "Data-Driven Inductive Bias",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/diffusion-reverse-process/",
+      "title": "Diffusion Reverse Process",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/continual-learning-formulation/",
+      "title": "Continual Learning Formulation",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/n-gram-models/",
+      "title": "N-gram Models",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/continual-learning-eval-metrics/",
+      "title": "Continual Learning - Eval Metrics",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/deep-q-networks-dqn/",
+      "title": "Deep Q-Networks (DQN)",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/energy-based-models/",
+      "title": "Energy based Models",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/what-is-perplexity-in-ml/",
+      "title": "What is Perplexity in ML?",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/curriculum-learning/",
+      "title": "Curriculum Learning",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/frchet-inception-distance-fid/",
+      "title": "Fr\u00e9chet Inception Distance (FID)",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/layer-normalisation/",
+      "title": "Layer Normalisation",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/rotary-positional-embeddings-rope/",
+      "title": "Rotary Positional Embeddings (RoPE)",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/ml-notes-database-expansion/",
+      "title": "ML Notes Database Expansion",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/attention-mechanism/",
+      "title": "Attention Mechanism",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/-index/",
+      "title": "Deep Learning",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/solvable-models-in-machine-learning/",
+      "title": "Solvable Models in Machine Learning",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/diffusion-models/",
+      "title": "Diffusion Models",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/diffusion-lm-denoising/",
+      "title": "Diffusion-LM Denoising",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/deterministic-vs-probabilistic-models/",
+      "title": "Deterministic vs Probabilistic Models",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/optimal-transport/",
+      "title": "Optimal Transport",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/reimannian-manifolds/",
+      "title": "Reimannian Manifolds",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/vq-vae-vector-quantized-variational-autoencoder/",
+      "title": "VQ-VAE (Vector Quantized Variational Autoencoder)",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/stability-vs-plasticity/",
+      "title": "Stability vs Plasticity",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/low-rank-adaptationlora/",
+      "title": "Low Rank Adaptation(LoRA)",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/mixture-of-experts/",
+      "title": "Mixture of Experts",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/diffusion-and-flow-models/reason-behind-the-creativity-of-diffusion-models/",
+      "title": "Reason Behind the Creativity of Diffusion Models",
+      "group": "Deep Learning"
+    },
+    {
+      "id": "/vault/deep-learning/diffusion-and-flow-models/-index/",
+      "title": "Diffusion and Flow Models",
+      "group": "Deep Learning"
+    }
+  ],
+  "links": [
+    {
+      "source": "/vault/cool-things-i-read/",
+      "target": "/vault/deep-learning/diffusion-and-flow-models/reason-behind-the-creativity-of-diffusion-models/"
+    },
+    {
+      "source": "/vault/command-center/",
+      "target": "/vault/misc/workout-log/"
+    },
+    {
+      "source": "/vault/command-center/",
+      "target": "/vault/projects/project-ideas/"
+    },
+    {
+      "source": "/vault/command-center/",
+      "target": "/vault/misc/summer-plan-2026/"
+    },
+    {
+      "source": "/vault/math/probability-theory/power-of-test-statistic/",
+      "target": "/vault/math/probability-theory/probability-and-statistics/"
+    },
+    {
+      "source": "/vault/math/probability-theory/probability-and-statistics/",
+      "target": "/vault/math/probability-theory/total-expectation-theorem/"
+    },
+    {
+      "source": "/vault/math/probability-theory/probability-and-statistics/",
+      "target": "/vault/math/probability-theory/well-known-distributions/"
+    },
+    {
+      "source": "/vault/math/probability-theory/probability-and-statistics/",
+      "target": "/vault/math/probability-theory/law-of-iterated-expectations/"
+    },
+    {
+      "source": "/vault/math/probability-theory/probability-and-statistics/",
+      "target": "/vault/math/probability-theory/independent-random-variables/"
+    },
+    {
+      "source": "/vault/math/probability-theory/probability-and-statistics/",
+      "target": "/vault/math/probability-theory/deterministic-random-variable/"
+    },
+    {
+      "source": "/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/",
+      "target": "/vault/math/probability-theory/gaussian-distributions/"
+    },
+    {
+      "source": "/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/",
+      "target": "/vault/math/probability-theory/power-of-test-statistic/"
+    },
+    {
+      "source": "/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/",
+      "target": "/vault/math/probability-theory/total-expectation-theorem/"
+    },
+    {
+      "source": "/vault/math/probability-theory/jointly-gaussian-random-variables-conditional-distributions/",
+      "target": "/vault/math/probability-theory/p-values/"
+    },
+    {
+      "source": "/vault/papers/diffusion-and-flows/diffusion-lm/",
+      "target": "/vault/deep-learning/diffusion-lm-denoising/"
+    },
+    {
+      "source": "/vault/papers/diffusion-and-flows/diffusion-lm/",
+      "target": "/vault/deep-learning/x-0-parameterization/"
+    },
+    {
+      "source": "/vault/papers/vision/infidepth-arbitrary-high-res-estimation-using-neural-implicit-fields/",
+      "target": "/vault/deep-learning/neural-implicit-fields/"
+    },
+    {
+      "source": "/vault/papers/data-attribution/large-scale-pruning-using-dyna-uncertainty/",
+      "target": "/vault/papers/data-attribution/deep-learning-on-a-data-diet/"
+    },
+    {
+      "source": "/vault/papers/data-attribution/deep-learning-on-a-data-diet/",
+      "target": "/vault/papers/data-attribution/large-scale-pruning-using-dyna-uncertainty/"
+    },
+    {
+      "source": "/vault/dsa-and-cp/sorting/quick-sort/",
+      "target": "/vault/dsa-and-cp/sorting/quick-sort-partition/"
+    },
+    {
+      "source": "/vault/research-work/random-ideas/new-way-of-training-small-models/",
+      "target": "/vault/deep-learning/matryoshka-representation-learning/"
+    },
+    {
+      "source": "/vault/research-work/btp/ksd-for-goodness-of-fit-tests/",
+      "target": "/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/"
+    },
+    {
+      "source": "/vault/research-work/btp/ksd-for-goodness-of-fit-tests/",
+      "target": "/vault/research-work/btp/reproducing-kernel-hilbert-space-rkhs/"
+    },
+    {
+      "source": "/vault/research-work/lossfunk-proposal/loss-funk-application/",
+      "target": "/vault/deep-learning/the-manifold-hypothesis/"
+    },
+    {
+      "source": "/vault/research-work/lossfunk-proposal/loss-funk-application/",
+      "target": "/vault/deep-learning/continual-learning/"
+    },
+    {
+      "source": "/vault/research-work/val-del/scaling-laws-with-rep/",
+      "target": "/vault/research-work/val-del/initial-tests-for-the-scaling-law/"
+    },
+    {
+      "source": "/vault/research-work/val-del/deriving-neural-scaling-laws-from-lang-stat/",
+      "target": "/vault/research-work/val-del/scaling-laws-with-rep/"
+    },
+    {
+      "source": "/vault/blogs/need-for-score-networks/",
+      "target": "/vault/blogs/why-iterative-reverse-sampling-recovers-the-data-distribution/"
+    },
+    {
+      "source": "/vault/blogs/diffusion/",
+      "target": "/vault/deep-learning/diffusion-models/"
+    },
+    {
+      "source": "/vault/blogs/diffusion/",
+      "target": "/vault/deep-learning/diffusion-reverse-process/"
+    },
+    {
+      "source": "/vault/deep-learning/continual-learning/",
+      "target": "/vault/deep-learning/continual-learning-formulation/"
+    },
+    {
+      "source": "/vault/deep-learning/continual-learning/",
+      "target": "/vault/deep-learning/stability-vs-plasticity/"
+    },
+    {
+      "source": "/vault/deep-learning/continual-learning/",
+      "target": "/vault/deep-learning/continual-learning-eval-metrics/"
+    },
+    {
+      "source": "/vault/deep-learning/x-0-parameterization/",
+      "target": "/vault/deep-learning/diffusion-models/"
+    },
+    {
+      "source": "/vault/deep-learning/diffusion-models/",
+      "target": "/vault/deep-learning/diffusion-reverse-process/"
+    },
+    {
+      "source": "/vault/deep-learning/stability-vs-plasticity/",
+      "target": "/vault/deep-learning/continual-learning/"
+    },
+    {
+      "source": "/vault/deep-learning/stability-vs-plasticity/",
+      "target": "/vault/deep-learning/continual-learning/"
+    }
+  ]
+}

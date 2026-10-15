@@ -1,14 +1,191 @@
 {{ define "main" }}
-<article class="post-content">
-    <header style="margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color);">
-        <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem; color: var(--text-color); font-family: var(--font-main);">{{ .Title }}</h1>
-        <div style="color: #8b949e; font-size: 0.85rem; font-family: var(--font-main);">
-            Last modified: {{ .Lastmod.Format "January 2, 2006" }}
-        </div>
-    </header>
+{{ $backlinks := .Params.backlinks | default (index site.Data.backlinks .RelPermalink) }}
+<div class="note-layout">
+    <!-- Main Reading Article -->
+    <article class="post-content">
+        <!-- Breadcrumbs Navigation -->
+        <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <a href="{{ "" | relURL }}" class="breadcrumb-item">
+                <span class="breadcrumb-icon">🌿</span>
+                <span>Garden</span>
+            </a>
+            {{ $p := .Parent }}
+            {{ if and $p (ne $p.RelPermalink "/") (ne $p.RelPermalink "/vault/") }}
+                {{ $pp := $p.Parent }}
+                {{ if and $pp (ne $pp.RelPermalink "/") (ne $pp.RelPermalink "/vault/") }}
+                    {{ $ppp := $pp.Parent }}
+                    {{ if and $ppp (ne $ppp.RelPermalink "/") (ne $ppp.RelPermalink "/vault/") }}
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="{{ $ppp.RelPermalink }}" class="breadcrumb-item">{{ $ppp.Title }}</a>
+                    {{ end }}
+                    <span class="breadcrumb-separator">/</span>
+                    <a href="{{ $pp.RelPermalink }}" class="breadcrumb-item">{{ $pp.Title }}</a>
+                {{ end }}
+                <span class="breadcrumb-separator">/</span>
+                <a href="{{ $p.RelPermalink }}" class="breadcrumb-item">{{ $p.Title }}</a>
+            {{ end }}
+            <span class="breadcrumb-separator">/</span>
+            <span class="breadcrumb-current">{{ .Title }}</span>
+        </nav>
 
-    <div class="markdown-body">
-        {{ .Content }}
-    </div>
-</article>
+        <!-- Note Header -->
+        <header class="note-header">
+            <h1 class="note-title">{{ .Title }}</h1>
+            
+            <div class="note-meta-bar">
+                <div class="meta-item" title="Last modified date">
+                    <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>{{ .Lastmod.Format "Jan 2, 2006" }}</span>
+                </div>
+
+                <span class="meta-dot">•</span>
+
+                <div class="meta-item" title="Estimated reading time">
+                    <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>{{ .ReadingTime }} min read</span>
+                </div>
+
+                {{ if .WordCount }}
+                <span class="meta-dot">•</span>
+                <div class="meta-item" title="Word count">
+                    <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    <span>{{ .WordCount }} words</span>
+                </div>
+                {{ end }}
+            </div>
+
+            {{ if .Params.tags }}
+            <div class="note-tags">
+                {{ range .Params.tags }}
+                <span class="tag-pill">#{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </header>
+
+        <!-- Markdown Content -->
+        <div class="markdown-body">
+            {{ .Content }}
+        </div>
+
+        <!-- Bottom Backlinks Section -->
+        {{ if $backlinks }}
+        <section class="bottom-backlinks">
+            <div class="section-badge">
+                <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                </svg>
+                <span>Mentioned In ({{ len $backlinks }})</span>
+            </div>
+            <div class="backlinks-grid">
+                {{ range $backlinks }}
+                <a href="{{ .url }}" class="backlink-card">
+                    <div class="backlink-card-header">
+                        <span class="backlink-card-icon">📄</span>
+                        <span class="backlink-card-title">{{ .title }}</span>
+                    </div>
+                    <span class="backlink-card-arrow">→</span>
+                </a>
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
+    </article>
+
+    <!-- Right Sidebar (Context & Tools) -->
+    <aside class="right-sidebar">
+        <div class="right-sidebar-sticky">
+            <!-- Table of Contents -->
+            {{ if gt (len .TableOfContents) 35 }}
+            <div class="toc-container">
+                <div class="sidebar-section-title">
+                    <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                    <span>On This Page</span>
+                </div>
+                <div class="toc-content">
+                    {{ .TableOfContents }}
+                </div>
+            </div>
+            {{ end }}
+
+            <!-- Backlinks In Rail -->
+            {{ if $backlinks }}
+            <div class="backlinks-rail-container">
+                <div class="sidebar-section-title">
+                    <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                    </svg>
+                    <span>Backlinks</span>
+                </div>
+                <ul class="rail-backlinks-list">
+                    {{ range $backlinks }}
+                    <li>
+                        <a href="{{ .url }}" class="rail-backlink-link">
+                            <span class="rail-bl-bullet">↳</span>
+                            <span class="rail-bl-title">{{ .title }}</span>
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+
+            <!-- Interactive Local Graph -->
+            <div class="local-graph-box">
+                <div class="sidebar-section-title">
+                    <svg class="meta-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="18" cy="5" r="3"></circle>
+                        <circle cx="6" cy="12" r="3"></circle>
+                        <circle cx="18" cy="19" r="3"></circle>
+                        <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                        <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                    </svg>
+                    <span>Interactive Graph</span>
+                </div>
+                <div class="canvas-wrapper">
+                    <canvas id="local-graph-canvas" width="240" height="180"></canvas>
+                    <div class="graph-legend">
+                        <span class="legend-item"><span class="legend-dot active-dot"></span> This note</span>
+                        <span class="legend-item"><span class="legend-dot neighbor-dot"></span> Linked</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page Actions -->
+            <div class="page-quick-actions">
+                <button class="quick-action-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Scroll to top">
+                    <span>↑</span>
+                    <span>Top</span>
+                </button>
+                <button class="quick-action-btn" onclick="navigator.clipboard.writeText(window.location.href); this.classList.add('copied'); setTimeout(() => this.classList.remove('copied'), 2000)" title="Copy note link">
+                    <span class="btn-copy-icon">🔗</span>
+                    <span class="btn-copy-text">Share</span>
+                </button>
+            </div>
+        </div>
+    </aside>
+</div>
 {{ end }}

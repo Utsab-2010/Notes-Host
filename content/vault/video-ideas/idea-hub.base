@@ -1,1 +1,12 @@
-/home/utsab/Utsab-Notes/Video Ideas/Idea Hub.base
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "Video Ideas"
+        - file.ext == "md"
+    groupBy:
+      property: file.tags
+      direction: ASC
+    order:
+      - file.name

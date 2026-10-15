@@ -1,48 +1,101 @@
 {{ define "main" }}
 <div class="contents-page">
-    <header style="margin-bottom: 2.5rem;">
-        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(90deg, var(--accent-color), #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-            📁 {{ .Title }}
-        </h1>
-        <p style="color: #8b949e; font-size: 1.1rem;">Section folder view.</p>
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <a href="{{ "" | relURL }}" class="breadcrumb-item">
+            <span class="breadcrumb-icon">🌿</span>
+            <span>Garden</span>
+        </a>
+        {{ $p := .Parent }}
+        {{ if and $p (ne $p.RelPermalink "/") (ne $p.RelPermalink "/vault/") }}
+            {{ $pp := $p.Parent }}
+            {{ if and $pp (ne $pp.RelPermalink "/") (ne $pp.RelPermalink "/vault/") }}
+                {{ $ppp := $pp.Parent }}
+                {{ if and $ppp (ne $ppp.RelPermalink "/") (ne $ppp.RelPermalink "/vault/") }}
+                    <span class="breadcrumb-separator">/</span>
+                    <a href="{{ $ppp.RelPermalink }}" class="breadcrumb-item">{{ $ppp.Title }}</a>
+                {{ end }}
+                <span class="breadcrumb-separator">/</span>
+                <a href="{{ $pp.RelPermalink }}" class="breadcrumb-item">{{ $pp.Title }}</a>
+            {{ end }}
+            <span class="breadcrumb-separator">/</span>
+            <a href="{{ $p.RelPermalink }}" class="breadcrumb-item">{{ $p.Title }}</a>
+        {{ end }}
+        <span class="breadcrumb-separator">/</span>
+        <span class="breadcrumb-current">{{ .Title }}</span>
+    </nav>
+
+    <header class="folder-header-hero">
+        <div class="folder-hero-title-group">
+            <span class="hero-icon">📁</span>
+            <div>
+                <h1 class="hero-title">{{ .Title }}</h1>
+                <p class="hero-subtitle">
+                    {{ if .Sections }}
+                        <span>{{ len .Sections }} subfolder{{ if gt (len .Sections) 1 }}s{{ end }}</span>
+                    {{ end }}
+                    {{ if and .Sections .RegularPages }}<span class="meta-dot">•</span>{{ end }}
+                    {{ if .RegularPages }}
+                        <span>{{ len .RegularPages }} note{{ if gt (len .RegularPages) 1 }}s{{ end }}</span>
+                    {{ end }}
+                </p>
+            </div>
+        </div>
     </header>
 
     <div class="folder-grid-container">
         {{ if .Sections }}
-        <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; color: #8b949e;">
-            Subfolders
-        </h2>
-        <div class="grid" style="margin-bottom: 3rem;">
-            {{ range .Sections.ByTitle }}
-            <a href="{{ .RelPermalink }}" class="card folder-card">
-                <div class="card-icon">📁</div>
-                <div class="card-info">
-                    <h3>{{ .Title }}</h3>
-                    <span class="card-meta">{{ len .RegularPagesRecursive }} notes</span>
-                </div>
-            </a>
-            {{ end }}
+        <div class="section-group">
+            <h2 class="group-title">
+                <span class="group-icon">📂</span>
+                <span>Subfolders</span>
+            </h2>
+            <div class="grid">
+                {{ range .Sections.ByTitle }}
+                <a href="{{ .RelPermalink }}" class="card folder-card">
+                    <div class="card-icon-wrapper folder-icon-bg">
+                        <span class="card-icon">📁</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>{{ .Title }}</h3>
+                        <span class="card-meta">{{ len .RegularPagesRecursive }} note{{ if ne (len .RegularPagesRecursive) 1 }}s{{ end }}</span>
+                    </div>
+                    <span class="card-arrow">→</span>
+                </a>
+                {{ end }}
+            </div>
         </div>
         {{ end }}
 
         {{ if .RegularPages }}
-        <h2 style="font-size: 1.3rem; margin-bottom: 1.25rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; color: #8b949e;">
-            Notes
-        </h2>
-        <div class="grid">
-            {{ range .RegularPages.ByTitle }}
-            <a href="{{ .RelPermalink }}" class="card file-card">
-                <div class="card-icon">📄</div>
-                <div class="card-info">
-                    <h3>{{ .Title }}</h3>
-                    <span class="card-meta">Note</span>
-                </div>
-            </a>
-            {{ end }}
+        <div class="section-group">
+            <h2 class="group-title">
+                <span class="group-icon">📄</span>
+                <span>Notes</span>
+            </h2>
+            <div class="grid">
+                {{ range .RegularPages.ByTitle }}
+                <a href="{{ .RelPermalink }}" class="card file-card">
+                    <div class="card-icon-wrapper file-icon-bg">
+                        <span class="card-icon">{{ if eq .Layout "canvas" }}🎨{{ else }}📄{{ end }}</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>{{ .Title }}</h3>
+                        <div class="card-meta-row">
+                            <span class="card-meta">{{ .Lastmod.Format "Jan 2, 2006" }}</span>
+                            <span class="meta-dot">•</span>
+                            <span class="card-meta">{{ .ReadingTime }} min</span>
+                        </div>
+                    </div>
+                    <span class="card-arrow">→</span>
+                </a>
+                {{ end }}
+            </div>
         </div>
         {{ else if not .Sections }}
         <div class="empty-state">
-            <p>This folder is empty.</p>
+            <span class="empty-icon">🍃</span>
+            <p>This folder is currently empty.</p>
         </div>
         {{ end }}
     </div>

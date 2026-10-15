@@ -1,47 +1,94 @@
 {{ define "main" }}
-<div class="contents-page">
-    <header style="margin-bottom: 2.5rem;">
-        <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem; background: linear-gradient(90deg, var(--accent-color), #bc8cff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Garden Index</h1>
-        <p style="color: #8b949e; font-size: 1.1rem;">Explore the notes, categories, and technical logs from my Obsidian vault.</p>
+<div class="contents-page garden-home">
+    <header class="home-hero">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Digital Garden & Knowledge Base</span>
+        </div>
+        <h1 class="hero-main-title">
+            <span class="hero-accent">Utsab's</span> Digital Garden
+        </h1>
+        <p class="hero-description">
+            An evolving web of research logs, machine learning architectures, algorithms, mathematics, and personal explorations — interconnected and published in the open.
+        </p>
+
+        <div class="hero-stats-row">
+            {{ $vault := .Site.GetPage "section" "vault" }}
+            {{ if $vault }}
+            <div class="stat-pill">
+                <span class="stat-number">{{ len $vault.RegularPagesRecursive }}</span>
+                <span class="stat-label">Published Notes</span>
+            </div>
+            <div class="stat-pill">
+                <span class="stat-number">{{ len $vault.Sections }}</span>
+                <span class="stat-label">Vault Topics</span>
+            </div>
+            <div class="stat-pill">
+                <span class="stat-icon">🌲</span>
+                <span class="stat-label">Everforest Theme</span>
+            </div>
+            {{ end }}
+        </div>
     </header>
 
     {{ $vault := .Site.GetPage "section" "vault" }}
     {{ if $vault }}
         <div class="folder-grid-container">
-            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
-                📂 Top-Level Folders
-            </h2>
-            <div class="grid">
-                {{ range $vault.Sections.ByTitle }}
-                <a href="{{ .RelPermalink }}" class="card folder-card">
-                    <div class="card-icon">📁</div>
-                    <div class="card-info">
-                        <h3>{{ .Title }}</h3>
-                        <span class="card-meta">{{ len .RegularPagesRecursive }} notes</span>
-                    </div>
-                </a>
-                {{ end }}
+            <div class="section-group">
+                <div class="group-header-row">
+                    <h2 class="group-title">
+                        <span class="group-icon">📂</span>
+                        <span>Explore Topics</span>
+                    </h2>
+                </div>
+                <div class="grid">
+                    {{ range $vault.Sections.ByTitle }}
+                    <a href="{{ .RelPermalink }}" class="card folder-card">
+                        <div class="card-icon-wrapper folder-icon-bg">
+                            <span class="card-icon">📁</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>{{ .Title }}</h3>
+                            <span class="card-meta">{{ len .RegularPagesRecursive }} note{{ if ne (len .RegularPagesRecursive) 1 }}s{{ end }}</span>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </a>
+                    {{ end }}
+                </div>
             </div>
 
             {{ if $vault.RegularPages }}
-            <h2 style="font-size: 1.5rem; margin-top: 3rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
-                📄 Root Notes
-            </h2>
-            <div class="grid">
-                {{ range $vault.RegularPages.ByTitle }}
-                <a href="{{ .RelPermalink }}" class="card file-card">
-                    <div class="card-icon">📄</div>
-                    <div class="card-info">
-                        <h3>{{ .Title }}</h3>
-                        <span class="card-meta">Note</span>
-                    </div>
-                </a>
-                {{ end }}
+            <div class="section-group" style="margin-top: 3.5rem;">
+                <div class="group-header-row">
+                    <h2 class="group-title">
+                        <span class="group-icon">📄</span>
+                        <span>Featured & Root Notes</span>
+                    </h2>
+                </div>
+                <div class="grid">
+                    {{ range $vault.RegularPages.ByTitle }}
+                    <a href="{{ .RelPermalink }}" class="card file-card">
+                        <div class="card-icon-wrapper file-icon-bg">
+                            <span class="card-icon">{{ if eq .Layout "canvas" }}🎨{{ else }}📄{{ end }}</span>
+                        </div>
+                        <div class="card-info">
+                            <h3>{{ .Title }}</h3>
+                            <div class="card-meta-row">
+                                <span class="card-meta">{{ .Lastmod.Format "Jan 2, 2006" }}</span>
+                                <span class="meta-dot">•</span>
+                                <span class="card-meta">{{ .ReadingTime }} min</span>
+                            </div>
+                        </div>
+                        <span class="card-arrow">→</span>
+                    </a>
+                    {{ end }}
+                </div>
             </div>
             {{ end }}
         </div>
     {{ else }}
         <div class="empty-state">
+            <span class="empty-icon">🌱</span>
             <p>No content found in the vault.</p>
             <p>Ensure that your Obsidian vault folder is correctly configured and accessible.</p>
         </div>

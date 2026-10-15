@@ -10,9 +10,17 @@
     {{ end }}
     <li class="tree-item folder {{ if $isOpen }}open{{ end }}">
       <div class="folder-header" onclick="toggleFolder(this, event)">
-        <span class="toggle-arrow">{{ if $isOpen }}▼{{ else }}▶{{ end }}</span>
+        <span class="toggle-arrow">
+          <svg class="chevron-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </span>
         <span class="folder-icon">📁</span>
         <a href="{{ .RelPermalink }}" class="folder-title {{ if eq $current . }}active{{ end }}">{{ .Title }}</a>
+        {{ $count := len .RegularPagesRecursive }}
+        {{ if gt $count 0 }}
+        <span class="folder-count-badge">{{ $count }}</span>
+        {{ end }}
       </div>
       <div class="folder-content" style="{{ if $isOpen }}display: block;{{ else }}display: none;{{ end }}">
         {{ partial "tree-node.html" (dict "node" . "current" $current) }}
